@@ -8,12 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Download GotSport XLSX
         run: |
           curl -L --fail --show-error \
-            -A "Mozilla/5.0" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36" \
+            -e "https://system.gotsport.com/org_event/events/55206/schedules?team=4264996" \
+            -H "Accept: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream,*/*" \
             -o gotsport-export.xlsx \
             "https://system.gotsport.com/org_event/events/55206/matches_export?team=4239121"
+          
 
       - name: Verify downloaded file
         run: |
