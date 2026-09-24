@@ -8,14 +8,14 @@ from openpyxl import load_workbook
 
 
 REQUIRED_COLUMNS = {
-    "Match #",
-    "Date",
-    "Time",
-    "Home Team",
-    "Away Team",
-    "Location",
-    "Division",
-    "Status",
+    "Match #" ,
+    "Date" ,
+    "Time" ,
+    "Home Team" ,
+    "Away Team" ,
+    "Location" ,
+    "Division" ,
+    "Status" ,
 }
 
 
