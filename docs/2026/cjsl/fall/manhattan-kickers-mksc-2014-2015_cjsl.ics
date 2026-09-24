@@ -1,0 +1,168 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OpenAI//CJSL GotSport XLSX Conversion//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CJSL - Manhattan Kickers MKSC 2014/2015
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cjsl-55206-match-274@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20260920T110000
+DTEND;TZID=America/New_York:20260920T120000
+SUMMARY:CJSL: MKSC @ Excelsior NY Academy
+LOCATION:Southern Fields - NYC Parks - 9 v 9
+DESCRIPTION:Match #274\nAway match\nHome: Excelsior New York Academy
+ 2014/2015 Boys\nAway: Manhattan Kickers MKSC 2014/2015\nDivision: U12
+ (9v9) - D2 Metro\nResult: 2 - 7\nGotSport status: Rescheduled\nSource:
+ https://system.gotsport.com/org_event/events/55206/schedules?team=426499
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+X-GOTSPORT-STATUS:Rescheduled
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-277@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20260926T184000
+DTEND;TZID=America/New_York:20260926T194000
+SUMMARY:CJSL: MKSC vs Brooklyn Italians
+LOCATION:Con Edison Field- Manhattan - 1- Manhattan
+DESCRIPTION:Match #277\nHome match\nHome: Manhattan Kickers MKSC
+ 2014/2015\nAway: Brooklyn Italians 2014/2015 Premier\nDivision: U12
+ (9v9) - D2 Metro\nSource:
+ https://system.gotsport.com/org_event/events/55206/schedules?team=426499
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-279@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261003T120000
+DTEND;TZID=America/New_York:20261003T130000
+SUMMARY:CJSL: MKSC @ ALBION SC Brooklyn
+LOCATION:Pier 42 - Pier 42 11v11
+DESCRIPTION:Match #279\nAway match\nHome: ALBION SC Brooklyn B14/15
+ Premier - Williamsburg\nAway: Manhattan Kickers MKSC
+ 2014/2015\nDivision: U12 (9v9) - D2 Metro\nSource:
+ https://system.gotsport.com/org_event/events/55206/schedules?team=426499
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-284@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261017T171000
+DTEND;TZID=America/New_York:20261017T181000
+SUMMARY:CJSL: MKSC vs SC Gjoa Strand Larsen
+LOCATION:Con Edison Field- Manhattan - 1- Manhattan
+DESCRIPTION:Match #284\nHome match\nHome: Manhattan Kickers MKSC
+ 2014/2015\nAway: SC Gjoa Strand Larsen\nDivision: U12 (9v9) - D2
+ Metro\nSource: https://system.gotsport.com/org_event/events/55206/schedu
+ les?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-285@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261024T190000
+DTEND;TZID=America/New_York:20261024T200000
+SUMMARY:CJSL: MKSC vs French Football Academy
+LOCATION:Con Edison Field- Manhattan - 1- Manhattan
+DESCRIPTION:Match #285\nHome match\nHome: Manhattan Kickers MKSC
+ 2014/2015\nAway: French Football Academy 2014/15 Digne\nDivision: U12
+ (9v9) - D2 Metro\nSource:
+ https://system.gotsport.com/org_event/events/55206/schedules?team=426499
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-289@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261101T101500
+DTEND;TZID=America/New_York:20261101T111500
+SUMMARY:CJSL: MKSC @ Brooklyn Italians
+LOCATION:Calvert Vaux Park - Field 1
+DESCRIPTION:Match #289\nAway match\nHome: Brooklyn Italians 2014/2015
+ Premier\nAway: Manhattan Kickers MKSC 2014/2015\nDivision: U12 (9v9) -
+ D2 Metro\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-291@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261107T190000
+DTEND;TZID=America/New_York:20261107T200000
+SUMMARY:CJSL: MKSC vs ALBION SC Brooklyn
+LOCATION:Con Edison Field- Manhattan - 1- Manhattan
+DESCRIPTION:Match #291\nHome match\nHome: Manhattan Kickers MKSC
+ 2014/2015\nAway: ALBION SC Brooklyn B14/15 Premier -
+ Williamsburg\nDivision: U12 (9v9) - D2 Metro\nSource:
+ https://system.gotsport.com/org_event/events/55206/schedules?team=426499
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-296@system.gotsport.com
+DTSTAMP:20260924T095131Z
+DTSTART;TZID=America/New_York:20261114T110000
+DTEND;TZID=America/New_York:20261114T120000
+SUMMARY:CJSL: MKSC @ SC Gjoa Strand Larsen
+LOCATION:Dyker Turf Field B Small Sided - B
+DESCRIPTION:Match #296\nAway match\nHome: SC Gjoa Strand Larsen\nAway:
+ Manhattan Kickers MKSC 2014/2015\nDivision: U12 (9v9) - D2
+ Metro\nSource: https://system.gotsport.com/org_event/events/55206/schedu
+ les?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 4996
+CATEGORIES:CJSL,Soccer,MKSC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
