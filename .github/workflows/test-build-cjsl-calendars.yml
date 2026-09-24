@@ -1,0 +1,117 @@
+name: Test CJSL Calendar Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl
+
+      - name: Build CJSL calendars
+        run: |
+          python scripts/build_cjsl_calendars.py \
+            config/2026/cjsl/fall/manifest.json
+
+      - name: Verify MKSC calendar was generated
+        run: |
+          test -f docs/2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics
+
+          echo "Calendar file generated successfully:"
+          ls -lh docs/2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics
+
+      - name: Validate calendar contents
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path(
+              "docs/2026/cjsl/fall/"
+              "manhattan-kickers-mksc-2014-2015.ics"
+          )
+
+          text = path.read_text(encoding="utf-8")
+
+          # Unfold RFC 5545 continuation lines.
+          text = re.sub(r"\r?\n[ \t]", "", text)
+
+          checks = [
+              "BEGIN:VCALENDAR",
+              "BEGIN:VEVENT",
+              "Match No: 277 (HOME)",
+              "HOME: Manhattan Kickers MKSC 2014/2015",
+              "AWAY: Brooklyn Italians 2014/2015 Premier",
+              "Division: U12 (9v9) - D2 Metro",
+              "TRIGGER:-P7D",
+              "TRIGGER:-P2D",
+              "TRIGGER:-PT12H",
+              "TRIGGER:-PT3H",
+          ]
+
+          missing = [
+              item for item in checks
+              if item not in text
+          ]
+
+          if missing:
+              raise SystemExit(
+                  "FAILED: Missing expected calendar content:\n"
+                  + "\n".join(missing)
+              )
+
+          event_count = text.count("BEGIN:VEVENT")
+
+          print(
+              f"SUCCESS: Calendar contains "
+              f"{event_count} events."
+          )
+
+          print()
+          print("Match 277 description:")
+          print()
+
+          match = re.search(
+              r"UID:cjsl-55206-match-277"
+              r".*?DESCRIPTION:(.*?)\r?\nURL:",
+              text,
+              re.S,
+          )
+
+          if match:
+              print(
+                  match.group(1)
+                  .replace("\\n", "\n")
+              )
+          else:
+              print(
+                  "Could not display Match 277 preview."
+              )
+          PY
+
+      - name: Show changes compared with current live file
+        run: |
+          echo "Changes the converter would make:"
+          echo
+          git diff -- \
+            docs/2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics \
+            || true
+
+      - name: Upload generated calendar for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-mksc-calendar
+          path: docs/2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics
