@@ -8,46 +8,89 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Download GotSport XLSX
+      - name: Install Playwright
         run: |
-          curl -L --fail --show-error \
-            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36" \
-            -e "https://system.gotsport.com/org_event/events/55206/schedules?team=4264996" \
-            -H "Accept: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream,*/*" \
-            -o gotsport-export.xlsx \
-            "https://system.gotsport.com/org_event/events/55206/matches_export?team=4239121"
-          
+          pip install playwright
+          playwright install --with-deps chromium
 
-      - name: Verify downloaded file
+      - name: Open GotSport and download XLSX
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+
+          schedule_url = (
+              "https://system.gotsport.com/org_event/events/55206/"
+              "schedules?team=4264996"
+          )
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True)
+              page = browser.new_page()
+
+              print("Opening:", schedule_url)
+              response = page.goto(
+                  schedule_url,
+                  wait_until="domcontentloaded",
+                  timeout=60000
+              )
+
+              if response:
+                  print("HTTP status:", response.status)
+
+              print("Page title:", page.title())
+
+              body = page.locator("body").inner_text()
+
+              if "Export Team Schedule" not in body:
+                  print("Export Team Schedule was NOT found.")
+                  print("First 2000 characters of page:")
+                  print(body[:2000])
+                  raise SystemExit(1)
+
+              print("Export Team Schedule found.")
+
+              with page.expect_download(timeout=60000) as download_info:
+                  page.get_by_text(
+                      "Export Team Schedule",
+                      exact=True
+                  ).click()
+
+              download = download_info.value
+              download.save_as("gotsport-export.xlsx")
+
+              print("Downloaded:", download.suggested_filename)
+
+              browser.close()
+          PY
+
+      - name: Verify XLSX
         run: |
           ls -lh gotsport-export.xlsx
           file gotsport-export.xlsx
 
-          python - <<'PY'
+          python <<'PY'
           from zipfile import ZipFile, is_zipfile
 
           path = "gotsport-export.xlsx"
 
           if not is_zipfile(path):
               raise SystemExit(
-                  "FAILED: GotSport did not return a valid XLSX/ZIP file."
+                  "FAILED: Download is not a valid XLSX file."
               )
 
           with ZipFile(path) as z:
-              files = set(z.namelist())
-              required = {
-                  "[Content_Types].xml",
-                  "xl/workbook.xml"
-              }
+              names = set(z.namelist())
 
-              missing = required - files
-
-              if missing:
+              if "xl/workbook.xml" not in names:
                   raise SystemExit(
-                      f"FAILED: Download is a ZIP file but not a valid XLSX. "
-                      f"Missing: {missing}"
+                      "FAILED: ZIP downloaded, but it is not an XLSX workbook."
                   )
 
-          print("SUCCESS: GotSport returned a valid XLSX file.")
+          print("SUCCESS: Valid GotSport XLSX downloaded.")
           PY
