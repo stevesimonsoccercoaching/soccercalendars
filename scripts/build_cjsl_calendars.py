@@ -135,6 +135,14 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 f"{tracked_team_name!r}"
             )
 
+        if "Results" in headers:
+            result = clean_text(row[headers["Results"]])
+        else:
+            result = ""
+
+        raw_status = clean_text(row[headers["Status"]])
+        display_status = raw_status if raw_status else "Scheduled"
+
         start = parse_match_start(
             row[headers["Date"]],
             row[headers["Time"]]
@@ -149,9 +157,10 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 "end": end,
                 "home_team": home_team,
                 "away_team": away_team,
+                "result": result,
                 "location": clean_text(row[headers["Location"]]),
                 "division": clean_text(row[headers["Division"]]),
-                "status": clean_text(row[headers["Status"]]),
+                "status": display_status,
             }
         )
 
@@ -245,17 +254,33 @@ def build_calendar(
             f"{separator} {opponent_short}"
         )
 
-        description = (
-            f"Match No: {match['match_no']} ({home_away})"
-            "\\n\\n"
-            f"HOME: {ics_escape(home_team)}"
-            "\\n"
-            f"AWAY: {ics_escape(away_team)}"
-            "\\n\\n"
-            f"Division: {ics_escape(match['division'])}"
-            "\\n"
-            f"Source: {source_url}"
+        description_parts = [
+            f"Status: {ics_escape(match['status'])}",
+            f"Match No: {match['match_no']} ({home_away})",
+            f"Division: {ics_escape(match['division'])}",
+            "",
+            f"HOME: {ics_escape(home_team)}",
+            f"AWAY: {ics_escape(away_team)}",
+        ]
+
+        result = clean_text(match.get("result", ""))
+
+        if result and result != "-":
+            description_parts.extend(
+                [
+                    "",
+                    f"Results: {ics_escape(result)}",
+                ]
+            )
+
+        description_parts.extend(
+            [
+                "",
+                f"Source: {source_url}",
+            ]
         )
+
+        description = "\\n".join(description_parts)
 
         uid = (
             f"{organizer.lower()}-{event_id}-"
@@ -284,15 +309,16 @@ def build_calendar(
             ]
         )
 
-        if "cancel" in match["status"].lower():
+        status_lower = match["status"].lower()
+
+        if "cancel" in status_lower:
             lines.append("STATUS:CANCELLED")
         else:
             lines.append("STATUS:CONFIRMED")
 
-        if match["status"]:
-            lines.append(
-                f"X-GOTSPORT-STATUS:{ics_escape(match['status'])}"
-            )
+        lines.append(
+            f"X-GOTSPORT-STATUS:{ics_escape(match['status'])}"
+        )
 
         for reminder in reminders:
             lines.extend(
