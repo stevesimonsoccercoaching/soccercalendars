@@ -5,9 +5,11 @@ on:
 
   push:
     paths:
-      - "data/**/cjsl/**/*.xlsx"
-      - "config/**/cjsl/**/manifest.json"
+      - "data/**/*.xlsx"
+      - "config/**/manifest.json"
       - "scripts/build_cjsl_calendars.py"
+      - "scripts/build_calendar_index.py"
+      - ".github/workflows/build-cjsl-calendars.yml"
 
 permissions:
   contents: write
@@ -53,16 +55,20 @@ jobs:
             exit 1
           fi
 
+      - name: Build calendar index page
+        run: |
+          python scripts/build_calendar_index.py
+
       - name: Show generated changes
         run: |
-          echo "Generated calendar changes:"
+          echo "Generated calendar and index changes:"
           echo
           git diff -- docs/ || true
 
-      - name: Commit updated calendars
+      - name: Commit updated calendars and index
         run: |
           if git diff --quiet -- docs/; then
-            echo "No calendar changes to commit."
+            echo "No generated changes to commit."
             exit 0
           fi
 
@@ -71,6 +77,6 @@ jobs:
 
           git add docs/
 
-          git commit -m "Update generated CJSL calendars"
+          git commit -m "Update generated soccer calendars"
 
           git push
