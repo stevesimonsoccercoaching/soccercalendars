@@ -9,7 +9,6 @@
     "timezone": "America/New_York",
     "default_duration_minutes": 60
   },
-
   "calendar_defaults": {
     "reminders": [
       {
@@ -30,29 +29,455 @@
       }
     ]
   },
-
   "display_names": {
-    "Manhattan Kickers MKSC 2014/2015": "MKSC",
-    "Excelsior New York Academy 2014/2015 Boys": "Excelsior NY Academy",
+    "ALBION SC Brooklyn B13/14 Premier - Williamsburg": "ALBION Brooklyn",
+    "ALBION SC Brooklyn B14/15 Premier - Williamsburg": "ALBION Brooklyn",
+    "ALBION SC Brooklyn B15/16 Premier - Williamsburg": "ALBION Brooklyn",
+    "Brooklyn City FC F.C. B13/14": "Brooklyn City FC",
+    "Brooklyn City FC F.C. B14/15 Blue": "Brooklyn City FC",
+    "Brooklyn City FC F.C. B15/16 Blue": "Brooklyn City FC",
     "Brooklyn Italians 2014/2015 Premier": "Brooklyn Italians",
-    "ALBION SC Brooklyn B14/15 Premier - Williamsburg": "ALBION SC Brooklyn",
-    "SC Gjoa Strand Larsen": "SC Gjoa Strand Larsen",
-    "French Football Academy 2014/15 Digne": "French Football Academy"
+    "Brooklyn Premier F.C. 14/13 Regional": "Brooklyn Premier",
+    "Brooklyn United Academy B2013/2014 Park Slope Select": "Brooklyn United",
+    "Coney Island Cyclones United Leopards 2015/16": "Coney Island Cyclones",
+    "Coney Island Cyclones United Lions 2014/15": "Coney Island Cyclones",
+    "Coney Island Cyclones United Tigers 2013/14": "Coney Island Cyclones",
+    "Dynamo Soccer Club 2014": "Dynamo SC",
+    "FA Euro New York 2014/2015 Pre-MLS III": "FA Euro",
+    "French Football Academy 2014/15 Digne": "French Football Academy",
+    "Lucky Soccer Academy Shining Stars 14-15": "Lucky Soccer Academy",
+    "Manhattan Kickers MKSC 2014/2015": "MKSC",
+    "Manhattan SC Inter B2014/15": "Manhattan SC",
+    "Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray": "Met Oval",
+    "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White": "Met Oval",
+    "Rebels Legacy Soccer Club 2014\\2015": "Rebels Legacy",
+    "SC Gjoa Ajer": "SC Gjoa",
+    "SC Gjoa Johnsen": "SC Gjoa",
+    "SC Gjoa King": "SC Gjoa",
+    "SC Gjoa Nyland": "SC Gjoa",
+    "SC Gjoa Strand Larsen": "SC Gjoa",
+    "SkillsU FC U12": "SkillsU FC",
+    "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue": "SFFK",
+    "Soccer Fun for Kids / Brooklyn Patriots 2015-2016": "SFFK",
+    "Soccer Legion FC U11 Boys Blue (2015/2016)": "Soccer Legion",
+    "South Brooklyn FC #2 2013/2014": "South Brooklyn FC",
+    "South Brooklyn Fc 2014/2015": "South Brooklyn FC"
   },
-
   "teams": [
+    {
+      "name": "Coney Island Cyclones United Leopards 2015/16",
+      "short_name": "Coney Island Cyclones",
+      "slug": "coney-island-cyclones-united-leopards-2015-16",
+      "gotsport": {
+        "schedule_team_id": "4261459",
+        "export_team_id": "4261459",
+        "group_id": "536607",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4261459",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4261459",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536607"
+      }
+    },
+    {
+      "name": "ALBION SC Brooklyn B15/16 Premier - Williamsburg",
+      "short_name": "ALBION Brooklyn",
+      "slug": "albion-sc-brooklyn-b15-16-premier-williamsburg",
+      "gotsport": {
+        "schedule_team_id": "4264733",
+        "export_team_id": "4264733",
+        "group_id": "536609",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4264733",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4264733",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536609"
+      }
+    },
+    {
+      "name": "Brooklyn City FC F.C. B15/16 Blue",
+      "short_name": "Brooklyn City FC",
+      "slug": "brooklyn-city-fc-b15-16-blue",
+      "gotsport": {
+        "schedule_team_id": "4272105",
+        "export_team_id": "4272105",
+        "group_id": "536609",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4272105",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4272105",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536609"
+      }
+    },
+    {
+      "name": "Soccer Fun for Kids / Brooklyn Patriots 2015-2016",
+      "short_name": "SFFK",
+      "slug": "soccer-fun-for-kids-brooklyn-patriots-2015-2016",
+      "gotsport": {
+        "schedule_team_id": "4262140",
+        "export_team_id": "4262140",
+        "group_id": "536609",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4262140",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262140",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536609"
+      }
+    },
+    {
+      "name": "SC Gjoa King",
+      "short_name": "SC Gjoa",
+      "slug": "sc-gjoa-king",
+      "gotsport": {
+        "schedule_team_id": "4244097",
+        "export_team_id": "4244097",
+        "group_id": "536611",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4244097",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4244097",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536611"
+      }
+    },
+    {
+      "name": "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White",
+      "short_name": "Met Oval",
+      "slug": "metropolitan-oval-academy-brooklyn-2015-16-boys-u11-white",
+      "gotsport": {
+        "schedule_team_id": "4264996",
+        "export_team_id": "4264996",
+        "group_id": "536611",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4264996",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4264996",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536611"
+      }
+    },
+    {
+      "name": "Soccer Legion FC U11 Boys Blue (2015/2016)",
+      "short_name": "Soccer Legion",
+      "slug": "soccer-legion-fc-u11-boys-blue-2015-2016",
+      "gotsport": {
+        "schedule_team_id": "4435585",
+        "export_team_id": "4435585",
+        "group_id": "536610",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4435585",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4435585",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536610"
+      }
+    },
+    {
+      "name": "Coney Island Cyclones United Lions 2014/15",
+      "short_name": "Coney Island Cyclones",
+      "slug": "coney-island-cyclones-united-lions-2014-15",
+      "gotsport": {
+        "schedule_team_id": "4261465",
+        "export_team_id": "4261465",
+        "group_id": "536614",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4261465",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4261465",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536614"
+      }
+    },
+    {
+      "name": "Brooklyn Italians 2014/2015 Premier",
+      "short_name": "Brooklyn Italians",
+      "slug": "brooklyn-italians-2014-2015-premier",
+      "gotsport": {
+        "schedule_team_id": "4240340",
+        "export_team_id": "4240340",
+        "group_id": "536613",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4240340",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4240340",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536613"
+      }
+    },
     {
       "name": "Manhattan Kickers MKSC 2014/2015",
       "short_name": "MKSC",
       "slug": "manhattan-kickers-mksc-2014-2015",
-
       "gotsport": {
-        "schedule_team_id": "4264996",
+        "schedule_team_id": "4239121",
         "export_team_id": "4239121",
         "group_id": "536613",
-
-        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4264996",
-        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4239121"
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4239121",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4239121",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536613"
+      }
+    },
+    {
+      "name": "SC Gjoa Strand Larsen",
+      "short_name": "SC Gjoa",
+      "slug": "sc-gjoa-strand-larsen",
+      "gotsport": {
+        "schedule_team_id": "4244158",
+        "export_team_id": "4244158",
+        "group_id": "536613",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4244158",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4244158",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536613"
+      }
+    },
+    {
+      "name": "French Football Academy 2014/15 Digne",
+      "short_name": "French Football Academy",
+      "slug": "french-football-academy-2014-15-digne",
+      "gotsport": {
+        "schedule_team_id": "4206689",
+        "export_team_id": "4206689",
+        "group_id": "536613",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4206689",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4206689",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536613"
+      }
+    },
+    {
+      "name": "ALBION SC Brooklyn B14/15 Premier - Williamsburg",
+      "short_name": "ALBION Brooklyn",
+      "slug": "albion-sc-brooklyn-b14-15-premier-williamsburg",
+      "gotsport": {
+        "schedule_team_id": "4290983",
+        "export_team_id": "4290983",
+        "group_id": "536613",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4290983",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4290983",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536613"
+      }
+    },
+    {
+      "name": "South Brooklyn Fc 2014/2015",
+      "short_name": "South Brooklyn FC",
+      "slug": "south-brooklyn-fc-2014-2015",
+      "gotsport": {
+        "schedule_team_id": "4259907",
+        "export_team_id": "4259907",
+        "group_id": "536617",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4259907",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4259907",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536617"
+      }
+    },
+    {
+      "name": "Brooklyn City FC F.C. B14/15 Blue",
+      "short_name": "Brooklyn City FC",
+      "slug": "brooklyn-city-fc-b14-15-blue",
+      "gotsport": {
+        "schedule_team_id": "4272080",
+        "export_team_id": "4272080",
+        "group_id": "536617",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4272080",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4272080",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536617"
+      }
+    },
+    {
+      "name": "SkillsU FC U12",
+      "short_name": "SkillsU FC",
+      "slug": "skillsu-fc-u12",
+      "gotsport": {
+        "schedule_team_id": "4321423",
+        "export_team_id": "4321423",
+        "group_id": "536617",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4321423",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4321423",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536617"
+      }
+    },
+    {
+      "name": "FA Euro New York 2014/2015 Pre-MLS III",
+      "short_name": "FA Euro",
+      "slug": "fa-euro-new-york-2014-2015-pre-mls-iii",
+      "gotsport": {
+        "schedule_team_id": "4264585",
+        "export_team_id": "4264585",
+        "group_id": "536617",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4264585",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4264585",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536617"
+      }
+    },
+    {
+      "name": "SC Gjoa Nyland",
+      "short_name": "SC Gjoa",
+      "slug": "sc-gjoa-nyland",
+      "gotsport": {
+        "schedule_team_id": "4244169",
+        "export_team_id": "4244169",
+        "group_id": "536619",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4244169",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4244169",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536619"
+      }
+    },
+    {
+      "name": "Rebels Legacy Soccer Club 2014\\2015",
+      "short_name": "Rebels Legacy",
+      "slug": "rebels-legacy-soccer-club-2014-2015",
+      "gotsport": {
+        "schedule_team_id": "4260592",
+        "export_team_id": "4260592",
+        "group_id": "536619",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4260592",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4260592",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536619"
+      }
+    },
+    {
+      "name": "Manhattan SC Inter B2014/15",
+      "short_name": "Manhattan SC",
+      "slug": "manhattan-sc-inter-b2014-15",
+      "gotsport": {
+        "schedule_team_id": "4239148",
+        "export_team_id": "4239148",
+        "group_id": "536619",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4239148",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4239148",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536619"
+      }
+    },
+    {
+      "name": "Lucky Soccer Academy Shining Stars 14-15",
+      "short_name": "Lucky Soccer Academy",
+      "slug": "lucky-soccer-academy-shining-stars-14-15",
+      "gotsport": {
+        "schedule_team_id": "4233548",
+        "export_team_id": "4233548",
+        "group_id": "536618",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4233548",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4233548",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536618"
+      }
+    },
+    {
+      "name": "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue",
+      "short_name": "SFFK",
+      "slug": "soccer-fun-for-kids-brooklyn-patriots-2014-2015-blue",
+      "gotsport": {
+        "schedule_team_id": "4262171",
+        "export_team_id": "4262171",
+        "group_id": "536612",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4262171",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262171",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536612"
+      }
+    },
+    {
+      "name": "SC Gjoa Johnsen",
+      "short_name": "SC Gjoa",
+      "slug": "sc-gjoa-johnsen",
+      "gotsport": {
+        "schedule_team_id": "4244183",
+        "export_team_id": "4244183",
+        "group_id": "536620",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4244183",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4244183",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536620"
+      }
+    },
+    {
+      "name": "Brooklyn Premier F.C. 14/13 Regional",
+      "short_name": "Brooklyn Premier",
+      "slug": "brooklyn-premier-fc-14-13-regional",
+      "gotsport": {
+        "schedule_team_id": "4225977",
+        "export_team_id": "4225977",
+        "group_id": "536620",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4225977",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4225977",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536620"
+      }
+    },
+    {
+      "name": "Coney Island Cyclones United Tigers 2013/14",
+      "short_name": "Coney Island Cyclones",
+      "slug": "coney-island-cyclones-united-tigers-2013-14",
+      "gotsport": {
+        "schedule_team_id": "4259832",
+        "export_team_id": "4259832",
+        "group_id": "536621",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4259832",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4259832",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536621"
+      }
+    },
+    {
+      "name": "ALBION SC Brooklyn B13/14 Premier - Williamsburg",
+      "short_name": "ALBION Brooklyn",
+      "slug": "albion-sc-brooklyn-b13-14-premier-williamsburg",
+      "gotsport": {
+        "schedule_team_id": "4264740",
+        "export_team_id": "4264740",
+        "group_id": "536621",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4264740",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4264740",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536621"
+      }
+    },
+    {
+      "name": "Brooklyn City FC F.C. B13/14",
+      "short_name": "Brooklyn City FC",
+      "slug": "brooklyn-city-fc-b13-14",
+      "gotsport": {
+        "schedule_team_id": "4271987",
+        "export_team_id": "4271987",
+        "group_id": "536621",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4271987",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4271987",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536621"
+      }
+    },
+    {
+      "name": "Dynamo Soccer Club 2014",
+      "short_name": "Dynamo SC",
+      "slug": "dynamo-soccer-club-2014",
+      "gotsport": {
+        "schedule_team_id": "4240357",
+        "export_team_id": "4240357",
+        "group_id": "536623",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4240357",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4240357",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536623"
+      }
+    },
+    {
+      "name": "South Brooklyn FC #2 2013/2014",
+      "short_name": "South Brooklyn FC",
+      "slug": "south-brooklyn-fc-2-2013-2014",
+      "gotsport": {
+        "schedule_team_id": "4259905",
+        "export_team_id": "4259905",
+        "group_id": "536623",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4259905",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4259905",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536623"
+      }
+    },
+    {
+      "name": "Brooklyn United Academy B2013/2014 Park Slope Select",
+      "short_name": "Brooklyn United",
+      "slug": "brooklyn-united-academy-b2013-2014-park-slope-select",
+      "gotsport": {
+        "schedule_team_id": "4216813",
+        "export_team_id": "4216813",
+        "group_id": "536623",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4216813",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4216813",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536623"
+      }
+    },
+    {
+      "name": "SC Gjoa Ajer",
+      "short_name": "SC Gjoa",
+      "slug": "sc-gjoa-ajer",
+      "gotsport": {
+        "schedule_team_id": "4244196",
+        "export_team_id": "4244196",
+        "group_id": "536623",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4244196",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4244196",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536623"
+      }
+    },
+    {
+      "name": "Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray",
+      "short_name": "Met Oval",
+      "slug": "metropolitan-oval-academy-brooklyn-2013-14-boys-u13-gray",
+      "gotsport": {
+        "schedule_team_id": "4265007",
+        "export_team_id": "4265007",
+        "group_id": "536623",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4265007",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4265007",
+        "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536623"
       }
     }
   ]
