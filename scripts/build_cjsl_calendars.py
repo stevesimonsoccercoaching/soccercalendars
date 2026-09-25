@@ -67,18 +67,28 @@ def fold_line(line, limit=75):
     return pieces
 
 
-def parse_match_start(date_value, time_value):
+def parse_match_date(date_value):
     if isinstance(date_value, datetime):
-        match_date = date_value.date()
-    elif isinstance(date_value, date):
-        match_date = date_value
-    else:
-        date_text = clean_text(date_value)
-        date_text = re.sub(r"\s+", " ", date_text)
-        match_date = datetime.strptime(
-            date_text,
-            "%A, %B %d, %Y"
-        ).date()
+        return date_value.date()
+
+    if isinstance(date_value, date):
+        return date_value
+
+    date_text = clean_text(date_value)
+
+    if not date_text:
+        raise ValueError("Match date is blank")
+
+    date_text = re.sub(r"\s+", " ", date_text)
+
+    return datetime.strptime(
+        date_text,
+        "%A, %B %d, %Y"
+    ).date()
+
+
+def parse_match_start(date_value, time_value):
+    match_date = parse_match_date(date_value)
 
     if isinstance(time_value, datetime):
         match_time = time_value.time()
@@ -86,6 +96,10 @@ def parse_match_start(date_value, time_value):
         match_time = time_value
     else:
         time_text = clean_text(time_value)
+
+        if not time_text:
+            raise ValueError("Match time is blank")
+
         clock_text = time_text.split()[0]
         match_time = datetime.strptime(
             clock_text,
@@ -93,6 +107,22 @@ def parse_match_start(date_value, time_value):
         ).time()
 
     return datetime.combine(match_date, match_time)
+
+
+def time_is_tbd(time_value):
+    if isinstance(time_value, (datetime, time)):
+        return False
+
+    time_text = clean_text(time_value).upper()
+
+    return time_text in {
+        "",
+        "-",
+        "TBD",
+        "TBA",
+        "TO BE DETERMINED",
+        "TO BE ANNOUNCED",
+    }
 
 
 def read_matches(input_file, tracked_team_name, duration_minutes):
@@ -143,18 +173,38 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
         raw_status = clean_text(row[headers["Status"]])
         display_status = raw_status if raw_status else "Scheduled"
 
-        start = parse_match_start(
-            row[headers["Date"]],
-            row[headers["Time"]]
-        )
+        date_value = row[headers["Date"]]
+        time_value = row[headers["Time"]]
 
-        end = start + timedelta(minutes=duration_minutes)
+        try:
+            match_date = parse_match_date(date_value)
+        except ValueError as exc:
+            raise RuntimeError(
+                f"{input_file}: Match {match_no} has no usable date"
+            ) from exc
+
+        all_day = time_is_tbd(time_value)
+
+        if all_day:
+            start = datetime.combine(match_date, time.min)
+            end = start + timedelta(days=1)
+        else:
+            try:
+                start = parse_match_start(date_value, time_value)
+            except (ValueError, IndexError) as exc:
+                raise RuntimeError(
+                    f"{input_file}: Match {match_no} has an invalid "
+                    f"time value: {time_value!r}"
+                ) from exc
+
+            end = start + timedelta(minutes=duration_minutes)
 
         matches.append(
             {
                 "match_no": int(match_no),
                 "start": start,
                 "end": end,
+                "all_day": all_day,
                 "home_team": home_team,
                 "away_team": away_team,
                 "result": result,
@@ -287,19 +337,32 @@ def build_calendar(
             f"match-{match['match_no']}@system.gotsport.com"
         )
 
+        if match["all_day"]:
+            dtstart_line = (
+                "DTSTART;VALUE=DATE:"
+                f"{match['start'].strftime('%Y%m%d')}"
+            )
+            dtend_line = (
+                "DTEND;VALUE=DATE:"
+                f"{match['end'].strftime('%Y%m%d')}"
+            )
+        else:
+            dtstart_line = (
+                f"DTSTART;TZID={calendar_timezone}:"
+                f"{match['start'].strftime('%Y%m%dT%H%M%S')}"
+            )
+            dtend_line = (
+                f"DTEND;TZID={calendar_timezone}:"
+                f"{match['end'].strftime('%Y%m%dT%H%M%S')}"
+            )
+
         lines.extend(
             [
                 "BEGIN:VEVENT",
                 f"UID:{uid}",
                 f"DTSTAMP:{generated_at}",
-                (
-                    f"DTSTART;TZID={calendar_timezone}:"
-                    f"{match['start'].strftime('%Y%m%dT%H%M%S')}"
-                ),
-                (
-                    f"DTEND;TZID={calendar_timezone}:"
-                    f"{match['end'].strftime('%Y%m%dT%H%M%S')}"
-                ),
+                dtstart_line,
+                dtend_line,
                 f"SUMMARY:{ics_escape(summary)}",
                 f"LOCATION:{ics_escape(match['location'])}",
                 f"DESCRIPTION:{description}",
@@ -320,16 +383,17 @@ def build_calendar(
             f"X-GOTSPORT-STATUS:{ics_escape(match['status'])}"
         )
 
-        for reminder in reminders:
-            lines.extend(
-                [
-                    "BEGIN:VALARM",
-                    f"TRIGGER:{reminder['trigger']}",
-                    "ACTION:DISPLAY",
-                    f"DESCRIPTION:{ics_escape(reminder['description'])}",
-                    "END:VALARM",
-                ]
-            )
+        if not match["all_day"]:
+            for reminder in reminders:
+                lines.extend(
+                    [
+                        "BEGIN:VALARM",
+                        f"TRIGGER:{reminder['trigger']}",
+                        "ACTION:DISPLAY",
+                        f"DESCRIPTION:{ics_escape(reminder['description'])}",
+                        "END:VALARM",
+                    ]
+                )
 
         lines.append("END:VEVENT")
 
