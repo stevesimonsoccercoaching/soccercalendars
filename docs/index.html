@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soccer Calendars</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.45;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 8vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .intro {
+      margin: 0 0 24px;
+      max-width: 720px;
+      color: color-mix(in srgb, CanvasText 75%, transparent);
+    }
+
+    .history-control {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      margin: 22px 0 30px;
+      font-weight: 650;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .history-control.visible {
+      display: flex;
+    }
+
+    .history-control input {
+      width: 20px;
+      height: 20px;
+      margin: 0;
+    }
+
+    .league {
+      margin-top: 34px;
+    }
+
+    h2 {
+      margin: 0;
+      padding-bottom: 8px;
+      border-bottom: 3px solid currentColor;
+      font-size: 1.75rem;
+    }
+
+    .competition {
+      margin-top: 28px;
+    }
+
+    .competition.historical {
+      display: none;
+    }
+
+    body.show-history .competition.historical {
+      display: block;
+    }
+
+    h3 {
+      margin: 0 0 22px;
+      font-size: 1.4rem;
+    }
+
+    .division {
+      margin: 0 0 28px;
+    }
+
+    h4 {
+      margin: 0 0 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid color-mix(in srgb, CanvasText 35%, transparent);
+      font-size: 1rem;
+      font-weight: 750;
+    }
+
+    .team-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-list li {
+      border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
+    }
+
+    .calendar-link {
+      display: block;
+      padding: 12px 4px;
+      color: LinkText;
+      font-weight: 650;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .calendar-link:hover,
+    .calendar-link:focus-visible {
+      text-decoration-thickness: 2px;
+    }
+
+    .empty-message {
+      margin-top: 32px;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        width: min(100% - 24px, 860px);
+        padding-top: 24px;
+      }
+
+      .calendar-link {
+        padding: 14px 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Soccer Calendars</h1>
+  <p class="intro">
+    Tap a team to download or open its ICS calendar feed. To subscribe in Google Calendar,
+    long-press or copy the team link and add it under <strong>Other calendars → From URL</strong>.
+  </p>
+
+  <label class="history-control" id="history-control">
+    <input type="checkbox" id="show-history">
+    <span>Show previous seasons</span>
+  </label>
+
+<section class="league">
+  <h2>CJSL</h2>
+    <section class="competition" data-organizer="CJSL" data-start-date="2026-09-19" data-end-date="2026-12-05">
+      <h3>Fall 2026</h3>
+      <div class="division">
+        <h4>Male U11 (9v9) - D2</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-leopards-2015-16.ics" download title="Coney Island Cyclones United Leopards 2015/16">Coney Island Cyclones</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U11 (9v9) - D3 City</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b15-16-premier-williamsburg.ics" download title="ALBION SC Brooklyn B15/16 Premier - Williamsburg">ALBION Brooklyn</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b15-16-blue.ics" download title="Brooklyn City FC F.C. B15/16 Blue">Brooklyn City FC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2015-2016.ics" download title="Soccer Fun for Kids / Brooklyn Patriots 2015-2016">SFFK</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U11 (9v9) - D4 City</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2015-16-boys-u11-white.ics" download title="Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White">Met Oval</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-king.ics" download title="SC Gjoa King">SC Gjoa</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U11 (9v9) - D4 Metro</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-legion-fc-u11-boys-blue-2015-2016.ics" download title="Soccer Legion FC U11 Boys Blue (2015/2016)">Soccer Legion</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - D2 City</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-lions-2014-15.ics" download title="Coney Island Cyclones United Lions 2014/15">Coney Island Cyclones</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - D2 Metro</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b14-15-premier-williamsburg.ics" download title="ALBION SC Brooklyn B14/15 Premier - Williamsburg">ALBION Brooklyn</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-italians-2014-2015-premier.ics" download title="Brooklyn Italians 2014/2015 Premier">Brooklyn Italians</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/french-football-academy-2014-15-digne.ics" download title="French Football Academy 2014/15 Digne">French Football Academy</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics" download title="Manhattan Kickers MKSC 2014/2015">MKSC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-strand-larsen.ics" download title="SC Gjoa Strand Larsen">SC Gjoa</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - D3 Cosmo</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b14-15-blue.ics" download title="Brooklyn City FC F.C. B14/15 Blue">Brooklyn City FC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/fa-euro-new-york-2014-2015-pre-mls-iii.ics" download title="FA Euro New York 2014/2015 Pre-MLS III">FA Euro</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/skillsu-fc-u12.ics" download title="SkillsU FC U12">SkillsU FC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2014-2015.ics" download title="South Brooklyn Fc 2014/2015">South Brooklyn FC</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - D4 City</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/manhattan-sc-inter-b2014-15.ics" download title="Manhattan SC Inter B2014/15">Manhattan SC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/rebels-legacy-soccer-club-2014-2015.ics" download title="Rebels Legacy Soccer Club 2014\2015">Rebels Legacy</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-nyland.ics" download title="SC Gjoa Nyland">SC Gjoa</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - D4 Metro</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/lucky-soccer-academy-shining-stars-14-15.ics" download title="Lucky Soccer Academy Shining Stars 14-15">Lucky Soccer Academy</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U12 (9v9) - Super D1</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2014-2015-blue.ics" download title="Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue">SFFK</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U13 (9v9) - D1 - D2 Mix</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-premier-fc-14-13-regional.ics" download title="Brooklyn Premier F.C. 14/13 Regional">Brooklyn Premier</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-johnsen.ics" download title="SC Gjoa Johnsen">SC Gjoa</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U13 (9v9) - D3</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b13-14-premier-williamsburg.ics" download title="ALBION SC Brooklyn B13/14 Premier - Williamsburg">ALBION Brooklyn</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b13-14.ics" download title="Brooklyn City FC F.C. B13/14">Brooklyn City FC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-tigers-2013-14.ics" download title="Coney Island Cyclones United Tigers 2013/14">Coney Island Cyclones</a></li>
+        </ul>
+      </div>
+      <div class="division">
+        <h4>Male U13 (9v9) - D4 City</h4>
+        <ul class="team-list">
+          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-united-academy-b2013-2014-park-slope-select.ics" download title="Brooklyn United Academy B2013/2014 Park Slope Select">Brooklyn United</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/dynamo-soccer-club-2014.ics" download title="Dynamo Soccer Club 2014">Dynamo SC</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2013-14-boys-u13-gray.ics" download title="Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray">Met Oval</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-ajer.ics" download title="SC Gjoa Ajer">SC Gjoa</a></li>
+          <li><a class="calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2-2013-2014.ics" download title="South Brooklyn FC #2 2013/2014">South Brooklyn FC</a></li>
+        </ul>
+      </div>
+    </section>
+</section>
+</main>
+
+<script>
+(function () {
+  const sections = Array.from(document.querySelectorAll('.competition'));
+  const toggle = document.getElementById('show-history');
+  const control = document.getElementById('history-control');
+
+  if (!sections.length) return;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const byOrganizer = new Map();
+
+  for (const section of sections) {
+    const organizer = section.dataset.organizer || '';
+    if (!byOrganizer.has(organizer)) byOrganizer.set(organizer, []);
+    byOrganizer.get(organizer).push(section);
+  }
+
+  let historicalCount = 0;
+
+  for (const group of byOrganizer.values()) {
+    const activeOrFuture = group.filter((section) => {
+      const value = section.dataset.endDate;
+      if (!value) return true;
+      const endDate = new Date(value + 'T00:00:00');
+      return endDate >= today;
+    });
+
+    if (activeOrFuture.length) {
+      for (const section of group) {
+        const value = section.dataset.endDate;
+        if (!value) continue;
+        const endDate = new Date(value + 'T00:00:00');
+        if (endDate < today) {
+          section.classList.add('historical');
+          historicalCount += 1;
+        }
+      }
+    } else {
+      // If every season for a league is already over, leave the newest one visible
+      // and treat only the older ones as historical.
+      group.slice(1).forEach((section) => {
+        section.classList.add('historical');
+        historicalCount += 1;
+      });
+    }
+  }
+
+  if (historicalCount > 0) {
+    control.classList.add('visible');
+  }
+
+  toggle.addEventListener('change', function () {
+    document.body.classList.toggle('show-history', toggle.checked);
+  });
+})();
+</script>
+</body>
+</html>
