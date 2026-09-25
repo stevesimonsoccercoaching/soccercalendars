@@ -1,0 +1,319 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CJSL - Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 Whi
+ te
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cjsl-55206-match-564@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260926T092000
+DTEND;TZID=America/New_York:20260926T102000
+SUMMARY:CJSL: Met Oval vs Long Island CIty Youth Soccer Academy LIC Dragons
+  B 2015/2016
+LOCATION:Red Hook Field #5 - Field 5 11v11
+DESCRIPTION:Status: Scheduled\nMatch No: 564 (HOME)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White
+ \nAWAY: Long Island CIty Youth Soccer Academy LIC Dragons B 2015/2016\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-569@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261011T120000
+DTEND;TZID=America/New_York:20261011T130000
+SUMMARY:CJSL: Met Oval @ Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 Bo
+ ys
+LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
+ A
+DESCRIPTION:Status: Scheduled\nMatch No: 569 (AWAY)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 Boys\nAWA
+ Y: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-571@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261018T103000
+DTEND;TZID=America/New_York:20261018T113000
+SUMMARY:CJSL: Met Oval vs Islas Malvinas Int. IMIFC 2016/2017
+LOCATION:Met Oval Field - Met Oval Field 1
+DESCRIPTION:Status: Scheduled\nMatch No: 571 (HOME)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White
+ \nAWAY: Islas Malvinas Int. IMIFC 2016/2017\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-574@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:CJSL: Met Oval @ Soccer Stars United Pulsar 2015/2016
+LOCATION:
+DESCRIPTION:Status: Scheduled\nMatch No: 574 (AWAY)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Soccer Stars United Pulsar 2015/2016\nAWAY: Metropolitan 
+ Oval Academy Brooklyn 2015/16 Boys U11 White\n\nSource: https://system.got
+ sport.com/org_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-578@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261031T103000
+DTEND;TZID=America/New_York:20261031T113000
+SUMMARY:CJSL: Met Oval vs SC Gjoa
+LOCATION:Red Hook Field #5 - Field 5 11v11
+DESCRIPTION:Status: Scheduled\nMatch No: 578 (HOME)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White
+ \nAWAY: SC Gjoa King\n\nSource: https://system.gotsport.com/org_event/even
+ ts/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-579@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261107T093000
+DTEND;TZID=America/New_York:20261107T103000
+SUMMARY:CJSL: Met Oval @ NY Kids S.C. 2015/16 boys
+LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
+ 01
+DESCRIPTION:Status: Scheduled\nMatch No: 579 (AWAY)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: NY Kids S.C. 2015/16 boys\nAWAY: Metropolitan Oval Academ
+ y Brooklyn 2015/16 Boys U11 White\n\nSource: https://system.gotsport.com/o
+ rg_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-582@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261115T110000
+DTEND;TZID=America/New_York:20261115T120000
+SUMMARY:CJSL: Met Oval @ Long Island CIty Youth Soccer Academy LIC Dragons 
+ B 2015/2016
+LOCATION:Raymond O'Connor Park - Small Sided
+DESCRIPTION:Status: Scheduled\nMatch No: 582 (AWAY)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Long Island CIty Youth Soccer Academy LIC Dragons B 2015/
+ 2016\nAWAY: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-587@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261121T100000
+DTEND;TZID=America/New_York:20261121T110000
+SUMMARY:CJSL: Met Oval vs Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 B
+ oys
+LOCATION:Red Hook Field #4 - 11v11
+DESCRIPTION:Status: Scheduled\nMatch No: 587 (HOME)\nDivision: U11 (9v9) - 
+ D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White
+ \nAWAY: Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 Boys\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+END:VCALENDAR

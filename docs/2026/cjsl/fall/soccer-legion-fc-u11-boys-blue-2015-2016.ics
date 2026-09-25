@@ -1,0 +1,334 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CJSL - Soccer Legion FC U11 Boys Blue (2015/2016)
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cjsl-55206-match-534@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260919T150000
+DTEND;TZID=America/New_York:20260919T160000
+SUMMARY:CJSL: Soccer Legion vs Soccer Stars United Scorpio 2015/2016
+LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
+DESCRIPTION:Status: Scheduled\nMatch No: 534 (HOME)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: Soccer
+  Stars United Scorpio 2015/2016\n\nResults: 3 - 0\n\nSource: https://syste
+ m.gotsport.com/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-537@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260926T120000
+DTEND;TZID=America/New_York:20260926T130000
+SUMMARY:CJSL: Soccer Legion @ Juventus Academy NY CJSL Vieri - B2016/2017
+LOCATION:Randall's Island - 60
+DESCRIPTION:Status: Scheduled\nMatch No: 537 (AWAY)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Juventus Academy NY CJSL Vieri - B2016/2017\nAWAY: Socce
+ r Legion FC U11 Boys Blue (2015/2016)\n\nSource: https://system.gotsport.c
+ om/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-541@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261003T140000
+DTEND;TZID=America/New_York:20261003T150000
+SUMMARY:CJSL: Soccer Legion vs Eleftheria Pancyprian Soccer Club EPSC 2015/
+ 2016 White
+LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
+DESCRIPTION:Status: Scheduled\nMatch No: 541 (HOME)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: Elefth
+ eria Pancyprian Soccer Club EPSC 2015/2016 White\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-542@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261017T120000
+DTEND;TZID=America/New_York:20261017T130000
+SUMMARY:CJSL: Soccer Legion @ B&G Soccer Academy & B2015/16 GLADIATORS
+LOCATION:Van Cortlandt Park - C
+DESCRIPTION:Status: Scheduled\nMatch No: 542 (AWAY)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: B&G Soccer Academy & B2015/16 GLADIATORS\nAWAY: Soccer L
+ egion FC U11 Boys Blue (2015/2016)\n\nSource: https://system.gotsport.com/
+ org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-548@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261031T140000
+DTEND;TZID=America/New_York:20261031T150000
+SUMMARY:CJSL: Soccer Legion vs 5 Star Soccer Academy 2015/2016
+LOCATION:Brooklyn Bridge Park Pier 5  - Field #3B
+DESCRIPTION:Status: Scheduled\nMatch No: 548 (HOME)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: 5 Star
+  Soccer Academy 2015/2016\n\nSource: https://system.gotsport.com/org_event
+ /events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-553@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261107T130000
+DTEND;TZID=America/New_York:20261107T140000
+SUMMARY:CJSL: Soccer Legion @ Pelham Bay Soccer Club PBSC Pine - 2015-2016 
+ Boys
+LOCATION:Bronx Park East - Turf
+DESCRIPTION:Status: Scheduled\nMatch No: 553 (AWAY)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Pelham Bay Soccer Club PBSC Pine - 2015-2016 Boys\nAWAY:
+  Soccer Legion FC U11 Boys Blue (2015/2016)\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-555@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261114T140000
+DTEND;TZID=America/New_York:20261114T150000
+SUMMARY:CJSL: Soccer Legion vs Juventus Academy NY CJSL Vieri - B2016/2017
+LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
+DESCRIPTION:Status: Scheduled\nMatch No: 555 (HOME)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: Juvent
+ us Academy NY CJSL Vieri - B2016/2017\n\nSource: https://system.gotsport.c
+ om/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-559@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261121T110000
+DTEND;TZID=America/New_York:20261121T120000
+SUMMARY:CJSL: Soccer Legion @ Eleftheria Pancyprian Soccer Club EPSC 2015/2
+ 016 White
+LOCATION:St.Michaels Field A - 7v7 or 9v9 - St. Michaels Field A - 7v7 or 9
+ v9
+DESCRIPTION:Status: Scheduled\nMatch No: 559 (AWAY)\nDivision: U11 (9v9) - 
+ D4 Metro\n\nHOME: Eleftheria Pancyprian Soccer Club EPSC 2015/2016 White\n
+ AWAY: Soccer Legion FC U11 Boys Blue (2015/2016)\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,317 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CJSL - Lucky Soccer Academy Shining Stars 14-15
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cjsl-55206-match-395@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260919T143000
+DTEND;TZID=America/New_York:20260919T153000
+SUMMARY:CJSL: Lucky Soccer Academy vs Top Prestige Soccer Academy SA 2014-2
+ 015
+LOCATION:Bill Brown Playground - 1
+DESCRIPTION:Status: Scheduled\nMatch No: 395 (HOME)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Lucky Soccer Academy Shining Stars 14-15\nAWAY: Top Pres
+ tige Soccer Academy SA 2014-2015\n\nResults: 3 - 0\n\nSource: https://syst
+ em.gotsport.com/org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-396@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260926T150000
+DTEND;TZID=America/New_York:20260926T160000
+SUMMARY:CJSL: Lucky Soccer Academy @ Pelham Bay Soccer Club PBSC Elm - 2014
+ -2015
+LOCATION:Bronx Park East - Turf
+DESCRIPTION:Status: Scheduled\nMatch No: 396 (AWAY)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Pelham Bay Soccer Club PBSC Elm - 2014-2015\nAWAY: Lucky
+  Soccer Academy Shining Stars 14-15\n\nSource: https://system.gotsport.com
+ /org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-402@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261017T143000
+DTEND;TZID=America/New_York:20261017T153000
+SUMMARY:CJSL: Lucky Soccer Academy vs Long Island CIty Youth Soccer Academy
+  LIC Arsenal 2015/2014
+LOCATION:Bill Brown Playground - 1
+DESCRIPTION:Status: Scheduled\nMatch No: 402 (HOME)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Lucky Soccer Academy Shining Stars 14-15\nAWAY: Long Isl
+ and CIty Youth Soccer Academy LIC Arsenal 2015/2014\n\nSource: https://sys
+ tem.gotsport.com/org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-407@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261025T114000
+DTEND;TZID=America/New_York:20261025T124000
+SUMMARY:CJSL: Lucky Soccer Academy @ GOAT Youth Soccer Academy Boys 2014/20
+ 15
+LOCATION:Randall's Island - 73
+DESCRIPTION:Status: Scheduled\nMatch No: 407 (AWAY)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: GOAT Youth Soccer Academy Boys 2014/2015\nAWAY: Lucky So
+ ccer Academy Shining Stars 14-15\n\nSource: https://system.gotsport.com/or
+ g_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-409@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261031T143000
+DTEND;TZID=America/New_York:20261031T153000
+SUMMARY:CJSL: Lucky Soccer Academy vs Kickers Jr. of Southeast Queens BOYS 
+ (2014-2015) FALCONS
+LOCATION:Bill Brown Playground - 1
+DESCRIPTION:Status: Scheduled\nMatch No: 409 (HOME)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Lucky Soccer Academy Shining Stars 14-15\nAWAY: Kickers 
+ Jr. of Southeast Queens BOYS (2014-2015) FALCONS\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-412@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:CJSL: Lucky Soccer Academy @ Soccer Stars United Equator 2014/2015
+LOCATION:
+DESCRIPTION:Status: Scheduled\nMatch No: 412 (AWAY)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Soccer Stars United Equator 2014/2015\nAWAY: Lucky Socce
+ r Academy Shining Stars 14-15\n\nSource: https://system.gotsport.com/org_e
+ vent/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-414@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261114T143000
+DTEND;TZID=America/New_York:20261114T153000
+SUMMARY:CJSL: Lucky Soccer Academy vs Pelham Bay Soccer Club PBSC Elm - 201
+ 4-2015
+LOCATION:Bill Brown Playground - 1
+DESCRIPTION:Status: Scheduled\nMatch No: 414 (HOME)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Lucky Soccer Academy Shining Stars 14-15\nAWAY: Pelham B
+ ay Soccer Club PBSC Elm - 2014-2015\n\nSource: https://system.gotsport.com
+ /org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-420@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261205T150000
+DTEND;TZID=America/New_York:20261205T160000
+SUMMARY:CJSL: Lucky Soccer Academy @ Kickers Jr. of Southeast Queens BOYS (
+ 2014-2015) FALCONS
+LOCATION:MONTEBELLIER PARK - MONTEBELLIER PARK
+DESCRIPTION:Status: Scheduled\nMatch No: 420 (AWAY)\nDivision: U12 (9v9) - 
+ D4 Metro\n\nHOME: Kickers Jr. of Southeast Queens BOYS (2014-2015) FALCONS
+ \nAWAY: Lucky Soccer Academy Shining Stars 14-15\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4233548
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
+ 48
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,333 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CJSL - ALBION SC Brooklyn B15/16 Premier - Williamsburg
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cjsl-55206-match-510@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260919T133000
+DTEND;TZID=America/New_York:20260919T143000
+SUMMARY:CJSL: ALBION Brooklyn @ Stage10 FC Boys Leopards 2015/2016
+LOCATION:Randall's Island - 51
+DESCRIPTION:Status: Scheduled\nMatch No: 510 (AWAY)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: Stage10 FC Boys Leopards 2015/2016\nAWAY: ALBION SC Brook
+ lyn B15/16 Premier - Williamsburg\n\nResults: 2 - 9\n\nSource: https://sys
+ tem.gotsport.com/org_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-513@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20260926T080000
+DTEND;TZID=America/New_York:20260926T090000
+SUMMARY:CJSL: ALBION Brooklyn vs South Brooklyn Fc 2015/2016
+LOCATION:Bushwick Inlet Park - Field 1 9v9
+DESCRIPTION:Status: Scheduled\nMatch No: 513 (HOME)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: S
+ outh Brooklyn Fc 2015/2016\n\nSource: https://system.gotsport.com/org_even
+ t/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-515@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261003T140000
+DTEND;TZID=America/New_York:20261003T150000
+SUMMARY:CJSL: ALBION Brooklyn @ Brooklyn City FC
+LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
+DESCRIPTION:Status: Scheduled\nMatch No: 515 (AWAY)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: Brooklyn City FC F.C. B15/16 Blue\nAWAY: ALBION SC Brookl
+ yn B15/16 Premier - Williamsburg\n\nSource: https://system.gotsport.com/or
+ g_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-520@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261017T090000
+DTEND;TZID=America/New_York:20261017T100000
+SUMMARY:CJSL: ALBION Brooklyn vs Griffin United Soccer Club Elite Brooklyn 
+ Boys - 2015/2016
+LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
+DESCRIPTION:Status: Scheduled\nMatch No: 520 (HOME)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: G
+ riffin United Soccer Club Elite Brooklyn Boys - 2015/2016\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-521@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261024T081500
+DTEND;TZID=America/New_York:20261024T091500
+SUMMARY:CJSL: ALBION Brooklyn vs SFFK
+LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
+DESCRIPTION:Status: Scheduled\nMatch No: 521 (HOME)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: S
+ occer Fun for Kids / Brooklyn Patriots 2015-2016\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-525@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261031T160000
+DTEND;TZID=America/New_York:20261031T170000
+SUMMARY:CJSL: ALBION Brooklyn @ South Brooklyn Fc 2015/2016
+LOCATION:Calvert Vaux/Verrazano Complex - Field #1
+DESCRIPTION:Status: Scheduled\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: South Brooklyn Fc 2015/2016\nAWAY: ALBION SC Brooklyn B15
+ /16 Premier - Williamsburg\n\nSource: https://system.gotsport.com/org_even
+ t/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-527@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261107T123000
+DTEND;TZID=America/New_York:20261107T133000
+SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
+LOCATION:Pier 42 - Pier 42 11v11
+DESCRIPTION:Status: Scheduled\nMatch No: 527 (HOME)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: B
+ rooklyn City FC F.C. B15/16 Blue\n\nSource: https://system.gotsport.com/or
+ g_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-532@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261114T110000
+DTEND;TZID=America/New_York:20261114T120000
+SUMMARY:CJSL: ALBION Brooklyn @ Griffin United Soccer Club Elite Brooklyn B
+ oys - 2015/2016
+LOCATION:Barry "Sly" Morrow Field  - Barry "Sly"  Morrow Field ( 7 vs 7) & 
+ ( 9 vs 9)
+DESCRIPTION:Status: Scheduled\nMatch No: 532 (AWAY)\nDivision: U11 (9v9) - 
+ D3 City\n\nHOME: Griffin United Soccer Club Elite Brooklyn Boys - 2015/201
+ 6\nAWAY: ALBION SC Brooklyn B15/16 Premier - Williamsburg\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4264733
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
+ 33
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+END:VCALENDAR

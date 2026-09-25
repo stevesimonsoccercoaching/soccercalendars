@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:CJSL - Manhattan Kickers MKSC 2014/2015
+X-WR-CALNAME:CJSL - French Football Academy 2014/15 Digne
 X-WR-TIMEZONE:America/New_York
 BEGIN:VTIMEZONE
 TZID:America/New_York
@@ -24,56 +24,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cjsl-55206-match-274@system.gotsport.com
+UID:cjsl-55206-match-275@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20260920T110000
-DTEND;TZID=America/New_York:20260920T120000
-SUMMARY:CJSL: MKSC @ Excelsior New York Academy 2014/2015 Boys
-LOCATION:Southern Fields - NYC Parks - 9 v 9
-DESCRIPTION:Status: Rescheduled\nMatch No: 274 (AWAY)\nDivision: U12 (9v9) 
- - D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: Manha
- ttan Kickers MKSC 2014/2015\n\nResults: 2 - 7\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rescheduled
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:cjsl-55206-match-277@system.gotsport.com
-DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20260926T184000
-DTEND;TZID=America/New_York:20260926T194000
-SUMMARY:CJSL: MKSC vs Brooklyn Italians
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 277 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: Brooklyn Italian
- s 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20260919T163000
+DTEND;TZID=America/New_York:20260919T173000
+SUMMARY:CJSL: French Football Academy vs SC Gjoa
+LOCATION:Randall's Island - 82
+DESCRIPTION:Status: Scheduled\nMatch No: 275 (HOME)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: SC Gjoa Str
+ and Larsen\n\nResults: 0 - 3\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -100,18 +62,19 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-279@system.gotsport.com
+UID:cjsl-55206-match-276@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261003T120000
-DTEND;TZID=America/New_York:20261003T130000
-SUMMARY:CJSL: MKSC @ ALBION Brooklyn
-LOCATION:Pier 42 - Pier 42 11v11
-DESCRIPTION:Status: Scheduled\nMatch No: 279 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- Manhattan Kickers MKSC 2014/2015\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20260927T080000
+DTEND;TZID=America/New_York:20260927T090000
+SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
+ 15 Boys
+LOCATION:Randall's Island - 72
+DESCRIPTION:Status: Scheduled\nMatch No: 276 (HOME)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Excelsior N
+ ew York Academy 2014/2015 Boys\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -138,18 +101,56 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-284@system.gotsport.com
+UID:cjsl-55206-match-280@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261017T171000
-DTEND;TZID=America/New_York:20261017T181000
-SUMMARY:CJSL: MKSC vs SC Gjoa
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 284 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: SC Gjoa Strand L
- arsen\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261004T090000
+DTEND;TZID=America/New_York:20261004T100000
+SUMMARY:CJSL: French Football Academy @ Brooklyn Italians
+LOCATION:Calvert Vaux Park - Field 1A
+DESCRIPTION:Status: Scheduled\nMatch No: 280 (AWAY)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: French Footba
+ ll Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/
+ events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-283@system.gotsport.com
+DTSTAMP:20260925T142042Z
+DTSTART;TZID=America/New_York:20261018T091000
+DTEND;TZID=America/New_York:20261018T101000
+SUMMARY:CJSL: French Football Academy vs ALBION Brooklyn
+LOCATION:Randall's Island - 82
+DESCRIPTION:Status: Scheduled\nMatch No: 283 (HOME)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: ALBION SC B
+ rooklyn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.c
+ om/org_event/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -180,14 +181,14 @@ UID:cjsl-55206-match-285@system.gotsport.com
 DTSTAMP:20260925T142042Z
 DTSTART;TZID=America/New_York:20261024T190000
 DTEND;TZID=America/New_York:20261024T200000
-SUMMARY:CJSL: MKSC vs French Football Academy
+SUMMARY:CJSL: French Football Academy @ MKSC
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 285 (HOME)\nDivision: U12 (9v9) - 
+DESCRIPTION:Status: Scheduled\nMatch No: 285 (AWAY)\nDivision: U12 (9v9) - 
  D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: French Football 
  Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+ nts/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -214,18 +215,19 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-289@system.gotsport.com
+UID:cjsl-55206-match-288@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261101T101500
-DTEND;TZID=America/New_York:20261101T111500
-SUMMARY:CJSL: MKSC @ Brooklyn Italians
-LOCATION:Calvert Vaux Park - Field 1
-DESCRIPTION:Status: Scheduled\nMatch No: 289 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: Manhattan Kic
- kers MKSC 2014/2015\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261031T130000
+DTEND;TZID=America/New_York:20261031T140000
+SUMMARY:CJSL: French Football Academy @ Excelsior New York Academy 2014/201
+ 5 Boys
+LOCATION:Southern Fields - NYC Parks - 9 v 9
+DESCRIPTION:Status: Scheduled\nMatch No: 288 (AWAY)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: French 
+ Football Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -252,18 +254,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-291@system.gotsport.com
+UID:cjsl-55206-match-292@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261107T190000
-DTEND;TZID=America/New_York:20261107T200000
-SUMMARY:CJSL: MKSC vs ALBION Brooklyn
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 291 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: ALBION SC Brookl
- yn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261108T083000
+DTEND;TZID=America/New_York:20261108T093000
+SUMMARY:CJSL: French Football Academy vs Brooklyn Italians
+LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
+DESCRIPTION:Status: Scheduled\nMatch No: 292 (HOME)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Brooklyn It
+ alians 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/
+ events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -290,18 +292,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-296@system.gotsport.com
+UID:cjsl-55206-match-295@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261114T110000
-DTEND;TZID=America/New_York:20261114T120000
-SUMMARY:CJSL: MKSC @ SC Gjoa
-LOCATION:Dyker Turf Field B Small Sided  - B
-DESCRIPTION:Status: Scheduled\nMatch No: 296 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Manhattan Kickers MKSC 2014
- /2015\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261121T084500
+DTEND;TZID=America/New_York:20261121T094500
+SUMMARY:CJSL: French Football Academy @ ALBION Brooklyn
+LOCATION:Frank Principe Park  - East Field
+DESCRIPTION:Status: Scheduled\nMatch No: 295 (AWAY)\nDivision: U12 (9v9) - 
+ D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
+ French Football Academy 2014/15 Digne\n\nSource: https://system.gotsport.c
+ om/org_event/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED

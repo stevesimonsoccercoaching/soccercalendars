@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:CJSL - Manhattan Kickers MKSC 2014/2015
+X-WR-CALNAME:CJSL - SC Gjoa Ajer
 X-WR-TIMEZONE:America/New_York
 BEGIN:VTIMEZONE
 TZID:America/New_York
@@ -24,18 +24,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cjsl-55206-match-274@system.gotsport.com
+UID:cjsl-55206-match-177@system.gotsport.com
 DTSTAMP:20260925T142042Z
 DTSTART;TZID=America/New_York:20260920T110000
 DTEND;TZID=America/New_York:20260920T120000
-SUMMARY:CJSL: MKSC @ Excelsior New York Academy 2014/2015 Boys
-LOCATION:Southern Fields - NYC Parks - 9 v 9
-DESCRIPTION:Status: Rescheduled\nMatch No: 274 (AWAY)\nDivision: U12 (9v9) 
- - D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: Manha
- ttan Kickers MKSC 2014/2015\n\nResults: 2 - 7\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+SUMMARY:CJSL: SC Gjoa @ Brooklyn United
+LOCATION:Dyker Beach Park -  Dyker Turf Field B Small Sided (B)
+DESCRIPTION:Status: Rescheduled\nMatch No: 177 (AWAY)\nDivision: U13 (9v9) 
+ - D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nA
+ WAY: SC Gjoa Ajer\n\nResults: 3 - 2\n\nSource: https://system.gotsport.com
+ /org_event/events/55206/schedules?team=4244196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -62,18 +62,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-277@system.gotsport.com
+UID:cjsl-55206-match-182@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20260926T184000
-DTEND;TZID=America/New_York:20260926T194000
-SUMMARY:CJSL: MKSC vs Brooklyn Italians
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 277 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: Brooklyn Italian
- s 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20260926T163000
+DTEND;TZID=America/New_York:20260926T173000
+SUMMARY:CJSL: SC Gjoa vs South Brooklyn FC
+LOCATION:Dyker Turf Field A Small Sided  - A
+DESCRIPTION:Status: Scheduled\nMatch No: 182 (HOME)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: SC Gjoa Ajer\nAWAY: South Brooklyn FC #2 2013/2014\n\nSou
+ rce: https://system.gotsport.com/org_event/events/55206/schedules?team=424
+ 4196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -100,18 +100,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-279@system.gotsport.com
+UID:cjsl-55206-match-183@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261003T120000
-DTEND;TZID=America/New_York:20261003T130000
-SUMMARY:CJSL: MKSC @ ALBION Brooklyn
-LOCATION:Pier 42 - Pier 42 11v11
-DESCRIPTION:Status: Scheduled\nMatch No: 279 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- Manhattan Kickers MKSC 2014/2015\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261003T133000
+DTEND;TZID=America/New_York:20261003T143000
+SUMMARY:CJSL: SC Gjoa vs NY Kids S.C. 2013/2014 boys
+LOCATION:Dyker Turf Field A Small Sided  - A
+DESCRIPTION:Status: Scheduled\nMatch No: 183 (HOME)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: SC Gjoa Ajer\nAWAY: NY Kids S.C. 2013/2014 boys\n\nSource
+ : https://system.gotsport.com/org_event/events/55206/schedules?team=424419
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -138,18 +138,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-284@system.gotsport.com
+UID:cjsl-55206-match-187@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261017T171000
-DTEND;TZID=America/New_York:20261017T181000
-SUMMARY:CJSL: MKSC vs SC Gjoa
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 284 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: SC Gjoa Strand L
- arsen\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261018T134500
+DTEND;TZID=America/New_York:20261018T144500
+SUMMARY:CJSL: SC Gjoa @ Met Oval
+LOCATION:Met Oval Field - Met Oval Field
+DESCRIPTION:Status: Scheduled\nMatch No: 187 (AWAY)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
+ nAWAY: SC Gjoa Ajer\n\nSource: https://system.gotsport.com/org_event/event
+ s/55206/schedules?team=4244196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -176,18 +176,17 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-285@system.gotsport.com
+UID:cjsl-55206-match-190@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261024T190000
-DTEND;TZID=America/New_York:20261024T200000
-SUMMARY:CJSL: MKSC vs French Football Academy
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 285 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: French Football 
- Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261024T134500
+DTEND;TZID=America/New_York:20261024T144500
+SUMMARY:CJSL: SC Gjoa vs Dynamo SC
+LOCATION:Dyker Turf Field A Small Sided  - A
+DESCRIPTION:Status: Scheduled\nMatch No: 190 (HOME)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: SC Gjoa Ajer\nAWAY: Dynamo Soccer Club 2014\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4244196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -214,18 +213,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-289@system.gotsport.com
+UID:cjsl-55206-match-194@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261101T101500
-DTEND;TZID=America/New_York:20261101T111500
-SUMMARY:CJSL: MKSC @ Brooklyn Italians
-LOCATION:Calvert Vaux Park - Field 1
-DESCRIPTION:Status: Scheduled\nMatch No: 289 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: Manhattan Kic
- kers MKSC 2014/2015\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261031T130000
+DTEND;TZID=America/New_York:20261031T140000
+SUMMARY:CJSL: SC Gjoa @ South Brooklyn FC
+LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
+DESCRIPTION:Status: Scheduled\nMatch No: 194 (AWAY)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: South Brooklyn FC #2 2013/2014\nAWAY: SC Gjoa Ajer\n\nSou
+ rce: https://system.gotsport.com/org_event/events/55206/schedules?team=424
+ 4196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -252,18 +251,19 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-291@system.gotsport.com
+UID:cjsl-55206-match-195@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261107T190000
-DTEND;TZID=America/New_York:20261107T200000
-SUMMARY:CJSL: MKSC vs ALBION Brooklyn
-LOCATION:Con Edison Field- Manhattan - 1- Manhattan
-DESCRIPTION:Status: Scheduled\nMatch No: 291 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: ALBION SC Brookl
- yn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261107T103500
+DTEND;TZID=America/New_York:20261107T113500
+SUMMARY:CJSL: SC Gjoa @ NY Kids S.C. 2013/2014 boys
+LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
+ 01
+DESCRIPTION:Status: Scheduled\nMatch No: 195 (AWAY)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: NY Kids S.C. 2013/2014 boys\nAWAY: SC Gjoa Ajer\n\nSource
+ : https://system.gotsport.com/org_event/events/55206/schedules?team=424419
+ 6
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -290,18 +290,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-296@system.gotsport.com
+UID:cjsl-55206-match-199@system.gotsport.com
 DTSTAMP:20260925T142042Z
-DTSTART;TZID=America/New_York:20261114T110000
-DTEND;TZID=America/New_York:20261114T120000
-SUMMARY:CJSL: MKSC @ SC Gjoa
-LOCATION:Dyker Turf Field B Small Sided  - B
-DESCRIPTION:Status: Scheduled\nMatch No: 296 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Manhattan Kickers MKSC 2014
- /2015\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4239121
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
- 21
+DTSTART;TZID=America/New_York:20261114T080000
+DTEND;TZID=America/New_York:20261114T090000
+SUMMARY:CJSL: SC Gjoa vs Met Oval
+LOCATION:Dyker Turf Field A Small Sided  - A
+DESCRIPTION:Status: Scheduled\nMatch No: 199 (HOME)\nDivision: U13 (9v9) - 
+ D4 City\n\nHOME: SC Gjoa Ajer\nAWAY: Metropolitan Oval Academy Brooklyn 20
+ 13/14 Boys U13 Gray\n\nSource: https://system.gotsport.com/org_event/event
+ s/55206/schedules?team=4244196
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
