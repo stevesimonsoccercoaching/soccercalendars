@@ -259,6 +259,7 @@ def build_calendar(
         "PRODID:-//Soccer Calendars//CJSL GotSport Converter//EN",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
+        f"NAME:{ics_escape(calendar_name)}",
         f"X-WR-CALNAME:{ics_escape(calendar_name)}",
         f"X-WR-TIMEZONE:{calendar_timezone}",
         "BEGIN:VTIMEZONE",
