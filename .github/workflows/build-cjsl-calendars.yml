@@ -9,6 +9,7 @@ on:
       - "config/**/manifest.json"
       - "scripts/build_cjsl_calendars.py"
       - "scripts/build_calendar_index.py"
+      - "scripts/report_schedule_changes.py"
       - ".github/workflows/build-cjsl-calendars.yml"
 
 permissions:
@@ -21,6 +22,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,6 +34,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install openpyxl
+
+      - name: Report XLSX schedule changes
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          python scripts/report_schedule_changes.py \
+            --base "$BEFORE_SHA" \
+            --head "$CURRENT_SHA" \
+            --output schedule-change-report.md
+
+          cat schedule-change-report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build all CJSL calendars
         run: |
