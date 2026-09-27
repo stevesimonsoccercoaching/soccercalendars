@@ -1,0 +1,74 @@
+name: Watch SFFK Team App Calendar
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # GitHub Actions cron is UTC. This runs once per hour at minute 17.
+    # Using :17 instead of :00 can reduce scheduler congestion.
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sffk-2015-2016-weave-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check official Team App calendar
+        id: watch
+        env:
+          WEAVE_ICAL_URL: ${{ secrets.SFFK_2015_2016_ICAL_URL }}
+        run: |
+          python scripts/watch_weave_calendar.py \
+            --name "SFFK / Brooklyn Patriots 2015-2016" \
+            --state "state/weave/sffk-2015-2016.json" \
+            --report "weave-watch-report.md"
+
+      - name: Commit updated watch state
+        run: |
+          if git diff --quiet -- state/weave/; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add state/weave/
+          git commit -m "Update SFFK Team App schedule watch state"
+          git push
+
+      - name: Create GitHub issue for schedule change
+        if: steps.watch.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync(
+              'weave-watch-report.md',
+              'utf8'
+            );
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'SFFK 2015-2016 schedule changed',
+              body: report
+            });
