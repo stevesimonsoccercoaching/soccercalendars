@@ -199,14 +199,26 @@ def load_state(path: Path) -> Dict[str, dict]:
 
 def save_state(path: Path, watch_name: str, events: Dict[str, dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+
+    ordered_events = dict(
+        sorted(
+            events.items(),
+            key=lambda item: (
+                item[1].get("start", ""),
+                item[0],
+            ),
+        )
+    )
+
     payload = {
         "watch_name": watch_name,
         "updated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "event_count": len(events),
-        "events": events,
+        "event_count": len(ordered_events),
+        "events": ordered_events,
     }
+
     path.write_text(
-        json.dumps(payload, indent=2, sort_keys=True) + "\n",
+        json.dumps(payload, indent=2) + "\n",
         encoding="utf-8",
     )
 
