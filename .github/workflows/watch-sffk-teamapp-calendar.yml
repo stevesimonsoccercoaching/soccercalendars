@@ -43,7 +43,7 @@ jobs:
 
       - name: Commit updated watch state
         run: |
-          if git diff --quiet -- state/weave/; then
+          if [ -z "$(git status --porcelain -- state/weave/)" ]; then
             echo "No state changes to commit."
             exit 0
           fi
