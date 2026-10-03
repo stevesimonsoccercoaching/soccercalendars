@@ -608,6 +608,327 @@ def build_report(base, head):
 
     return "\n".join(lines)
 
+def build_current_status_report():
+    manifests = sorted(
+        Path("config").glob("**/cjsl/*/manifest.json")
+    )
+
+    records = {}
+    schedule_files_scanned = 0
+    missing_files = []
+    conflicts = []
+
+    for manifest_file in manifests:
+        manifest = json.loads(
+            manifest_file.read_text(encoding="utf-8")
+        )
+
+        competition = manifest.get("competition", {})
+        teams = manifest.get("teams", [])
+
+        parts = manifest_file.parts
+        try:
+            config_index = parts.index("config")
+        except ValueError:
+            continue
+
+        relative_folder = Path(
+            *parts[config_index + 1:-1]
+        )
+        data_folder = Path("data") / relative_folder
+
+        organizer = clean_text(competition.get("organizer"))
+        season = clean_text(competition.get("season"))
+        year = clean_text(competition.get("year"))
+        event_id = clean_text(competition.get("event_id"))
+
+        competition_label = " ".join(
+            part
+            for part in (organizer, season, year)
+            if part
+        ) or manifest_file.parent.as_posix()
+
+        for team in teams:
+            team_name = clean_text(team.get("name"))
+            short_name = (
+                clean_text(team.get("short_name"))
+                or team_name
+            )
+            slug = clean_text(team.get("slug"))
+
+            input_file = data_folder / f"{slug}.xlsx"
+
+            if not input_file.exists():
+                missing_files.append(
+                    f"{competition_label}: {input_file}"
+                )
+                continue
+
+            schedule_files_scanned += 1
+
+            matches = read_schedule(
+                input_file.read_bytes(),
+                tracked_team_name=team_name,
+            )
+
+            for match_no, match in matches.items():
+                key = (event_id, match_no)
+
+                if key not in records:
+                    records[key] = {
+                        **match,
+                        "event_id": event_id,
+                        "competition_label": competition_label,
+                        "tracked_teams": {short_name},
+                        "source_files": {input_file.as_posix()},
+                    }
+                    continue
+
+                existing = records[key]
+                existing["tracked_teams"].add(short_name)
+                existing["source_files"].add(
+                    input_file.as_posix()
+                )
+
+                compare_keys = (
+                    "home_team",
+                    "away_team",
+                    "date",
+                    "time",
+                    "location",
+                    "division",
+                    "status",
+                    "result",
+                )
+
+                differing = [
+                    field
+                    for field in compare_keys
+                    if existing[field] != match[field]
+                ]
+
+                if differing:
+                    conflicts.append(
+                        (
+                            competition_label,
+                            match_no,
+                            sorted(differing),
+                            sorted(existing["source_files"]),
+                        )
+                    )
+
+    status_groups = {}
+    tbd_matches = []
+    blank_location_matches = []
+
+    for (event_id, match_no), match in records.items():
+        status_key = match["status"]
+        status_display = match["status_display"]
+
+        status_groups.setdefault(
+            status_key,
+            {
+                "display": status_display,
+                "matches": [],
+            },
+        )
+        status_groups[status_key]["matches"].append(
+            (match_no, match)
+        )
+
+        if match["time"] == "TBD":
+            tbd_matches.append((match_no, match))
+
+        if not match["location"]:
+            blank_location_matches.append(
+                (match_no, match)
+            )
+
+    lines = [
+        "---",
+        "",
+        "# Current schedule status",
+        "",
+        (
+            f"Canonical XLSX schedule files scanned: "
+            f"**{schedule_files_scanned}**"
+        ),
+        "",
+        (
+            f"Unique GotSport matches represented: "
+            f"**{len(records)}**"
+        ),
+        "",
+        "## Status totals",
+        "",
+    ]
+
+    def status_sort(item):
+        key, group = item
+        if key == "scheduled":
+            return (0, group["display"].casefold())
+        return (1, group["display"].casefold())
+
+    for status_key, group in sorted(
+        status_groups.items(),
+        key=status_sort,
+    ):
+        lines.append(
+            f"- {group['display']}: "
+            f"**{len(group['matches'])}**"
+        )
+
+    non_scheduled = [
+        (key, group)
+        for key, group in status_groups.items()
+        if key != "scheduled"
+    ]
+
+    if non_scheduled:
+        lines.extend(
+            [
+                "",
+                "## Current non-Scheduled matches",
+                "",
+            ]
+        )
+
+        for status_key, group in sorted(
+            non_scheduled,
+            key=lambda item: item[1]["display"].casefold(),
+        ):
+            lines.extend(
+                [
+                    f"### {group['display']}",
+                    "",
+                ]
+            )
+
+            def match_sort(item):
+                match_no, match = item
+                return (
+                    match["date"],
+                    match["time"],
+                    match_sort_key(match_no),
+                )
+
+            for match_no, match in sorted(
+                group["matches"],
+                key=match_sort,
+            ):
+                tracked = ", ".join(
+                    sorted(match["tracked_teams"])
+                )
+
+                lines.append(
+                    f"- Match **{match_no}** — "
+                    f"{match['date_display']}, "
+                    f"{match['time_display']} — "
+                    f"{match['home_team']} vs "
+                    f"{match['away_team']} — "
+                    f"{match['location_display']} "
+                    f"_(tracked: {tracked})_"
+                )
+
+            lines.append("")
+
+    lines.extend(
+        [
+            "## Schedule data quality",
+            "",
+            f"- Matches with TBD kickoff time: "
+            f"**{len(tbd_matches)}**",
+            f"- Matches with blank location: "
+            f"**{len(blank_location_matches)}**",
+            f"- Conflicting duplicate Match # records: "
+            f"**{len(conflicts)}**",
+            f"- Missing configured XLSX files: "
+            f"**{len(missing_files)}**",
+            "",
+        ]
+    )
+
+    if tbd_matches:
+        lines.extend(
+            [
+                "### TBD kickoff times",
+                "",
+            ]
+        )
+
+        for match_no, match in sorted(
+            tbd_matches,
+            key=lambda item: (
+                item[1]["date"],
+                match_sort_key(item[0]),
+            ),
+        ):
+            lines.append(
+                f"- Match **{match_no}** — "
+                f"{match['date_display']} — "
+                f"{match['home_team']} vs "
+                f"{match['away_team']} — "
+                f"{match['location_display']}"
+            )
+
+        lines.append("")
+
+    if blank_location_matches:
+        lines.extend(
+            [
+                "### Blank locations",
+                "",
+            ]
+        )
+
+        for match_no, match in sorted(
+            blank_location_matches,
+            key=lambda item: (
+                item[1]["date"],
+                match_sort_key(item[0]),
+            ),
+        ):
+            lines.append(
+                f"- Match **{match_no}** — "
+                f"{match['date_display']}, "
+                f"{match['time_display']} — "
+                f"{match['home_team']} vs "
+                f"{match['away_team']}"
+            )
+
+        lines.append("")
+
+    if conflicts:
+        lines.extend(
+            [
+                "### Conflicting duplicate records",
+                "",
+            ]
+        )
+
+        for competition_label, match_no, fields, files in conflicts:
+            lines.append(
+                f"- **{competition_label} Match {match_no}** — "
+                f"different values for: "
+                f"{', '.join(fields)}"
+            )
+
+        lines.append("")
+
+    if missing_files:
+        lines.extend(
+            [
+                "### Missing configured XLSX files",
+                "",
+            ]
+        )
+
+        for path in missing_files:
+            lines.append(f"- `{path}`")
+
+        lines.append("")
+
+    return "\n".join(lines)
 
 def main():
     parser = argparse.ArgumentParser(
@@ -621,7 +942,10 @@ def main():
     head = run_git(["rev-parse", args.head]).strip()
     base = resolve_base(args.base, head)
 
-    report = build_report(base, head)
+    change_report = build_report(base, head)
+    current_status_report = build_current_status_report()
+    report = change_report + "\n\n" + current_status_report
+    
     output_file = Path(args.output)
     output_file.write_text(report + "\n", encoding="utf-8")
 
