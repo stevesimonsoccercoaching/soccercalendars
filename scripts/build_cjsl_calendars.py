@@ -1,5 +1,6 @@
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
+import hashlib
 import json
 import re
 import sys
@@ -22,7 +23,117 @@ REQUIRED_COLUMNS = {
 def clean_text(value):
     if value is None:
         return ""
-    return str(value).strip()
+    return str(value).strip()def match_fingerprint(match):
+    payload = {
+        "start": match["start"].isoformat(),
+        "end": match["end"].isoformat(),
+        "all_day": bool(match["all_day"]),
+        "home_team": match["home_team"],
+        "away_team": match["away_team"],
+        "result": match["result"],
+        "location": match["location"],
+        "division": match["division"],
+        "status": match["status"],
+    }
+
+    serialized = json.dumps(
+        payload,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    ).encode("utf-8")
+
+    return hashlib.sha256(serialized).hexdigest()
+
+
+def load_revision_state(path):
+    if not path.exists():
+        return {
+            "version": 1,
+            "matches": {},
+        }
+
+    data = json.loads(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(data, dict):
+        raise RuntimeError(
+            f"Invalid revision state file: {path}"
+        )
+
+    data.setdefault("version", 1)
+    data.setdefault("matches", {})
+
+    return data
+
+
+def get_match_revision(
+    state,
+    event_id,
+    match,
+    changed_at,
+):
+    key = f"{event_id}:{match['match_no']}"
+    fingerprint = match_fingerprint(match)
+
+    previous = state["matches"].get(key)
+
+    if previous and previous.get("fingerprint") == fingerprint:
+        sequence = int(previous.get("sequence", 1))
+        last_modified = (
+            clean_text(previous.get("last_modified"))
+            or changed_at
+        )
+    else:
+        if previous:
+            sequence = int(previous.get("sequence", 0)) + 1
+        else:
+            sequence = 1
+
+        last_modified = changed_at
+
+    state["matches"][key] = {
+        "fingerprint": fingerprint,
+        "sequence": sequence,
+        "last_modified": last_modified,
+    }
+
+    return {
+        "sequence": sequence,
+        "last_modified": last_modified,
+    }
+
+
+def save_revision_state(path, state):
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    content = (
+        json.dumps(
+            state,
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+
+    if (
+        path.exists()
+        and path.read_text(encoding="utf-8") == content
+    ):
+        return False
+
+    path.write_text(
+        content,
+        encoding="utf-8",
+    )
+
+    return True
+
+
 
 
 def ics_escape(value):
@@ -232,7 +343,9 @@ def build_calendar(
     display_names,
     team,
     matches,
-    output_file
+    output_file,
+    revision_state,
+    changed_at,
 ):
     organizer = competition["organizer"]
     event_id = str(competition["event_id"])
@@ -338,6 +451,16 @@ def build_calendar(
             f"match-{match['match_no']}@system.gotsport.com"
         )
 
+        revision = get_match_revision(
+            state=revision_state,
+            event_id=event_id,
+            match=match,
+            changed_at=changed_at,
+)
+
+last_modified = revision["last_modified"]
+sequence = revision["sequence"]
+        
         if match["all_day"]:
             dtstart_line = (
                 "DTSTART;VALUE=DATE:"
@@ -361,7 +484,9 @@ def build_calendar(
             [
                 "BEGIN:VEVENT",
                 f"UID:{uid}",
-                f"DTSTAMP:{generated_at}",
+                f"DTSTAMP:{last_modified}",
+                f"LAST-MODIFIED:{last_modified}",
+                f"SEQUENCE:{sequence}",
                 dtstart_line,
                 dtend_line,
                 f"SUMMARY:{ics_escape(summary)}",
@@ -465,6 +590,19 @@ def main():
 
     data_folder = Path("data") / relative_folder
     docs_folder = Path("docs") / relative_folder
+    revision_state_file = (
+    Path("state")
+    / relative_folder
+    / "revisions.json"
+)
+
+revision_state = load_revision_state(
+    revision_state_file
+)
+
+changed_at = datetime.now(timezone.utc).strftime(
+    "%Y%m%dT%H%M%SZ"
+)
 
     default_duration = int(
         competition.get(
@@ -505,12 +643,28 @@ def main():
         )
 
         build_calendar(
-            competition=competition,
-            defaults=defaults,
-            display_names=display_names,
-            team=team,
-            matches=matches,
-            output_file=output_file,
+        competition=competition,
+        defaults=defaults,
+        display_names=display_names,
+        team=team,
+        matches=matches,
+        output_file=output_file,
+        revision_state=revision_state,
+        changed_at=changed_at,
+        )
+
+    state_changed = save_revision_state(
+        revision_state_file,
+        revision_state,
+    )
+    
+    if state_changed:
+        print(
+            f"Updated revision state: {revision_state_file}"
+        )
+    else:
+        print(
+            f"Revision state unchanged: {revision_state_file}"
         )
 
     print(
