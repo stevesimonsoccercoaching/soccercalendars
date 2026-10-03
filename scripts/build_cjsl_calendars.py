@@ -23,7 +23,9 @@ REQUIRED_COLUMNS = {
 def clean_text(value):
     if value is None:
         return ""
-    return str(value).strip()def match_fingerprint(match):
+    return str(value).strip()
+    
+    def match_fingerprint(match):
     payload = {
         "start": match["start"].isoformat(),
         "end": match["end"].isoformat(),
