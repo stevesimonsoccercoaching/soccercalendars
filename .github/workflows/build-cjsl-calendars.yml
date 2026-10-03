@@ -76,21 +76,21 @@ jobs:
 
       - name: Show generated changes
         run: |
-          echo "Generated calendar and index changes:"
+          echo "Generated calendar, index, and revision-state changes:"
           echo
-          git diff -- docs/ || true
+          git diff -- docs/ state/ || true
 
-      - name: Commit updated calendars and index
+      - name: Commit updated calendars and revision state
         run: |
-          if git diff --quiet -- docs/; then
+          git add docs/ state/
+
+          if git diff --cached --quiet; then
             echo "No generated changes to commit."
             exit 0
           fi
-
+      
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add docs/
 
           git commit -m "Update generated soccer calendars"
 
