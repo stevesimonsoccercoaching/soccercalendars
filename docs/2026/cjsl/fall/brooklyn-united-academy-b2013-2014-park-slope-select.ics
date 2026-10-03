@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-177@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260920T110000
 DTEND;TZID=America/New_York:20260920T120000
 SUMMARY:CJSL: Brooklyn United vs SC Gjoa
@@ -64,22 +64,22 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-181@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260926T103500
 DTEND;TZID=America/New_York:20260926T113500
 SUMMARY:CJSL: Brooklyn United @ NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
-DESCRIPTION:Status: Scheduled\nMatch No: 181 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: NY Kids S.C. 2013/2014 boys\nAWAY: Brooklyn United Academ
- y B2013/2014 Park Slope Select\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4216813
+DESCRIPTION:Status: Rained Out\nMatch No: 181 (AWAY)\nDivision: U13 (9v9) -
+  D4 City\n\nHOME: NY Kids S.C. 2013/2014 boys\nAWAY: Brooklyn United Acade
+ my B2013/2014 Park Slope Select\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rained Out
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -103,7 +103,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-184@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261003T163000
 DTEND;TZID=America/New_York:20261003T173000
 SUMMARY:CJSL: Brooklyn United vs Met Oval
@@ -141,7 +141,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-186@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
 SUMMARY:CJSL: Brooklyn United @ Dynamo SC
@@ -179,7 +179,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-191@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261024T173000
 DTEND;TZID=America/New_York:20261024T183000
 SUMMARY:CJSL: Brooklyn United @ South Brooklyn FC
@@ -217,7 +217,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-193@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261031T163000
 DTEND;TZID=America/New_York:20261031T173000
 SUMMARY:CJSL: Brooklyn United vs NY Kids S.C. 2013/2014 boys
@@ -255,7 +255,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-196@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261107T103500
 DTEND;TZID=America/New_York:20261107T113500
 SUMMARY:CJSL: Brooklyn United @ Met Oval
@@ -293,21 +293,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-198@system.gotsport.com
-DTSTAMP:20260926T200913Z
-DTSTART;TZID=America/New_York:20261114T163000
-DTEND;TZID=America/New_York:20261114T173000
+DTSTAMP:20261003T021224Z
+DTSTART;TZID=America/New_York:20261115T123000
+DTEND;TZID=America/New_York:20261115T133000
 SUMMARY:CJSL: Brooklyn United vs Dynamo SC
-LOCATION:Hamilton Metz Field - Field 1
-DESCRIPTION:Status: Scheduled\nMatch No: 198 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4216813
+LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
+DESCRIPTION:Status: Rescheduled\nMatch No: 198 (HOME)\nDivision: U13 (9v9) 
+ - D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nA
+ WAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

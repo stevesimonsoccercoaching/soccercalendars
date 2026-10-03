@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-254@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
 SUMMARY:CJSL: SFFK @ Real Bronx FC 2015-2014
@@ -63,16 +63,16 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-256@system.gotsport.com
-DTSTAMP:20260926T200913Z
-DTSTART;TZID=America/New_York:20260927T121500
-DTEND;TZID=America/New_York:20260927T131500
-SUMMARY:CJSL: SFFK vs ARB SC 1415
-LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
-DESCRIPTION:Status: Scheduled\nMatch No: 256 (HOME)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n
- AWAY: ARB SC 1415\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4262171
+UID:cjsl-55206-match-258@system.gotsport.com
+DTSTAMP:20261003T021224Z
+DTSTART;TZID=America/New_York:20261003T144500
+DTEND;TZID=America/New_York:20261003T154500
+SUMMARY:CJSL: SFFK @ Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
+LOCATION:St. Michaels Playground - St. Michaels Playground
+DESCRIPTION:Status: Scheduled\nMatch No: 258 (AWAY)\nDivision: U12 (9v9) - 
+ Super D1\n\nHOME: Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl\nA
+ WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -101,26 +101,8 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-258@system.gotsport.com
-DTSTAMP:20260926T200913Z
-DTSTART;VALUE=DATE:20261003
-DTEND;VALUE=DATE:20261004
-SUMMARY:CJSL: SFFK @ Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
-LOCATION:
-DESCRIPTION:Status: Scheduled\nMatch No: 258 (AWAY)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl\nA
- WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4262171
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
- 71
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-261@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261025T121500
 DTEND;TZID=America/New_York:20261025T131500
 SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
@@ -158,7 +140,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-263@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261031T083000
 DTEND;TZID=America/New_York:20261031T093000
 SUMMARY:CJSL: SFFK @ ARB SC 1415
@@ -196,7 +178,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-266@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261108T133000
 DTEND;TZID=America/New_York:20261108T143000
 SUMMARY:CJSL: SFFK vs Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
@@ -233,8 +215,46 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:cjsl-55206-match-256@system.gotsport.com
+DTSTAMP:20261003T021224Z
+DTSTART;TZID=America/New_York:20261115T133000
+DTEND;TZID=America/New_York:20261115T143000
+SUMMARY:CJSL: SFFK vs ARB SC 1415
+LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
+DESCRIPTION:Status: Rescheduled\nMatch No: 256 (HOME)\nDivision: U12 (9v9) 
+ - Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue
+ \nAWAY: ARB SC 1415\n\nSource: https://system.gotsport.com/org_event/event
+ s/55206/schedules?team=4262171
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
+ 71
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:cjsl-55206-match-270@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261121T083000
 DTEND;TZID=America/New_York:20261121T093000
 SUMMARY:CJSL: SFFK @ Long Island City Soccer Club 2014/2015
@@ -272,7 +292,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-271@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:CJSL: SFFK vs Real Bronx FC 2015-2014

@@ -26,21 +26,21 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-180@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260926T080000
 DTEND;TZID=America/New_York:20260926T090000
 SUMMARY:CJSL: Dynamo SC @ Met Oval
 LOCATION:Red Hook Field #5 - Field 5 11v11
-DESCRIPTION:Status: Scheduled\nMatch No: 180 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
- nAWAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4240357
+DESCRIPTION:Status: Rained Out\nMatch No: 180 (AWAY)\nDivision: U13 (9v9) -
+  D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray
+ \nAWAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rained Out
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -64,7 +64,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-185@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261004T140000
 DTEND;TZID=America/New_York:20261004T150000
 SUMMARY:CJSL: Dynamo SC @ South Brooklyn FC
@@ -102,7 +102,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-178@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261011T170000
 DTEND;TZID=America/New_York:20261011T180000
 SUMMARY:CJSL: Dynamo SC vs NY Kids S.C. 2013/2014 boys
@@ -140,7 +140,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-186@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
 SUMMARY:CJSL: Dynamo SC vs Brooklyn United
@@ -178,7 +178,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-190@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261024T134500
 DTEND;TZID=America/New_York:20261024T144500
 SUMMARY:CJSL: Dynamo SC @ SC Gjoa
@@ -215,7 +215,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-192@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261101T170000
 DTEND;TZID=America/New_York:20261101T180000
 SUMMARY:CJSL: Dynamo SC vs Met Oval
@@ -253,7 +253,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-197@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261108T170000
 DTEND;TZID=America/New_York:20261108T180000
 SUMMARY:CJSL: Dynamo SC vs South Brooklyn FC
@@ -291,21 +291,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-198@system.gotsport.com
-DTSTAMP:20260926T200913Z
-DTSTART;TZID=America/New_York:20261114T163000
-DTEND;TZID=America/New_York:20261114T173000
+DTSTAMP:20261003T021224Z
+DTSTART;TZID=America/New_York:20261115T123000
+DTEND;TZID=America/New_York:20261115T133000
 SUMMARY:CJSL: Dynamo SC @ Brooklyn United
-LOCATION:Hamilton Metz Field - Field 1
-DESCRIPTION:Status: Scheduled\nMatch No: 198 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4240357
+LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
+DESCRIPTION:Status: Rescheduled\nMatch No: 198 (AWAY)\nDivision: U13 (9v9) 
+ - D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nA
+ WAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

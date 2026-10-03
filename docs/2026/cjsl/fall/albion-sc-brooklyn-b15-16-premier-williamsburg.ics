@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-510@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260919T133000
 DTEND;TZID=America/New_York:20260919T143000
 SUMMARY:CJSL: ALBION Brooklyn @ Stage10 FC Boys Leopards 2015/2016
@@ -64,21 +64,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-513@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20260926T080000
 DTEND;TZID=America/New_York:20260926T090000
 SUMMARY:CJSL: ALBION Brooklyn vs South Brooklyn Fc 2015/2016
 LOCATION:Bushwick Inlet Park - Field 1 9v9
-DESCRIPTION:Status: Scheduled\nMatch No: 513 (HOME)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: S
- outh Brooklyn Fc 2015/2016\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4264733
+DESCRIPTION:Status: Rained Out\nMatch No: 513 (HOME)\nDivision: U11 (9v9) -
+  D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: 
+ South Brooklyn Fc 2015/2016\n\nSource: https://system.gotsport.com/org_eve
+ nt/events/55206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rained Out
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -102,7 +102,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-515@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
 SUMMARY:CJSL: ALBION Brooklyn @ Brooklyn City FC
@@ -140,7 +140,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-520@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261017T090000
 DTEND;TZID=America/New_York:20261017T100000
 SUMMARY:CJSL: ALBION Brooklyn vs Griffin United Soccer Club Elite Brooklyn 
@@ -179,7 +179,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-521@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261024T081500
 DTEND;TZID=America/New_York:20261024T091500
 SUMMARY:CJSL: ALBION Brooklyn vs SFFK
@@ -217,21 +217,21 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-525@system.gotsport.com
-DTSTAMP:20260926T200913Z
-DTSTART;TZID=America/New_York:20261031T160000
-DTEND;TZID=America/New_York:20261031T170000
+DTSTAMP:20261003T021224Z
+DTSTART;TZID=America/New_York:20261031T170000
+DTEND;TZID=America/New_York:20261031T180000
 SUMMARY:CJSL: ALBION Brooklyn @ South Brooklyn Fc 2015/2016
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
-DESCRIPTION:Status: Scheduled\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: South Brooklyn Fc 2015/2016\nAWAY: ALBION SC Brooklyn B15
- /16 Premier - Williamsburg\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4264733
+DESCRIPTION:Status: Rescheduled\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) 
+ - D3 City\n\nHOME: South Brooklyn Fc 2015/2016\nAWAY: ALBION SC Brooklyn B
+ 15/16 Premier - Williamsburg\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -255,7 +255,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-527@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T133000
 SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
@@ -293,7 +293,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-532@system.gotsport.com
-DTSTAMP:20260926T200913Z
+DTSTAMP:20261003T021224Z
 DTSTART;TZID=America/New_York:20261114T110000
 DTEND;TZID=America/New_York:20261114T120000
 SUMMARY:CJSL: ALBION Brooklyn @ Griffin United Soccer Club Elite Brooklyn B
