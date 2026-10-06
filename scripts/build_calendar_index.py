@@ -206,6 +206,8 @@ def load_competitions():
             competition_dates.extend(schedule["dates"])
 
             href = ics_file.relative_to(DOCS_ROOT).as_posix()
+            gotsport = team.get("gotsport", {})
+            schedule_url = clean_text(gotsport.get("schedule_url"))
 
             team_records.append(
                 {
@@ -217,6 +219,7 @@ def load_competitions():
                         competition,
                     ),
                     "href": href,
+                    "schedule_url": schedule_url,
                 }
             )
 
@@ -277,12 +280,31 @@ def render_team_list(teams):
         else:
             display_name = team["short_name"]
 
+        schedule_link = ""
+        if team.get("schedule_url"):
+            schedule_link = (
+                f'<a class="team-action schedule-link" '
+                f'href="{escape(team["schedule_url"], quote=True)}" '
+                f'target="_blank" rel="noopener noreferrer">'
+                "GotSport Schedule"
+                "</a>"
+            )
+
         items.append(
             "          <li>"
-            f'<a class="calendar-link" href="{escape(team["href"], quote=True)}" '
-            f'download title="{escape(team["name"], quote=True)}">'
+            '<div class="team-row">'
+            f'<span class="team-name" title="{escape(team["name"], quote=True)}">'
             f"{escape(display_name)}"
-            "</a></li>"
+            "</span>"
+            '<span class="team-actions">'
+            f'<a class="team-action calendar-link" href="{escape(team["href"], quote=True)}" '
+            f'download title="Calendar feed for {escape(team["name"], quote=True)}">'
+            "Calendar Feed"
+            "</a>"
+            f"{schedule_link}"
+            "</span>"
+            "</div>"
+            "</li>"
         )
 
     return "\n".join(items)
@@ -472,17 +494,37 @@ def build_index(competitions):
       border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
     }}
 
-    .calendar-link {{
-      display: block;
+    .team-row {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       padding: 12px 4px;
+    }}
+
+    .team-name {{
+      min-width: 0;
+      font-weight: 650;
+    }}
+
+    .team-actions {{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 14px;
+      flex: 0 0 auto;
+    }}
+
+    .team-action {{
       color: LinkText;
       font-weight: 650;
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
+      white-space: nowrap;
     }}
 
-    .calendar-link:hover,
-    .calendar-link:focus-visible {{
+    .team-action:hover,
+    .team-action:focus-visible {{
       text-decoration-thickness: 2px;
     }}
 
@@ -496,8 +538,15 @@ def build_index(competitions):
         padding-top: 24px;
       }}
 
-      .calendar-link {{
+      .team-row {{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
         padding: 14px 2px;
+      }}
+
+      .team-actions {{
+        justify-content: flex-start;
       }}
     }}
   </style>
@@ -506,8 +555,9 @@ def build_index(competitions):
 <main>
   <h1>Soccer Calendars</h1>
   <p class="intro">
-    Tap a team to download or open its ICS calendar feed. To subscribe in Google Calendar,
-    long-press or copy the team link and add it under <strong>Other calendars → From URL</strong>.
+    Each team has a Calendar Feed for subscription and a GotSport Schedule link for the live team schedule.
+    To subscribe in Google Calendar, copy the Calendar Feed link and add it under
+    <strong>Other calendars → From URL</strong>.
   </p>
 
   <label class="history-control" id="history-control">
