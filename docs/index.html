@@ -105,17 +105,37 @@
       border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
     }
 
-    .calendar-link {
-      display: block;
+    .team-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
       padding: 12px 4px;
+    }
+
+    .team-name {
+      min-width: 0;
+      font-weight: 650;
+    }
+
+    .team-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 14px;
+      flex: 0 0 auto;
+    }
+
+    .team-action {
       color: LinkText;
       font-weight: 650;
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
+      white-space: nowrap;
     }
 
-    .calendar-link:hover,
-    .calendar-link:focus-visible {
+    .team-action:hover,
+    .team-action:focus-visible {
       text-decoration-thickness: 2px;
     }
 
@@ -129,8 +149,15 @@
         padding-top: 24px;
       }
 
-      .calendar-link {
+      .team-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
         padding: 14px 2px;
+      }
+
+      .team-actions {
+        justify-content: flex-start;
       }
     }
   </style>
@@ -139,8 +166,9 @@
 <main>
   <h1>Soccer Calendars</h1>
   <p class="intro">
-    Tap a team to download or open its ICS calendar feed. To subscribe in Google Calendar,
-    long-press or copy the team link and add it under <strong>Other calendars → From URL</strong>.
+    Each team has a Calendar Feed for subscription and a GotSport Schedule link for the live team schedule.
+    To subscribe in Google Calendar, copy the Calendar Feed link and add it under
+    <strong>Other calendars → From URL</strong>.
   </p>
 
   <label class="history-control" id="history-control">
@@ -155,99 +183,99 @@
       <div class="division">
         <h4>Male U11 (9v9) - D2</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-leopards-2015-16.ics" download title="Coney Island Cyclones United Leopards 2015/16">Coney Island Cyclones</a></li>
+          <li><div class="team-row"><span class="team-name" title="Coney Island Cyclones United Leopards 2015/16">Coney Island Cyclones</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-leopards-2015-16.ics" download title="Calendar feed for Coney Island Cyclones United Leopards 2015/16">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4261459" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U11 (9v9) - D3 City</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b15-16-premier-williamsburg.ics" download title="ALBION SC Brooklyn B15/16 Premier - Williamsburg">ALBION Brooklyn</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b15-16-blue.ics" download title="Brooklyn City FC F.C. B15/16 Blue">Brooklyn City FC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2015-2016.ics" download title="Soccer Fun for Kids / Brooklyn Patriots 2015-2016">SFFK</a></li>
+          <li><div class="team-row"><span class="team-name" title="ALBION SC Brooklyn B15/16 Premier - Williamsburg">ALBION Brooklyn</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b15-16-premier-williamsburg.ics" download title="Calendar feed for ALBION SC Brooklyn B15/16 Premier - Williamsburg">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4264733" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn City FC F.C. B15/16 Blue">Brooklyn City FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b15-16-blue.ics" download title="Calendar feed for Brooklyn City FC F.C. B15/16 Blue">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4272105" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Soccer Fun for Kids / Brooklyn Patriots 2015-2016">SFFK</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2015-2016.ics" download title="Calendar feed for Soccer Fun for Kids / Brooklyn Patriots 2015-2016">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4262140" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U11 (9v9) - D4 City</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2015-16-boys-u11-white.ics" download title="Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White">Met Oval</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-king.ics" download title="SC Gjoa King">SC Gjoa</a></li>
+          <li><div class="team-row"><span class="team-name" title="Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White">Met Oval</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2015-16-boys-u11-white.ics" download title="Calendar feed for Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4264996" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SC Gjoa King">SC Gjoa</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/sc-gjoa-king.ics" download title="Calendar feed for SC Gjoa King">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4244097" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U11 (9v9) - D4 Metro</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-legion-fc-u11-boys-blue-2015-2016.ics" download title="Soccer Legion FC U11 Boys Blue (2015/2016)">Soccer Legion</a></li>
+          <li><div class="team-row"><span class="team-name" title="Soccer Legion FC U11 Boys Blue (2015/2016)">Soccer Legion</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/soccer-legion-fc-u11-boys-blue-2015-2016.ics" download title="Calendar feed for Soccer Legion FC U11 Boys Blue (2015/2016)">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4435585" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - D2 City</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-lions-2014-15.ics" download title="Coney Island Cyclones United Lions 2014/15">Coney Island Cyclones</a></li>
+          <li><div class="team-row"><span class="team-name" title="Coney Island Cyclones United Lions 2014/15">Coney Island Cyclones</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-lions-2014-15.ics" download title="Calendar feed for Coney Island Cyclones United Lions 2014/15">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4261465" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - D2 Metro</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b14-15-premier-williamsburg.ics" download title="ALBION SC Brooklyn B14/15 Premier - Williamsburg">ALBION Brooklyn</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-italians-2014-2015-premier.ics" download title="Brooklyn Italians 2014/2015 Premier">Brooklyn Italians</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/french-football-academy-2014-15-digne.ics" download title="French Football Academy 2014/15 Digne">French Football Academy</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics" download title="Manhattan Kickers MKSC 2014/2015">MKSC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-strand-larsen.ics" download title="SC Gjoa Strand Larsen">SC Gjoa</a></li>
+          <li><div class="team-row"><span class="team-name" title="ALBION SC Brooklyn B14/15 Premier - Williamsburg">ALBION Brooklyn</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b14-15-premier-williamsburg.ics" download title="Calendar feed for ALBION SC Brooklyn B14/15 Premier - Williamsburg">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4290983" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn Italians 2014/2015 Premier">Brooklyn Italians</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-italians-2014-2015-premier.ics" download title="Calendar feed for Brooklyn Italians 2014/2015 Premier">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4240340" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="French Football Academy 2014/15 Digne">French Football Academy</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/french-football-academy-2014-15-digne.ics" download title="Calendar feed for French Football Academy 2014/15 Digne">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4206689" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Manhattan Kickers MKSC 2014/2015">MKSC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics" download title="Calendar feed for Manhattan Kickers MKSC 2014/2015">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4239121" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SC Gjoa Strand Larsen">SC Gjoa</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/sc-gjoa-strand-larsen.ics" download title="Calendar feed for SC Gjoa Strand Larsen">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4244158" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - D3 Cosmo</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b14-15-blue.ics" download title="Brooklyn City FC F.C. B14/15 Blue">Brooklyn City FC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/fa-euro-new-york-2014-2015-pre-mls-iii.ics" download title="FA Euro New York 2014/2015 Pre-MLS III">FA Euro</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2014-2015-white.ics" download title="Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White">SFFK</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/skillsu-fc-u12.ics" download title="SkillsU FC U12">SkillsU FC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2014-2015.ics" download title="South Brooklyn Fc 2014/2015">South Brooklyn FC</a></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn City FC F.C. B14/15 Blue">Brooklyn City FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b14-15-blue.ics" download title="Calendar feed for Brooklyn City FC F.C. B14/15 Blue">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4272080" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="FA Euro New York 2014/2015 Pre-MLS III">FA Euro</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/fa-euro-new-york-2014-2015-pre-mls-iii.ics" download title="Calendar feed for FA Euro New York 2014/2015 Pre-MLS III">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4264585" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White">SFFK</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2014-2015-white.ics" download title="Calendar feed for Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4262199" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SkillsU FC U12">SkillsU FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/skillsu-fc-u12.ics" download title="Calendar feed for SkillsU FC U12">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4321423" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="South Brooklyn Fc 2014/2015">South Brooklyn FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2014-2015.ics" download title="Calendar feed for South Brooklyn Fc 2014/2015">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4259907" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - D4 City</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/manhattan-sc-inter-b2014-15.ics" download title="Manhattan SC Inter B2014/15">Manhattan SC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/rebels-legacy-soccer-club-2014-2015.ics" download title="Rebels Legacy Soccer Club 2014\2015">Rebels Legacy</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-nyland.ics" download title="SC Gjoa Nyland">SC Gjoa</a></li>
+          <li><div class="team-row"><span class="team-name" title="Manhattan SC Inter B2014/15">Manhattan SC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/manhattan-sc-inter-b2014-15.ics" download title="Calendar feed for Manhattan SC Inter B2014/15">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4239148" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Rebels Legacy Soccer Club 2014\2015">Rebels Legacy</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/rebels-legacy-soccer-club-2014-2015.ics" download title="Calendar feed for Rebels Legacy Soccer Club 2014\2015">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4260592" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SC Gjoa Nyland">SC Gjoa</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/sc-gjoa-nyland.ics" download title="Calendar feed for SC Gjoa Nyland">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4244169" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - D4 Metro</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/lucky-soccer-academy-shining-stars-14-15.ics" download title="Lucky Soccer Academy Shining Stars 14-15">Lucky Soccer Academy</a></li>
+          <li><div class="team-row"><span class="team-name" title="Lucky Soccer Academy Shining Stars 14-15">Lucky Soccer Academy</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/lucky-soccer-academy-shining-stars-14-15.ics" download title="Calendar feed for Lucky Soccer Academy Shining Stars 14-15">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4233548" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U12 (9v9) - Super D1</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2014-2015-blue.ics" download title="Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue">SFFK</a></li>
+          <li><div class="team-row"><span class="team-name" title="Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue">SFFK</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/soccer-fun-for-kids-brooklyn-patriots-2014-2015-blue.ics" download title="Calendar feed for Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4262171" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U13 (9v9) - D1 - D2 Mix</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-premier-fc-14-13-regional.ics" download title="Brooklyn Premier F.C. 14/13 Regional">Brooklyn Premier</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-johnsen.ics" download title="SC Gjoa Johnsen">SC Gjoa</a></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn Premier F.C. 14/13 Regional">Brooklyn Premier</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-premier-fc-14-13-regional.ics" download title="Calendar feed for Brooklyn Premier F.C. 14/13 Regional">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4225977" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SC Gjoa Johnsen">SC Gjoa</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/sc-gjoa-johnsen.ics" download title="Calendar feed for SC Gjoa Johnsen">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4244183" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U13 (9v9) - D3</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b13-14-premier-williamsburg.ics" download title="ALBION SC Brooklyn B13/14 Premier - Williamsburg">ALBION Brooklyn</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b13-14.ics" download title="Brooklyn City FC F.C. B13/14">Brooklyn City FC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-tigers-2013-14.ics" download title="Coney Island Cyclones United Tigers 2013/14">Coney Island Cyclones</a></li>
+          <li><div class="team-row"><span class="team-name" title="ALBION SC Brooklyn B13/14 Premier - Williamsburg">ALBION Brooklyn</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/albion-sc-brooklyn-b13-14-premier-williamsburg.ics" download title="Calendar feed for ALBION SC Brooklyn B13/14 Premier - Williamsburg">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4264740" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn City FC F.C. B13/14">Brooklyn City FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-city-fc-b13-14.ics" download title="Calendar feed for Brooklyn City FC F.C. B13/14">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4271987" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Coney Island Cyclones United Tigers 2013/14">Coney Island Cyclones</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/coney-island-cyclones-united-tigers-2013-14.ics" download title="Calendar feed for Coney Island Cyclones United Tigers 2013/14">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4259832" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
       <div class="division">
         <h4>Male U13 (9v9) - D4 City</h4>
         <ul class="team-list">
-          <li><a class="calendar-link" href="2026/cjsl/fall/brooklyn-united-academy-b2013-2014-park-slope-select.ics" download title="Brooklyn United Academy B2013/2014 Park Slope Select">Brooklyn United</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/dynamo-soccer-club-2014.ics" download title="Dynamo Soccer Club 2014">Dynamo SC</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2013-14-boys-u13-gray.ics" download title="Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray">Met Oval</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/sc-gjoa-ajer.ics" download title="SC Gjoa Ajer">SC Gjoa</a></li>
-          <li><a class="calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2-2013-2014.ics" download title="South Brooklyn FC #2 2013/2014">South Brooklyn FC</a></li>
+          <li><div class="team-row"><span class="team-name" title="Brooklyn United Academy B2013/2014 Park Slope Select">Brooklyn United</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/brooklyn-united-academy-b2013-2014-park-slope-select.ics" download title="Calendar feed for Brooklyn United Academy B2013/2014 Park Slope Select">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4216813" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Dynamo Soccer Club 2014">Dynamo SC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/dynamo-soccer-club-2014.ics" download title="Calendar feed for Dynamo Soccer Club 2014">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4240357" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray">Met Oval</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/metropolitan-oval-academy-brooklyn-2013-14-boys-u13-gray.ics" download title="Calendar feed for Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4265007" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="SC Gjoa Ajer">SC Gjoa</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/sc-gjoa-ajer.ics" download title="Calendar feed for SC Gjoa Ajer">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4244196" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
+          <li><div class="team-row"><span class="team-name" title="South Brooklyn FC #2 2013/2014">South Brooklyn FC</span><span class="team-actions"><a class="team-action calendar-link" href="2026/cjsl/fall/south-brooklyn-fc-2-2013-2014.ics" download title="Calendar feed for South Brooklyn FC #2 2013/2014">Calendar Feed</a><a class="team-action schedule-link" href="https://system.gotsport.com/org_event/events/55206/schedules?team=4259905" target="_blank" rel="noopener noreferrer">GotSport Schedule</a></span></div></li>
         </ul>
       </div>
     </section>
