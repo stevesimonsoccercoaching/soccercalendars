@@ -39,6 +39,13 @@ def match_fingerprint(match):
         "status": match["status"],
     }
 
+    # Canceled matches are intentionally kept visible in subscribed calendars.
+    # Include this rendering rule only for canceled matches so introducing the
+    # feature bumps revision metadata for those matches without touching every
+    # unchanged match in the season.
+    if "cancel" in clean_text(match["status"]).lower():
+        payload["canceled_rendering"] = "visible-prefix-v1"
+
     serialized = json.dumps(
         payload,
         sort_keys=True,
@@ -414,10 +421,15 @@ def build_calendar(
             opponent_full
         )
 
+        status_lower = match["status"].lower()
+
         summary = (
             f"{organizer}: {short_name} "
             f"{separator} {opponent_short}"
         )
+
+        if "cancel" in status_lower:
+            summary = f"❌ Canceled — {summary}"
 
         description_parts = [
             f"Status: {ics_escape(match['status'])}",
@@ -499,12 +511,11 @@ def build_calendar(
             ]
         )
 
-        status_lower = match["status"].lower()
-
-        if "cancel" in status_lower:
-            lines.append("STATUS:CANCELLED")
-        else:
-            lines.append("STATUS:CONFIRMED")
+        # Keep canceled GotSport matches visible in subscribed calendars.
+        # Their cancellation remains explicit in SUMMARY, DESCRIPTION, and
+        # X-GOTSPORT-STATUS rather than using iCalendar STATUS:CANCELLED,
+        # which some calendar clients hide or remove.
+        lines.append("STATUS:CONFIRMED")
 
         lines.append(
             f"X-GOTSPORT-STATUS:{ics_escape(match['status'])}"
