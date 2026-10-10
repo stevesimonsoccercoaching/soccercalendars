@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-134@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T121500
 DTEND;TZID=America/New_York:20260919T131500
 SUMMARY:CJSL: Brooklyn City FC vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Bush Terminal Piers Park - Soccer 2B - small sided
 DESCRIPTION:Status: Rescheduled\nMatch No: 134 (HOME)\nDivision: U13 (9v9) 
- - D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: LS Select FC Raptors Eli
- te 2014/2013\n\nResults: 1 - 4\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4271987
+ - D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. 
+ B13/14\nAWAY: LS Select FC Raptors Elite 2014/2013\n\nResults: 1 - 4\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 71987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-136@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260927T144500
 DTEND;TZID=America/New_York:20260927T154500
-SUMMARY:CJSL: Brooklyn City FC @ Coney Island Cyclones
+SUMMARY:CJSL: Brooklyn City FC vs Coney Island Cyclones
 LOCATION:Bill Brown Playground - Bill Brown Playground
 DESCRIPTION:Status: Rained Out\nMatch No: 136 (AWAY)\nDivision: U13 (9v9) -
-  D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: Brooklyn C
- ity FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_event/events
- /55206/schedules?team=4271987
+  D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones U
+ nited Tigers 2013/14\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: https:
+ //system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -105,18 +106,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-141@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T180000
 DTEND;TZID=America/New_York:20261003T190000
-SUMMARY:CJSL: Brooklyn City FC @ Long Island CIty Youth Soccer Academy LIC 
- GOATS 2013/2014
+SUMMARY:CJSL: Brooklyn City FC vs Long Island CIty Youth Soccer Academy LIC
+  GOATS 2013/2014
 LOCATION:St. Michael’s Playground  - Small Sided B
 DESCRIPTION:Status: Scheduled\nMatch No: 141 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Long Island CIty Youth Soccer Academy LIC GOATS 2013/2014\nAWA
- Y: Brooklyn City FC F.C. B13/14\n\nResults: 5 - 0\n\nSource: https://syste
- m.gotsport.com/org_event/events/55206/schedules?team=4271987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island CIty Youth S
+ occer Academy LIC GOATS 2013/2014\nAWAY: Brooklyn City FC F.C. B13/14\n\nR
+ esults: 5 - 0\n\nSource: https://system.gotsport.com/org_event/events/5520
+ 6/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -146,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-142@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T154500
 DTEND;TZID=America/New_York:20261017T164500
 SUMMARY:CJSL: Brooklyn City FC vs ALBION Brooklyn
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 142 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: ALBION SC Brooklyn B13/14 
- Premier - Williamsburg\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4271987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -186,17 +188,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-146@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T093000
 DTEND;TZID=America/New_York:20261024T103000
-SUMMARY:CJSL: Brooklyn City FC @ Sunset united 2014
+SUMMARY:CJSL: Brooklyn City FC vs Sunset united 2014
 LOCATION:Bush Terminal   - Bush Terminal
 DESCRIPTION:Status: Scheduled\nMatch No: 146 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Sunset united 2014\nAWAY: Brooklyn City FC F.C. B13/14\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4271
- 987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Sunset united 2014\nAWAY
+ : Brooklyn City FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -226,17 +228,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-148@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T165000
 DTEND;TZID=America/New_York:20261031T175000
 SUMMARY:CJSL: Brooklyn City FC vs Coney Island Cyclones
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 148 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: Coney Island Cyclones Unit
- ed Tigers 2013/14\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4271987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -266,18 +268,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-153@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T084500
 DTEND;TZID=America/New_York:20261107T094500
 SUMMARY:CJSL: Brooklyn City FC vs Long Island CIty Youth Soccer Academy LIC
   GOATS 2013/2014
 LOCATION:Red Hook Ball Fields - Field #7A - Small-sided
 DESCRIPTION:Status: Scheduled\nMatch No: 153 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: Long Island CIty Youth Soc
- cer Academy LIC GOATS 2013/2014\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4271987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: Long Island CIty Youth Soccer Academy LIC GOATS 2013/2014\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer
@@ -307,17 +310,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-154@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T130000
 DTEND;TZID=America/New_York:20261114T140000
-SUMMARY:CJSL: Brooklyn City FC @ ALBION Brooklyn
+SUMMARY:CJSL: Brooklyn City FC vs ALBION Brooklyn
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 154 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: Brookl
- yn City FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4271987
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/1
+ 4 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer

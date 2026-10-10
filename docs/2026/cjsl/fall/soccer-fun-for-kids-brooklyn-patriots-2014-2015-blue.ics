@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-254@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
-SUMMARY:CJSL: SFFK @ Real Bronx FC 2015-2014
+SUMMARY:CJSL: SFFK vs Real Bronx FC 2015-2014
 LOCATION:Parade Ground  - Parade Ground Field 10
 DESCRIPTION:Status: Scheduled\nMatch No: 254 (AWAY)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Real Bronx FC 2015-2014\nAWAY: Soccer Fun for Kids / Bro
- oklyn Patriots 2014-2015 Blue\n\nResults: 4 - 1\n\nSource: https://system.
- gotsport.com/org_event/events/55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Real Bronx FC 2015
+ -2014\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nRes
+ ults: 4 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/
+ schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -65,18 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-258@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T144500
 DTEND;TZID=America/New_York:20261003T154500
-SUMMARY:CJSL: SFFK @ Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
+SUMMARY:CJSL: SFFK vs Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
 LOCATION:St. Michaels Playground - St. Michaels Playground
 DESCRIPTION:Status: Scheduled\nMatch No: 258 (AWAY)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl\nA
- WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nResults: 2 
- - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Veras Soccer Acade
+ my V.S.A Prospects (2014-2015) cjsl\nAWAY: Soccer Fun for Kids / Brooklyn 
+ Patriots 2014-2015 Blue\n\nResults: 2 - 1\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -106,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-261@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T121500
 DTEND;TZID=America/New_York:20261025T131500
 SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 261 (HOME)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n
- AWAY: Long Island City Soccer Club 2014/2015\n\nSource: https://system.got
- sport.com/org_event/events/55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 Blue\nAWAY: Long Island City Soccer Club 2
+ 014/2015\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -146,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-263@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T083000
 DTEND;TZID=America/New_York:20261031T093000
-SUMMARY:CJSL: SFFK @ ARB SC 1415
+SUMMARY:CJSL: SFFK vs ARB SC 1415
 LOCATION:Frank Principe Park  - Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 263 (AWAY)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: ARB SC 1415\nAWAY: Soccer Fun for Kids / Brooklyn Patrio
- ts 2014-2015 Blue\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ARB SC 1415\nAWAY:
+  Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -186,17 +188,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-266@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T133000
 DTEND;TZID=America/New_York:20261108T143000
 SUMMARY:CJSL: SFFK vs Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 266 (HOME)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n
- AWAY: Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 Blue\nAWAY: Veras Soccer Academy V.S.A Pro
+ spects (2014-2015) cjsl\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -226,17 +229,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-256@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T133000
 DTEND;TZID=America/New_York:20261115T143000
 SUMMARY:CJSL: SFFK vs ARB SC 1415
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Rescheduled\nMatch No: 256 (HOME)\nDivision: U12 (9v9) 
- - Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue
- \nAWAY: ARB SC 1415\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4262171
+ - Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for K
+ ids / Brooklyn Patriots 2014-2015 Blue\nAWAY: ARB SC 1415\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -266,17 +269,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-270@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T083000
 DTEND;TZID=America/New_York:20261121T093000
-SUMMARY:CJSL: SFFK @ Long Island City Soccer Club 2014/2015
+SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
 LOCATION:Randalls Island Park - Randalls 72- Full Sided
 DESCRIPTION:Status: Scheduled\nMatch No: 270 (AWAY)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Long Island City Soccer Club 2014/2015\nAWAY: Soccer Fun
-  for Kids / Brooklyn Patriots 2014-2015 Blue\n\nSource: https://system.got
- sport.com/org_event/events/55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island City S
+ occer Club 2014/2015\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2
+ 015 Blue\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -306,17 +310,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-271@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:CJSL: SFFK vs Real Bronx FC 2015-2014
 LOCATION:
 DESCRIPTION:Status: Scheduled\nMatch No: 271 (HOME)\nDivision: U12 (9v9) - 
- Super D1\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n
- AWAY: Real Bronx FC 2015-2014\n\nSource: https://system.gotsport.com/org_e
- vent/events/55206/schedules?team=4262171
+ Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 Blue\nAWAY: Real Bronx FC 2015-2014\n\nSou
+ rce: https://system.gotsport.com/org_event/events/55206/schedules?team=426
+ 2171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer

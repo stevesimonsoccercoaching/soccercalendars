@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-275@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T163000
 DTEND;TZID=America/New_York:20260919T173000
-SUMMARY:CJSL: SC Gjoa @ French Football Academy
+SUMMARY:CJSL: SC Gjoa vs French Football Academy
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 275 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: SC Gjoa Str
- and Larsen\n\nResults: 0 - 3\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: SC Gjoa Strand Larsen\n\nResults: 0 - 3\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4244
+ 158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-278@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T090000
 DTEND;TZID=America/New_York:20260926T100000
-SUMMARY:CJSL: SC Gjoa @ ALBION Brooklyn
+SUMMARY:CJSL: SC Gjoa vs ALBION Brooklyn
 LOCATION:Bushwick Inlet Park - Field 1 9v9
 DESCRIPTION:Status: Rained Out\nMatch No: 278 (AWAY)\nDivision: U12 (9v9) -
-  D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY:
-  SC Gjoa Strand Larsen\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4244158
+  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brookly
+ n B14/15 Premier - Williamsburg\nAWAY: SC Gjoa Strand Larsen\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -105,17 +106,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-281@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T104500
 DTEND;TZID=America/New_York:20261003T114500
 SUMMARY:CJSL: SC Gjoa vs Excelsior New York Academy 2014/2015 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 281 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Excelsior New York Academy 
- 2014/2015 Boys\n\nResults: 2 - 4\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: Excelsior New York Academy 2014/2015 Boys\n\nResults: 2 - 4\n\n
+ Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
+ 4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -145,17 +147,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-284@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T171000
 DTEND;TZID=America/New_York:20261017T181000
-SUMMARY:CJSL: SC Gjoa @ MKSC
+SUMMARY:CJSL: SC Gjoa vs MKSC
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 284 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: SC Gjoa Strand L
- arsen\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan Kickers 
+ MKSC 2014/2015\nAWAY: SC Gjoa Strand Larsen\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -185,17 +187,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-287@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T103000
 DTEND;TZID=America/New_York:20261024T113000
 SUMMARY:CJSL: SC Gjoa vs Brooklyn Italians
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 287 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Brooklyn Italians 2014/2015
-  Premier\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -225,17 +227,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-290@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T080000
 DTEND;TZID=America/New_York:20261031T090000
 SUMMARY:CJSL: SC Gjoa vs ALBION Brooklyn
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 290 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: ALBION SC Brooklyn B14/15 P
- remier - Williamsburg\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -265,17 +267,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-293@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T124500
 DTEND;TZID=America/New_York:20261107T134500
-SUMMARY:CJSL: SC Gjoa @ Excelsior New York Academy 2014/2015 Boys
+SUMMARY:CJSL: SC Gjoa vs Excelsior New York Academy 2014/2015 Boys
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 293 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: SC Gjoa
-  Strand Larsen\n\nSource: https://system.gotsport.com/org_event/events/552
- 06/schedules?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
+  Academy 2014/2015 Boys\nAWAY: SC Gjoa Strand Larsen\n\nSource: https://sy
+ stem.gotsport.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -305,17 +307,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-296@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T110000
 DTEND;TZID=America/New_York:20261114T120000
 SUMMARY:CJSL: SC Gjoa vs MKSC
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 296 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Manhattan Kickers MKSC 2014
- /2015\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4244158
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: Manhattan Kickers MKSC 2014/2015\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer

@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-273@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T113000
 DTEND;TZID=America/New_York:20260919T123000
-SUMMARY:CJSL: ALBION Brooklyn @ Brooklyn Italians
+SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn Italians
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 273 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: ALBION SC Bro
- oklyn B14/15 Premier - Williamsburg\n\nResults: 6 - 0\n\nSource: https://s
- ystem.gotsport.com/org_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\
+ n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-278@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T090000
 DTEND;TZID=America/New_York:20260926T100000
 SUMMARY:CJSL: ALBION Brooklyn vs SC Gjoa
 LOCATION:Bushwick Inlet Park - Field 1 9v9
 DESCRIPTION:Status: Rained Out\nMatch No: 278 (HOME)\nDivision: U12 (9v9) -
-  D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY:
-  SC Gjoa Strand Larsen\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4290983
+  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brookly
+ n B14/15 Premier - Williamsburg\nAWAY: SC Gjoa Strand Larsen\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -105,17 +106,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-279@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T130000
 SUMMARY:CJSL: ALBION Brooklyn vs MKSC
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 279 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- Manhattan Kickers MKSC 2014/2015\n\nResults: 1 - 8\n\nSource: https://syst
- em.gotsport.com/org_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B14/15 Premier - Williamsburg\nAWAY: Manhattan Kickers MKSC 2014/2015\n\n
+ Results: 1 - 8\n\nSource: https://system.gotsport.com/org_event/events/552
+ 06/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -145,17 +147,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T091000
 DTEND;TZID=America/New_York:20261018T101000
-SUMMARY:CJSL: ALBION Brooklyn @ French Football Academy
+SUMMARY:CJSL: ALBION Brooklyn vs French Football Academy
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 283 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: ALBION SC B
- rooklyn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsbur
+ g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -185,17 +188,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-286@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T091500
 DTEND;TZID=America/New_York:20261024T101500
 SUMMARY:CJSL: ALBION Brooklyn vs Excelsior New York Academy 2014/2015 Boys
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 286 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- Excelsior New York Academy 2014/2015 Boys\n\nSource: https://system.gotspo
- rt.com/org_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B14/15 Premier - Williamsburg\nAWAY: Excelsior New York Academy 2014/2015
+  Boys\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
+ les?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -225,17 +229,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-290@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T080000
 DTEND;TZID=America/New_York:20261031T090000
-SUMMARY:CJSL: ALBION Brooklyn @ SC Gjoa
+SUMMARY:CJSL: ALBION Brooklyn vs SC Gjoa
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 290 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: ALBION SC Brooklyn B14/15 P
- remier - Williamsburg\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -265,17 +269,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-291@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T190000
 DTEND;TZID=America/New_York:20261107T200000
-SUMMARY:CJSL: ALBION Brooklyn @ MKSC
+SUMMARY:CJSL: ALBION Brooklyn vs MKSC
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 291 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: ALBION SC Brookl
- yn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan Kickers 
+ MKSC 2014/2015\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\n
+ Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
+ 4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -305,17 +310,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-295@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T084500
 DTEND;TZID=America/New_York:20261121T094500
 SUMMARY:CJSL: ALBION Brooklyn vs French Football Academy
 LOCATION:Frank Principe Park  - East Field
 DESCRIPTION:Status: Scheduled\nMatch No: 295 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- French Football Academy 2014/15 Digne\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4290983
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B14/15 Premier - Williamsburg\nAWAY: French Football Academy 2014/15 Dign
+ e\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer

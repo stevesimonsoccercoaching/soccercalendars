@@ -25,19 +25,19 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-135@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T083000
 DTEND;TZID=America/New_York:20260919T093000
 SUMMARY:CJSL: Coney Island Cyclones vs Long Island CIty Youth Soccer Academ
  y LIC GOATS 2013/2014
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 135 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: Long Island
-  CIty Youth Soccer Academy LIC GOATS 2013/2014\n\nResults: 4 - 5\n\nSource
- : https://system.gotsport.com/org_event/events/55206/schedules?team=425983
- 2
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
+ ited Tigers 2013/14\nAWAY: Long Island CIty Youth Soccer Academy LIC GOATS
+  2013/2014\n\nResults: 4 - 5\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -67,17 +67,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-136@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260927T144500
 DTEND;TZID=America/New_York:20260927T154500
 SUMMARY:CJSL: Coney Island Cyclones vs Brooklyn City FC
 LOCATION:Bill Brown Playground - Bill Brown Playground
 DESCRIPTION:Status: Rained Out\nMatch No: 136 (HOME)\nDivision: U13 (9v9) -
-  D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: Brooklyn C
- ity FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_event/events
- /55206/schedules?team=4259832
+  D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones U
+ nited Tigers 2013/14\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: https:
+ //system.gotsport.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -107,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-140@system.gotsport.com
-DTSTAMP:20261006T013251Z
-LAST-MODIFIED:20261006T013251Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T131500
 DTEND;TZID=America/New_York:20261003T141500
-SUMMARY:❌ Canceled — CJSL: Coney Island Cyclones @ ALBION Brooklyn
+SUMMARY:❌ Canceled — CJSL: Coney Island Cyclones vs ALBION Brooklyn
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Canceled\nMatch No: 140 (AWAY)\nDivision: U13 (9v9) - D
- 3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: Coney I
- sland Cyclones United Tigers 2013/14\n\nSource: https://system.gotsport.co
- m/org_event/events/55206/schedules?team=4259832
+ 3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/14
+  Premier - Williamsburg\nAWAY: Coney Island Cyclones United Tigers 2013/14
+ \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
+ eam=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -147,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-143@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T130000
 DTEND;TZID=America/New_York:20261018T140000
 SUMMARY:CJSL: Coney Island Cyclones vs Sunset united 2014
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 143 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: Sunset unit
- ed 2014\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
- dules?team=4259832
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
+ ited Tigers 2013/14\nAWAY: Sunset united 2014\n\nSource: https://system.go
+ tsport.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -187,17 +188,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-145@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T103000
 DTEND;TZID=America/New_York:20261025T113000
-SUMMARY:CJSL: Coney Island Cyclones @ LS Select FC Raptors Elite 2014/2013
+SUMMARY:CJSL: Coney Island Cyclones vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Flushing Meadows Corona Park - Field # 9 - Field 9A
 DESCRIPTION:Status: Scheduled\nMatch No: 145 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: LS Select FC Raptors Elite 2014/2013\nAWAY: Coney Island Cyclo
- nes United Tigers 2013/14\n\nSource: https://system.gotsport.com/org_event
- /events/55206/schedules?team=4259832
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: LS Select FC Raptors Eli
+ te 2014/2013\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nSource:
+  https://system.gotsport.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -227,17 +228,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-148@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T165000
 DTEND;TZID=America/New_York:20261031T175000
-SUMMARY:CJSL: Coney Island Cyclones @ Brooklyn City FC
+SUMMARY:CJSL: Coney Island Cyclones vs Brooklyn City FC
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 148 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: Coney Island Cyclones Unit
- ed Tigers 2013/14\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4259832
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -267,17 +268,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-152@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T131500
 DTEND;TZID=America/New_York:20261107T141500
 SUMMARY:CJSL: Coney Island Cyclones vs ALBION Brooklyn
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 152 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: ALBION SC B
- rooklyn B13/14 Premier - Williamsburg\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4259832
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
+ ited Tigers 2013/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsbur
+ g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
@@ -307,17 +309,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-155@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
-SUMMARY:CJSL: Coney Island Cyclones @ Sunset united 2014
+SUMMARY:CJSL: Coney Island Cyclones vs Sunset united 2014
 LOCATION:Bush Terminal   - Bush Terminal
 DESCRIPTION:Status: Scheduled\nMatch No: 155 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Sunset united 2014\nAWAY: Coney Island Cyclones United Tigers 
- 2013/14\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
- dules?team=4259832
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Sunset united 2014\nAWAY
+ : Coney Island Cyclones United Tigers 2013/14\n\nSource: https://system.go
+ tsport.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer

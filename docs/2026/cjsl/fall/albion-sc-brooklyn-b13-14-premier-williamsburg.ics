@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-133@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T141500
 DTEND;TZID=America/New_York:20260919T151500
 SUMMARY:CJSL: ALBION Brooklyn vs Sunset united 2014
 LOCATION:Red Hook Ball Fields - Field #4
 DESCRIPTION:Status: Scheduled\nMatch No: 133 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: Sunset
-  united 2014\n\nResults: 2 - 6\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/1
+ 4 Premier - Williamsburg\nAWAY: Sunset united 2014\n\nResults: 2 - 6\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 64740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-137@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260927T093000
 DTEND;TZID=America/New_York:20260927T103000
-SUMMARY:CJSL: ALBION Brooklyn @ LS Select FC Raptors Elite 2014/2013
+SUMMARY:CJSL: ALBION Brooklyn vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Randall's Island - 91
 DESCRIPTION:Status: Rained Out\nMatch No: 137 (AWAY)\nDivision: U13 (9v9) -
-  D3\n\nHOME: LS Select FC Raptors Elite 2014/2013\nAWAY: ALBION SC Brookly
- n B13/14 Premier - Williamsburg\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4264740
+  D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: LS Select FC Raptors El
+ ite 2014/2013\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -105,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-140@system.gotsport.com
-DTSTAMP:20261006T013251Z
-LAST-MODIFIED:20261006T013251Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T131500
 DTEND;TZID=America/New_York:20261003T141500
 SUMMARY:❌ Canceled — CJSL: ALBION Brooklyn vs Coney Island Cyclones
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Canceled\nMatch No: 140 (HOME)\nDivision: U13 (9v9) - D
- 3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: Coney I
- sland Cyclones United Tigers 2013/14\n\nSource: https://system.gotsport.co
- m/org_event/events/55206/schedules?team=4264740
+ 3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/14
+  Premier - Williamsburg\nAWAY: Coney Island Cyclones United Tigers 2013/14
+ \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
+ eam=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -145,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-142@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T154500
 DTEND;TZID=America/New_York:20261017T164500
-SUMMARY:CJSL: ALBION Brooklyn @ Brooklyn City FC
+SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 142 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Brooklyn City FC F.C. B13/14\nAWAY: ALBION SC Brooklyn B13/14 
- Premier - Williamsburg\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -185,18 +188,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-147@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T180000
 DTEND;TZID=America/New_York:20261024T190000
-SUMMARY:CJSL: ALBION Brooklyn @ Long Island CIty Youth Soccer Academy LIC G
- OATS 2013/2014
+SUMMARY:CJSL: ALBION Brooklyn vs Long Island CIty Youth Soccer Academy LIC 
+ GOATS 2013/2014
 LOCATION:St. Michael’s Playground  - Small Sided A
 DESCRIPTION:Status: Scheduled\nMatch No: 147 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Long Island CIty Youth Soccer Academy LIC GOATS 2013/2014\nAWA
- Y: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nSource: https://sys
- tem.gotsport.com/org_event/events/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island CIty Youth S
+ occer Academy LIC GOATS 2013/2014\nAWAY: ALBION SC Brooklyn B13/14 Premier
+  - Williamsburg\n\nSource: https://system.gotsport.com/org_event/events/55
+ 206/schedules?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -226,17 +230,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-149@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T123000
 DTEND;TZID=America/New_York:20261031T133000
 SUMMARY:CJSL: ALBION Brooklyn vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 149 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: LS Sel
- ect FC Raptors Elite 2014/2013\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/1
+ 4 Premier - Williamsburg\nAWAY: LS Select FC Raptors Elite 2014/2013\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 64740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -266,17 +271,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-152@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T131500
 DTEND;TZID=America/New_York:20261107T141500
-SUMMARY:CJSL: ALBION Brooklyn @ Coney Island Cyclones
+SUMMARY:CJSL: ALBION Brooklyn vs Coney Island Cyclones
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 152 (AWAY)\nDivision: U13 (9v9) - 
- D3\n\nHOME: Coney Island Cyclones United Tigers 2013/14\nAWAY: ALBION SC B
- rooklyn B13/14 Premier - Williamsburg\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
+ ited Tigers 2013/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsbur
+ g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer
@@ -306,17 +312,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-154@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T130000
 DTEND;TZID=America/New_York:20261114T140000
 SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 154 (HOME)\nDivision: U13 (9v9) - 
- D3\n\nHOME: ALBION SC Brooklyn B13/14 Premier - Williamsburg\nAWAY: Brookl
- yn City FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4264740
+ D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/1
+ 4 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer

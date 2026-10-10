@@ -26,17 +26,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-179@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T103000
 DTEND;TZID=America/New_York:20260919T113000
 SUMMARY:CJSL: Met Oval vs South Brooklyn FC
 LOCATION:Red Hook Field #5 - Field #5A 9v9/7v7
 DESCRIPTION:Status: Scheduled\nMatch No: 179 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
- nAWAY: South Brooklyn FC #2 2013/2014\n\nResults: 0 - 9\n\nSource: https:/
- /system.gotsport.com/org_event/events/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
+ cademy Brooklyn 2013/14 Boys U13 Gray\nAWAY: South Brooklyn FC #2 2013/201
+ 4\n\nResults: 0 - 9\n\nSource: https://system.gotsport.com/org_event/event
+ s/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -66,17 +67,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-180@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T080000
 DTEND;TZID=America/New_York:20260926T090000
 SUMMARY:CJSL: Met Oval vs Dynamo SC
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Rained Out\nMatch No: 180 (HOME)\nDivision: U13 (9v9) -
-  D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray
- \nAWAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4265007
+  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval 
+ Academy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Dynamo Soccer Club 2014\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -106,18 +108,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-184@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T163000
 DTEND;TZID=America/New_York:20261003T173000
-SUMMARY:CJSL: Met Oval @ Brooklyn United
+SUMMARY:CJSL: Met Oval vs Brooklyn United
 LOCATION:Hamilton Metz Field - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 184 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nResults: 6 
- - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United Aca
+ demy B2013/2014 Park Slope Select\nAWAY: Metropolitan Oval Academy Brookly
+ n 2013/14 Boys U13 Gray\n\nResults: 6 - 0\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -147,17 +149,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-187@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T134500
 DTEND;TZID=America/New_York:20261018T144500
 SUMMARY:CJSL: Met Oval vs SC Gjoa
 LOCATION:Met Oval Field - Met Oval Field
 DESCRIPTION:Status: Scheduled\nMatch No: 187 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
- nAWAY: SC Gjoa Ajer\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
+ cademy Brooklyn 2013/14 Boys U13 Gray\nAWAY: SC Gjoa Ajer\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -187,18 +189,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-189@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T100000
 DTEND;TZID=America/New_York:20261024T110000
-SUMMARY:CJSL: Met Oval @ NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: Met Oval vs NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
 DESCRIPTION:Status: Scheduled\nMatch No: 189 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: NY Kids S.C. 2013/2014 boys\nAWAY: Metropolitan Oval Acad
- emy Brooklyn 2013/14 Boys U13 Gray\n\nSource: https://system.gotsport.com/
- org_event/events/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: NY Kids S.C. 2013/2
+ 014 boys\nAWAY: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n
+ \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
+ m=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -228,17 +231,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-192@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261101T170000
 DTEND;TZID=America/New_York:20261101T180000
-SUMMARY:CJSL: Met Oval @ Dynamo SC
+SUMMARY:CJSL: Met Oval vs Dynamo SC
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 192 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Dynamo Soccer Club 2014\nAWAY: Metropolitan Oval Academy 
- Brooklyn 2013/14 Boys U13 Gray\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
+ 2014\nAWAY: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 65007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -268,17 +272,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-196@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T103500
 DTEND;TZID=America/New_York:20261107T113500
 SUMMARY:CJSL: Met Oval vs Brooklyn United
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 196 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
- nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
+ cademy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Brooklyn United Academy B2013
+ /2014 Park Slope Select\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
@@ -308,17 +313,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-199@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
-SUMMARY:CJSL: Met Oval @ SC Gjoa
+SUMMARY:CJSL: Met Oval vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 199 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: SC Gjoa Ajer\nAWAY: Metropolitan Oval Academy Brooklyn 20
- 13/14 Boys U13 Gray\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4265007
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY:
+  Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer

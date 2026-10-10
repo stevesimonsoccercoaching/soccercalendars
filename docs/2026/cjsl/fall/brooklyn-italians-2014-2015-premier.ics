@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-273@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T113000
 DTEND;TZID=America/New_York:20260919T123000
 SUMMARY:CJSL: Brooklyn Italians vs ALBION Brooklyn
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 273 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: ALBION SC Bro
- oklyn B14/15 Premier - Williamsburg\n\nResults: 6 - 0\n\nSource: https://s
- ystem.gotsport.com/org_event/events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\
+ n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-277@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T184000
 DTEND;TZID=America/New_York:20260926T194000
-SUMMARY:CJSL: Brooklyn Italians @ MKSC
+SUMMARY:CJSL: Brooklyn Italians vs MKSC
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Rained Out\nMatch No: 277 (AWAY)\nDivision: U12 (9v9) -
-  D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: Brooklyn Italia
- ns 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/even
- ts/55206/schedules?team=4240340
+  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan Kickers
+  MKSC 2014/2015\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: http
+ s://system.gotsport.com/org_event/events/55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -105,17 +106,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-280@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T090000
 DTEND;TZID=America/New_York:20261004T100000
 SUMMARY:CJSL: Brooklyn Italians vs French Football Academy
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 280 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: French Footba
- ll Academy 2014/15 Digne\n\nResults: 2 - 7\n\nSource: https://system.gotsp
- ort.com/org_event/events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: French Football Academy 2014/15 Digne\n\nResults:
+  2 - 7\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
+ ules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -145,17 +147,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-282@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T120000
 DTEND;TZID=America/New_York:20261018T130000
-SUMMARY:CJSL: Brooklyn Italians @ Excelsior New York Academy 2014/2015 Boys
+SUMMARY:CJSL: Brooklyn Italians vs Excelsior New York Academy 2014/2015 Boy
+ s
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 282 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: Brookly
- n Italians 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
+  Academy 2014/2015 Boys\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4240
+ 340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -185,17 +189,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-287@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T103000
 DTEND;TZID=America/New_York:20261024T113000
-SUMMARY:CJSL: Brooklyn Italians @ SC Gjoa
+SUMMARY:CJSL: Brooklyn Italians vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 287 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Brooklyn Italians 2014/2015
-  Premier\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -225,17 +229,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-289@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261101T101500
 DTEND;TZID=America/New_York:20261101T111500
 SUMMARY:CJSL: Brooklyn Italians vs MKSC
 LOCATION:Calvert Vaux Park - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 289 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: Manhattan Kic
- kers MKSC 2014/2015\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: Manhattan Kickers MKSC 2014/2015\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -265,17 +269,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-292@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T083000
 DTEND;TZID=America/New_York:20261108T093000
-SUMMARY:CJSL: Brooklyn Italians @ French Football Academy
+SUMMARY:CJSL: Brooklyn Italians vs French Football Academy
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 292 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Brooklyn It
- alians 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer
@@ -305,18 +309,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-294@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T090000
 DTEND;TZID=America/New_York:20261115T100000
 SUMMARY:CJSL: Brooklyn Italians vs Excelsior New York Academy 2014/2015 Boy
  s
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 294 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: Excelsior New
-  York Academy 2014/2015 Boys\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: Excelsior New York Academy 2014/2015 Boys\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4240
+ 340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer

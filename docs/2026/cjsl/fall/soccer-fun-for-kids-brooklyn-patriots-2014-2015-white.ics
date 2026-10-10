@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-370@system.gotsport.com
-DTSTAMP:20261006T005929Z
-LAST-MODIFIED:20261006T005929Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T160000
 DTEND;TZID=America/New_York:20260920T170000
-SUMMARY:CJSL: SFFK @ DV7 NY B2014/15
+SUMMARY:CJSL: SFFK vs DV7 NY B2014/15
 LOCATION:Juniper Park - Brennan Field (11v11\,9v9)
 DESCRIPTION:Status: Scheduled\nMatch No: 370 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: DV7 NY B2014/15\nAWAY: Soccer Fun for Kids / Brooklyn Pa
- triots 2014-2015 White\n\nResults: 1 - 3\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: DV7 NY B2014/15\nA
+ WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\n\nResults: 1
+  - 3\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-373@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T160000
 DTEND;TZID=America/New_York:20260926T170000
 SUMMARY:CJSL: SFFK vs Brooklyn City FC
 LOCATION:Prospect Park Parade Grounds Field 10B - Parade Grounds Field 10B
 DESCRIPTION:Status: Rained Out\nMatch No: 373 (HOME)\nDivision: U12 (9v9) -
-  D3 Cosmo\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White
- \nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nSource: https://system.gotspo
- rt.com/org_event/events/55206/schedules?team=4262199
+  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Ki
+ ds / Brooklyn Patriots 2014-2015 White\nAWAY: Brooklyn City FC F.C. B14/15
+  Blue\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
+ les?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -105,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-375@system.gotsport.com
-DTSTAMP:20261006T020115Z
-LAST-MODIFIED:20261006T020115Z
-SEQUENCE:6
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261003T130000
 DTEND;TZID=America/New_York:20261003T140000
-SUMMARY:CJSL: SFFK @ South Brooklyn FC
+SUMMARY:CJSL: SFFK vs South Brooklyn FC
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 375 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: South Brooklyn Fc 2014/2015\nAWAY: Soccer Fun for Kids /
-  Brooklyn Patriots 2014-2015 White\n\nResults: 1 - 0\n\nSource: https://sy
- stem.gotsport.com/org_event/events/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 
+ 2014/2015\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\n
+ \nResults: 1 - 0\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -145,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-380@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T121500
 DTEND;TZID=America/New_York:20261018T131500
 SUMMARY:CJSL: SFFK vs SkillsU FC
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 380 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\
- nAWAY: SkillsU FC U12\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 White\nAWAY: SkillsU FC U12\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -185,17 +188,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-381@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
 SUMMARY:CJSL: SFFK vs FA Euro
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 381 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\
- nAWAY: FA Euro New York 2014/2015 Pre-MLS III\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 White\nAWAY: FA Euro New York 2014/2015 Pr
+ e-MLS III\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -225,17 +229,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-385@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
-SUMMARY:CJSL: SFFK @ Brooklyn City FC
+SUMMARY:CJSL: SFFK vs Brooklyn City FC
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 385 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: Brooklyn City FC F.C. B14/15 Blue\nAWAY: Soccer Fun for 
- Kids / Brooklyn Patriots 2014-2015 White\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
+ .C. B14/15 Blue\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 W
+ hite\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -265,17 +270,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-387@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T121500
 DTEND;TZID=America/New_York:20261108T131500
 SUMMARY:CJSL: SFFK vs South Brooklyn FC
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 387 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\
- nAWAY: South Brooklyn Fc 2014/2015\n\nSource: https://system.gotsport.com/
- org_event/events/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2014-2015 White\nAWAY: South Brooklyn Fc 2014/2015\n
+ \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
+ m=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer
@@ -305,17 +311,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-392@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T141500
 DTEND;TZID=America/New_York:20261114T151500
-SUMMARY:CJSL: SFFK @ SkillsU FC
+SUMMARY:CJSL: SFFK vs SkillsU FC
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 392 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: SkillsU FC U12\nAWAY: Soccer Fun for Kids / Brooklyn Pat
- riots 2014-2015 White\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4262199
+ D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SkillsU FC U12\nAW
+ AY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4262199
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  99
 CATEGORIES:CJSL,Soccer

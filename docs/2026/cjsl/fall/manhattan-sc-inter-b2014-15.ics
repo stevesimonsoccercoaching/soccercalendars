@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-423@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
 SUMMARY:CJSL: Manhattan SC vs Rebels Legacy
 LOCATION:College of Mt. St. Vincent - Marillac Field
 DESCRIPTION:Status: Scheduled\nMatch No: 423 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: Rebels Legacy Soccer C
- lub 2014\\2015\n\nResults: 8 - 2\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
+ B2014/15\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nResults: 8 - 2\n\n
+ Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
+ 4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-424@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T133000
 DTEND;TZID=America/New_York:20260926T143000
 SUMMARY:CJSL: Manhattan SC vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Randall's Island - 10 - Icahn
 DESCRIPTION:Status: Rained Out\nMatch No: 424 (HOME)\nDivision: U12 (9v9) -
-  D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: UNITED CYCLONES FC Ge
- o 2014/15\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
- hedules?team=4239148
+  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter
+  B2014/15\nAWAY: UNITED CYCLONES FC Geo 2014/15\n\nSource: https://system.
+ gotsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -105,18 +106,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-428@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
-SUMMARY:CJSL: Manhattan SC @ FC Copa Academy Brooklyn B14/15 Black
+SUMMARY:CJSL: Manhattan SC vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Aviator Sports & Events Center - Aviator Sports & Events Center Fi
  eld #2A
 DESCRIPTION:Status: Scheduled\nMatch No: 428 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: FC Copa Academy Brooklyn B14/15 Black\nAWAY: Manhattan SC
-  Inter B2014/15\n\nResults: 8 - 5\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4239148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FC Copa Academy Bro
+ oklyn B14/15 Black\nAWAY: Manhattan SC Inter B2014/15\n\nResults: 8 - 5\n\
+ nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
+ =4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -146,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-431@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:CJSL: Manhattan SC vs SC Gjoa
 LOCATION:
 DESCRIPTION:Status: Scheduled\nMatch No: 431 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: SC Gjoa Nyland\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4239
- 148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
+ B2014/15\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -166,17 +168,17 @@ X-GOTSPORT-STATUS:Scheduled
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-433@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T083000
 DTEND;TZID=America/New_York:20261024T093000
-SUMMARY:CJSL: Manhattan SC @ River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: Manhattan SC vs River Island FC 2015/2016 RAVENS
 LOCATION:Roosevelt Island- Octagon Field - Octagon Field
 DESCRIPTION:Status: Scheduled\nMatch No: 433 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: River Island FC 2015/2016 RAVENS\nAWAY: Manhattan SC Inte
- r B2014/15\n\nSource: https://system.gotsport.com/org_event/events/55206/s
- chedules?team=4239148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: River Island FC 201
+ 5/2016 RAVENS\nAWAY: Manhattan SC Inter B2014/15\n\nSource: https://system
+ .gotsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -206,17 +208,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-436@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T160000
 DTEND;TZID=America/New_York:20261031T170000
-SUMMARY:CJSL: Manhattan SC @ UNITED CYCLONES FC Geo 2014/15
+SUMMARY:CJSL: Manhattan SC vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 436 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: UNITED CYCLONES FC Geo 2014/15\nAWAY: Manhattan SC Inter 
- B2014/15\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4239148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: UNITED CYCLONES FC 
+ Geo 2014/15\nAWAY: Manhattan SC Inter B2014/15\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -246,17 +248,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-440@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T163000
 DTEND;TZID=America/New_York:20261108T173000
 SUMMARY:CJSL: Manhattan SC vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Randall's Island - 10 - Icahn
 DESCRIPTION:Status: Scheduled\nMatch No: 440 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: FC Copa Academy Brookl
- yn B14/15 Black\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4239148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
+ B2014/15\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nSource: https://s
+ ystem.gotsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -286,17 +288,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-443@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
-SUMMARY:CJSL: Manhattan SC @ SC Gjoa
+SUMMARY:CJSL: Manhattan SC vs SC Gjoa
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: Manhattan SC Inter B2014/15\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4239
- 148
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
+ Y: Manhattan SC Inter B2014/15\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer

@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-98@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T101500
 DTEND;TZID=America/New_York:20260920T111500
 SUMMARY:CJSL: SC Gjoa vs New York United Soccer Academy NYUSA 2013/14 CJSL
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 98 (HOME)\nDivision: U13 (9v9) - D
- 1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: New York United Soccer Academy 
- NYUSA 2013/14 CJSL\n\nResults: 1 - 5\n\nSource: https://system.gotsport.co
- m/org_event/events/55206/schedules?team=4244183
+ 1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen\
+ nAWAY: New York United Soccer Academy NYUSA 2013/14 CJSL\n\nResults: 1 - 5
+ \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
+ eam=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-105@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: SC Gjoa vs Eastern Queens FC - 2013/2014 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 105 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: Eastern Queens FC - 2013/2014 
- Boys\n\nResults: 0 - 8\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
+ \nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nResults: 0 - 8\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -105,17 +106,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-104@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T083000
 DTEND;TZID=America/New_York:20261017T093000
-SUMMARY:CJSL: SC Gjoa @ Long Island City Soccer Club 2013/2014
+SUMMARY:CJSL: SC Gjoa vs Long Island City Soccer Club 2013/2014
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 104 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Long Island City Soccer Club 2013/2014\nAWAY: SC Gjoa
-  Johnsen\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island Cit
+ y Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -145,17 +146,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-113@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T160000
 DTEND;TZID=America/New_York:20261024T170000
-SUMMARY:CJSL: SC Gjoa @ UNITED CYCLONES FC Geo -2013/14
+SUMMARY:CJSL: SC Gjoa vs UNITED CYCLONES FC Geo -2013/14
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 113 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: UNITED CYCLONES FC Geo -2013/14\nAWAY: SC Gjoa Johnse
- n\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: UNITED CYCLONES
+  FC Geo -2013/14\nAWAY: SC Gjoa Johnsen\n\nSource: https://system.gotsport
+ .com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -185,16 +186,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-120@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T150000
 DTEND;TZID=America/New_York:20261031T160000
 SUMMARY:CJSL: SC Gjoa vs ARB SC U1314
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 120 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: ARB SC U1314\n\nSource: https:
- //system.gotsport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
+ \nAWAY: ARB SC U1314\n\nSource: https://system.gotsport.com/org_event/even
+ ts/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -224,17 +226,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-122@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T120000
 DTEND;TZID=America/New_York:20261107T130000
-SUMMARY:CJSL: SC Gjoa @ Chernomorets Black Sea 2014
+SUMMARY:CJSL: SC Gjoa vs Chernomorets Black Sea 2014
 LOCATION:Scarangella Park  - Sacrangella Park
 DESCRIPTION:Status: Scheduled\nMatch No: 122 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Chernomorets Black Sea 2014\nAWAY: SC Gjoa Johnsen\n\
- nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
- =4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Chernomorets Bl
+ ack Sea 2014\nAWAY: SC Gjoa Johnsen\n\nSource: https://system.gotsport.com
+ /org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -264,17 +266,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-127@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
 SUMMARY:CJSL: SC Gjoa vs Brooklyn Premier
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: Brooklyn Premier F.C. 14/13 Re
- gional\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
- ules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
+ \nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.got
+ sport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -304,17 +306,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-131@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261122T110000
 DTEND;TZID=America/New_York:20261122T120000
-SUMMARY:CJSL: SC Gjoa @ Soccer Fun for Kids / Brooklyn Patriots 2013-2014
+SUMMARY:CJSL: SC Gjoa vs Soccer Fun for Kids / Brooklyn Patriots 2013-2014
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 131 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\nAW
- AY: SC Gjoa Johnsen\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for 
+ Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer

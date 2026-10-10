@@ -25,18 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-421@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T123000
 DTEND;TZID=America/New_York:20260919T133000
-SUMMARY:CJSL: SC Gjoa @ FC Copa Academy Brooklyn B14/15 Black
+SUMMARY:CJSL: SC Gjoa vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Aviator Sports & Events Center - Aviator Sports & Events Center Fi
  eld #2
 DESCRIPTION:Status: Scheduled\nMatch No: 421 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: FC Copa Academy Brooklyn B14/15 Black\nAWAY: SC Gjoa Nyla
- nd\n\nResults: 7 - 2\n\nSource: https://system.gotsport.com/org_event/even
- ts/55206/schedules?team=4244169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FC Copa Academy Bro
+ oklyn B14/15 Black\nAWAY: SC Gjoa Nyland\n\nResults: 7 - 2\n\nSource: http
+ s://system.gotsport.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -66,17 +66,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-427@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T093000
 DTEND;TZID=America/New_York:20261004T103000
 SUMMARY:CJSL: SC Gjoa vs River Island FC 2015/2016 RAVENS
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 427 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: River Island FC 2015/2016 RAVENS\n\
- nResults: 1 - 7\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4244169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
+ Y: River Island FC 2015/2016 RAVENS\n\nResults: 1 - 7\n\nSource: https://s
+ ystem.gotsport.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -106,17 +106,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-431@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
-SUMMARY:CJSL: SC Gjoa @ Manhattan SC
+SUMMARY:CJSL: SC Gjoa vs Manhattan SC
 LOCATION:
 DESCRIPTION:Status: Scheduled\nMatch No: 431 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: SC Gjoa Nyland\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4244
- 169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
+ B2014/15\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -126,17 +126,17 @@ X-GOTSPORT-STATUS:Scheduled
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-434@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T090000
 DTEND;TZID=America/New_York:20261025T100000
 SUMMARY:CJSL: SC Gjoa vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 434 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: UNITED CYCLONES FC Geo 2014/15\n\nS
- ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
- 244169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
+ Y: UNITED CYCLONES FC Geo 2014/15\n\nSource: https://system.gotsport.com/o
+ rg_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -166,17 +166,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-439@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T083000
 DTEND;TZID=America/New_York:20261107T093000
-SUMMARY:CJSL: SC Gjoa @ River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: SC Gjoa vs River Island FC 2015/2016 RAVENS
 LOCATION:Roosevelt Island- Octagon Field - Octagon Field
 DESCRIPTION:Status: Scheduled\nMatch No: 439 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: River Island FC 2015/2016 RAVENS\nAWAY: SC Gjoa Nyland\n\
- nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
- =4244169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: River Island FC 201
+ 5/2016 RAVENS\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport.com
+ /org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -206,17 +206,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-443@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
 SUMMARY:CJSL: SC Gjoa vs Manhattan SC
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: Manhattan SC Inter B2014/15\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4244
- 169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
+ Y: Manhattan SC Inter B2014/15\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -246,17 +246,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-438@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
-SUMMARY:CJSL: SC Gjoa @ Rebels Legacy
+SUMMARY:CJSL: SC Gjoa vs Rebels Legacy
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 438 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Rebels Legacy Soccer Club 2014\\2015\nAWAY: SC Gjoa Nylan
- d\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4244169
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
+ r Club 2014\\2015\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport
+ .com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -286,17 +286,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-426@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261213T083000
 DTEND;TZID=America/New_York:20261213T093000
 SUMMARY:CJSL: SC Gjoa vs Rebels Legacy
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 426 (HOME)\nDivision: U12 (9v9) 
- - D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: Rebels Legacy Soccer Club 2014\\2
- 015\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4244169
+ - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nA
+ WAY: Rebels Legacy Soccer Club 2014\\2015\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer

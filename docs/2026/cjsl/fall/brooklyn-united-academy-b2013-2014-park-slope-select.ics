@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-177@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T110000
 DTEND;TZID=America/New_York:20260920T120000
 SUMMARY:CJSL: Brooklyn United vs SC Gjoa
 LOCATION:Dyker Beach Park -  Dyker Turf Field B Small Sided (B)
 DESCRIPTION:Status: Rescheduled\nMatch No: 177 (HOME)\nDivision: U13 (9v9) 
- - D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nA
- WAY: SC Gjoa Ajer\n\nResults: 3 - 2\n\nSource: https://system.gotsport.com
- /org_event/events/55206/schedules?team=4216813
+ - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United A
+ cademy B2013/2014 Park Slope Select\nAWAY: SC Gjoa Ajer\n\nResults: 3 - 2\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -65,18 +66,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-181@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T103500
 DTEND;TZID=America/New_York:20260926T113500
-SUMMARY:CJSL: Brooklyn United @ NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: Brooklyn United vs NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
 DESCRIPTION:Status: Rained Out\nMatch No: 181 (AWAY)\nDivision: U13 (9v9) -
-  D4 City\n\nHOME: NY Kids S.C. 2013/2014 boys\nAWAY: Brooklyn United Acade
- my B2013/2014 Park Slope Select\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4216813
+  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: NY Kids S.C. 2013/
+ 2014 boys\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nS
+ ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
+ 216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -106,18 +108,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-184@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T163000
 DTEND;TZID=America/New_York:20261003T173000
 SUMMARY:CJSL: Brooklyn United vs Met Oval
 LOCATION:Hamilton Metz Field - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 184 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nResults: 6 
- - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4216813
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United Aca
+ demy B2013/2014 Park Slope Select\nAWAY: Metropolitan Oval Academy Brookly
+ n 2013/14 Boys U13 Gray\n\nResults: 6 - 0\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -147,17 +149,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-186@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
-SUMMARY:CJSL: Brooklyn United @ Dynamo SC
+SUMMARY:CJSL: Brooklyn United vs Dynamo SC
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 186 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Dynamo Soccer Club 2014\nAWAY: Brooklyn United Academy B2
- 013/2014 Park Slope Select\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4216813
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
+ 2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nSource
+ : https://system.gotsport.com/org_event/events/55206/schedules?team=421681
+ 3
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -187,17 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-191@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T173000
 DTEND;TZID=America/New_York:20261024T183000
-SUMMARY:CJSL: Brooklyn United @ South Brooklyn FC
+SUMMARY:CJSL: Brooklyn United vs South Brooklyn FC
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 191 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: South Brooklyn FC #2 2013/2014\nAWAY: Brooklyn United Aca
- demy B2013/2014 Park Slope Select\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4216813
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #
+ 2 2013/2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\
+ nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
+ =4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -227,17 +231,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-193@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T163000
 DTEND;TZID=America/New_York:20261031T173000
 SUMMARY:CJSL: Brooklyn United vs NY Kids S.C. 2013/2014 boys
 LOCATION:Hamilton Metz Field - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 193 (HOME)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: NY Kids S.C. 2013/2014 boys\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4216813
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United Aca
+ demy B2013/2014 Park Slope Select\nAWAY: NY Kids S.C. 2013/2014 boys\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 16813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -267,17 +272,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-196@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261107T103500
 DTEND;TZID=America/New_York:20261107T113500
-SUMMARY:CJSL: Brooklyn United @ Met Oval
+SUMMARY:CJSL: Brooklyn United vs Met Oval
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 196 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\n\nHOME: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
- nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4216813
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
+ cademy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Brooklyn United Academy B2013
+ /2014 Park Slope Select\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
@@ -307,17 +313,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-198@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T123000
 DTEND;TZID=America/New_York:20261115T133000
 SUMMARY:CJSL: Brooklyn United vs Dynamo SC
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rescheduled\nMatch No: 198 (HOME)\nDivision: U13 (9v9) 
- - D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nA
- WAY: Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4216813
+ - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United A
+ cademy B2013/2014 Park Slope Select\nAWAY: Dynamo Soccer Club 2014\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4216
+ 813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer

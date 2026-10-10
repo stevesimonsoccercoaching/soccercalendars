@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-275@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T163000
 DTEND;TZID=America/New_York:20260919T173000
 SUMMARY:CJSL: French Football Academy vs SC Gjoa
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 275 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: SC Gjoa Str
- and Larsen\n\nResults: 0 - 3\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: SC Gjoa Strand Larsen\n\nResults: 0 - 3\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4206
+ 689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-280@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T090000
 DTEND;TZID=America/New_York:20261004T100000
-SUMMARY:CJSL: French Football Academy @ Brooklyn Italians
+SUMMARY:CJSL: French Football Academy vs Brooklyn Italians
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 280 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: French Footba
- ll Academy 2014/15 Digne\n\nResults: 2 - 7\n\nSource: https://system.gotsp
- ort.com/org_event/events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: French Football Academy 2014/15 Digne\n\nResults:
+  2 - 7\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
+ ules?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -105,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T091000
 DTEND;TZID=America/New_York:20261018T101000
 SUMMARY:CJSL: French Football Academy vs ALBION Brooklyn
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 283 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: ALBION SC B
- rooklyn B14/15 Premier - Williamsburg\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsbur
+ g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -145,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-285@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T190000
 DTEND;TZID=America/New_York:20261024T200000
-SUMMARY:CJSL: French Football Academy @ MKSC
+SUMMARY:CJSL: French Football Academy vs MKSC
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 285 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Manhattan Kickers MKSC 2014/2015\nAWAY: French Football 
- Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan Kickers 
+ MKSC 2014/2015\nAWAY: French Football Academy 2014/15 Digne\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -185,18 +188,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-288@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T130000
 DTEND;TZID=America/New_York:20261031T140000
-SUMMARY:CJSL: French Football Academy @ Excelsior New York Academy 2014/201
- 5 Boys
+SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
+ 15 Boys
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 288 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: Excelsior New York Academy 2014/2015 Boys\nAWAY: French 
- Football Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
+  Academy 2014/2015 Boys\nAWAY: French Football Academy 2014/15 Digne\n\nSo
+ urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
+ 06689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -226,17 +230,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-292@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T083000
 DTEND;TZID=America/New_York:20261108T093000
 SUMMARY:CJSL: French Football Academy vs Brooklyn Italians
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 292 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Brooklyn It
- alians 2014/2015 Premier\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
+ ademy 2014/15 Digne\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -266,17 +270,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-295@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T084500
 DTEND;TZID=America/New_York:20261121T094500
-SUMMARY:CJSL: French Football Academy @ ALBION Brooklyn
+SUMMARY:CJSL: French Football Academy vs ALBION Brooklyn
 LOCATION:Frank Principe Park  - East Field
 DESCRIPTION:Status: Scheduled\nMatch No: 295 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- French Football Academy 2014/15 Digne\n\nSource: https://system.gotsport.c
- om/org_event/events/55206/schedules?team=4206689
+ D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B14/15 Premier - Williamsburg\nAWAY: French Football Academy 2014/15 Dign
+ e\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -306,18 +311,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-276@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261206T150000
 DTEND;TZID=America/New_York:20261206T160000
 SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
  15 Boys
 LOCATION:Randall's Island - 72
 DESCRIPTION:Status: Rescheduled\nMatch No: 276 (HOME)\nDivision: U12 (9v9) 
- - D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Excelsior
-  New York Academy 2014/2015 Boys\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4206689
+ - D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football 
+ Academy 2014/15 Digne\nAWAY: Excelsior New York Academy 2014/2015 Boys\n\n
+ Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
+ 4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer

@@ -25,9 +25,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-511@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T160000
 DTEND;TZID=America/New_York:20260919T170000
 SUMMARY:CJSL: SFFK vs Griffin United Soccer Club Elite Brooklyn Boys - 2015
@@ -35,10 +35,10 @@ SUMMARY:CJSL: SFFK vs Griffin United Soccer Club Elite Brooklyn Boys - 2015
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 511 (HOME)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\nAWAY: 
- Griffin United Soccer Club Elite Brooklyn Boys - 2015/2016\n\nResults: 1 -
-  9\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules
- ?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kids
+  / Brooklyn Patriots 2015-2016\nAWAY: Griffin United Soccer Club Elite Bro
+ oklyn Boys - 2015/2016\n\nResults: 1 - 9\n\nSource: https://system.gotspor
+ t.com/org_event/events/55206/schedules?team=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -68,17 +68,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-512@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260927T110000
 DTEND;TZID=America/New_York:20260927T120000
 SUMMARY:CJSL: SFFK vs Stage10 FC Boys Leopards 2015/2016
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Rained Out\nMatch No: 512 (HOME)\nDivision: U11 (9v9) -
-  D3 City\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\nAWAY:
-  Stage10 FC Boys Leopards 2015/2016\n\nSource: https://system.gotsport.com
- /org_event/events/55206/schedules?team=4262140
+  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
+ s / Brooklyn Patriots 2015-2016\nAWAY: Stage10 FC Boys Leopards 2015/2016\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -108,17 +109,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-516@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T142000
 DTEND;TZID=America/New_York:20261004T152000
-SUMMARY:CJSL: SFFK @ South Brooklyn Fc 2015/2016
+SUMMARY:CJSL: SFFK vs South Brooklyn Fc 2015/2016
 LOCATION:Bush Terminal Park - Bush Terminal #2 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 516 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: South Brooklyn Fc 2015/2016\nAWAY: Soccer Fun for Kids / 
- Brooklyn Patriots 2015-2016\n\nResults: 4 - 0\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 2
+ 015/2016\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\n\nResul
+ ts: 4 - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -148,17 +150,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-519@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
 SUMMARY:CJSL: SFFK vs Brooklyn City FC
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 519 (HOME)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\nAWAY: 
- Brooklyn City FC F.C. B15/16 Blue\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kids
+  / Brooklyn Patriots 2015-2016\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n\
+ nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
+ =4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -188,17 +191,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-521@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T081500
 DTEND;TZID=America/New_York:20261024T091500
-SUMMARY:CJSL: SFFK @ ALBION Brooklyn
+SUMMARY:CJSL: SFFK vs ALBION Brooklyn
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 521 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: ALBION SC Brooklyn B15/16 Premier - Williamsburg\nAWAY: S
- occer Fun for Kids / Brooklyn Patriots 2015-2016\n\nSource: https://system
- .gotsport.com/org_event/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
+ B15/16 Premier - Williamsburg\nAWAY: Soccer Fun for Kids / Brooklyn Patrio
+ ts 2015-2016\n\nSource: https://system.gotsport.com/org_event/events/55206
+ /schedules?team=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -228,17 +232,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-524@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T100000
 DTEND;TZID=America/New_York:20261031T110000
-SUMMARY:CJSL: SFFK @ Stage10 FC Boys Leopards 2015/2016
+SUMMARY:CJSL: SFFK vs Stage10 FC Boys Leopards 2015/2016
 LOCATION:Randall's Island - 7
 DESCRIPTION:Status: Scheduled\nMatch No: 524 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: Stage10 FC Boys Leopards 2015/2016\nAWAY: Soccer Fun for 
- Kids / Brooklyn Patriots 2015-2016\n\nSource: https://system.gotsport.com/
- org_event/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Stage10 FC Boys Leo
+ pards 2015/2016\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\n
+ \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
+ m=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -268,17 +273,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-528@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T110000
 DTEND;TZID=America/New_York:20261108T120000
 SUMMARY:CJSL: SFFK vs South Brooklyn Fc 2015/2016
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 528 (HOME)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\nAWAY: 
- South Brooklyn Fc 2015/2016\n\nSource: https://system.gotsport.com/org_eve
- nt/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kids
+  / Brooklyn Patriots 2015-2016\nAWAY: South Brooklyn Fc 2015/2016\n\nSourc
+ e: https://system.gotsport.com/org_event/events/55206/schedules?team=42621
+ 40
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -308,17 +314,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-531@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T150000
 DTEND;TZID=America/New_York:20261114T160000
-SUMMARY:CJSL: SFFK @ Brooklyn City FC
+SUMMARY:CJSL: SFFK vs Brooklyn City FC
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Scheduled\nMatch No: 531 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\n\nHOME: Brooklyn City FC F.C. B15/16 Blue\nAWAY: Soccer Fun for K
- ids / Brooklyn Patriots 2015-2016\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4262140
+ D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.
+ C. B15/16 Blue\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\n\
+ nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
+ =4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer

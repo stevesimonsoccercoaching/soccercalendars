@@ -25,17 +25,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-100@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T180000
 DTEND;TZID=America/New_York:20260920T190000
-SUMMARY:CJSL: Brooklyn Premier @ ARB SC U1314
+SUMMARY:CJSL: Brooklyn Premier vs ARB SC U1314
 LOCATION:Frank Principe Park  - Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 100 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: ARB SC U1314\nAWAY: Brooklyn Premier F.C. 14/13 Regio
- nal\n\nResults: 3 - 6\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ARB SC U1314\nA
+ WAY: Brooklyn Premier F.C. 14/13 Regional\n\nResults: 3 - 6\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -65,19 +65,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-109@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
-SUMMARY:CJSL: Brooklyn Premier @ Soccer Fun for Kids / Brooklyn Patriots 20
- 13-2014
+SUMMARY:CJSL: Brooklyn Premier vs Soccer Fun for Kids / Brooklyn Patriots 2
+ 013-2014
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\nAW
- AY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for 
+ Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Regi
+ onal\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -107,17 +108,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-101@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
 SUMMARY:CJSL: Brooklyn Premier vs Chernomorets Black Sea 2014
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Rescheduled\nMatch No: 101 (HOME)\nDivision: U13 (9v9) 
- - D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: Chernom
- orets Black Sea 2014\n\nSource: https://system.gotsport.com/org_event/even
- ts/55206/schedules?team=4225977
+ - D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Prem
+ ier F.C. 14/13 Regional\nAWAY: Chernomorets Black Sea 2014\n\nSource: http
+ s://system.gotsport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -147,18 +148,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-116@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
 SUMMARY:CJSL: Brooklyn Premier vs New York United Soccer Academy NYUSA 2013
  /14 CJSL
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 116 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: New York 
- United Soccer Academy NYUSA 2013/14 CJSL\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie
+ r F.C. 14/13 Regional\nAWAY: New York United Soccer Academy NYUSA 2013/14 
+ CJSL\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -188,17 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-118@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261101T150000
 DTEND;TZID=America/New_York:20261101T160000
-SUMMARY:CJSL: Brooklyn Premier @ Long Island City Soccer Club 2013/2014
+SUMMARY:CJSL: Brooklyn Premier vs Long Island City Soccer Club 2013/2014
 LOCATION:Astoria Park  - Astoria Park
 DESCRIPTION:Status: Scheduled\nMatch No: 118 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Long Island City Soccer Club 2013/2014\nAWAY: Brookly
- n Premier F.C. 14/13 Regional\n\nSource: https://system.gotsport.com/org_e
- vent/events/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island Cit
+ y Soccer Club 2013/2014\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSou
+ rce: https://system.gotsport.com/org_event/events/55206/schedules?team=422
+ 5977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -228,17 +231,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-123@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T110000
 DTEND;TZID=America/New_York:20261108T120000
 SUMMARY:CJSL: Brooklyn Premier vs Eastern Queens FC - 2013/2014 Boys
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 123 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: Eastern Q
- ueens FC - 2013/2014 Boys\n\nSource: https://system.gotsport.com/org_event
- /events/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie
+ r F.C. 14/13 Regional\nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nSource:
+  https://system.gotsport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -268,17 +271,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-127@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
-SUMMARY:CJSL: Brooklyn Premier @ SC Gjoa
+SUMMARY:CJSL: Brooklyn Premier vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: Brooklyn Premier F.C. 14/13 Re
- gional\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
- ules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
+ \nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.got
+ sport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -308,17 +311,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-130@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T100000
 DTEND;TZID=America/New_York:20261121T110000
 SUMMARY:CJSL: Brooklyn Premier vs UNITED CYCLONES FC Geo -2013/14
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 130 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: UNITED CY
- CLONES FC Geo -2013/14\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie
+ r F.C. 14/13 Regional\nAWAY: UNITED CYCLONES FC Geo -2013/14\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer

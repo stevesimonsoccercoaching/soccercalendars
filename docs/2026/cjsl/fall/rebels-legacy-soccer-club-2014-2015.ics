@@ -25,17 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-423@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
-SUMMARY:CJSL: Rebels Legacy @ Manhattan SC
+SUMMARY:CJSL: Rebels Legacy vs Manhattan SC
 LOCATION:College of Mt. St. Vincent - Marillac Field
 DESCRIPTION:Status: Scheduled\nMatch No: 423 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Manhattan SC Inter B2014/15\nAWAY: Rebels Legacy Soccer C
- lub 2014\\2015\n\nResults: 8 - 2\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
+ B2014/15\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nResults: 8 - 2\n\n
+ Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
+ 4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -65,17 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-432@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T083000
 DTEND;TZID=America/New_York:20261003T093000
-SUMMARY:CJSL: Rebels Legacy @ River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: Rebels Legacy vs River Island FC 2015/2016 RAVENS
 LOCATION:Jack McManus Field - Jack McManus/Octagon Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 432 (AWAY)\nDivision: U12 (9v9) 
- - D4 City\n\nHOME: River Island FC 2015/2016 RAVENS\nAWAY: Rebels Legacy S
- occer Club 2014\\2015\n\nResults: 1 - 0\n\nSource: https://system.gotsport
- .com/org_event/events/55206/schedules?team=4260592
+ - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: River Island FC 2
+ 015/2016 RAVENS\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nResults: 1 
+ - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
+ s?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -105,18 +107,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-429@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T080000
 DTEND;TZID=America/New_York:20261004T090000
 SUMMARY:CJSL: Rebels Legacy vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 429 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Rebels Legacy Soccer Club 2014\\2015\nAWAY: UNITED CYCLON
- ES FC Geo 2014/15\n\nResults: 0 - 6\n\nSource: https://system.gotsport.com
- /org_event/events/55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
+ r Club 2014\\2015\nAWAY: UNITED CYCLONES FC Geo 2014/15\n\nResults: 0 - 6\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -146,18 +149,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-435@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T140000
 DTEND;TZID=America/New_York:20261025T150000
 SUMMARY:CJSL: Rebels Legacy vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 435 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Rebels Legacy Soccer Club 2014\\2015\nAWAY: FC Copa Acade
- my Brooklyn B14/15 Black\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
+ r Club 2014\\2015\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -187,17 +190,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-441@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T084500
 DTEND;TZID=America/New_York:20261108T094500
-SUMMARY:CJSL: Rebels Legacy @ UNITED CYCLONES FC Geo 2014/15
+SUMMARY:CJSL: Rebels Legacy vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 441 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: UNITED CYCLONES FC Geo 2014/15\nAWAY: Rebels Legacy Socce
- r Club 2014\\2015\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: UNITED CYCLONES FC 
+ Geo 2014/15\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -227,18 +230,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-444@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T140000
 DTEND;TZID=America/New_York:20261115T150000
 SUMMARY:CJSL: Rebels Legacy vs River Island FC 2015/2016 RAVENS
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 444 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Rebels Legacy Soccer Club 2014\\2015\nAWAY: River Island 
- FC 2015/2016 RAVENS\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
+ r Club 2014\\2015\nAWAY: River Island FC 2015/2016 RAVENS\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -268,17 +271,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-438@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
 SUMMARY:CJSL: Rebels Legacy vs SC Gjoa
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 438 (HOME)\nDivision: U12 (9v9) - 
- D4 City\n\nHOME: Rebels Legacy Soccer Club 2014\\2015\nAWAY: SC Gjoa Nylan
- d\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4260592
+ D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
+ r Club 2014\\2015\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport
+ .com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
@@ -308,17 +311,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-426@system.gotsport.com
-DTSTAMP:20261010T002911Z
-LAST-MODIFIED:20261010T002911Z
-SEQUENCE:2
+DTSTAMP:20261010T010606Z
+LAST-MODIFIED:20261010T010606Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261213T083000
 DTEND;TZID=America/New_York:20261213T093000
-SUMMARY:CJSL: Rebels Legacy @ SC Gjoa
+SUMMARY:CJSL: Rebels Legacy vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 426 (AWAY)\nDivision: U12 (9v9) 
- - D4 City\n\nHOME: SC Gjoa Nyland\nAWAY: Rebels Legacy Soccer Club 2014\\2
- 015\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4260592
+ - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nA
+ WAY: Rebels Legacy Soccer Club 2014\\2015\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer
