@@ -1,5 +1,6 @@
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 import hashlib
 import json
 import re
@@ -39,12 +40,10 @@ def match_fingerprint(match):
         "status": match["status"],
     }
 
-    # Canceled matches are intentionally kept visible in subscribed calendars.
-    # Include this rendering rule only for canceled matches so introducing the
-    # feature bumps revision metadata for those matches without touching every
-    # unchanged match in the season.
-    if "cancel" in clean_text(match["status"]).lower():
-        payload["canceled_rendering"] = "visible-prefix-v1"
+    # Calendar presentation rules are included in the fingerprint so a change
+    # to the published event itself (not just GotSport data) gets a one-time
+    # revision bump and is more likely to refresh cleanly in subscribed clients.
+    payload["calendar_rendering"] = "vs-updated-visible-cancel-v1"
 
     serialized = json.dumps(
         payload,
@@ -410,11 +409,9 @@ def build_calendar(
         if home_team == team_name:
             home_away = "HOME"
             opponent_full = away_team
-            separator = "vs"
         else:
             home_away = "AWAY"
             opponent_full = home_team
-            separator = "@"
 
         opponent_short = display_names.get(
             opponent_full,
@@ -425,16 +422,50 @@ def build_calendar(
 
         summary = (
             f"{organizer}: {short_name} "
-            f"{separator} {opponent_short}"
+            f"vs {opponent_short}"
         )
 
         if "cancel" in status_lower:
             summary = f"❌ Canceled — {summary}"
 
+        uid = (
+            f"{organizer.lower()}-{event_id}-"
+            f"match-{match['match_no']}@system.gotsport.com"
+        )
+
+        revision = get_match_revision(
+            state=revision_state,
+            event_id=event_id,
+            match=match,
+            changed_at=changed_at,
+        )
+
+        last_modified = revision["last_modified"]
+        sequence = revision["sequence"]
+
+        updated_utc = datetime.strptime(
+            last_modified,
+            "%Y%m%dT%H%M%SZ",
+        ).replace(tzinfo=timezone.utc)
+        updated_local = updated_utc.astimezone(
+            ZoneInfo(calendar_timezone)
+        )
+        updated_date = updated_local.strftime(
+            "%b %d, %Y"
+        ).replace(" 0", " ")
+        updated_time = updated_local.strftime(
+            "%I:%M %p"
+        ).lstrip("0")
+        updated_label = (
+            f"{updated_date} at {updated_time} "
+            f"{updated_local.tzname()}"
+        )
+
         description_parts = [
             f"Status: {ics_escape(match['status'])}",
             f"Match No: {match['match_no']} ({home_away})",
             f"Division: {ics_escape(match['division'])}",
+            f"Updated: {ics_escape(updated_label)}",
             "",
             f"HOME: {ics_escape(home_team)}",
             f"AWAY: {ics_escape(away_team)}",
@@ -458,21 +489,6 @@ def build_calendar(
         )
 
         description = "\\n".join(description_parts)
-
-        uid = (
-            f"{organizer.lower()}-{event_id}-"
-            f"match-{match['match_no']}@system.gotsport.com"
-        )
-
-        revision = get_match_revision(
-            state=revision_state,
-            event_id=event_id,
-            match=match,
-            changed_at=changed_at,
-        )
-
-        last_modified = revision["last_modified"]
-        sequence = revision["sequence"]
 
         if match["all_day"]:
             dtstart_line = (
