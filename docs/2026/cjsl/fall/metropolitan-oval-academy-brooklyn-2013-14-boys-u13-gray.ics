@@ -106,17 +106,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-184@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T163000
 DTEND;TZID=America/New_York:20261003T173000
 SUMMARY:CJSL: Met Oval @ Brooklyn United
 LOCATION:Hamilton Metz Field - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 184 (AWAY)\nDivision: U13 (9v9) - 
  D4 City\n\nHOME: Brooklyn United Academy B2013/2014 Park Slope Select\nAWA
- Y: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4265007
+ Y: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n\nResults: 6 
+ - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
+ s?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer

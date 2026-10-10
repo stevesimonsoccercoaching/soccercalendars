@@ -65,17 +65,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-258@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T144500
 DTEND;TZID=America/New_York:20261003T154500
 SUMMARY:CJSL: SFFK @ Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
 LOCATION:St. Michaels Playground - St. Michaels Playground
 DESCRIPTION:Status: Scheduled\nMatch No: 258 (AWAY)\nDivision: U12 (9v9) - 
  Super D1\n\nHOME: Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl\nA
- WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4262171
+ WAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue\n\nResults: 2 
+ - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
+ s?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer

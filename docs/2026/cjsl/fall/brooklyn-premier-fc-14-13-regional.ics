@@ -64,24 +64,26 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-101@system.gotsport.com
+UID:cjsl-55206-match-109@system.gotsport.com
 DTSTAMP:20261003T042311Z
 LAST-MODIFIED:20261003T042311Z
 SEQUENCE:1
-DTSTART;TZID=America/New_York:20260927T110000
-DTEND;TZID=America/New_York:20260927T120000
-SUMMARY:CJSL: Brooklyn Premier vs Chernomorets Black Sea 2014
-LOCATION:KAISER PARK - KAISER PARK
-DESCRIPTION:Status: Rained Out\nMatch No: 101 (HOME)\nDivision: U13 (9v9) -
-  D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: Chernomo
- rets Black Sea 2014\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4225977
+DTSTART;TZID=America/New_York:20261017T160000
+DTEND;TZID=America/New_York:20261017T170000
+SUMMARY:CJSL: Brooklyn Premier @ Soccer Fun for Kids / Brooklyn Patriots 20
+ 13-2014
+LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
+ A
+DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
+ D1 - D2 Mix\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\nAW
+ AY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.gotspor
+ t.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
+X-GOTSPORT-STATUS:Scheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -104,26 +106,24 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-109@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20261017T160000
-DTEND;TZID=America/New_York:20261017T170000
-SUMMARY:CJSL: Brooklyn Premier @ Soccer Fun for Kids / Brooklyn Patriots 20
- 13-2014
-LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
- A
-DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\n\nHOME: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\nAW
- AY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4225977
+UID:cjsl-55206-match-101@system.gotsport.com
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261018T110000
+DTEND;TZID=America/New_York:20261018T120000
+SUMMARY:CJSL: Brooklyn Premier vs Chernomorets Black Sea 2014
+LOCATION:KAISER PARK - KAISER PARK
+DESCRIPTION:Status: Rescheduled\nMatch No: 101 (HOME)\nDivision: U13 (9v9) 
+ - D1 - D2 Mix\n\nHOME: Brooklyn Premier F.C. 14/13 Regional\nAWAY: Chernom
+ orets Black Sea 2014\n\nSource: https://system.gotsport.com/org_event/even
+ ts/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

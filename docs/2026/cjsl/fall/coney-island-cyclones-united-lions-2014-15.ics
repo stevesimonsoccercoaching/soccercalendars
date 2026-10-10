@@ -106,17 +106,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-304@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T090000
 DTEND;TZID=America/New_York:20261003T100000
 SUMMARY:CJSL: Coney Island Cyclones vs S.S. Soccer Academy 2015/2014
 LOCATION:Bill Brown Playground - Bill Brown Playground
 DESCRIPTION:Status: Scheduled\nMatch No: 304 (HOME)\nDivision: U12 (9v9) - 
  D2 City\n\nHOME: Coney Island Cyclones United Lions 2014/15\nAWAY: S.S. So
- ccer Academy 2015/2014\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4261465
+ ccer Academy 2015/2014\n\nResults: 1 - 1\n\nSource: https://system.gotspor
+ t.com/org_event/events/55206/schedules?team=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer
@@ -146,24 +146,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-306@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20261017T091500
-DTEND;TZID=America/New_York:20261017T101500
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261017T093000
+DTEND;TZID=America/New_York:20261017T103000
 SUMMARY:CJSL: Coney Island Cyclones @ New York United Soccer Academy NYUSA 
  2014/15 CJSL
-LOCATION:Randalls Island Park - Randalls 51- Full Sided
-DESCRIPTION:Status: Scheduled\nMatch No: 306 (AWAY)\nDivision: U12 (9v9) - 
- D2 City\n\nHOME: New York United Soccer Academy NYUSA 2014/15 CJSL\nAWAY: 
- Coney Island Cyclones United Lions 2014/15\n\nSource: https://system.gotsp
- ort.com/org_event/events/55206/schedules?team=4261465
+LOCATION:Joseph F. Mafera Park - Football Field
+DESCRIPTION:Status: Rescheduled\nMatch No: 306 (AWAY)\nDivision: U12 (9v9) 
+ - D2 City\n\nHOME: New York United Soccer Academy NYUSA 2014/15 CJSL\nAWAY
+ : Coney Island Cyclones United Lions 2014/15\n\nSource: https://system.got
+ sport.com/org_event/events/55206/schedules?team=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -268,23 +268,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-316@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20261107T143000
-DTEND;TZID=America/New_York:20261107T153000
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261107T104500
+DTEND;TZID=America/New_York:20261107T114500
 SUMMARY:CJSL: Coney Island Cyclones @ S.S. Soccer Academy 2015/2014
-LOCATION:Red Hook Park - Field 2 - Red Hook Park - Field 2
-DESCRIPTION:Status: Scheduled\nMatch No: 316 (AWAY)\nDivision: U12 (9v9) - 
- D2 City\n\nHOME: S.S. Soccer Academy 2015/2014\nAWAY: Coney Island Cyclone
- s United Lions 2014/15\n\nSource: https://system.gotsport.com/org_event/ev
- ents/55206/schedules?team=4261465
+LOCATION:Hamilton Metz - Hamilton Metz
+DESCRIPTION:Status: Rescheduled\nMatch No: 316 (AWAY)\nDivision: U12 (9v9) 
+ - D2 City\n\nHOME: S.S. Soccer Academy 2015/2014\nAWAY: Coney Island Cyclo
+ nes United Lions 2014/15\n\nSource: https://system.gotsport.com/org_event/
+ events/55206/schedules?team=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

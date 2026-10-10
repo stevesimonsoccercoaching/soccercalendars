@@ -64,59 +64,18 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-276@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20260927T080000
-DTEND;TZID=America/New_York:20260927T090000
-SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
- 15 Boys
-LOCATION:Randall's Island - 72
-DESCRIPTION:Status: Rained Out\nMatch No: 276 (HOME)\nDivision: U12 (9v9) -
-  D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Excelsior 
- New York Academy 2014/2015 Boys\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4206689
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
- 89
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-280@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261004T090000
 DTEND;TZID=America/New_York:20261004T100000
 SUMMARY:CJSL: French Football Academy @ Brooklyn Italians
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 280 (AWAY)\nDivision: U12 (9v9) - 
  D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: French Footba
- ll Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4206689
+ ll Academy 2014/15 Digne\n\nResults: 2 - 7\n\nSource: https://system.gotsp
+ ort.com/org_event/events/55206/schedules?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
@@ -324,6 +283,47 @@ CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-276@system.gotsport.com
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261206T150000
+DTEND;TZID=America/New_York:20261206T160000
+SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
+ 15 Boys
+LOCATION:Randall's Island - 72
+DESCRIPTION:Status: Rescheduled\nMatch No: 276 (HOME)\nDivision: U12 (9v9) 
+ - D2 Metro\n\nHOME: French Football Academy 2014/15 Digne\nAWAY: Excelsior
+  New York Academy 2014/2015 Boys\n\nSource: https://system.gotsport.com/or
+ g_event/events/55206/schedules?team=4206689
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
+ 89
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

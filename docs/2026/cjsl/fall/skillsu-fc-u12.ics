@@ -65,16 +65,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-377@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: SkillsU FC vs DV7 NY B2014/15
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 377 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\n\nHOME: SkillsU FC U12\nAWAY: DV7 NY B2014/15\n\nSource: https:/
- /system.gotsport.com/org_event/events/55206/schedules?team=4321423
+ D3 Cosmo\n\nHOME: SkillsU FC U12\nAWAY: DV7 NY B2014/15\n\nResults: 0 - 6\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
  23
 CATEGORIES:CJSL,Soccer

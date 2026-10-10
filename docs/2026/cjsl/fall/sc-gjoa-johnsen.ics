@@ -65,17 +65,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-105@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: SC Gjoa vs Eastern Queens FC - 2013/2014 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 105 (HOME)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\n\nHOME: SC Gjoa Johnsen\nAWAY: Eastern Queens FC - 2013/2014 
- Boys\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
- es?team=4244183
+ Boys\n\nResults: 0 - 8\n\nSource: https://system.gotsport.com/org_event/ev
+ ents/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer

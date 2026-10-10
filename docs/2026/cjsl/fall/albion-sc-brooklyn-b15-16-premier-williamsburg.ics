@@ -105,17 +105,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-515@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
 SUMMARY:CJSL: ALBION Brooklyn @ Brooklyn City FC
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 515 (AWAY)\nDivision: U11 (9v9) - 
  D3 City\n\nHOME: Brooklyn City FC F.C. B15/16 Blue\nAWAY: ALBION SC Brookl
- yn B15/16 Premier - Williamsburg\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4264733
+ yn B15/16 Premier - Williamsburg\n\nResults: 3 - 2\n\nSource: https://syst
+ em.gotsport.com/org_event/events/55206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer

@@ -105,9 +105,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-141@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T180000
 DTEND;TZID=America/New_York:20261003T190000
 SUMMARY:CJSL: Brooklyn City FC @ Long Island CIty Youth Soccer Academy LIC 
@@ -115,8 +115,8 @@ SUMMARY:CJSL: Brooklyn City FC @ Long Island CIty Youth Soccer Academy LIC
 LOCATION:St. Michael’s Playground  - Small Sided B
 DESCRIPTION:Status: Scheduled\nMatch No: 141 (AWAY)\nDivision: U13 (9v9) - 
  D3\n\nHOME: Long Island CIty Youth Soccer Academy LIC GOATS 2013/2014\nAWA
- Y: Brooklyn City FC F.C. B13/14\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4271987
+ Y: Brooklyn City FC F.C. B13/14\n\nResults: 5 - 0\n\nSource: https://syste
+ m.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer

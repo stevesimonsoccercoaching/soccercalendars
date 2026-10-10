@@ -67,15 +67,15 @@ BEGIN:VEVENT
 UID:cjsl-55206-match-375@system.gotsport.com
 DTSTAMP:20261006T020115Z
 LAST-MODIFIED:20261006T020115Z
-SEQUENCE:5
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261003T130000
 DTEND;TZID=America/New_York:20261003T140000
 SUMMARY:CJSL: South Brooklyn FC vs SFFK
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 375 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\n\nHOME: South Brooklyn Fc 2014/2015\nAWAY: Soccer Fun for Kids /
-  Brooklyn Patriots 2014-2015 White\n\nSource: https://system.gotsport.com/
- org_event/events/55206/schedules?team=4259907
+  Brooklyn Patriots 2014-2015 White\n\nResults: 1 - 0\n\nSource: https://sy
+ stem.gotsport.com/org_event/events/55206/schedules?team=4259907
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  07
 CATEGORIES:CJSL,Soccer

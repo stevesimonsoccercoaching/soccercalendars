@@ -105,17 +105,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-280@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261004T090000
 DTEND;TZID=America/New_York:20261004T100000
 SUMMARY:CJSL: Brooklyn Italians vs French Football Academy
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 280 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\n\nHOME: Brooklyn Italians 2014/2015 Premier\nAWAY: French Footba
- ll Academy 2014/15 Digne\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4240340
+ ll Academy 2014/15 Digne\n\nResults: 2 - 7\n\nSource: https://system.gotsp
+ ort.com/org_event/events/55206/schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer

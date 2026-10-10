@@ -189,17 +189,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-412@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:CJSL: Lucky Soccer Academy @ Soccer Stars United Equator 2014/2015
+SUMMARY:CJSL: Lucky Soccer Academy @ Soccer Stars United Met Oval - SSU Blu
+ e 2014/2015 (Equator)
 LOCATION:
 DESCRIPTION:Status: Scheduled\nMatch No: 412 (AWAY)\nDivision: U12 (9v9) - 
- D4 Metro\n\nHOME: Soccer Stars United Equator 2014/2015\nAWAY: Lucky Socce
- r Academy Shining Stars 14-15\n\nSource: https://system.gotsport.com/org_e
- vent/events/55206/schedules?team=4233548
+ D4 Metro\n\nHOME: Soccer Stars United Met Oval - SSU Blue 2014/2015 (Equat
+ or)\nAWAY: Lucky Soccer Academy Shining Stars 14-15\n\nSource: https://sys
+ tem.gotsport.com/org_event/events/55206/schedules?team=4233548
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
  48
 CATEGORIES:CJSL,Soccer

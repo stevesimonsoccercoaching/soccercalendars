@@ -150,23 +150,45 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-574@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
-SUMMARY:CJSL: Met Oval @ Soccer Stars United Pulsar 2015/2016
-LOCATION:
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261025T170000
+DTEND;TZID=America/New_York:20261025T180000
+SUMMARY:CJSL: Met Oval @ Soccer Stars United Met Oval - SSU Black 2015/2016
+  (Formerly Pulsar)
+LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Scheduled\nMatch No: 574 (AWAY)\nDivision: U11 (9v9) - 
- D4 City\n\nHOME: Soccer Stars United Pulsar 2015/2016\nAWAY: Metropolitan 
- Oval Academy Brooklyn 2015/16 Boys U11 White\n\nSource: https://system.got
- sport.com/org_event/events/55206/schedules?team=4264996
+ D4 City\n\nHOME: Soccer Stars United Met Oval - SSU Black 2015/2016 (Forme
+ rly Pulsar)\nAWAY: Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 Whi
+ te\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules
+ ?team=4264996
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
  96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-578@system.gotsport.com

@@ -105,9 +105,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-428@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: Manhattan SC @ FC Copa Academy Brooklyn B14/15 Black
@@ -115,8 +115,8 @@ LOCATION:Aviator Sports & Events Center - Aviator Sports & Events Center Fi
  eld #2A
 DESCRIPTION:Status: Scheduled\nMatch No: 428 (AWAY)\nDivision: U12 (9v9) - 
  D4 City\n\nHOME: FC Copa Academy Brooklyn B14/15 Black\nAWAY: Manhattan SC
-  Inter B2014/15\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4239148
+  Inter B2014/15\n\nResults: 8 - 5\n\nSource: https://system.gotsport.com/o
+ rg_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer

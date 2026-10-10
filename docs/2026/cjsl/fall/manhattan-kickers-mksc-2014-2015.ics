@@ -105,17 +105,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-279@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T130000
 SUMMARY:CJSL: MKSC @ ALBION Brooklyn
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 279 (AWAY)\nDivision: U12 (9v9) - 
  D2 Metro\n\nHOME: ALBION SC Brooklyn B14/15 Premier - Williamsburg\nAWAY: 
- Manhattan Kickers MKSC 2014/2015\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4239121
+ Manhattan Kickers MKSC 2014/2015\n\nResults: 1 - 8\n\nSource: https://syst
+ em.gotsport.com/org_event/events/55206/schedules?team=4239121
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  21
 CATEGORIES:CJSL,Soccer

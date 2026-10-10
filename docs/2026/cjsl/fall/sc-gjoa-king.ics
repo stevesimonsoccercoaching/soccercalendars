@@ -107,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-567@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T160000
 DTEND;TZID=America/New_York:20261003T170000
-SUMMARY:CJSL: SC Gjoa @ Soccer Stars United Pulsar 2015/2016
+SUMMARY:CJSL: SC Gjoa @ Soccer Stars United Met Oval - SSU Black 2015/2016 
+ (Formerly Pulsar)
 LOCATION:Randall's Island - 72
 DESCRIPTION:Status: Scheduled\nMatch No: 567 (AWAY)\nDivision: U11 (9v9) - 
- D4 City\n\nHOME: Soccer Stars United Pulsar 2015/2016\nAWAY: SC Gjoa King\
- n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
- am=4244097
+ D4 City\n\nHOME: Soccer Stars United Met Oval - SSU Black 2015/2016 (Forme
+ rly Pulsar)\nAWAY: SC Gjoa King\n\nResults: 7 - 2\n\nSource: https://syste
+ m.gotsport.com/org_event/events/55206/schedules?team=4244097
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42440
  97
 CATEGORIES:CJSL,Soccer
@@ -307,17 +308,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-585@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T103000
 DTEND;TZID=America/New_York:20261121T113000
-SUMMARY:CJSL: SC Gjoa vs Soccer Stars United Pulsar 2015/2016
+SUMMARY:CJSL: SC Gjoa vs Soccer Stars United Met Oval - SSU Black 2015/2016
+  (Formerly Pulsar)
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 585 (HOME)\nDivision: U11 (9v9) - 
- D4 City\n\nHOME: SC Gjoa King\nAWAY: Soccer Stars United Pulsar 2015/2016\
- n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
- am=4244097
+ D4 City\n\nHOME: SC Gjoa King\nAWAY: Soccer Stars United Met Oval - SSU Bl
+ ack 2015/2016 (Formerly Pulsar)\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4244097
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42440
  97
 CATEGORIES:CJSL,Soccer

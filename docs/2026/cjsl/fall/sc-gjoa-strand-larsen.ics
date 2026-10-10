@@ -105,17 +105,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-281@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T104500
 DTEND;TZID=America/New_York:20261003T114500
 SUMMARY:CJSL: SC Gjoa vs Excelsior New York Academy 2014/2015 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 281 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\n\nHOME: SC Gjoa Strand Larsen\nAWAY: Excelsior New York Academy 
- 2014/2015 Boys\n\nSource: https://system.gotsport.com/org_event/events/552
- 06/schedules?team=4244158
+ 2014/2015 Boys\n\nResults: 2 - 4\n\nSource: https://system.gotsport.com/or
+ g_event/events/55206/schedules?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer

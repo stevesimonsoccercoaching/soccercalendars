@@ -25,17 +25,19 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-534@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T150000
 DTEND;TZID=America/New_York:20260919T160000
-SUMMARY:CJSL: Soccer Legion vs Soccer Stars United Scorpio 2015/2016
+SUMMARY:CJSL: Soccer Legion vs Soccer Stars United Met Oval - SSU White 201
+ 5/2016 (Formerly Scorpio)
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 534 (HOME)\nDivision: U11 (9v9) - 
  D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: Soccer
-  Stars United Scorpio 2015/2016\n\nResults: 3 - 0\n\nSource: https://syste
- m.gotsport.com/org_event/events/55206/schedules?team=4435585
+  Stars United Met Oval - SSU White 2015/2016 (Formerly Scorpio)\n\nResults
+ : 3 - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
+ dules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -64,50 +66,10 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-537@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20260926T120000
-DTEND;TZID=America/New_York:20260926T130000
-SUMMARY:CJSL: Soccer Legion @ Juventus Academy NY CJSL Vieri - B2016/2017
-LOCATION:Randall's Island - 60
-DESCRIPTION:Status: Rained Out\nMatch No: 537 (AWAY)\nDivision: U11 (9v9) -
-  D4 Metro\n\nHOME: Juventus Academy NY CJSL Vieri - B2016/2017\nAWAY: Socc
- er Legion FC U11 Boys Blue (2015/2016)\n\nSource: https://system.gotsport.
- com/org_event/events/55206/schedules?team=4435585
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
- 85
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-541@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
 SUMMARY:CJSL: Soccer Legion vs Eleftheria Pancyprian Soccer Club EPSC 2015/
@@ -115,8 +77,9 @@ SUMMARY:CJSL: Soccer Legion vs Eleftheria Pancyprian Soccer Club EPSC 2015/
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 541 (HOME)\nDivision: U11 (9v9) - 
  D4 Metro\n\nHOME: Soccer Legion FC U11 Boys Blue (2015/2016)\nAWAY: Elefth
- eria Pancyprian Soccer Club EPSC 2015/2016 White\n\nSource: https://system
- .gotsport.com/org_event/events/55206/schedules?team=4435585
+ eria Pancyprian Soccer Club EPSC 2015/2016 White\n\nResults: 1 - 2\n\nSour
+ ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4435
+ 585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -163,6 +126,46 @@ CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-537@system.gotsport.com
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261018T081500
+DTEND;TZID=America/New_York:20261018T091500
+SUMMARY:CJSL: Soccer Legion @ Juventus Academy NY CJSL Vieri - B2016/2017
+LOCATION:Randall's Island - 6
+DESCRIPTION:Status: Rescheduled\nMatch No: 537 (AWAY)\nDivision: U11 (9v9) 
+ - D4 Metro\n\nHOME: Juventus Academy NY CJSL Vieri - B2016/2017\nAWAY: Soc
+ cer Legion FC U11 Boys Blue (2015/2016)\n\nSource: https://system.gotsport
+ .com/org_event/events/55206/schedules?team=4435585
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
+ 85
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

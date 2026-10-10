@@ -105,17 +105,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-185@system.gotsport.com
-DTSTAMP:20261003T042311Z
-LAST-MODIFIED:20261003T042311Z
-SEQUENCE:1
+DTSTAMP:20261010T002911Z
+LAST-MODIFIED:20261010T002911Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261004T140000
 DTEND;TZID=America/New_York:20261004T150000
 SUMMARY:CJSL: South Brooklyn FC vs Dynamo SC
 LOCATION:Bush Terminal Park - Bush Terminal #2 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 185 (HOME)\nDivision: U13 (9v9) - 
  D4 City\n\nHOME: South Brooklyn FC #2 2013/2014\nAWAY: Dynamo Soccer Club 
- 2014\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
- es?team=4259905
+ 2014\n\nResults: 10 - 0\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4259905
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  05
 CATEGORIES:CJSL,Soccer
