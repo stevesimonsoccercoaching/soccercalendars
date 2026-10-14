@@ -68,9 +68,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-569@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261011T120000
 DTEND;TZID=America/New_York:20261011T130000
 SUMMARY:CJSL: Met Oval vs Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 B
@@ -78,10 +78,10 @@ SUMMARY:CJSL: Met Oval vs Kevin Lue Soccer Academy FFA STRIKERS 2015/2016 B
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 569 (AWAY)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Kevin Lue Soccer Ac
- ademy FFA STRIKERS 2015/2016 Boys\nAWAY: Metropolitan Oval Academy Brookly
- n 2015/16 Boys U11 White\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4264996
+ D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: Kevin Lue Soccer A
+ cademy FFA STRIKERS 2015/2016 Boys\nAWAY: Metropolitan Oval Academy Brookl
+ yn 2015/16 Boys U11 White\n\nResults: 3 - 2\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4264996
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
  96
 CATEGORIES:CJSL,Soccer

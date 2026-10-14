@@ -106,23 +106,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-178@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261011T170000
 DTEND;TZID=America/New_York:20261011T180000
 SUMMARY:CJSL: Dynamo SC vs NY Kids S.C. 2013/2014 boys
 LOCATION:KAISER PARK - KAISER PARK
-DESCRIPTION:Status: Scheduled\nMatch No: 178 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
- 2014\nAWAY: NY Kids S.C. 2013/2014 boys\n\nSource: https://system.gotsport
- .com/org_event/events/55206/schedules?team=4240357
+DESCRIPTION:Status: Rained Out\nMatch No: 178 (HOME)\nDivision: U13 (9v9) -
+  D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: Dynamo Soccer Clu
+ b 2014\nAWAY: NY Kids S.C. 2013/2014 boys\n\nSource: https://system.gotspo
+ rt.com/org_event/events/55206/schedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rained Out
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

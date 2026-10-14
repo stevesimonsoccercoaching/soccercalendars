@@ -149,23 +149,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-187@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20261018T134500
-DTEND;TZID=America/New_York:20261018T144500
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261018T123000
+DTEND;TZID=America/New_York:20261018T133000
 SUMMARY:CJSL: Met Oval vs SC Gjoa
-LOCATION:Met Oval Field - Met Oval Field
-DESCRIPTION:Status: Scheduled\nMatch No: 187 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
- cademy Brooklyn 2013/14 Boys U13 Gray\nAWAY: SC Gjoa Ajer\n\nSource: https
- ://system.gotsport.com/org_event/events/55206/schedules?team=4265007
+LOCATION:Red Hook Field #5 - Field 5 11v11
+DESCRIPTION:Status: Rescheduled\nMatch No: 187 (HOME)\nDivision: U13 (9v9) 
+ - D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: Metropolitan Ova
+ l Academy Brooklyn 2013/14 Boys U13 Gray\nAWAY: SC Gjoa Ajer\n\nSource: ht
+ tps://system.gotsport.com/org_event/events/55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

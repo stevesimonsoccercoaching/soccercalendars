@@ -65,46 +65,6 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-278@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20260926T090000
-DTEND;TZID=America/New_York:20260926T100000
-SUMMARY:CJSL: ALBION Brooklyn vs SC Gjoa
-LOCATION:Bushwick Inlet Park - Field 1 9v9
-DESCRIPTION:Status: Rained Out\nMatch No: 278 (HOME)\nDivision: U12 (9v9) -
-  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brookly
- n B14/15 Premier - Williamsburg\nAWAY: SC Gjoa Strand Larsen\n\nSource: ht
- tps://system.gotsport.com/org_event/events/55206/schedules?team=4290983
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
- 83
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-279@system.gotsport.com
 DTSTAMP:20261010T010606Z
 LAST-MODIFIED:20261010T010606Z
@@ -147,24 +107,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20261018T091000
-DTEND;TZID=America/New_York:20261018T101000
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261018T100000
+DTEND;TZID=America/New_York:20261018T110000
 SUMMARY:CJSL: ALBION Brooklyn vs French Football Academy
-LOCATION:Randall's Island - 82
-DESCRIPTION:Status: Scheduled\nMatch No: 283 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
- ademy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsbur
- g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4290983
+LOCATION:Randall's Island - 70
+DESCRIPTION:Status: Rescheduled\nMatch No: 283 (AWAY)\nDivision: U12 (9v9) 
+ - D2 Metro\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: French Football
+  Academy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williams
+ burg\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -328,6 +288,46 @@ CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-278@system.gotsport.com
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261121T140000
+DTEND;TZID=America/New_York:20261121T150000
+SUMMARY:CJSL: ALBION Brooklyn vs SC Gjoa
+LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
+DESCRIPTION:Status: Rescheduled\nMatch No: 278 (HOME)\nDivision: U12 (9v9) 
+ - D2 Metro\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: ALBION SC Brook
+ lyn B14/15 Premier - Williamsburg\nAWAY: SC Gjoa Strand Larsen\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4290983
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
+ 83
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

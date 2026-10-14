@@ -107,24 +107,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20261018T091000
-DTEND;TZID=America/New_York:20261018T101000
+DTSTAMP:20261014T224944Z
+LAST-MODIFIED:20261014T224944Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261018T100000
+DTEND;TZID=America/New_York:20261018T110000
 SUMMARY:CJSL: French Football Academy vs ALBION Brooklyn
-LOCATION:Randall's Island - 82
-DESCRIPTION:Status: Scheduled\nMatch No: 283 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
- ademy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsbur
- g\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4206689
+LOCATION:Randall's Island - 70
+DESCRIPTION:Status: Rescheduled\nMatch No: 283 (HOME)\nDivision: U12 (9v9) 
+ - D2 Metro\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: French Football
+  Academy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williams
+ burg\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
