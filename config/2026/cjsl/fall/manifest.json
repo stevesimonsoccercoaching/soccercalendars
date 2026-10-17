@@ -60,6 +60,7 @@
     "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue": "SFFK",
     "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White": "SFFK",
     "Soccer Fun for Kids / Brooklyn Patriots 2015-2016": "SFFK",
+    "Soccer Fun for Kids / Brooklyn Patriots 2017-2018": "SFFK",
     "Soccer Legion FC U11 Boys Blue (2015/2016)": "Soccer Legion",
     "South Brooklyn FC #2 2013/2014": "South Brooklyn FC",
     "South Brooklyn Fc 2014/2015": "South Brooklyn FC"
@@ -493,6 +494,17 @@
         "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262199",
         "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536617"
       }
-  }
+  },
+    {
+      "name": "Soccer Fun for Kids / Brooklyn Patriots 2017-2018",
+      "short_name": "SFFK",
+      "slug": "soccer-fun-for-kids-brooklyn-patriots-2017-2018",
+      "gotsport": {
+        "schedule_team_id": "4262127",
+        "export_team_id": "4262127",
+        "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4262127",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262127"
+    }
+}
   ]
 }
