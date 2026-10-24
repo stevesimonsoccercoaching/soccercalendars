@@ -147,19 +147,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-282@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T120000
 DTEND;TZID=America/New_York:20261018T130000
 SUMMARY:CJSL: Brooklyn Italians vs Excelsior New York Academy 2014/2015 Boy
  s
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 282 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
-  Academy 2014/2015 Boys\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4240
- 340
+ D2 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Excelsior New Yor
+ k Academy 2014/2015 Boys\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nRes
+ ults: 7 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/
+ schedules?team=4240340
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer

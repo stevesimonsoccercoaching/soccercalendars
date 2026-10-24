@@ -148,17 +148,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-142@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T154500
 DTEND;TZID=America/New_York:20261017T164500
 SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 142 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
- 3/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nSource: ht
- tps://system.gotsport.com/org_event/events/55206/schedules?team=4264740
+ D3\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Brooklyn City FC F.C. B
+ 13/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nResults: 
+ 4 - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
+ les?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer

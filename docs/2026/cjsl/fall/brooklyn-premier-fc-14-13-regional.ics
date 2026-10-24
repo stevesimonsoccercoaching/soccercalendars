@@ -65,9 +65,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-109@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
 SUMMARY:CJSL: Brooklyn Premier vs Soccer Fun for Kids / Brooklyn Patriots 2
@@ -75,10 +75,10 @@ SUMMARY:CJSL: Brooklyn Premier vs Soccer Fun for Kids / Brooklyn Patriots 2
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for 
- Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Regi
- onal\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
- es?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Soccer Fun for
+  Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Reg
+ ional\n\nResults: 1 - 5\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -108,17 +108,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-101@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
 SUMMARY:CJSL: Brooklyn Premier vs Chernomorets Black Sea 2014
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Rescheduled\nMatch No: 101 (HOME)\nDivision: U13 (9v9) 
- - D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Prem
- ier F.C. 14/13 Regional\nAWAY: Chernomorets Black Sea 2014\n\nSource: http
- s://system.gotsport.com/org_event/events/55206/schedules?team=4225977
+ - D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Brooklyn Pre
+ mier F.C. 14/13 Regional\nAWAY: Chernomorets Black Sea 2014\n\nResults: 4 
+ - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
+ s?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer

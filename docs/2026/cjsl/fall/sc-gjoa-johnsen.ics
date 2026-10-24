@@ -106,17 +106,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-104@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T083000
 DTEND;TZID=America/New_York:20261017T093000
 SUMMARY:CJSL: SC Gjoa vs Long Island City Soccer Club 2013/2014
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 104 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island Cit
- y Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nSource: https://system.g
- otsport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Long Island Ci
+ ty Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 3\n\nSourc
+ e: https://system.gotsport.com/org_event/events/55206/schedules?team=42441
+ 83
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer

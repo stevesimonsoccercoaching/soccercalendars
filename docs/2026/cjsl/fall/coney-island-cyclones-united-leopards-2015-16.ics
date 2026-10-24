@@ -108,19 +108,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-471@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T103000
 DTEND;TZID=America/New_York:20261017T113000
 SUMMARY:CJSL: Coney Island Cyclones vs New York United Soccer Academy NYUSA
   2015/16 CJSL
 LOCATION:Randalls Island Park - Randalls 51- Full Sided
 DESCRIPTION:Status: Scheduled\nMatch No: 471 (AWAY)\nDivision: U11 (9v9) - 
- D2\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: New York United Soccer A
- cademy NYUSA 2015/16 CJSL\nAWAY: Coney Island Cyclones United Leopards 201
- 5/16\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
- es?team=4261459
+ D2\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: New York United Soccer 
+ Academy NYUSA 2015/16 CJSL\nAWAY: Coney Island Cyclones United Leopards 20
+ 15/16\n\nResults: 3 - 2\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4261459
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  59
 CATEGORIES:CJSL,Soccer

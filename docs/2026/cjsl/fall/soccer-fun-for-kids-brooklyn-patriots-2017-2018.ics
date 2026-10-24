@@ -66,18 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-995@system.gotsport.com
-DTSTAMP:20261017T114201Z
-LAST-MODIFIED:20261017T114201Z
-SEQUENCE:1
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
 SUMMARY:CJSL: SFFK vs Kevin Lue Soccer Academy FFA STRIKERS 2018/2017 Boys
 LOCATION:Prospect Park Parade Grounds Field 10B - Parade Grounds Field 10B
 DESCRIPTION:Status: Scheduled\nMatch No: 995 (HOME)\nDivision: U9 (7v7) - D
- 4 Liberty\nUpdated: Oct 17\, 2026 at 7:42 AM EDT\n\nHOME: Soccer Fun for K
+ 4 Liberty\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Soccer Fun for K
  ids / Brooklyn Patriots 2017-2018\nAWAY: Kevin Lue Soccer Academy FFA STRI
- KERS 2018/2017 Boys\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4262127
+ KERS 2018/2017 Boys\n\nResults: 3 - 1\n\nSource: https://system.gotsport.c
+ om/org_event/events/55206/schedules?team=4262127
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  27
 CATEGORIES:CJSL,Soccer

@@ -67,19 +67,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-402@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T143000
 DTEND;TZID=America/New_York:20261017T153000
 SUMMARY:CJSL: Lucky Soccer Academy vs Long Island CIty Youth Soccer Academy
   LIC Arsenal 2015/2014
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 402 (HOME)\nDivision: U12 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Lucky Soccer Acade
- my Shining Stars 14-15\nAWAY: Long Island CIty Youth Soccer Academy LIC Ar
- senal 2015/2014\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4233548
+ D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Lucky Soccer Acad
+ emy Shining Stars 14-15\nAWAY: Long Island CIty Youth Soccer Academy LIC A
+ rsenal 2015/2014\n\nResults: 3 - 1\n\nSource: https://system.gotsport.com/
+ org_event/events/55206/schedules?team=4233548
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
  48
 CATEGORIES:CJSL,Soccer
@@ -109,25 +109,25 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-407@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20261025T114000
-DTEND;TZID=America/New_York:20261025T124000
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261024T143000
+DTEND;TZID=America/New_York:20261024T153000
 SUMMARY:CJSL: Lucky Soccer Academy vs GOAT Youth Soccer Academy Boys 2014/2
  015
-LOCATION:Randall's Island - 73
-DESCRIPTION:Status: Scheduled\nMatch No: 407 (AWAY)\nDivision: U12 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: GOAT Youth Soccer 
- Academy Boys 2014/2015\nAWAY: Lucky Soccer Academy Shining Stars 14-15\n\n
- Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
- 4233548
+LOCATION:Astoria Park - Soccer Field
+DESCRIPTION:Status: Rescheduled\nMatch No: 407 (AWAY)\nDivision: U12 (9v9) 
+ - D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: GOAT Youth Socc
+ er Academy Boys 2014/2015\nAWAY: Lucky Soccer Academy Shining Stars 14-15\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4233548
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
  48
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

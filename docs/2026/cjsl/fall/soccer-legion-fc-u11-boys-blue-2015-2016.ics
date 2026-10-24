@@ -109,18 +109,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-542@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T120000
 DTEND;TZID=America/New_York:20261017T130000
 SUMMARY:CJSL: Soccer Legion vs B&G Soccer Academy & B2015/16 GLADIATORS
 LOCATION:Van Cortlandt Park - C
 DESCRIPTION:Status: Scheduled\nMatch No: 542 (AWAY)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: B&G Soccer Academy
-  & B2015/16 GLADIATORS\nAWAY: Soccer Legion FC U11 Boys Blue (2015/2016)\n
- \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
- m=4435585
+ D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: B&G Soccer Academ
+ y & B2015/16 GLADIATORS\nAWAY: Soccer Legion FC U11 Boys Blue (2015/2016)\
+ n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -150,18 +150,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-537@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261018T081500
 DTEND;TZID=America/New_York:20261018T091500
 SUMMARY:CJSL: Soccer Legion vs Juventus Academy NY CJSL Vieri - B2016/2017
 LOCATION:Randall's Island - 6
 DESCRIPTION:Status: Rescheduled\nMatch No: 537 (AWAY)\nDivision: U11 (9v9) 
- - D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Juventus Academy
-  NY CJSL Vieri - B2016/2017\nAWAY: Soccer Legion FC U11 Boys Blue (2015/20
- 16)\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4435585
+ - D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Juventus Academ
+ y NY CJSL Vieri - B2016/2017\nAWAY: Soccer Legion FC U11 Boys Blue (2015/2
+ 016)\n\nResults: 2 - 3\n\nSource: https://system.gotsport.com/org_event/ev
+ ents/55206/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer

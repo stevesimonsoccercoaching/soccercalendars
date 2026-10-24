@@ -107,17 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-379@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T114500
 DTEND;TZID=America/New_York:20261017T124500
 SUMMARY:CJSL: South Brooklyn FC vs FA Euro
 LOCATION:Calvert Vaux Park - Field 2
 DESCRIPTION:Status: Scheduled\nMatch No: 379 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York 2
- 014/2015 Pre-MLS III\nAWAY: South Brooklyn Fc 2014/2015\n\nSource: https:/
- /system.gotsport.com/org_event/events/55206/schedules?team=4259907
+ D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: FA Euro New York 
+ 2014/2015 Pre-MLS III\nAWAY: South Brooklyn Fc 2014/2015\n\nResults: 1 - 1
+ \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
+ eam=4259907
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  07
 CATEGORIES:CJSL,Soccer

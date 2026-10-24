@@ -148,25 +148,25 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-520@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T090000
 DTEND;TZID=America/New_York:20261017T100000
 SUMMARY:CJSL: ALBION Brooklyn vs Griffin United Soccer Club Elite Brooklyn 
  Boys - 2015/2016
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
-DESCRIPTION:Status: Scheduled\nMatch No: 520 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
- B15/16 Premier - Williamsburg\nAWAY: Griffin United Soccer Club Elite Broo
- klyn Boys - 2015/2016\n\nSource: https://system.gotsport.com/org_event/eve
- nts/55206/schedules?team=4264733
+DESCRIPTION:Status: Forfeit\nMatch No: 520 (HOME)\nDivision: U11 (9v9) - D3
+  City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: ALBION SC Brooklyn B
+ 15/16 Premier - Williamsburg\nAWAY: Griffin United Soccer Club Elite Brook
+ lyn Boys - 2015/2016\n\nResults: 0 - 2\n\nSource: https://system.gotsport.
+ com/org_event/events/55206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Forfeit
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

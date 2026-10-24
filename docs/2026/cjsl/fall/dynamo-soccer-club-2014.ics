@@ -146,18 +146,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-186@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
 SUMMARY:CJSL: Dynamo SC vs Brooklyn United
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 186 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
- 2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nSource
- : https://system.gotsport.com/org_event/events/55206/schedules?team=424035
- 7
+ D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Dynamo Soccer Club
+  2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nResul
+ ts: 1 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer

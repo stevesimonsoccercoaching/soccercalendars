@@ -111,18 +111,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-571@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T103000
 DTEND;TZID=America/New_York:20261018T113000
 SUMMARY:CJSL: Met Oval vs Islas Malvinas Int. IMIFC 2016/2017
 LOCATION:Met Oval Field - Met Oval Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 571 (HOME)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
- cademy Brooklyn 2015/16 Boys U11 White\nAWAY: Islas Malvinas Int. IMIFC 20
- 16/2017\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
- dules?team=4264996
+ D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Metropolitan Oval 
+ Academy Brooklyn 2015/16 Boys U11 White\nAWAY: Islas Malvinas Int. IMIFC 2
+ 016/2017\n\nResults: 1 - 9\n\nSource: https://system.gotsport.com/org_even
+ t/events/55206/schedules?team=4264996
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
  96
 CATEGORIES:CJSL,Soccer

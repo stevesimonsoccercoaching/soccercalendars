@@ -147,17 +147,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-284@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T171000
 DTEND;TZID=America/New_York:20261017T181000
 SUMMARY:CJSL: MKSC vs SC Gjoa
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 284 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan Kickers 
- MKSC 2014/2015\nAWAY: SC Gjoa Strand Larsen\n\nSource: https://system.gots
- port.com/org_event/events/55206/schedules?team=4239121
+ D2 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Manhattan Kickers
+  MKSC 2014/2015\nAWAY: SC Gjoa Strand Larsen\n\nResults: 2 - 3\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4239121
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  21
 CATEGORIES:CJSL,Soccer

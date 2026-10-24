@@ -148,19 +148,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-306@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261017T093000
 DTEND;TZID=America/New_York:20261017T103000
 SUMMARY:CJSL: Coney Island Cyclones vs New York United Soccer Academy NYUSA
   2014/15 CJSL
 LOCATION:Joseph F. Mafera Park - Football Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 306 (AWAY)\nDivision: U12 (9v9) 
- - D2 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: New York United S
- occer Academy NYUSA 2014/15 CJSL\nAWAY: Coney Island Cyclones United Lions
-  2014/15\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4261465
+ - D2 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: New York United 
+ Soccer Academy NYUSA 2014/15 CJSL\nAWAY: Coney Island Cyclones United Lion
+ s 2014/15\n\nResults: 1 - 1\n\nSource: https://system.gotsport.com/org_eve
+ nt/events/55206/schedules?team=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer

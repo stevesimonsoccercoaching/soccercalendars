@@ -148,23 +148,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-143@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261024T093346Z
+LAST-MODIFIED:20261024T093346Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T130000
 DTEND;TZID=America/New_York:20261018T140000
 SUMMARY:CJSL: Coney Island Cyclones vs Sunset united 2014
-LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
-DESCRIPTION:Status: Scheduled\nMatch No: 143 (HOME)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
- ited Tigers 2013/14\nAWAY: Sunset united 2014\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4259832
+LOCATION:
+DESCRIPTION:Status: TBS\nMatch No: 143 (HOME)\nDivision: U13 (9v9) - D3\nUp
+ dated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Coney Island Cyclones United 
+ Tigers 2013/14\nAWAY: Sunset united 2014\n\nSource: https://system.gotspor
+ t.com/org_event/events/55206/schedules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:TBS
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
