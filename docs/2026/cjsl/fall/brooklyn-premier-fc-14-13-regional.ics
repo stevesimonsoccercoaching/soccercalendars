@@ -149,19 +149,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-116@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
 SUMMARY:CJSL: Brooklyn Premier vs New York United Soccer Academy NYUSA 2013
  /14 CJSL
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 116 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie
- r F.C. 14/13 Regional\nAWAY: New York United Soccer Academy NYUSA 2013/14 
- CJSL\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
- es?team=4225977
+ D1 - D2 Mix\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Brooklyn Premi
+ er F.C. 14/13 Regional\nAWAY: New York United Soccer Academy NYUSA 2013/14
+  CJSL\n\nResults: 1 - 1\n\nSource: https://system.gotsport.com/org_event/e
+ vents/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer

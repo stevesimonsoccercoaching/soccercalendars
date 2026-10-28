@@ -189,17 +189,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-287@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T103000
 DTEND;TZID=America/New_York:20261024T113000
 SUMMARY:CJSL: Brooklyn Italians vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 287 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
- sen\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nSource: https://system.g
- otsport.com/org_event/events/55206/schedules?team=4240340
+ D2 Metro\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Strand La
+ rsen\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nResults: 5 - 1\n\nSourc
+ e: https://system.gotsport.com/org_event/events/55206/schedules?team=42403
+ 40
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  40
 CATEGORIES:CJSL,Soccer

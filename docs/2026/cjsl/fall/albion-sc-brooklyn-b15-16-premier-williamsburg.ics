@@ -190,18 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-521@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T081500
 DTEND;TZID=America/New_York:20261024T091500
 SUMMARY:CJSL: ALBION Brooklyn vs SFFK
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 521 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
- B15/16 Premier - Williamsburg\nAWAY: Soccer Fun for Kids / Brooklyn Patrio
- ts 2015-2016\n\nSource: https://system.gotsport.com/org_event/events/55206
- /schedules?team=4264733
+ D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B15/16 Premier - Williamsburg\nAWAY: Soccer Fun for Kids / Brooklyn Patri
+ ots 2015-2016\n\nResults: 4 - 4\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer

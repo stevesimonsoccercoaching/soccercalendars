@@ -110,17 +110,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-573@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T103000
 DTEND;TZID=America/New_York:20261024T113000
 SUMMARY:CJSL: SC Gjoa vs NY Kids S.C. 2015/16 boys
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 573 (HOME)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa King\nAWAY:
-  NY Kids S.C. 2015/16 boys\n\nSource: https://system.gotsport.com/org_even
- t/events/55206/schedules?team=4244097
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa King\nAWAY
+ : NY Kids S.C. 2015/16 boys\n\nResults: 4 - 2\n\nSource: https://system.go
+ tsport.com/org_event/events/55206/schedules?team=4244097
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42440
  97
 CATEGORIES:CJSL,Soccer
@@ -150,17 +150,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-566@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:3
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261025T133000
 DTEND;TZID=America/New_York:20261025T143000
 SUMMARY:CJSL: SC Gjoa vs Islas Malvinas Int. IMIFC 2016/2017
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 566 (HOME)\nDivision: U11 (9v9) 
- - D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: SC Gjoa King\nAW
- AY: Islas Malvinas Int. IMIFC 2016/2017\n\nSource: https://system.gotsport
- .com/org_event/events/55206/schedules?team=4244097
+ - D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa King\nAW
+ AY: Islas Malvinas Int. IMIFC 2016/2017\n\nResults: 7 - 3\n\nSource: https
+ ://system.gotsport.com/org_event/events/55206/schedules?team=4244097
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42440
  97
 CATEGORIES:CJSL,Soccer

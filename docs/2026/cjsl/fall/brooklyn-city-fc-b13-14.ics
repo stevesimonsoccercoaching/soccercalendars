@@ -189,17 +189,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-146@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T093000
 DTEND;TZID=America/New_York:20261024T103000
 SUMMARY:CJSL: Brooklyn City FC vs Sunset united 2014
 LOCATION:Bush Terminal   - Bush Terminal
 DESCRIPTION:Status: Scheduled\nMatch No: 146 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Sunset united 2014\nAWAY
- : Brooklyn City FC F.C. B13/14\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4271987
+ D3\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Sunset united 2014\nAWA
+ Y: Brooklyn City FC F.C. B13/14\n\nResults: 13 - 0\n\nSource: https://syst
+ em.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
  87
 CATEGORIES:CJSL,Soccer

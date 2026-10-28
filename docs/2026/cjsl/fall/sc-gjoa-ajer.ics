@@ -147,17 +147,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-190@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T134500
 DTEND;TZID=America/New_York:20261024T144500
 SUMMARY:CJSL: SC Gjoa vs Dynamo SC
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 190 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY:
-  Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4244196
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY
+ : Dynamo Soccer Club 2014\n\nResults: 7 - 0\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4244196
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  96
 CATEGORIES:CJSL,Soccer
@@ -187,17 +187,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-182@system.gotsport.com
-DTSTAMP:20261014T224944Z
-LAST-MODIFIED:20261014T224944Z
-SEQUENCE:3
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261025T133000
 DTEND;TZID=America/New_York:20261025T143000
 SUMMARY:CJSL: SC Gjoa vs South Brooklyn FC
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Rescheduled\nMatch No: 182 (HOME)\nDivision: U13 (9v9) 
- - D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: SC Gjoa Ajer\nAW
- AY: South Brooklyn FC #2 2013/2014\n\nSource: https://system.gotsport.com/
- org_event/events/55206/schedules?team=4244196
+ - D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAW
+ AY: South Brooklyn FC #2 2013/2014\n\nResults: 1 - 7\n\nSource: https://sy
+ stem.gotsport.com/org_event/events/55206/schedules?team=4244196
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  96
 CATEGORIES:CJSL,Soccer

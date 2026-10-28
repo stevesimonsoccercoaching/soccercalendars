@@ -190,19 +190,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-311@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T180000
 DTEND;TZID=America/New_York:20261024T190000
 SUMMARY:CJSL: Coney Island Cyclones vs Long Island CIty Youth Soccer Academ
  y LIC PUMAS 2014/2015
 LOCATION:St. Michael’s Playground  - Small Sided A
 DESCRIPTION:Status: Scheduled\nMatch No: 311 (AWAY)\nDivision: U12 (9v9) - 
- D2 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island CIty Yo
- uth Soccer Academy LIC PUMAS 2014/2015\nAWAY: Coney Island Cyclones United
-  Lions 2014/15\n\nSource: https://system.gotsport.com/org_event/events/552
- 06/schedules?team=4261465
+ D2 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Long Island CIty Y
+ outh Soccer Academy LIC PUMAS 2014/2015\nAWAY: Coney Island Cyclones Unite
+ d Lions 2014/15\n\nResults: 2 - 0\n\nSource: https://system.gotsport.com/o
+ rg_event/events/55206/schedules?team=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer

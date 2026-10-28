@@ -148,18 +148,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-286@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T091500
 DTEND;TZID=America/New_York:20261024T101500
 SUMMARY:CJSL: ALBION Brooklyn vs Excelsior New York Academy 2014/2015 Boys
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 286 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
-  B14/15 Premier - Williamsburg\nAWAY: Excelsior New York Academy 2014/2015
-  Boys\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
- les?team=4290983
+ D2 Metro\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: ALBION SC Brookly
+ n B14/15 Premier - Williamsburg\nAWAY: Excelsior New York Academy 2014/201
+ 5 Boys\n\nResults: 0 - 4\n\nSource: https://system.gotsport.com/org_event/
+ events/55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer

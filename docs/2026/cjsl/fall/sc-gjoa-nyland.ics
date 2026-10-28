@@ -106,17 +106,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-434@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T090000
 DTEND;TZID=America/New_York:20261025T100000
 SUMMARY:CJSL: SC Gjoa vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 434 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
- Y: UNITED CYCLONES FC Geo 2014/15\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4244169
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Nyland\nAW
+ AY: UNITED CYCLONES FC Geo 2014/15\n\nResults: 2 - 3\n\nSource: https://sy
+ stem.gotsport.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer

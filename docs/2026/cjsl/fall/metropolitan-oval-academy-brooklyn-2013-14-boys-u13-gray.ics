@@ -190,19 +190,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-189@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T100000
 DTEND;TZID=America/New_York:20261024T110000
 SUMMARY:CJSL: Met Oval vs NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
 DESCRIPTION:Status: Scheduled\nMatch No: 189 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: NY Kids S.C. 2013/2
- 014 boys\nAWAY: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\n
- \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
- m=4265007
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: NY Kids S.C. 2013/
+ 2014 boys\nAWAY: Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray\
+ n\nResults: 7 - 2\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4265007
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42650
  07
 CATEGORIES:CJSL,Soccer

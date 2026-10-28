@@ -190,17 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-522@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T145500
 DTEND;TZID=America/New_York:20261024T155500
 SUMMARY:CJSL: Brooklyn City FC vs Stage10 FC Boys Leopards 2015/2016
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Scheduled\nMatch No: 522 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.
- C. B15/16 Blue\nAWAY: Stage10 FC Boys Leopards 2015/2016\n\nSource: https:
- //system.gotsport.com/org_event/events/55206/schedules?team=4272105
+ D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Brooklyn City FC F
+ .C. B15/16 Blue\nAWAY: Stage10 FC Boys Leopards 2015/2016\n\nResults: 0 - 
+ 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4272105
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42721
  05
 CATEGORIES:CJSL,Soccer

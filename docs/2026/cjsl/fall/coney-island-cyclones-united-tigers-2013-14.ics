@@ -188,17 +188,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-145@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T103000
 DTEND;TZID=America/New_York:20261025T113000
 SUMMARY:CJSL: Coney Island Cyclones vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Flushing Meadows Corona Park - Field # 9 - Field 9A
 DESCRIPTION:Status: Scheduled\nMatch No: 145 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: LS Select FC Raptors Eli
- te 2014/2013\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nSource:
-  https://system.gotsport.com/org_event/events/55206/schedules?team=4259832
+ D3\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: LS Select FC Raptors El
+ ite 2014/2013\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nResult
+ s: 3 - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer

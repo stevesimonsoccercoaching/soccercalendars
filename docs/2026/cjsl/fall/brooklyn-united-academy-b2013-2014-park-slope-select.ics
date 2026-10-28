@@ -148,18 +148,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-191@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T173000
 DTEND;TZID=America/New_York:20261024T183000
 SUMMARY:CJSL: Brooklyn United vs South Brooklyn FC
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 191 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #
- 2 2013/2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\
- nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
- =4216813
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: South Brooklyn FC 
+ #2 2013/2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n
+ \nResults: 4 - 1\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer

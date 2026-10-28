@@ -148,17 +148,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-382@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T160000
 DTEND;TZID=America/New_York:20261024T170000
 SUMMARY:CJSL: South Brooklyn FC vs DV7 NY B2014/15
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 382 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 
- 2014/2015\nAWAY: DV7 NY B2014/15\n\nSource: https://system.gotsport.com/or
- g_event/events/55206/schedules?team=4259907
+ D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: South Brooklyn Fc
+  2014/2015\nAWAY: DV7 NY B2014/15\n\nResults: 2 - 4\n\nSource: https://sys
+ tem.gotsport.com/org_event/events/55206/schedules?team=4259907
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  07
 CATEGORIES:CJSL,Soccer

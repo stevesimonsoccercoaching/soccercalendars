@@ -107,18 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-261@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T121500
 DTEND;TZID=America/New_York:20261025T131500
 SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 261 (HOME)\nDivision: U12 (9v9) - 
- Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
- s / Brooklyn Patriots 2014-2015 Blue\nAWAY: Long Island City Soccer Club 2
- 014/2015\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4262171
+ Super D1\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Fun for Ki
+ ds / Brooklyn Patriots 2014-2015 Blue\nAWAY: Long Island City Soccer Club 
+ 2014/2015\n\nResults: 2 - 2\n\nSource: https://system.gotsport.com/org_eve
+ nt/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer

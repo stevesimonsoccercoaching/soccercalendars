@@ -107,18 +107,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-998@system.gotsport.com
-DTSTAMP:20261017T114201Z
-LAST-MODIFIED:20261017T114201Z
-SEQUENCE:1
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261025T112000
 DTEND;TZID=America/New_York:20261025T122000
 SUMMARY:CJSL: SFFK vs VIP Soccer Academy 2018/2019 CJSL
 LOCATION:Kingsborough College Field - KCC Outdoor Field
 DESCRIPTION:Status: Scheduled\nMatch No: 998 (AWAY)\nDivision: U9 (7v7) - D
- 4 Liberty\nUpdated: Oct 17\, 2026 at 7:42 AM EDT\n\nHOME: VIP Soccer Acade
+ 4 Liberty\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: VIP Soccer Acade
  my 2018/2019 CJSL\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2017-2018
- \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
- eam=4262127
+ \n\nResults: 8 - 0\n\nSource: https://system.gotsport.com/org_event/events
+ /55206/schedules?team=4262127
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  27
 CATEGORIES:CJSL,Soccer

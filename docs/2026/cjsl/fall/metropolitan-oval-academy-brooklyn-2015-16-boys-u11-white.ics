@@ -152,19 +152,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-574@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261025T170000
 DTEND;TZID=America/New_York:20261025T180000
 SUMMARY:CJSL: Met Oval vs Soccer Stars United Met Oval - SSU Black 2015/201
  6 (Formerly Pulsar)
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Scheduled\nMatch No: 574 (AWAY)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Stars United
-  Met Oval - SSU Black 2015/2016 (Formerly Pulsar)\nAWAY: Metropolitan Oval
-  Academy Brooklyn 2015/16 Boys U11 White\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4264996
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Stars Unite
+ d Met Oval - SSU Black 2015/2016 (Formerly Pulsar)\nAWAY: Metropolitan Ova
+ l Academy Brooklyn 2015/16 Boys U11 White\n\nResults: 3 - 3\n\nSource: htt
+ ps://system.gotsport.com/org_event/events/55206/schedules?team=4264996
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
  96
 CATEGORIES:CJSL,Soccer

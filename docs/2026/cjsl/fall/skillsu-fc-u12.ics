@@ -146,17 +146,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-383@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:3
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261024T153000
 DTEND;TZID=America/New_York:20261024T163000
 SUMMARY:CJSL: SkillsU FC vs Brooklyn City FC
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Rescheduled\nMatch No: 383 (HOME)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: SkillsU FC U12\
- nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nSource: https://system.gotspor
- t.com/org_event/events/55206/schedules?team=4321423
+ - D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SkillsU FC U12\
+ nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nResults: 3 - 3\n\nSource: http
+ s://system.gotsport.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
  23
 CATEGORIES:CJSL,Soccer

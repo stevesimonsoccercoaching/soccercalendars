@@ -189,19 +189,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-147@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T180000
 DTEND;TZID=America/New_York:20261024T190000
 SUMMARY:CJSL: ALBION Brooklyn vs Long Island CIty Youth Soccer Academy LIC 
  GOATS 2013/2014
 LOCATION:St. Michael’s Playground  - Small Sided A
 DESCRIPTION:Status: Scheduled\nMatch No: 147 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island CIty Youth S
- occer Academy LIC GOATS 2013/2014\nAWAY: ALBION SC Brooklyn B13/14 Premier
-  - Williamsburg\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4264740
+ D3\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Long Island CIty Youth 
+ Soccer Academy LIC GOATS 2013/2014\nAWAY: ALBION SC Brooklyn B13/14 Premie
+ r - Williamsburg\n\nResults: 8 - 0\n\nSource: https://system.gotsport.com/
+ org_event/events/55206/schedules?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer

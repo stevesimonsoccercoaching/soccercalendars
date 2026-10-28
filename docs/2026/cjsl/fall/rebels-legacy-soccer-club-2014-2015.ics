@@ -149,18 +149,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-435@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T140000
 DTEND;TZID=America/New_York:20261025T150000
 SUMMARY:CJSL: Rebels Legacy vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 435 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
- r Club 2014\\2015\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nSource: 
- https://system.gotsport.com/org_event/events/55206/schedules?team=4260592
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Rebels Legacy Socc
+ er Club 2014\\2015\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nResults
+ : 0 - 10\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
  92
 CATEGORIES:CJSL,Soccer

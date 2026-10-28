@@ -187,17 +187,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-190@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T134500
 DTEND;TZID=America/New_York:20261024T144500
 SUMMARY:CJSL: Dynamo SC vs SC Gjoa
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 190 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY:
-  Dynamo Soccer Club 2014\n\nSource: https://system.gotsport.com/org_event/
- events/55206/schedules?team=4240357
+ D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY
+ : Dynamo Soccer Club 2014\n\nResults: 7 - 0\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer

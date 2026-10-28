@@ -187,18 +187,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-381@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
 SUMMARY:CJSL: FA Euro vs SFFK
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 381 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
- s / Brooklyn Patriots 2014-2015 White\nAWAY: FA Euro New York 2014/2015 Pr
- e-MLS III\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
- hedules?team=4264585
+ D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Fun for Ki
+ ds / Brooklyn Patriots 2014-2015 White\nAWAY: FA Euro New York 2014/2015 P
+ re-MLS III\n\nResults: 6 - 8\n\nSource: https://system.gotsport.com/org_ev
+ ent/events/55206/schedules?team=4264585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42645
  85
 CATEGORIES:CJSL,Soccer

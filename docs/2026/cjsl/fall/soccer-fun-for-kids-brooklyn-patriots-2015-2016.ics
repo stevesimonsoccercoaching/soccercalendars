@@ -67,47 +67,6 @@ DESCRIPTION:CJSL match in 3 hours
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cjsl-55206-match-512@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20260927T110000
-DTEND;TZID=America/New_York:20260927T120000
-SUMMARY:CJSL: SFFK vs Stage10 FC Boys Leopards 2015/2016
-LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
-DESCRIPTION:Status: Rained Out\nMatch No: 512 (HOME)\nDivision: U11 (9v9) -
-  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
- s / Brooklyn Patriots 2015-2016\nAWAY: Stage10 FC Boys Leopards 2015/2016\
- n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
- am=4262140
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
- 40
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-516@system.gotsport.com
 DTSTAMP:20261010T010606Z
 LAST-MODIFIED:20261010T010606Z
@@ -191,18 +150,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-521@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T081500
 DTEND;TZID=America/New_York:20261024T091500
 SUMMARY:CJSL: SFFK vs ALBION Brooklyn
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 521 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
- B15/16 Premier - Williamsburg\nAWAY: Soccer Fun for Kids / Brooklyn Patrio
- ts 2015-2016\n\nSource: https://system.gotsport.com/org_event/events/55206
- /schedules?team=4262140
+ D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: ALBION SC Brooklyn
+  B15/16 Premier - Williamsburg\nAWAY: Soccer Fun for Kids / Brooklyn Patri
+ ots 2015-2016\n\nResults: 4 - 4\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer
@@ -332,6 +291,47 @@ CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-512@system.gotsport.com
+DTSTAMP:20261028T195711Z
+LAST-MODIFIED:20261028T195711Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261115T110000
+DTEND;TZID=America/New_York:20261115T120000
+SUMMARY:CJSL: SFFK vs Stage10 FC Boys Leopards 2015/2016
+LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
+DESCRIPTION:Status: Rescheduled\nMatch No: 512 (HOME)\nDivision: U11 (9v9) 
+ - D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Fun for K
+ ids / Brooklyn Patriots 2015-2016\nAWAY: Stage10 FC Boys Leopards 2015/201
+ 6\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4262140
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
+ 40
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
