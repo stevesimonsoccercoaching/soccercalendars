@@ -1,26 +1,8 @@
 {
   "watch_name": "SFFK / Brooklyn Patriots 2015-2016",
-  "updated_at_utc": "2026-10-26T20:33:05Z",
-  "event_count": 19,
+  "updated_at_utc": "2026-11-02T00:49:46Z",
+  "event_count": 18,
   "events": {
-    "WEAVE-5a5e45e1-7ea3-4132-8d1e-52121d06389f": {
-      "uid": "WEAVE-5a5e45e1-7ea3-4132-8d1e-52121d06389f",
-      "start": "20251102T160000Z",
-      "end": "20251102T170000Z",
-      "summary": "2015-2016: Game:",
-      "location": "Prospect Park, Parade Grounds Field 7B, Caton Ave and Argyle Rd, Brooklyn, NY, USA",
-      "home_team": "2015 White",
-      "away_team": "Lions 2015",
-      "event": "CJSL - Fall 2025 - U8-U19 - Elite Travel",
-      "group": "U11 Born 2015 Elite 3 Gold",
-      "pitch_name": "Parade Grounds Field 7B",
-      "match_status": "Scheduled",
-      "surface": "Artificial",
-      "venue_name": "Prospect Park, Parade Grounds Field 7B",
-      "address": "Prospect Park, Parade Grounds Field 7B, Caton Ave and Argyle Rd, Brooklyn, NY, USA",
-      "created": "20250816T134754Z",
-      "last_modified": "20251110T161403Z"
-    },
     "WEAVE-2e36deb8-c228-4823-8f37-8c3c06801c48": {
       "uid": "WEAVE-2e36deb8-c228-4823-8f37-8c3c06801c48",
       "start": "20251108T180000Z",
@@ -253,7 +235,7 @@
       "venue_name": "Prospect Park, Parade Grounds Field 7A",
       "address": "Prospect Park, Parade Grounds Field 7A, Caton Ave and Argyle Rd, Brooklyn, NY, USA",
       "created": "20260817T113200Z",
-      "last_modified": "20261026T203157Z"
+      "last_modified": "20261101T040124Z"
     },
     "WEAVE-1399acd6-e388-4f9b-be8d-aa890ca14f3c": {
       "uid": "WEAVE-1399acd6-e388-4f9b-be8d-aa890ca14f3c",
@@ -271,7 +253,7 @@
       "venue_name": "Frank Principe Park/ Maurice Park Soccer 04",
       "address": "Frank Principe Park/ Maurice Park Soccer 04, Maurice Ave, Soccer 04, Maspeth, NY, USA",
       "created": "20260817T113201Z",
-      "last_modified": "20261026T203157Z"
+      "last_modified": "20261101T153837Z"
     },
     "WEAVE-1d516d0f-ed39-46ac-8b58-5a70a1fe87c2": {
       "uid": "WEAVE-1d516d0f-ed39-46ac-8b58-5a70a1fe87c2",
@@ -289,7 +271,7 @@
       "venue_name": "Randall's Island",
       "address": "Randall's Island, 20 Randalls Is Park, New York, NY, USA",
       "created": "20260817T113201Z",
-      "last_modified": "20261026T203157Z"
+      "last_modified": "20261101T153837Z"
     },
     "WEAVE-2941a91c-3503-44fa-8029-cffb5fddd776": {
       "uid": "WEAVE-2941a91c-3503-44fa-8029-cffb5fddd776",
@@ -307,7 +289,7 @@
       "venue_name": "Prospect Park, Parade Grounds Field 7A",
       "address": "Prospect Park, Parade Grounds Field 7A, Caton Ave and Argyle Rd, Brooklyn, NY, USA",
       "created": "20260817T113203Z",
-      "last_modified": "20261026T203158Z"
+      "last_modified": "20261101T153837Z"
     },
     "WEAVE-f65c491b-b7d2-4078-a5de-f933e8bd7b1d": {
       "uid": "WEAVE-f65c491b-b7d2-4078-a5de-f933e8bd7b1d",
@@ -325,7 +307,7 @@
       "venue_name": "Bush Terminal Piers Park",
       "address": "Bush Terminal Piers Park, 5004 1st Avenue, Brooklyn, NY, USA",
       "created": "20260817T113206Z",
-      "last_modified": "20261026T203158Z"
+      "last_modified": "20261101T153837Z"
     },
     "WEAVE-85b1d9e3-d9ab-4660-993a-f1bc30d32d18": {
       "uid": "WEAVE-85b1d9e3-d9ab-4660-993a-f1bc30d32d18",
@@ -343,7 +325,7 @@
       "venue_name": "Prospect Park, Parade Grounds Field 7A",
       "address": "Prospect Park, Parade Grounds Field 7A, Caton Ave and Argyle Rd, Brooklyn, NY, USA",
       "created": "20260817T113158Z",
-      "last_modified": "20261026T203157Z"
+      "last_modified": "20261101T153837Z"
     }
   }
 }
