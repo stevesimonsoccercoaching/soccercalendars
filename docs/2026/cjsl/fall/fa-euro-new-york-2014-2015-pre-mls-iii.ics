@@ -228,17 +228,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-384@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T160000
 DTEND;TZID=America/New_York:20261031T170000
 SUMMARY:CJSL: FA Euro vs DV7 NY B2014/15
 LOCATION:Forest Park - Forest Park Soccer
 DESCRIPTION:Status: Scheduled\nMatch No: 384 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: DV7 NY B2014/15\nA
- WAY: FA Euro New York 2014/2015 Pre-MLS III\n\nSource: https://system.gots
- port.com/org_event/events/55206/schedules?team=4264585
+ D3 Cosmo\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: DV7 NY B2014/15\nA
+ WAY: FA Euro New York 2014/2015 Pre-MLS III\n\nResults: 10 - 1\n\nSource: 
+ https://system.gotsport.com/org_event/events/55206/schedules?team=4264585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42645
  85
 CATEGORIES:CJSL,Soccer

@@ -150,17 +150,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-475@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T090000
 DTEND;TZID=America/New_York:20261031T100000
 SUMMARY:CJSL: Coney Island Cyclones vs VIP Soccer Academy 2016/2017 CJSL
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 475 (HOME)\nDivision: U11 (9v9) - 
- D2\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclones Un
- ited Leopards 2015/16\nAWAY: VIP Soccer Academy 2016/2017 CJSL\n\nSource: 
- https://system.gotsport.com/org_event/events/55206/schedules?team=4261459
+ D2\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Coney Island Cyclones Un
+ ited Leopards 2015/16\nAWAY: VIP Soccer Academy 2016/2017 CJSL\n\nResults:
+  2 - 4\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
+ ules?team=4261459
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  59
 CATEGORIES:CJSL,Soccer

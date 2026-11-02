@@ -231,18 +231,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-149@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T123000
 DTEND;TZID=America/New_York:20261031T133000
 SUMMARY:CJSL: ALBION Brooklyn vs LS Select FC Raptors Elite 2014/2013
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 149 (HOME)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn B13/1
- 4 Premier - Williamsburg\nAWAY: LS Select FC Raptors Elite 2014/2013\n\nSo
- urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
- 64740
+ D3\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: ALBION SC Brooklyn B13/1
+ 4 Premier - Williamsburg\nAWAY: LS Select FC Raptors Elite 2014/2013\n\nRe
+ sults: 3 - 7\n\nSource: https://system.gotsport.com/org_event/events/55206
+ /schedules?team=4264740
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  40
 CATEGORIES:CJSL,Soccer

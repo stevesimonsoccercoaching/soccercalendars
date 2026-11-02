@@ -191,18 +191,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-524@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T100000
 DTEND;TZID=America/New_York:20261031T110000
 SUMMARY:CJSL: SFFK vs Stage10 FC Boys Leopards 2015/2016
 LOCATION:Randall's Island - 7
 DESCRIPTION:Status: Scheduled\nMatch No: 524 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Stage10 FC Boys Leo
+ D3 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Stage10 FC Boys Leo
  pards 2015/2016\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\n
- \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
- m=4262140
+ \nResults: 2 - 0\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4262140
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  40
 CATEGORIES:CJSL,Soccer

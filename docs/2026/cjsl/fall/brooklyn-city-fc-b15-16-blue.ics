@@ -231,9 +231,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-526@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T095500
 DTEND;TZID=America/New_York:20261031T105500
 SUMMARY:CJSL: Brooklyn City FC vs Griffin United Soccer Club Elite Brooklyn
@@ -241,10 +241,10 @@ SUMMARY:CJSL: Brooklyn City FC vs Griffin United Soccer Club Elite Brooklyn
 LOCATION:Barry "Sly" Morrow Field  - Barry "Sly"  Morrow Field ( 7 vs 7) & 
  ( 9 vs 9)
 DESCRIPTION:Status: Scheduled\nMatch No: 526 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Griffin United Socc
+ D3 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Griffin United Socc
  er Club Elite Brooklyn Boys - 2015/2016\nAWAY: Brooklyn City FC F.C. B15/1
- 6 Blue\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
- ules?team=4272105
+ 6 Blue\n\nResults: 4 - 1\n\nSource: https://system.gotsport.com/org_event/
+ events/55206/schedules?team=4272105
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42721
  05
 CATEGORIES:CJSL,Soccer

@@ -151,19 +151,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-409@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T143000
 DTEND;TZID=America/New_York:20261031T153000
 SUMMARY:CJSL: Lucky Soccer Academy vs Kickers Jr. of Southeast Queens BOYS 
  (2014-2015) FALCONS
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 409 (HOME)\nDivision: U12 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Lucky Soccer Acade
+ D4 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Lucky Soccer Acade
  my Shining Stars 14-15\nAWAY: Kickers Jr. of Southeast Queens BOYS (2014-2
- 015) FALCONS\n\nSource: https://system.gotsport.com/org_event/events/55206
- /schedules?team=4233548
+ 015) FALCONS\n\nResults: 1 - 0\n\nSource: https://system.gotsport.com/org_
+ event/events/55206/schedules?team=4233548
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
  48
 CATEGORIES:CJSL,Soccer

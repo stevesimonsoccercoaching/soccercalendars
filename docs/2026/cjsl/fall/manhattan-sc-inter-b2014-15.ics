@@ -149,17 +149,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-431@system.gotsport.com
-DTSTAMP:20261014T224944Z
-LAST-MODIFIED:20261014T224944Z
-SEQUENCE:3
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261101T153000
 DTEND;TZID=America/New_York:20261101T163000
 SUMMARY:CJSL: Manhattan SC vs SC Gjoa
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Rescheduled\nMatch No: 431 (HOME)\nDivision: U12 (9v9) 
- - D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: Manhattan SC Int
- er B2014/15\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport.com/o
- rg_event/events/55206/schedules?team=4239148
+ - D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Manhattan SC Inte
+ r B2014/15\nAWAY: SC Gjoa Nyland\n\nResults: 5 - 3\n\nSource: https://syst
+ em.gotsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer

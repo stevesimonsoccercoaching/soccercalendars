@@ -191,17 +191,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-548@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T140000
 DTEND;TZID=America/New_York:20261031T150000
 SUMMARY:CJSL: Soccer Legion vs 5 Star Soccer Academy 2015/2016
 LOCATION:Brooklyn Bridge Park Pier 5  - Field #3B
 DESCRIPTION:Status: Scheduled\nMatch No: 548 (HOME)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Legion FC U
- 11 Boys Blue (2015/2016)\nAWAY: 5 Star Soccer Academy 2015/2016\n\nSource:
-  https://system.gotsport.com/org_event/events/55206/schedules?team=4435585
+ D4 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Soccer Legion FC U
+ 11 Boys Blue (2015/2016)\nAWAY: 5 Star Soccer Academy 2015/2016\n\nResults
+ : 0 - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
+ dules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer

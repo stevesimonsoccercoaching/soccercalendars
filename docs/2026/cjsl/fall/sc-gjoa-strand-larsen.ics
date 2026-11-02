@@ -188,17 +188,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-290@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T080000
 DTEND;TZID=America/New_York:20261031T090000
 SUMMARY:CJSL: SC Gjoa vs ALBION Brooklyn
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 290 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
- sen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nSource: htt
- ps://system.gotsport.com/org_event/events/55206/schedules?team=4244158
+ D2 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SC Gjoa Strand Lar
+ sen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nResults: 5 
+ - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
+ s?team=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer

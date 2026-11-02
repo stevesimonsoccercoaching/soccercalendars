@@ -191,18 +191,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-118@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261101T150000
 DTEND;TZID=America/New_York:20261101T160000
 SUMMARY:CJSL: Brooklyn Premier vs Long Island City Soccer Club 2013/2014
 LOCATION:Astoria Park  - Astoria Park
 DESCRIPTION:Status: Scheduled\nMatch No: 118 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island Cit
- y Soccer Club 2013/2014\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSou
- rce: https://system.gotsport.com/org_event/events/55206/schedules?team=422
- 5977
+ D1 - D2 Mix\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Long Island Cit
+ y Soccer Club 2013/2014\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nRes
+ ults: 0 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206/
+ schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer

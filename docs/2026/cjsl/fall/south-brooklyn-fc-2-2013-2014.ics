@@ -229,17 +229,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-194@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T130000
 DTEND;TZID=America/New_York:20261031T140000
 SUMMARY:CJSL: South Brooklyn FC vs SC Gjoa
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 194 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #
- 2 2013/2014\nAWAY: SC Gjoa Ajer\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4259905
+ D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: South Brooklyn FC #
+ 2 2013/2014\nAWAY: SC Gjoa Ajer\n\nResults: 6 - 1\n\nSource: https://syste
+ m.gotsport.com/org_event/events/55206/schedules?team=4259905
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  05
 CATEGORIES:CJSL,Soccer

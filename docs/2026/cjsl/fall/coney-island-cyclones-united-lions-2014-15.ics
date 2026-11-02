@@ -232,17 +232,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-313@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261101T120000
 DTEND;TZID=America/New_York:20261101T130000
 SUMMARY:CJSL: Coney Island Cyclones vs South Bronx Utd SBU 2015
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 313 (HOME)\nDivision: U12 (9v9) - 
- D2 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Coney Island Cyclon
- es United Lions 2014/15\nAWAY: South Bronx Utd SBU 2015\n\nSource: https:/
- /system.gotsport.com/org_event/events/55206/schedules?team=4261465
+ D2 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Coney Island Cyclon
+ es United Lions 2014/15\nAWAY: South Bronx Utd SBU 2015\n\nResults: 4 - 0\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4261465
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42614
  65
 CATEGORIES:CJSL,Soccer

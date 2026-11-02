@@ -229,17 +229,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-148@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T165000
 DTEND;TZID=America/New_York:20261031T175000
 SUMMARY:CJSL: Coney Island Cyclones vs Brooklyn City FC
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 148 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.C. B1
- 3/14\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nSource: https:/
- /system.gotsport.com/org_event/events/55206/schedules?team=4259832
+ D3\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Brooklyn City FC F.C. B1
+ 3/14\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nResults: 1 - 1\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4259832
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42598
  32
 CATEGORIES:CJSL,Soccer

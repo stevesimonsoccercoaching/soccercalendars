@@ -189,19 +189,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-288@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T130000
 DTEND;TZID=America/New_York:20261031T140000
 SUMMARY:CJSL: French Football Academy vs Excelsior New York Academy 2014/20
  15 Boys
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 288 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
-  Academy 2014/2015 Boys\nAWAY: French Football Academy 2014/15 Digne\n\nSo
- urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
- 06689
+ D2 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Excelsior New York
+  Academy 2014/2015 Boys\nAWAY: French Football Academy 2014/15 Digne\n\nRe
+ sults: 4 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206
+ /schedules?team=4206689
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42066
  89
 CATEGORIES:CJSL,Soccer

@@ -148,18 +148,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-991@system.gotsport.com
-DTSTAMP:20261017T114201Z
-LAST-MODIFIED:20261017T114201Z
-SEQUENCE:1
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T120000
 DTEND;TZID=America/New_York:20261031T130000
 SUMMARY:CJSL: SFFK vs South Brooklyn FC S.B 2017/2018
 LOCATION:Dust Bowl - 11v11
 DESCRIPTION:Status: Rescheduled\nMatch No: 991 (AWAY)\nDivision: U9 (7v7) -
-  D4 Liberty\nUpdated: Oct 17\, 2026 at 7:42 AM EDT\n\nHOME: South Brooklyn
-  FC S.B 2017/2018\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2017-2018
- \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
- eam=4262127
+  D4 Liberty\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: South Brooklyn 
+ FC S.B 2017/2018\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2017-2018\
+ n\nResults: 2 - 0\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4262127
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  27
 CATEGORIES:CJSL,Soccer
@@ -189,18 +189,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-1000@system.gotsport.com
-DTSTAMP:20261017T114201Z
-LAST-MODIFIED:20261017T114201Z
-SEQUENCE:1
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261101T110000
 DTEND;TZID=America/New_York:20261101T120000
 SUMMARY:CJSL: SFFK vs South Brooklyn FC S.B 2017/2018
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 1000 (HOME)\nDivision: U9 (7v7) - 
- D4 Liberty\nUpdated: Oct 17\, 2026 at 7:42 AM EDT\n\nHOME: Soccer Fun for 
- Kids / Brooklyn Patriots 2017-2018\nAWAY: South Brooklyn FC S.B 2017/2018\
- n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
- am=4262127
+ D4 Liberty\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Soccer Fun for K
+ ids / Brooklyn Patriots 2017-2018\nAWAY: South Brooklyn FC S.B 2017/2018\n
+ \nResults: 0 - 2\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4262127
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  27
 CATEGORIES:CJSL,Soccer

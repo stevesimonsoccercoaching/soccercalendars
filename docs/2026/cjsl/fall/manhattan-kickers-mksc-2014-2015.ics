@@ -228,17 +228,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-289@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261101T101500
 DTEND;TZID=America/New_York:20261101T111500
 SUMMARY:CJSL: MKSC vs Brooklyn Italians
 LOCATION:Calvert Vaux Park - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 289 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
- 2014/2015 Premier\nAWAY: Manhattan Kickers MKSC 2014/2015\n\nSource: https
- ://system.gotsport.com/org_event/events/55206/schedules?team=4239121
+ D2 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Brooklyn Italians 
+ 2014/2015 Premier\nAWAY: Manhattan Kickers MKSC 2014/2015\n\nResults: 0 - 
+ 8\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4239121
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  21
 CATEGORIES:CJSL,Soccer

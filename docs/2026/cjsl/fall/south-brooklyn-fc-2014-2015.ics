@@ -188,17 +188,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-386@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261102T195315Z
+LAST-MODIFIED:20261102T195315Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
 SUMMARY:CJSL: South Brooklyn FC vs SkillsU FC
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 386 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SkillsU FC U12\nAW
- AY: South Brooklyn Fc 2014/2015\n\nSource: https://system.gotsport.com/org
- _event/events/55206/schedules?team=4259907
+ D3 Cosmo\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SkillsU FC U12\nAW
+ AY: South Brooklyn Fc 2014/2015\n\nResults: 3 - 8\n\nSource: https://syste
+ m.gotsport.com/org_event/events/55206/schedules?team=4259907
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  07
 CATEGORIES:CJSL,Soccer
