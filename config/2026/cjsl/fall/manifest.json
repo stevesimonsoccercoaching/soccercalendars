@@ -45,6 +45,7 @@
     "Dynamo Soccer Club 2014": "Dynamo SC",
     "FA Euro New York 2014/2015 Pre-MLS III": "FA Euro",
     "French Football Academy 2014/15 Digne": "French Football Academy",
+    "Long Island City Soccer Club 2013/2014": "Long Island City SC",
     "Lucky Soccer Academy Shining Stars 14-15": "Lucky Soccer Academy",
     "Manhattan Kickers MKSC 2014/2015": "MKSC",
     "Manhattan SC Inter B2014/15": "Manhattan SC",
@@ -57,6 +58,7 @@
     "SC Gjoa Nyland": "SC Gjoa",
     "SC Gjoa Strand Larsen": "SC Gjoa",
     "SkillsU FC U12": "SkillsU FC",
+    "Soccer Fun for Kids / Brooklyn Patriots 2013-2014": "SFFK",
     "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue": "SFFK",
     "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White": "SFFK",
     "Soccer Fun for Kids / Brooklyn Patriots 2015-2016": "SFFK",
@@ -353,6 +355,19 @@
       }
     },
     {
+      "name": "Soccer Fun for Kids / Brooklyn Patriots 2013-2014",
+      "short_name": "SFFK",
+      "slug": "soccer-fun-for-kids-brooklyn-patriots-2013-2014",
+      "gotsport": {
+        "schedule_team_id": "4262229",
+        "export_team_id": "4262229",
+        "group_id": "536620",
+        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4262229",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262229",
+        "group_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?group=536620"
+      }
+    },
+    {
       "name": "SC Gjoa Johnsen",
       "short_name": "SC Gjoa",
       "slug": "sc-gjoa-johnsen",
@@ -376,6 +391,19 @@
         "schedule_url": "https://system.gotsport.com/org_event/events/55206/schedules?team=4225977",
         "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4225977",
         "group_url": "https://system.gotsport.com/org_event/events/55206/schedules?group=536620"
+      }
+    },
+    {
+      "name": "Long Island City Soccer Club 2013/2014",
+      "short_name": "Long Island City SC",
+      "slug": "long-island-city-soccer-club-2013-2014",
+      "gotsport": {
+        "schedule_team_id": "4260510",
+        "export_team_id": "4260510",
+        "group_id": "536620",
+        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4260510",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4260510",
+        "group_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?group=536620"
       }
     },
     {
