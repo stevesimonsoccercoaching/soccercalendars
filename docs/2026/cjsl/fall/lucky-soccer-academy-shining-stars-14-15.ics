@@ -193,25 +193,45 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-412@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
+DTSTAMP:20261106T011509Z
+LAST-MODIFIED:20261106T011509Z
+SEQUENCE:4
+DTSTART;TZID=America/New_York:20261107T143000
+DTEND;TZID=America/New_York:20261107T153000
 SUMMARY:CJSL: Lucky Soccer Academy vs Soccer Stars United Met Oval - SSU Bl
  ue 2014/2015 (Equator)
-LOCATION:
-DESCRIPTION:Status: Scheduled\nMatch No: 412 (AWAY)\nDivision: U12 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Stars Unite
- d Met Oval - SSU Blue 2014/2015 (Equator)\nAWAY: Lucky Soccer Academy Shin
- ing Stars 14-15\n\nSource: https://system.gotsport.com/org_event/events/55
- 206/schedules?team=4233548
+LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
+DESCRIPTION:Status: Rescheduled\nMatch No: 412 (AWAY)\nDivision: U12 (9v9) 
+ - D4 Metro\nUpdated: Nov 5\, 2026 at 8:15 PM EST\n\nHOME: Soccer Stars Uni
+ ted Met Oval - SSU Blue 2014/2015 (Equator)\nAWAY: Lucky Soccer Academy Sh
+ ining Stars 14-15\n\nSource: https://system.gotsport.com/org_event/events/
+ 55206/schedules?team=4233548
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42335
  48
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-414@system.gotsport.com
