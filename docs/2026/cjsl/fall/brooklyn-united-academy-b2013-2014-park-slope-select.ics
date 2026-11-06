@@ -189,24 +189,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-193@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261106T130707Z
+LAST-MODIFIED:20261106T130707Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T163000
 DTEND;TZID=America/New_York:20261031T173000
 SUMMARY:CJSL: Brooklyn United vs NY Kids S.C. 2013/2014 boys
 LOCATION:Hamilton Metz Field - Field 1
-DESCRIPTION:Status: Scheduled\nMatch No: 193 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United Aca
- demy B2013/2014 Park Slope Select\nAWAY: NY Kids S.C. 2013/2014 boys\n\nSo
- urce: https://system.gotsport.com/org_event/events/55206/schedules?team=42
- 16813
+DESCRIPTION:Status: Forfeit\nMatch No: 193 (HOME)\nDivision: U13 (9v9) - D4
+  City\nUpdated: Nov 6\, 2026 at 8:07 AM EST\n\nHOME: Brooklyn United Acade
+ my B2013/2014 Park Slope Select\nAWAY: NY Kids S.C. 2013/2014 boys\n\nResu
+ lts: 2 - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/s
+ chedules?team=4216813
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42168
  13
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Forfeit
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

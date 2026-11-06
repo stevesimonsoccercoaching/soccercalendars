@@ -231,24 +231,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-525@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261106T130707Z
+LAST-MODIFIED:20261106T130707Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T170000
 DTEND;TZID=America/New_York:20261031T180000
 SUMMARY:CJSL: ALBION Brooklyn vs South Brooklyn Fc 2015/2016
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
-DESCRIPTION:Status: Rescheduled\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) 
- - D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc
-  2015/2016\nAWAY: ALBION SC Brooklyn B15/16 Premier - Williamsburg\n\nSour
- ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4264
- 733
+DESCRIPTION:Status: Forfeit\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) - D3
+  City\nUpdated: Nov 6\, 2026 at 8:07 AM EST\n\nHOME: South Brooklyn Fc 201
+ 5/2016\nAWAY: ALBION SC Brooklyn B15/16 Premier - Williamsburg\n\nResults:
+  2 - 0\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
+ ules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rescheduled
+X-GOTSPORT-STATUS:Forfeit
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
