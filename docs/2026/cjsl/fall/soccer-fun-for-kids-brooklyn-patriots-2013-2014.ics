@@ -30,15 +30,15 @@ LAST-MODIFIED:20261105T182035Z
 SEQUENCE:1
 DTSTART;TZID=America/New_York:20260919T160000
 DTEND;TZID=America/New_York:20260919T170000
-SUMMARY:CJSL: SFFK vs UNITED CYCLONES FC Geo -2013/14
+SUMMARY:CJSL: SFFK U13 vs UNITED CYCLONES FC Geo -2013/14
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 99 (AWAY)\nDivision: U13 (9v9) - D
  1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: UNITED CYCLONES 
  FC Geo -2013/14\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\n
  \nResults: 2 - 1\n\nSource: https://system.gotsport.com/splash/3244/events
- /55206/schedules?team=4262229
+ /55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -71,15 +71,15 @@ LAST-MODIFIED:20261105T182035Z
 SEQUENCE:1
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T130000
-SUMMARY:CJSL: SFFK vs Chernomorets Black Sea 2014
+SUMMARY:CJSL: SFFK U13 vs Chernomorets Black Sea 2014
 LOCATION:Scarangella Park  - Sacrangella Park
 DESCRIPTION:Status: Scheduled\nMatch No: 108 (AWAY)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: Chernomorets Bl
  ack Sea 2014\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2013-2014\n\nR
  esults: 3 - 3\n\nSource: https://system.gotsport.com/splash/3244/events/55
- 206/schedules?team=4262229
+ 206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -112,16 +112,16 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
-SUMMARY:CJSL: SFFK vs Brooklyn Premier
+SUMMARY:CJSL: SFFK U13 vs Brooklyn Premier U13 Regional
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (HOME)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Reg
  ional\n\nResults: 1 - 5\n\nSource: https://system.gotsport.com/splash/3244
- /events/55206/schedules?team=4262229
+ /events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -154,15 +154,15 @@ LAST-MODIFIED:20261105T182035Z
 SEQUENCE:1
 DTSTART;TZID=America/New_York:20261031T081500
 DTEND;TZID=America/New_York:20261031T091500
-SUMMARY:CJSL: SFFK vs New York United Soccer Academy NYUSA 2013/14 CJSL
+SUMMARY:CJSL: SFFK U13 vs New York United Soccer Academy NYUSA 2013/14 CJSL
 LOCATION:Randalls Island Park - Randalls 50- Full Sided
 DESCRIPTION:Status: Scheduled\nMatch No: 117 (AWAY)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: New York United
   Soccer Academy NYUSA 2013/14 CJSL\nAWAY: Soccer Fun for Kids / Brooklyn P
  atriots 2013-2014\n\nResults: 3 - 1\n\nSource: https://system.gotsport.com
- /splash/3244/events/55206/schedules?team=4262229
+ /splash/3244/events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -190,20 +190,20 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-124@system.gotsport.com
-DTSTAMP:20261105T182035Z
-LAST-MODIFIED:20261105T182035Z
-SEQUENCE:1
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T144500
 DTEND;TZID=America/New_York:20261108T154500
-SUMMARY:CJSL: SFFK vs Long Island City SC
+SUMMARY:CJSL: SFFK U13 vs Long Island City U13
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 124 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: Soccer Fun for 
- Kids / Brooklyn Patriots 2013-2014\nAWAY: Long Island City Soccer Club 201
- 3/2014\n\nSource: https://system.gotsport.com/splash/3244/events/55206/sch
- edules?team=4262229
+ D1 - D2 Mix\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Soccer Fun fo
+ r Kids / Brooklyn Patriots 2013-2014\nAWAY: Long Island City Soccer Club 2
+ 013/2014\n\nResults: 1 - 1\n\nSource: https://system.gotsport.com/splash/3
+ 244/events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -231,24 +231,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-126@system.gotsport.com
-DTSTAMP:20261105T182035Z
-LAST-MODIFIED:20261105T182035Z
-SEQUENCE:1
-DTSTART;TZID=America/New_York:20261114T084000
-DTEND;TZID=America/New_York:20261114T094000
-SUMMARY:CJSL: SFFK vs Eastern Queens FC - 2013/2014 Boys
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:2
+DTSTART;TZID=America/New_York:20261114T080000
+DTEND;TZID=America/New_York:20261114T090000
+SUMMARY:CJSL: SFFK U13 vs Eastern Queens FC - 2013/2014 Boys
 LOCATION:Kissena Park Soccer Turf Field - KISSENA Park
-DESCRIPTION:Status: Scheduled\nMatch No: 126 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: Eastern Queens 
- FC - 2013/2014 Boys\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2013-20
- 14\n\nSource: https://system.gotsport.com/splash/3244/events/55206/schedul
- es?team=4262229
+DESCRIPTION:Status: Rescheduled\nMatch No: 126 (AWAY)\nDivision: U13 (9v9) 
+ - D1 - D2 Mix\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Eastern Que
+ ens FC - 2013/2014 Boys\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 201
+ 3-2014\n\nSource: https://system.gotsport.com/splash/3244/events/55206/sch
+ edules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -277,14 +277,14 @@ LAST-MODIFIED:20261105T182035Z
 SEQUENCE:1
 DTSTART;TZID=America/New_York:20261115T143000
 DTEND;TZID=America/New_York:20261115T153000
-SUMMARY:CJSL: SFFK vs ARB SC U1314
+SUMMARY:CJSL: SFFK U13 vs ARB SC U1314
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Rescheduled\nMatch No: 102 (HOME)\nDivision: U13 (9v9) 
  - D1 - D2 Mix\nUpdated: Nov 5\, 2026 at 1:20 PM EST\n\nHOME: Soccer Fun fo
  r Kids / Brooklyn Patriots 2013-2014\nAWAY: ARB SC U1314\n\nSource: https:
- //system.gotsport.com/splash/3244/events/55206/schedules?team=4262229
+ //system.gotsport.com/splash/3244/events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
@@ -317,14 +317,14 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261122T110000
 DTEND;TZID=America/New_York:20261122T120000
-SUMMARY:CJSL: SFFK vs SC Gjoa
+SUMMARY:CJSL: SFFK U13 vs SC Gjoa U13 Johnsen
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 131 (HOME)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for 
  Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: https
- ://system.gotsport.com/splash/3244/events/55206/schedules?team=4262229
+ ://system.gotsport.com/splash/3244/events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
- 2229
+ 0510
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED

@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T123000
 DTEND;TZID=America/New_York:20260919T133000
-SUMMARY:CJSL: SC Gjoa vs FC Copa Academy Brooklyn B14/15 Black
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs FC Copa Academy Brooklyn B14/15 Black
 LOCATION:Aviator Sports & Events Center - Aviator Sports & Events Center Fi
  eld #2
 DESCRIPTION:Status: Scheduled\nMatch No: 421 (AWAY)\nDivision: U12 (9v9) - 
@@ -71,7 +71,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T093000
 DTEND;TZID=America/New_York:20261004T103000
-SUMMARY:CJSL: SC Gjoa vs River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs River Island FC 2015/2016 RAVENS
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 427 (HOME)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
@@ -111,7 +111,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T090000
 DTEND;TZID=America/New_York:20261025T100000
-SUMMARY:CJSL: SC Gjoa vs UNITED CYCLONES FC Geo 2014/15
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 434 (HOME)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Nyland\nAW
@@ -151,7 +151,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261101T153000
 DTEND;TZID=America/New_York:20261101T163000
-SUMMARY:CJSL: SC Gjoa vs Manhattan SC
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs Manhattan SC U12 Inter
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Rescheduled\nMatch No: 431 (AWAY)\nDivision: U12 (9v9) 
  - D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Manhattan SC Inte
@@ -186,17 +186,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-439@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T083000
 DTEND;TZID=America/New_York:20261107T093000
-SUMMARY:CJSL: SC Gjoa vs River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs River Island FC 2015/2016 RAVENS
 LOCATION:Roosevelt Island- Octagon Field - Octagon Field
 DESCRIPTION:Status: Scheduled\nMatch No: 439 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: River Island FC 201
- 5/2016 RAVENS\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotsport.com
- /org_event/events/55206/schedules?team=4244169
+ D4 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: River Island FC 2
+ 015/2016 RAVENS\nAWAY: SC Gjoa Nyland\n\nResults: 6 - 2\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  69
 CATEGORIES:CJSL,Soccer
@@ -231,7 +231,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
-SUMMARY:CJSL: SC Gjoa vs Manhattan SC
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs Manhattan SC U12 Inter
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (HOME)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
@@ -271,7 +271,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
-SUMMARY:CJSL: SC Gjoa vs Rebels Legacy
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs Rebels Legacy U12
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 438 (AWAY)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Rebels Legacy Socce
@@ -311,7 +311,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261213T083000
 DTEND;TZID=America/New_York:20261213T093000
-SUMMARY:CJSL: SC Gjoa vs Rebels Legacy
+SUMMARY:CJSL: SC Gjoa U12 Nyland vs Rebels Legacy U12
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 426 (HOME)\nDivision: U12 (9v9) 
  - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nA

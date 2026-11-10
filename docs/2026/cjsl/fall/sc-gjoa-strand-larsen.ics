@@ -30,7 +30,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T163000
 DTEND;TZID=America/New_York:20260919T173000
-SUMMARY:CJSL: SC Gjoa vs French Football Academy
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs French Football Academy U12 Dign
+ e
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 275 (AWAY)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: French Football Ac
@@ -71,7 +72,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T104500
 DTEND;TZID=America/New_York:20261003T114500
-SUMMARY:CJSL: SC Gjoa vs Excelsior New York Academy 2014/2015 Boys
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs Excelsior New York Academy 2014/
+ 2015 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 281 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
@@ -112,7 +114,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T171000
 DTEND;TZID=America/New_York:20261017T181000
-SUMMARY:CJSL: SC Gjoa vs MKSC
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs MKSC U12
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 284 (AWAY)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Manhattan Kickers
@@ -152,7 +154,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T103000
 DTEND;TZID=America/New_York:20261024T113000
-SUMMARY:CJSL: SC Gjoa vs Brooklyn Italians
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs Brooklyn Italians U12 Premier
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 287 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Strand La
@@ -193,7 +195,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T080000
 DTEND;TZID=America/New_York:20261031T090000
-SUMMARY:CJSL: SC Gjoa vs ALBION Brooklyn
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs ALBION Brooklyn U12 Premier
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 290 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SC Gjoa Strand Lar
@@ -229,17 +231,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-293@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T124500
 DTEND;TZID=America/New_York:20261107T134500
-SUMMARY:CJSL: SC Gjoa vs Excelsior New York Academy 2014/2015 Boys
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs Excelsior New York Academy 2014/
+ 2015 Boys
 LOCATION:Southern Fields - NYC Parks - 9 v 9
 DESCRIPTION:Status: Scheduled\nMatch No: 293 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Excelsior New York
-  Academy 2014/2015 Boys\nAWAY: SC Gjoa Strand Larsen\n\nSource: https://sy
- stem.gotsport.com/org_event/events/55206/schedules?team=4244158
+ D2 Metro\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Excelsior New Yo
+ rk Academy 2014/2015 Boys\nAWAY: SC Gjoa Strand Larsen\n\nResults: 3 - 2\n
+ \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
+ m=4244158
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  58
 CATEGORIES:CJSL,Soccer
@@ -274,7 +278,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T110000
 DTEND;TZID=America/New_York:20261114T120000
-SUMMARY:CJSL: SC Gjoa vs MKSC
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs MKSC U12
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 296 (HOME)\nDivision: U12 (9v9) - 
  D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Strand Lar
@@ -314,7 +318,7 @@ LAST-MODIFIED:20261014T224944Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
-SUMMARY:CJSL: SC Gjoa vs ALBION Brooklyn
+SUMMARY:CJSL: SC Gjoa U12 Strand Larsen vs ALBION Brooklyn U12 Premier
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rescheduled\nMatch No: 278 (AWAY)\nDivision: U12 (9v9) 
  - D2 Metro\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: ALBION SC Brook

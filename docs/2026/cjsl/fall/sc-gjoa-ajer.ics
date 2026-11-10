@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T110000
 DTEND;TZID=America/New_York:20260920T120000
-SUMMARY:CJSL: SC Gjoa vs Brooklyn United
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs Brooklyn United U13 Park Slope Select
 LOCATION:Dyker Beach Park -  Dyker Turf Field B Small Sided (B)
 DESCRIPTION:Status: Rescheduled\nMatch No: 177 (AWAY)\nDivision: U13 (9v9) 
  - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United A
@@ -71,7 +71,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T133000
 DTEND;TZID=America/New_York:20261003T143000
-SUMMARY:CJSL: SC Gjoa vs NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs NY Kids S.C. 2013/2014 boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 183 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY:
@@ -111,7 +111,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261018T123000
 DTEND;TZID=America/New_York:20261018T133000
-SUMMARY:CJSL: SC Gjoa vs Met Oval
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs Met Oval U13 Gray
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Rescheduled\nMatch No: 187 (AWAY)\nDivision: U13 (9v9) 
  - D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Metropolitan Ova
@@ -152,7 +152,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T134500
 DTEND;TZID=America/New_York:20261024T144500
-SUMMARY:CJSL: SC Gjoa vs Dynamo SC
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs Dynamo SC U13
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 190 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY
@@ -192,7 +192,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261025T133000
 DTEND;TZID=America/New_York:20261025T143000
-SUMMARY:CJSL: SC Gjoa vs South Brooklyn FC
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs South Brooklyn U13 #2
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Rescheduled\nMatch No: 182 (HOME)\nDivision: U13 (9v9) 
  - D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAW
@@ -232,7 +232,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T130000
 DTEND;TZID=America/New_York:20261031T140000
-SUMMARY:CJSL: SC Gjoa vs South Brooklyn FC
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs South Brooklyn U13 #2
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 194 (AWAY)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: South Brooklyn FC #
@@ -267,24 +267,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-195@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T103500
 DTEND;TZID=America/New_York:20261107T113500
-SUMMARY:CJSL: SC Gjoa vs NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
-DESCRIPTION:Status: Scheduled\nMatch No: 195 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: NY Kids S.C. 2013/2
- 014 boys\nAWAY: SC Gjoa Ajer\n\nSource: https://system.gotsport.com/org_ev
- ent/events/55206/schedules?team=4244196
+DESCRIPTION:Status: Forfeit\nMatch No: 195 (AWAY)\nDivision: U13 (9v9) - D4
+  City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: NY Kids S.C. 2013/2
+ 014 boys\nAWAY: SC Gjoa Ajer\n\nResults: 0 - 2\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4244196
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  96
 CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Scheduled
+X-GOTSPORT-STATUS:Forfeit
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY
@@ -313,7 +313,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
-SUMMARY:CJSL: SC Gjoa vs Met Oval
+SUMMARY:CJSL: SC Gjoa U13 Ajer vs Met Oval U13 Gray
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 199 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY:

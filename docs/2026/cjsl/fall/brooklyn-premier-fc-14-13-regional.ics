@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T180000
 DTEND;TZID=America/New_York:20260920T190000
-SUMMARY:CJSL: Brooklyn Premier vs ARB SC U1314
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs ARB SC U1314
 LOCATION:Frank Principe Park  - Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 100 (AWAY)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ARB SC U1314\nA
@@ -70,7 +70,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
-SUMMARY:CJSL: Brooklyn Premier vs SFFK
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs SFFK U13
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
@@ -112,7 +112,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
-SUMMARY:CJSL: Brooklyn Premier vs Chernomorets Black Sea 2014
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs Chernomorets Black Sea 2014
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Rescheduled\nMatch No: 101 (HOME)\nDivision: U13 (9v9) 
  - D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Brooklyn Pre
@@ -153,8 +153,8 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
-SUMMARY:CJSL: Brooklyn Premier vs New York United Soccer Academy NYUSA 2013
- /14 CJSL
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs New York United Soccer Acade
+ my NYUSA 2013/14 CJSL
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 116 (HOME)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Brooklyn Premi
@@ -195,7 +195,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261101T150000
 DTEND;TZID=America/New_York:20261101T160000
-SUMMARY:CJSL: Brooklyn Premier vs Long Island City SC
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs Long Island City U13
 LOCATION:Astoria Park  - Astoria Park
 DESCRIPTION:Status: Scheduled\nMatch No: 118 (AWAY)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Long Island Cit
@@ -231,17 +231,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-123@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T110000
 DTEND;TZID=America/New_York:20261108T120000
-SUMMARY:CJSL: Brooklyn Premier vs Eastern Queens FC - 2013/2014 Boys
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs Eastern Queens FC - 2013/201
+ 4 Boys
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 123 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie
- r F.C. 14/13 Regional\nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nSource:
-  https://system.gotsport.com/org_event/events/55206/schedules?team=4225977
+ D1 - D2 Mix\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Brooklyn Prem
+ ier F.C. 14/13 Regional\nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nResul
+ ts: 2 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259
  77
 CATEGORIES:CJSL,Soccer
@@ -276,7 +278,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
-SUMMARY:CJSL: Brooklyn Premier vs SC Gjoa
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs SC Gjoa U13 Johnsen
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (AWAY)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
@@ -316,7 +318,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T100000
 DTEND;TZID=America/New_York:20261121T110000
-SUMMARY:CJSL: Brooklyn Premier vs UNITED CYCLONES FC Geo -2013/14
+SUMMARY:CJSL: Brooklyn Premier U13 Regional vs UNITED CYCLONES FC Geo -2013
+ /14
 LOCATION:KAISER PARK - 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 130 (HOME)\nDivision: U13 (9v9) - 
  D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Premie

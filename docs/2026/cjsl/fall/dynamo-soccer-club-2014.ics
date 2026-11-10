@@ -24,54 +24,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cjsl-55206-match-180@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
-DTSTART;TZID=America/New_York:20260926T080000
-DTEND;TZID=America/New_York:20260926T090000
-SUMMARY:CJSL: Dynamo SC vs Met Oval
-LOCATION:Red Hook Field #5 - Field 5 11v11
-DESCRIPTION:Status: Rained Out\nMatch No: 180 (AWAY)\nDivision: U13 (9v9) -
-  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval 
- Academy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Dynamo Soccer Club 2014\n\nS
- ource: https://system.gotsport.com/org_event/events/55206/schedules?team=4
- 240357
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
- 57
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-185@system.gotsport.com
 DTSTAMP:20261010T010606Z
 LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T140000
 DTEND;TZID=America/New_York:20261004T150000
-SUMMARY:CJSL: Dynamo SC vs South Brooklyn FC
+SUMMARY:CJSL: Dynamo SC U13 vs South Brooklyn U13 #2
 LOCATION:Bush Terminal Park - Bush Terminal #2 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 185 (AWAY)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #
@@ -111,7 +70,7 @@ LAST-MODIFIED:20261014T224944Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261011T170000
 DTEND;TZID=America/New_York:20261011T180000
-SUMMARY:CJSL: Dynamo SC vs NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: Dynamo SC U13 vs NY Kids S.C. 2013/2014 boys
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Rained Out\nMatch No: 178 (HOME)\nDivision: U13 (9v9) -
   D4 City\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: Dynamo Soccer Clu
@@ -151,7 +110,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
-SUMMARY:CJSL: Dynamo SC vs Brooklyn United
+SUMMARY:CJSL: Dynamo SC U13 vs Brooklyn United U13 Park Slope Select
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 186 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Dynamo Soccer Club
@@ -192,7 +151,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T134500
 DTEND;TZID=America/New_York:20261024T144500
-SUMMARY:CJSL: Dynamo SC vs SC Gjoa
+SUMMARY:CJSL: Dynamo SC U13 vs SC Gjoa U13 Ajer
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 190 (AWAY)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAWAY
@@ -232,7 +191,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261101T170000
 DTEND;TZID=America/New_York:20261101T180000
-SUMMARY:CJSL: Dynamo SC vs Met Oval
+SUMMARY:CJSL: Dynamo SC U13 vs Met Oval U13 Gray
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 192 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Dynamo Soccer Club 
@@ -268,17 +227,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-197@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T170000
 DTEND;TZID=America/New_York:20261108T180000
-SUMMARY:CJSL: Dynamo SC vs South Brooklyn FC
+SUMMARY:CJSL: Dynamo SC U13 vs South Brooklyn U13 #2
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 197 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
- 2014\nAWAY: South Brooklyn FC #2 2013/2014\n\nSource: https://system.gotsp
- ort.com/org_event/events/55206/schedules?team=4240357
+ D4 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Dynamo Soccer Clu
+ b 2014\nAWAY: South Brooklyn FC #2 2013/2014\n\nResults: 2 - 11\n\nSource:
+  https://system.gotsport.com/org_event/events/55206/schedules?team=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer
@@ -313,13 +272,54 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T123000
 DTEND;TZID=America/New_York:20261115T133000
-SUMMARY:CJSL: Dynamo SC vs Brooklyn United
+SUMMARY:CJSL: Dynamo SC U13 vs Brooklyn United U13 Park Slope Select
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rescheduled\nMatch No: 198 (AWAY)\nDivision: U13 (9v9) 
  - D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn United A
  cademy B2013/2014 Park Slope Select\nAWAY: Dynamo Soccer Club 2014\n\nSour
  ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4240
  357
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
+ 57
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-180@system.gotsport.com
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
+DTSTART;TZID=America/New_York:20261122T094500
+DTEND;TZID=America/New_York:20261122T104500
+SUMMARY:CJSL: Dynamo SC U13 vs Met Oval U13 Gray
+LOCATION:Bush Terminal  - Field 2 (11v11)
+DESCRIPTION:Status: Rescheduled\nMatch No: 180 (AWAY)\nDivision: U13 (9v9) 
+ - D4 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Metropolitan Ov
+ al Academy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Dynamo Soccer Club 2014\n
+ \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
+ m=4240357
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42403
  57
 CATEGORIES:CJSL,Soccer

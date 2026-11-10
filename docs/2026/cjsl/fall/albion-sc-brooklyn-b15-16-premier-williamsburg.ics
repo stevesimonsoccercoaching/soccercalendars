@@ -30,7 +30,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T133000
 DTEND;TZID=America/New_York:20260919T143000
-SUMMARY:CJSL: ALBION Brooklyn vs Stage10 FC Boys Leopards 2015/2016
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs Stage10 FC Boys Leopards 2015/
+ 2016
 LOCATION:Randall's Island - 51
 DESCRIPTION:Status: Scheduled\nMatch No: 510 (AWAY)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Stage10 FC Boys Leo
@@ -71,7 +72,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T080000
 DTEND;TZID=America/New_York:20260926T090000
-SUMMARY:CJSL: ALBION Brooklyn vs South Brooklyn Fc 2015/2016
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs South Brooklyn Fc 2015/2016
 LOCATION:Bushwick Inlet Park - Field 1 9v9
 DESCRIPTION:Status: Rained Out\nMatch No: 513 (HOME)\nDivision: U11 (9v9) -
   D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
@@ -112,7 +113,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
-SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs Brooklyn City U11 Blue
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 515 (AWAY)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.
@@ -153,8 +154,8 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T090000
 DTEND;TZID=America/New_York:20261017T100000
-SUMMARY:CJSL: ALBION Brooklyn vs Griffin United Soccer Club Elite Brooklyn 
- Boys - 2015/2016
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs Griffin United Soccer Club Eli
+ te Brooklyn Boys - 2015/2016
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Forfeit\nMatch No: 520 (HOME)\nDivision: U11 (9v9) - D3
   City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: ALBION SC Brooklyn B
@@ -195,7 +196,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T081500
 DTEND;TZID=America/New_York:20261024T091500
-SUMMARY:CJSL: ALBION Brooklyn vs SFFK
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs SFFK U11
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 521 (HOME)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: ALBION SC Brooklyn
@@ -236,7 +237,7 @@ LAST-MODIFIED:20261106T130707Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T170000
 DTEND;TZID=America/New_York:20261031T180000
-SUMMARY:CJSL: ALBION Brooklyn vs South Brooklyn Fc 2015/2016
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs South Brooklyn Fc 2015/2016
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Forfeit\nMatch No: 525 (AWAY)\nDivision: U11 (9v9) - D3
   City\nUpdated: Nov 6\, 2026 at 8:07 AM EST\n\nHOME: South Brooklyn Fc 201
@@ -272,18 +273,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-527@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T133000
-SUMMARY:CJSL: ALBION Brooklyn vs Brooklyn City FC
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs Brooklyn City U11 Blue
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 527 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
- B15/16 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n\n
- Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
- 4264733
+ D3 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: ALBION SC Brookly
+ n B15/16 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n
+ \nResults: 2 - 8\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4264733
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42647
  33
 CATEGORIES:CJSL,Soccer
@@ -318,8 +319,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T110000
 DTEND;TZID=America/New_York:20261114T120000
-SUMMARY:CJSL: ALBION Brooklyn vs Griffin United Soccer Club Elite Brooklyn 
- Boys - 2015/2016
+SUMMARY:CJSL: ALBION Brooklyn U11 Premier vs Griffin United Soccer Club Eli
+ te Brooklyn Boys - 2015/2016
 LOCATION:Barry "Sly" Morrow Field  - Barry "Sly"  Morrow Field ( 7 vs 7) & 
  ( 9 vs 9)
 DESCRIPTION:Status: Scheduled\nMatch No: 532 (AWAY)\nDivision: U11 (9v9) - 

@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T144500
 DTEND;TZID=America/New_York:20260919T154500
-SUMMARY:CJSL: Brooklyn City FC vs South Brooklyn FC
+SUMMARY:CJSL: Brooklyn City U12 Blue vs South Brooklyn U12
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 369 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -71,7 +71,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
-SUMMARY:CJSL: Brooklyn City FC vs FA Euro
+SUMMARY:CJSL: Brooklyn City U12 Blue vs FA Euro U12 Pre-MLS III
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 376 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -112,7 +112,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T160500
 DTEND;TZID=America/New_York:20261018T170500
-SUMMARY:CJSL: Brooklyn City FC vs DV7 NY B2014/15
+SUMMARY:CJSL: Brooklyn City U12 Blue vs DV7 NY B2014/15
 LOCATION:Juniper Park - Field A (7v7)
 DESCRIPTION:Status: Scheduled\nMatch No: 378 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: DV7 NY B2014/15\n
@@ -152,7 +152,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261024T153000
 DTEND;TZID=America/New_York:20261024T163000
-SUMMARY:CJSL: Brooklyn City FC vs SkillsU FC
+SUMMARY:CJSL: Brooklyn City U12 Blue vs SkillsU U12
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Rescheduled\nMatch No: 383 (AWAY)\nDivision: U12 (9v9) 
  - D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SkillsU FC U12\
@@ -192,7 +192,7 @@ LAST-MODIFIED:20261106T130707Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
-SUMMARY:CJSL: Brooklyn City FC vs SFFK
+SUMMARY:CJSL: Brooklyn City U12 Blue vs SFFK U12 White
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 385 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Nov 6\, 2026 at 8:07 AM EST\n\nHOME: Brooklyn City FC F
@@ -228,17 +228,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-388@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T194500
 DTEND;TZID=America/New_York:20261107T204500
-SUMMARY:CJSL: Brooklyn City FC vs FA Euro
+SUMMARY:CJSL: Brooklyn City U12 Blue vs FA Euro U12 Pre-MLS III
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 388 (AWAY)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York
-  2014/2015 Pre-MLS III\nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nSource:
-  https://system.gotsport.com/org_event/events/55206/schedules?team=4272080
+ - D3 Cosmo\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: FA Euro New Yo
+ rk 2014/2015 Pre-MLS III\nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nResul
+ ts: 1 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4272080
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42720
  80
 CATEGORIES:CJSL,Soccer
@@ -273,7 +274,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T141500
 DTEND;TZID=America/New_York:20261114T151500
-SUMMARY:CJSL: Brooklyn City FC vs DV7 NY B2014/15
+SUMMARY:CJSL: Brooklyn City U12 Blue vs DV7 NY B2014/15
 LOCATION:Red Hook Park - Field 8 9v9
 DESCRIPTION:Status: Scheduled\nMatch No: 390 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -313,7 +314,7 @@ LAST-MODIFIED:20261017T114201Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261115T133000
 DTEND;TZID=America/New_York:20261115T143000
-SUMMARY:CJSL: Brooklyn City FC vs SFFK
+SUMMARY:CJSL: Brooklyn City U12 Blue vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7B - Parade Grounds Field 7B
 DESCRIPTION:Status: Rescheduled\nMatch No: 373 (AWAY)\nDivision: U12 (9v9) 
  - D3 Cosmo\nUpdated: Oct 17\, 2026 at 7:42 AM EDT\n\nHOME: Soccer Fun for 

@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T144500
 DTEND;TZID=America/New_York:20260919T154500
-SUMMARY:CJSL: South Brooklyn FC vs Brooklyn City FC
+SUMMARY:CJSL: South Brooklyn U12 vs Brooklyn City U12 Blue
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 369 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -71,7 +71,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:7
 DTSTART;TZID=America/New_York:20261003T130000
 DTEND;TZID=America/New_York:20261003T140000
-SUMMARY:CJSL: South Brooklyn FC vs SFFK
+SUMMARY:CJSL: South Brooklyn U12 vs SFFK U12 White
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 375 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 
@@ -112,7 +112,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T114500
 DTEND;TZID=America/New_York:20261017T124500
-SUMMARY:CJSL: South Brooklyn FC vs FA Euro
+SUMMARY:CJSL: South Brooklyn U12 vs FA Euro U12 Pre-MLS III
 LOCATION:Calvert Vaux Park - Field 2
 DESCRIPTION:Status: Scheduled\nMatch No: 379 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: FA Euro New York 
@@ -153,7 +153,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T160000
 DTEND;TZID=America/New_York:20261024T170000
-SUMMARY:CJSL: South Brooklyn FC vs DV7 NY B2014/15
+SUMMARY:CJSL: South Brooklyn U12 vs DV7 NY B2014/15
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 382 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: South Brooklyn Fc
@@ -193,7 +193,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
-SUMMARY:CJSL: South Brooklyn FC vs SkillsU FC
+SUMMARY:CJSL: South Brooklyn U12 vs SkillsU U12
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 386 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SkillsU FC U12\nAW
@@ -228,18 +228,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-387@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T121500
 DTEND;TZID=America/New_York:20261108T131500
-SUMMARY:CJSL: South Brooklyn FC vs SFFK
+SUMMARY:CJSL: South Brooklyn U12 vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 387 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
- s / Brooklyn Patriots 2014-2015 White\nAWAY: South Brooklyn Fc 2014/2015\n
- \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
- m=4259907
+ D3 Cosmo\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Soccer Fun for K
+ ids / Brooklyn Patriots 2014-2015 White\nAWAY: South Brooklyn Fc 2014/2015
+ \n\nResults: 2 - 1\n\nSource: https://system.gotsport.com/org_event/events
+ /55206/schedules?team=4259907
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  07
 CATEGORIES:CJSL,Soccer
@@ -274,7 +274,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T163000
 DTEND;TZID=America/New_York:20261114T173000
-SUMMARY:CJSL: South Brooklyn FC vs FA Euro
+SUMMARY:CJSL: South Brooklyn U12 vs FA Euro U12 Pre-MLS III
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 391 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 
@@ -314,7 +314,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261122T180000
 DTEND;TZID=America/New_York:20261122T190000
-SUMMARY:CJSL: South Brooklyn FC vs SkillsU FC
+SUMMARY:CJSL: South Brooklyn U12 vs SkillsU U12
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 374 (HOME)\nDivision: U12 (9v9) 
  - D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn F

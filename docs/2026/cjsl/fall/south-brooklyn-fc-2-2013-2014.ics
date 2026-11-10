@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T103000
 DTEND;TZID=America/New_York:20260919T113000
-SUMMARY:CJSL: South Brooklyn FC vs Met Oval
+SUMMARY:CJSL: South Brooklyn U13 #2 vs Met Oval U13 Gray
 LOCATION:Red Hook Field #5 - Field #5A 9v9/7v7
 DESCRIPTION:Status: Scheduled\nMatch No: 179 (AWAY)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Metropolitan Oval A
@@ -71,7 +71,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261004T140000
 DTEND;TZID=America/New_York:20261004T150000
-SUMMARY:CJSL: South Brooklyn FC vs Dynamo SC
+SUMMARY:CJSL: South Brooklyn U13 #2 vs Dynamo SC U13
 LOCATION:Bush Terminal Park - Bush Terminal #2 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 185 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #
@@ -111,7 +111,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T103500
 DTEND;TZID=America/New_York:20261017T113500
-SUMMARY:CJSL: South Brooklyn FC vs NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: South Brooklyn U13 #2 vs NY Kids S.C. 2013/2014 boys
 LOCATION:Grover Cleveland Playground - Grover Cleveland Playground: Soccer-
  01
 DESCRIPTION:Status: Scheduled\nMatch No: 188 (AWAY)\nDivision: U13 (9v9) - 
@@ -153,7 +153,8 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T173000
 DTEND;TZID=America/New_York:20261024T183000
-SUMMARY:CJSL: South Brooklyn FC vs Brooklyn United
+SUMMARY:CJSL: South Brooklyn U13 #2 vs Brooklyn United U13 Park Slope Selec
+ t
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 191 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: South Brooklyn FC 
@@ -194,7 +195,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261025T133000
 DTEND;TZID=America/New_York:20261025T143000
-SUMMARY:CJSL: South Brooklyn FC vs SC Gjoa
+SUMMARY:CJSL: South Brooklyn U13 #2 vs SC Gjoa U13 Ajer
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Rescheduled\nMatch No: 182 (AWAY)\nDivision: U13 (9v9) 
  - D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SC Gjoa Ajer\nAW
@@ -234,7 +235,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T130000
 DTEND;TZID=America/New_York:20261031T140000
-SUMMARY:CJSL: South Brooklyn FC vs SC Gjoa
+SUMMARY:CJSL: South Brooklyn U13 #2 vs SC Gjoa U13 Ajer
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 194 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: South Brooklyn FC #
@@ -269,17 +270,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-197@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T170000
 DTEND;TZID=America/New_York:20261108T180000
-SUMMARY:CJSL: South Brooklyn FC vs Dynamo SC
+SUMMARY:CJSL: South Brooklyn U13 #2 vs Dynamo SC U13
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 197 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Dynamo Soccer Club 
- 2014\nAWAY: South Brooklyn FC #2 2013/2014\n\nSource: https://system.gotsp
- ort.com/org_event/events/55206/schedules?team=4259905
+ D4 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Dynamo Soccer Clu
+ b 2014\nAWAY: South Brooklyn FC #2 2013/2014\n\nResults: 2 - 11\n\nSource:
+  https://system.gotsport.com/org_event/events/55206/schedules?team=4259905
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42599
  05
 CATEGORIES:CJSL,Soccer
@@ -314,7 +315,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T122000
 DTEND;TZID=America/New_York:20261114T132000
-SUMMARY:CJSL: South Brooklyn FC vs NY Kids S.C. 2013/2014 boys
+SUMMARY:CJSL: South Brooklyn U13 #2 vs NY Kids S.C. 2013/2014 boys
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Scheduled\nMatch No: 200 (HOME)\nDivision: U13 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn FC #

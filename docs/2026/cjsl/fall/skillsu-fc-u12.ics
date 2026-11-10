@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T174500
 DTEND;TZID=America/New_York:20260920T184500
-SUMMARY:CJSL: SkillsU FC vs FA Euro
+SUMMARY:CJSL: SkillsU U12 vs FA Euro U12 Pre-MLS III
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Scheduled\nMatch No: 371 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York 2
@@ -70,7 +70,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
-SUMMARY:CJSL: SkillsU FC vs DV7 NY B2014/15
+SUMMARY:CJSL: SkillsU U12 vs DV7 NY B2014/15
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 377 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SkillsU FC U12\nAW
@@ -110,7 +110,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T121500
 DTEND;TZID=America/New_York:20261018T131500
-SUMMARY:CJSL: SkillsU FC vs SFFK
+SUMMARY:CJSL: SkillsU U12 vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 380 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Soccer Fun for Ki
@@ -151,7 +151,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261024T153000
 DTEND;TZID=America/New_York:20261024T163000
-SUMMARY:CJSL: SkillsU FC vs Brooklyn City FC
+SUMMARY:CJSL: SkillsU U12 vs Brooklyn City U12 Blue
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Rescheduled\nMatch No: 383 (HOME)\nDivision: U12 (9v9) 
  - D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: SkillsU FC U12\
@@ -191,7 +191,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
-SUMMARY:CJSL: SkillsU FC vs South Brooklyn FC
+SUMMARY:CJSL: SkillsU U12 vs South Brooklyn U12
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 386 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SkillsU FC U12\nAW
@@ -226,17 +226,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-389@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T180000
 DTEND;TZID=America/New_York:20261108T190000
-SUMMARY:CJSL: SkillsU FC vs DV7 NY B2014/15
+SUMMARY:CJSL: SkillsU U12 vs DV7 NY B2014/15
 LOCATION:St. Michael’s Playground  - Full Field 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 389 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: DV7 NY B2014/15\nA
- WAY: SkillsU FC U12\n\nSource: https://system.gotsport.com/org_event/event
- s/55206/schedules?team=4321423
+ D3 Cosmo\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: DV7 NY B2014/15\
+ nAWAY: SkillsU FC U12\n\nResults: 11 - 1\n\nSource: https://system.gotspor
+ t.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
  23
 CATEGORIES:CJSL,Soccer
@@ -271,7 +271,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T141500
 DTEND;TZID=America/New_York:20261114T151500
-SUMMARY:CJSL: SkillsU FC vs SFFK
+SUMMARY:CJSL: SkillsU U12 vs SFFK U12 White
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 392 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SkillsU FC U12\nAW
@@ -311,7 +311,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261122T180000
 DTEND;TZID=America/New_York:20261122T190000
-SUMMARY:CJSL: SkillsU FC vs South Brooklyn FC
+SUMMARY:CJSL: SkillsU U12 vs South Brooklyn U12
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 374 (AWAY)\nDivision: U12 (9v9) 
  - D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn F

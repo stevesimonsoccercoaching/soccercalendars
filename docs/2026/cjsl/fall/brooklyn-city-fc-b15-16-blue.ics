@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T160000
 DTEND;TZID=America/New_York:20260919T170000
-SUMMARY:CJSL: Brooklyn City FC vs South Brooklyn Fc 2015/2016
+SUMMARY:CJSL: Brooklyn City U11 Blue vs South Brooklyn Fc 2015/2016
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 509 (AWAY)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 2
@@ -71,8 +71,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260926T150000
 DTEND;TZID=America/New_York:20260926T160000
-SUMMARY:CJSL: Brooklyn City FC vs Griffin United Soccer Club Elite Brooklyn
-  Boys - 2015/2016
+SUMMARY:CJSL: Brooklyn City U11 Blue vs Griffin United Soccer Club Elite Br
+ ooklyn Boys - 2015/2016
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rained Out\nMatch No: 514 (HOME)\nDivision: U11 (9v9) -
   D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -113,7 +113,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
-SUMMARY:CJSL: Brooklyn City FC vs ALBION Brooklyn
+SUMMARY:CJSL: Brooklyn City U11 Blue vs ALBION Brooklyn U11 Premier
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 515 (HOME)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.
@@ -154,7 +154,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
-SUMMARY:CJSL: Brooklyn City FC vs SFFK
+SUMMARY:CJSL: Brooklyn City U11 Blue vs SFFK U11
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 519 (AWAY)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Soccer Fun for Kid
@@ -195,7 +195,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T145500
 DTEND;TZID=America/New_York:20261024T155500
-SUMMARY:CJSL: Brooklyn City FC vs Stage10 FC Boys Leopards 2015/2016
+SUMMARY:CJSL: Brooklyn City U11 Blue vs Stage10 FC Boys Leopards 2015/2016
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Scheduled\nMatch No: 522 (HOME)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Brooklyn City FC F
@@ -236,8 +236,8 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T095500
 DTEND;TZID=America/New_York:20261031T105500
-SUMMARY:CJSL: Brooklyn City FC vs Griffin United Soccer Club Elite Brooklyn
-  Boys - 2015/2016
+SUMMARY:CJSL: Brooklyn City U11 Blue vs Griffin United Soccer Club Elite Br
+ ooklyn Boys - 2015/2016
 LOCATION:Barry "Sly" Morrow Field  - Barry "Sly"  Morrow Field ( 7 vs 7) & 
  ( 9 vs 9)
 DESCRIPTION:Status: Scheduled\nMatch No: 526 (AWAY)\nDivision: U11 (9v9) - 
@@ -274,18 +274,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-527@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T133000
-SUMMARY:CJSL: Brooklyn City FC vs ALBION Brooklyn
+SUMMARY:CJSL: Brooklyn City U11 Blue vs ALBION Brooklyn U11 Premier
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 527 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn 
- B15/16 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n\n
- Source: https://system.gotsport.com/org_event/events/55206/schedules?team=
- 4272105
+ D3 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: ALBION SC Brookly
+ n B15/16 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n
+ \nResults: 2 - 8\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4272105
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42721
  05
 CATEGORIES:CJSL,Soccer
@@ -320,7 +320,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T150000
 DTEND;TZID=America/New_York:20261114T160000
-SUMMARY:CJSL: Brooklyn City FC vs SFFK
+SUMMARY:CJSL: Brooklyn City U11 Blue vs SFFK U11
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Scheduled\nMatch No: 531 (HOME)\nDivision: U11 (9v9) - 
  D3 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F.

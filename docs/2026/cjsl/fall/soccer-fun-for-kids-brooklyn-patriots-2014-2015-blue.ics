@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
-SUMMARY:CJSL: SFFK vs Real Bronx FC 2015-2014
+SUMMARY:CJSL: SFFK U12 Blue vs Real Bronx FC 2015-2014
 LOCATION:Parade Ground  - Parade Ground Field 10
 DESCRIPTION:Status: Scheduled\nMatch No: 254 (AWAY)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Real Bronx FC 2015
@@ -71,7 +71,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T144500
 DTEND;TZID=America/New_York:20261003T154500
-SUMMARY:CJSL: SFFK vs Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
+SUMMARY:CJSL: SFFK U12 Blue vs Veras Soccer Academy V.S.A Prospects (2014-2
+ 015) cjsl
 LOCATION:St. Michaels Playground - St. Michaels Playground
 DESCRIPTION:Status: Scheduled\nMatch No: 258 (AWAY)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Veras Soccer Acade
@@ -112,7 +113,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T121500
 DTEND;TZID=America/New_York:20261025T131500
-SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
+SUMMARY:CJSL: SFFK U12 Blue vs Long Island City Soccer Club 2014/2015
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 261 (HOME)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Fun for Ki
@@ -153,7 +154,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T083000
 DTEND;TZID=America/New_York:20261031T093000
-SUMMARY:CJSL: SFFK vs ARB SC 1415
+SUMMARY:CJSL: SFFK U12 Blue vs ARB SC 1415
 LOCATION:Frank Principe Park  - Full Field
 DESCRIPTION:Status: Scheduled\nMatch No: 263 (AWAY)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: ARB SC 1415\nAWAY:
@@ -189,18 +190,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-266@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T133000
 DTEND;TZID=America/New_York:20261108T143000
-SUMMARY:CJSL: SFFK vs Veras Soccer Academy V.S.A Prospects (2014-2015) cjsl
+SUMMARY:CJSL: SFFK U12 Blue vs Veras Soccer Academy V.S.A Prospects (2014-2
+ 015) cjsl
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 266 (HOME)\nDivision: U12 (9v9) - 
- Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid
- s / Brooklyn Patriots 2014-2015 Blue\nAWAY: Veras Soccer Academy V.S.A Pro
- spects (2014-2015) cjsl\n\nSource: https://system.gotsport.com/org_event/e
- vents/55206/schedules?team=4262171
+ Super D1\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Soccer Fun for K
+ ids / Brooklyn Patriots 2014-2015 Blue\nAWAY: Veras Soccer Academy V.S.A P
+ rospects (2014-2015) cjsl\n\nResults: 0 - 1\n\nSource: https://system.gots
+ port.com/org_event/events/55206/schedules?team=4262171
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42621
  71
 CATEGORIES:CJSL,Soccer
@@ -235,7 +237,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261115T133000
 DTEND;TZID=America/New_York:20261115T143000
-SUMMARY:CJSL: SFFK vs ARB SC 1415
+SUMMARY:CJSL: SFFK U12 Blue vs ARB SC 1415
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Rescheduled\nMatch No: 256 (HOME)\nDivision: U12 (9v9) 
  - Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for K
@@ -275,7 +277,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T083000
 DTEND;TZID=America/New_York:20261121T093000
-SUMMARY:CJSL: SFFK vs Long Island City Soccer Club 2014/2015
+SUMMARY:CJSL: SFFK U12 Blue vs Long Island City Soccer Club 2014/2015
 LOCATION:Randalls Island Park - Randalls 72- Full Sided
 DESCRIPTION:Status: Scheduled\nMatch No: 270 (AWAY)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Long Island City S
@@ -316,7 +318,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:CJSL: SFFK vs Real Bronx FC 2015-2014
+SUMMARY:CJSL: SFFK U12 Blue vs Real Bronx FC 2015-2014
 LOCATION:
 DESCRIPTION:Status: Scheduled\nMatch No: 271 (HOME)\nDivision: U12 (9v9) - 
  Super D1\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for Kid

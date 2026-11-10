@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260920T174500
 DTEND;TZID=America/New_York:20260920T184500
-SUMMARY:CJSL: FA Euro vs SkillsU FC
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs SkillsU U12
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Scheduled\nMatch No: 371 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York 2
@@ -70,7 +70,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260927T180000
 DTEND;TZID=America/New_York:20260927T190000
-SUMMARY:CJSL: FA Euro vs DV7 NY B2014/15
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs DV7 NY B2014/15
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Rained Out\nMatch No: 372 (HOME)\nDivision: U12 (9v9) -
   D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York 
@@ -110,7 +110,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
-SUMMARY:CJSL: FA Euro vs Brooklyn City FC
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs Brooklyn City U12 Blue
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 376 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn City FC F
@@ -151,7 +151,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261017T114500
 DTEND;TZID=America/New_York:20261017T124500
-SUMMARY:CJSL: FA Euro vs South Brooklyn FC
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs South Brooklyn U12
 LOCATION:Calvert Vaux Park - Field 2
 DESCRIPTION:Status: Scheduled\nMatch No: 379 (HOME)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: FA Euro New York 
@@ -192,7 +192,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
-SUMMARY:CJSL: FA Euro vs SFFK
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 381 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: Soccer Fun for Ki
@@ -233,7 +233,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261031T160000
 DTEND;TZID=America/New_York:20261031T170000
-SUMMARY:CJSL: FA Euro vs DV7 NY B2014/15
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs DV7 NY B2014/15
 LOCATION:Forest Park - Forest Park Soccer
 DESCRIPTION:Status: Scheduled\nMatch No: 384 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: DV7 NY B2014/15\nA
@@ -268,17 +268,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-388@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T194500
 DTEND;TZID=America/New_York:20261107T204500
-SUMMARY:CJSL: FA Euro vs Brooklyn City FC
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs Brooklyn City U12 Blue
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 388 (HOME)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: FA Euro New York
-  2014/2015 Pre-MLS III\nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nSource:
-  https://system.gotsport.com/org_event/events/55206/schedules?team=4264585
+ - D3 Cosmo\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: FA Euro New Yo
+ rk 2014/2015 Pre-MLS III\nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nResul
+ ts: 1 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
+ hedules?team=4264585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42645
  85
 CATEGORIES:CJSL,Soccer
@@ -313,7 +314,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T163000
 DTEND;TZID=America/New_York:20261114T173000
-SUMMARY:CJSL: FA Euro vs South Brooklyn FC
+SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs South Brooklyn U12
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 391 (AWAY)\nDivision: U12 (9v9) - 
  D3 Cosmo\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: South Brooklyn Fc 

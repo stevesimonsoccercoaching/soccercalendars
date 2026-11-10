@@ -30,7 +30,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
-SUMMARY:CJSL: Manhattan SC vs Rebels Legacy
+SUMMARY:CJSL: Manhattan SC U12 Inter vs Rebels Legacy U12
 LOCATION:College of Mt. St. Vincent - Marillac Field
 DESCRIPTION:Status: Scheduled\nMatch No: 423 (HOME)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
@@ -71,7 +71,8 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
-SUMMARY:CJSL: Manhattan SC vs FC Copa Academy Brooklyn B14/15 Black
+SUMMARY:CJSL: Manhattan SC U12 Inter vs FC Copa Academy Brooklyn B14/15 Bla
+ ck
 LOCATION:Aviator Sports & Events Center - Aviator Sports & Events Center Fi
  eld #2A
 DESCRIPTION:Status: Scheduled\nMatch No: 428 (AWAY)\nDivision: U12 (9v9) - 
@@ -113,7 +114,7 @@ LAST-MODIFIED:20261028T195711Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261024T083000
 DTEND;TZID=America/New_York:20261024T093000
-SUMMARY:CJSL: Manhattan SC vs River Island FC 2015/2016 RAVENS
+SUMMARY:CJSL: Manhattan SC U12 Inter vs River Island FC 2015/2016 RAVENS
 LOCATION:Roosevelt Island- Octagon Field - Octagon Field
 DESCRIPTION:Status: Scheduled\nMatch No: 433 (AWAY)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: River Island FC 20
@@ -154,7 +155,7 @@ LAST-MODIFIED:20261102T195315Z
 SEQUENCE:4
 DTSTART;TZID=America/New_York:20261101T153000
 DTEND;TZID=America/New_York:20261101T163000
-SUMMARY:CJSL: Manhattan SC vs SC Gjoa
+SUMMARY:CJSL: Manhattan SC U12 Inter vs SC Gjoa U12 Nyland
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Rescheduled\nMatch No: 431 (HOME)\nDivision: U12 (9v9) 
  - D4 City\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Manhattan SC Inte
@@ -189,17 +190,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-440@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261110T153231Z
+LAST-MODIFIED:20261110T153231Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261108T163000
 DTEND;TZID=America/New_York:20261108T173000
-SUMMARY:CJSL: Manhattan SC vs FC Copa Academy Brooklyn B14/15 Black
+SUMMARY:CJSL: Manhattan SC U12 Inter vs FC Copa Academy Brooklyn B14/15 Bla
+ ck
 LOCATION:Randall's Island - 10 - Icahn
 DESCRIPTION:Status: Scheduled\nMatch No: 440 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Manhattan SC Inter 
- B2014/15\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nSource: https://s
- ystem.gotsport.com/org_event/events/55206/schedules?team=4239148
+ D4 City\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Manhattan SC Inte
+ r B2014/15\nAWAY: FC Copa Academy Brooklyn B14/15 Black\n\nResults: 1 - 4\
+ n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?te
+ am=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
  48
 CATEGORIES:CJSL,Soccer
@@ -234,7 +237,7 @@ LAST-MODIFIED:20261010T010606Z
 SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
-SUMMARY:CJSL: Manhattan SC vs SC Gjoa
+SUMMARY:CJSL: Manhattan SC U12 Inter vs SC Gjoa U12 Nyland
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (AWAY)\nDivision: U12 (9v9) - 
  D4 City\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Nyland\nAWA
@@ -274,7 +277,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261115T140000
 DTEND;TZID=America/New_York:20261115T150000
-SUMMARY:CJSL: Manhattan SC vs UNITED CYCLONES FC Geo 2014/15
+SUMMARY:CJSL: Manhattan SC U12 Inter vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Randall's Island - 8
 DESCRIPTION:Status: Rescheduled\nMatch No: 424 (HOME)\nDivision: U12 (9v9) 
  - D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Manhattan SC Int
@@ -314,7 +317,7 @@ LAST-MODIFIED:20261024T093346Z
 SEQUENCE:3
 DTSTART;TZID=America/New_York:20261122T084000
 DTEND;TZID=America/New_York:20261122T094000
-SUMMARY:CJSL: Manhattan SC vs UNITED CYCLONES FC Geo 2014/15
+SUMMARY:CJSL: Manhattan SC U12 Inter vs UNITED CYCLONES FC Geo 2014/15
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Rescheduled\nMatch No: 436 (AWAY)\nDivision: U12 (9v9) 
  - D4 City\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: UNITED CYCLONES 
