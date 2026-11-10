@@ -30,48 +30,48 @@
     ]
   },
   "display_names": {
-    "ALBION SC Brooklyn B13/14 Premier - Williamsburg": "ALBION Brooklyn U13 Premier",
-    "ALBION SC Brooklyn B14/15 Premier - Williamsburg": "ALBION Brooklyn U12 Premier",
+    "Coney Island Cyclones United Leopards 2015/16": "Coney Island Leopards",
     "ALBION SC Brooklyn B15/16 Premier - Williamsburg": "ALBION Brooklyn U11 Premier",
-    "Brooklyn City FC F.C. B13/14": "Brooklyn City U13",
-    "Brooklyn City FC F.C. B14/15 Blue": "Brooklyn City U12 Blue",
     "Brooklyn City FC F.C. B15/16 Blue": "Brooklyn City U11 Blue",
-    "Brooklyn Italians 2014/2015 Premier": "Brooklyn Italians U12 Premier",
-    "Brooklyn Premier F.C. 14/13 Regional": "Brooklyn Premier U13 Regional",
-    "Brooklyn United Academy B2013/2014 Park Slope Select": "Brooklyn United U13 Park Slope Select",
-    "Coney Island Cyclones United Leopards 2015/16": "Coney Island U11 Leopards",
-    "Coney Island Cyclones United Lions 2014/15": "Coney Island U12 Lions",
-    "Coney Island Cyclones United Tigers 2013/14": "Coney Island U13 Tigers",
-    "Dynamo Soccer Club 2014": "Dynamo SC U13",
-    "FA Euro New York 2014/2015 Pre-MLS III": "FA Euro U12 Pre-MLS III",
-    "French Football Academy 2014/15 Digne": "French Football Academy U12 Digne",
-    "Long Island City Soccer Club 2013/2014": "Long Island City U13",
-    "Lucky Soccer Academy Shining Stars 14-15": "Lucky Soccer U12 Shining Stars",
-    "Manhattan Kickers MKSC 2014/2015": "MKSC U12",
-    "Manhattan Kickers MKSC 2017/2018": "MKSC U9",
-    "Manhattan SC Inter B2014/15": "Manhattan SC U12 Inter",
-    "Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray": "Met Oval U13 Gray",
-    "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White": "Met Oval U11 White",
-    "Rebels Legacy Soccer Club 2014\\2015": "Rebels Legacy U12",
-    "SC Gjoa Ajer": "SC Gjoa U13 Ajer",
-    "SC Gjoa Johnsen": "SC Gjoa U13 Johnsen",
-    "SC Gjoa King": "SC Gjoa U11 King",
-    "SC Gjoa Nyland": "SC Gjoa U12 Nyland",
-    "SC Gjoa Strand Larsen": "SC Gjoa U12 Strand Larsen",
-    "SkillsU FC U12": "SkillsU U12",
-    "Soccer Fun for Kids / Brooklyn Patriots 2013-2014": "SFFK U13",
-    "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue": "SFFK U12 Blue",
-    "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White": "SFFK U12 White",
     "Soccer Fun for Kids / Brooklyn Patriots 2015-2016": "SFFK U11",
-    "Soccer Fun for Kids / Brooklyn Patriots 2017-2018": "SFFK U9",
+    "SC Gjoa King": "Gjoa King",
+    "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 White": "Met Oval U11 White",
     "Soccer Legion FC U11 Boys Blue (2015/2016)": "Soccer Legion U11 Blue",
+    "Coney Island Cyclones United Lions 2014/15": "Coney Island Lions",
+    "Brooklyn Italians 2014/2015 Premier": "Brooklyn Italians U12 Premier",
+    "Manhattan Kickers MKSC 2014/2015": "MKSC U12",
+    "SC Gjoa Strand Larsen": "Gjoa Strand Larsen",
+    "French Football Academy 2014/15 Digne": "French FA Digne",
+    "ALBION SC Brooklyn B14/15 Premier - Williamsburg": "ALBION Brooklyn U12 Premier",
+    "South Brooklyn Fc 2014/2015": "South Brooklyn U12",
+    "Brooklyn City FC F.C. B14/15 Blue": "Brooklyn City U12 Blue",
+    "SkillsU FC U12": "SkillsU U12",
+    "FA Euro New York 2014/2015 Pre-MLS III": "FA Euro U12 Pre-MLS III",
+    "SC Gjoa Nyland": "Gjoa Nyland",
+    "Rebels Legacy Soccer Club 2014\\2015": "Rebels Legacy U12",
+    "Manhattan SC Inter B2014/15": "Manhattan SC U12 Inter",
+    "Lucky Soccer Academy Shining Stars 14-15": "Lucky Shining Stars",
+    "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 Blue": "SFFK U12 Blue",
+    "SC Gjoa Johnsen": "Gjoa Johnsen",
+    "Brooklyn Premier F.C. 14/13 Regional": "Brooklyn Premier Regional",
+    "Coney Island Cyclones United Tigers 2013/14": "Coney Island Tigers",
+    "ALBION SC Brooklyn B13/14 Premier - Williamsburg": "ALBION Brooklyn U13 Premier",
+    "Brooklyn City FC F.C. B13/14": "Brooklyn City U13",
+    "Dynamo Soccer Club 2014": "Dynamo SC U13",
     "South Brooklyn FC #2 2013/2014": "South Brooklyn U13 #2",
-    "South Brooklyn Fc 2014/2015": "South Brooklyn U12"
+    "Brooklyn United Academy B2013/2014 Park Slope Select": "Brooklyn United U13 Park Slope Select",
+    "SC Gjoa Ajer": "Gjoa Ajer",
+    "Metropolitan Oval Academy Brooklyn 2013/14 Boys U13 Gray": "Met Oval U13 Gray",
+    "Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White": "SFFK U12 White",
+    "Soccer Fun for Kids / Brooklyn Patriots 2017-2018": "SFFK U9",
+    "Soccer Fun for Kids / Brooklyn Patriots 2013-2014": "SFFK U13",
+    "Long Island City Soccer Club 2013/2014": "Long Island City U13",
+    "Manhattan Kickers MKSC 2017/2018": "MKSC U9"
   },
   "teams": [
     {
       "name": "Coney Island Cyclones United Leopards 2015/16",
-      "short_name": "Coney Island U11 Leopards",
+      "short_name": "Coney Island Leopards",
       "slug": "coney-island-cyclones-united-leopards-2015-16",
       "gotsport": {
         "schedule_team_id": "4261459",
@@ -123,7 +123,7 @@
     },
     {
       "name": "SC Gjoa King",
-      "short_name": "SC Gjoa U11 King",
+      "short_name": "Gjoa King",
       "slug": "sc-gjoa-king",
       "gotsport": {
         "schedule_team_id": "4244097",
@@ -162,7 +162,7 @@
     },
     {
       "name": "Coney Island Cyclones United Lions 2014/15",
-      "short_name": "Coney Island U12 Lions",
+      "short_name": "Coney Island Lions",
       "slug": "coney-island-cyclones-united-lions-2014-15",
       "gotsport": {
         "schedule_team_id": "4261465",
@@ -201,7 +201,7 @@
     },
     {
       "name": "SC Gjoa Strand Larsen",
-      "short_name": "SC Gjoa U12 Strand Larsen",
+      "short_name": "Gjoa Strand Larsen",
       "slug": "sc-gjoa-strand-larsen",
       "gotsport": {
         "schedule_team_id": "4244158",
@@ -214,7 +214,7 @@
     },
     {
       "name": "French Football Academy 2014/15 Digne",
-      "short_name": "French Football Academy U12 Digne",
+      "short_name": "French FA Digne",
       "slug": "french-football-academy-2014-15-digne",
       "gotsport": {
         "schedule_team_id": "4206689",
@@ -292,7 +292,7 @@
     },
     {
       "name": "SC Gjoa Nyland",
-      "short_name": "SC Gjoa U12 Nyland",
+      "short_name": "Gjoa Nyland",
       "slug": "sc-gjoa-nyland",
       "gotsport": {
         "schedule_team_id": "4244169",
@@ -331,7 +331,7 @@
     },
     {
       "name": "Lucky Soccer Academy Shining Stars 14-15",
-      "short_name": "Lucky Soccer U12 Shining Stars",
+      "short_name": "Lucky Shining Stars",
       "slug": "lucky-soccer-academy-shining-stars-14-15",
       "gotsport": {
         "schedule_team_id": "4233548",
@@ -357,7 +357,7 @@
     },
     {
       "name": "SC Gjoa Johnsen",
-      "short_name": "SC Gjoa U13 Johnsen",
+      "short_name": "Gjoa Johnsen",
       "slug": "sc-gjoa-johnsen",
       "gotsport": {
         "schedule_team_id": "4244183",
@@ -370,7 +370,7 @@
     },
     {
       "name": "Brooklyn Premier F.C. 14/13 Regional",
-      "short_name": "Brooklyn Premier U13 Regional",
+      "short_name": "Brooklyn Premier Regional",
       "slug": "brooklyn-premier-fc-14-13-regional",
       "gotsport": {
         "schedule_team_id": "4225977",
@@ -383,7 +383,7 @@
     },
     {
       "name": "Coney Island Cyclones United Tigers 2013/14",
-      "short_name": "Coney Island U13 Tigers",
+      "short_name": "Coney Island Tigers",
       "slug": "coney-island-cyclones-united-tigers-2013-14",
       "gotsport": {
         "schedule_team_id": "4259832",
@@ -461,7 +461,7 @@
     },
     {
       "name": "SC Gjoa Ajer",
-      "short_name": "SC Gjoa U13 Ajer",
+      "short_name": "Gjoa Ajer",
       "slug": "sc-gjoa-ajer",
       "gotsport": {
         "schedule_team_id": "4244196",
