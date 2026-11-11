@@ -25,18 +25,18 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-273@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20260919T113000
 DTEND;TZID=America/New_York:20260919T123000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs Brooklyn Italians U12 Premier
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 273 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Brooklyn Italians 
- 2014/2015 Premier\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\
- n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4290983
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn Italians
+  2014/2015 Premier\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg
+ \n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events
+ /55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -66,18 +66,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-279@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T130000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs MKSC U12
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 279 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
-  B14/15 Premier - Williamsburg\nAWAY: Manhattan Kickers MKSC 2014/2015\n\n
- Results: 1 - 8\n\nSource: https://system.gotsport.com/org_event/events/552
- 06/schedules?team=4290983
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brookly
+ n B14/15 Premier - Williamsburg\nAWAY: Manhattan Kickers MKSC 2014/2015\n\
+ nResults: 1 - 8\n\nSource: https://system.gotsport.com/org_event/events/55
+ 206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:4
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261018T100000
 DTEND;TZID=America/New_York:20261018T110000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs French FA Digne
 LOCATION:Randall's Island - 70
 DESCRIPTION:Status: Rescheduled\nMatch No: 283 (AWAY)\nDivision: U12 (9v9) 
- - D2 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: French Football
+ - D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: French Football
   Academy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williams
  burg\n\nResults: 7 - 2\n\nSource: https://system.gotsport.com/org_event/ev
  ents/55206/schedules?team=4290983
@@ -148,16 +148,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-286@system.gotsport.com
-DTSTAMP:20261028T195711Z
-LAST-MODIFIED:20261028T195711Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261024T091500
 DTEND;TZID=America/New_York:20261024T101500
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs Excelsior New York Academy 201
  4/2015 Boys
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Status: Scheduled\nMatch No: 286 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: ALBION SC Brookly
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brookly
  n B14/15 Premier - Williamsburg\nAWAY: Excelsior New York Academy 2014/201
  5 Boys\n\nResults: 0 - 4\n\nSource: https://system.gotsport.com/org_event/
  events/55206/schedules?team=4290983
@@ -190,18 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-290@system.gotsport.com
-DTSTAMP:20261102T195315Z
-LAST-MODIFIED:20261102T195315Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261031T080000
 DTEND;TZID=America/New_York:20261031T090000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs Gjoa Strand Larsen
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 290 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SC Gjoa Strand Lar
- sen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nResults: 5 
- - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4290983
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: SC Gjoa Strand La
+ rsen\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\nResults: 5
+  - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -231,18 +231,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-291@system.gotsport.com
-DTSTAMP:20261110T153231Z
-LAST-MODIFIED:20261110T153231Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261107T190000
 DTEND;TZID=America/New_York:20261107T200000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs MKSC U12
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 291 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Manhattan Kicker
- s MKSC 2014/2015\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n
- \nResults: 11 - 1\n\nSource: https://system.gotsport.com/org_event/events/
- 55206/schedules?team=4290983
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Manhattan Kickers
+  MKSC 2014/2015\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williamsburg\n\
+ nResults: 11 - 1\n\nSource: https://system.gotsport.com/org_event/events/5
+ 5206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -272,18 +272,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-295@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261121T084500
 DTEND;TZID=America/New_York:20261121T094500
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs French FA Digne
 LOCATION:Frank Principe Park  - East Field
 DESCRIPTION:Status: Scheduled\nMatch No: 295 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: ALBION SC Brooklyn
-  B14/15 Premier - Williamsburg\nAWAY: French Football Academy 2014/15 Dign
- e\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4290983
+ D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brookly
+ n B14/15 Premier - Williamsburg\nAWAY: French Football Academy 2014/15 Dig
+ ne\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules
+ ?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909
  83
 CATEGORIES:CJSL,Soccer
@@ -313,15 +313,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-278@system.gotsport.com
-DTSTAMP:20261014T224944Z
-LAST-MODIFIED:20261014T224944Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
 SUMMARY:CJSL: ALBION Brooklyn U12 Premier vs Gjoa Strand Larsen
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rescheduled\nMatch No: 278 (HOME)\nDivision: U12 (9v9) 
- - D2 Metro\nUpdated: Oct 14\, 2026 at 6:49 PM EDT\n\nHOME: ALBION SC Brook
+ - D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brook
  lyn B14/15 Premier - Williamsburg\nAWAY: SC Gjoa Strand Larsen\n\nSource: 
  https://system.gotsport.com/org_event/events/55206/schedules?team=4290983
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42909

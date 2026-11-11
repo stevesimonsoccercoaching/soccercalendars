@@ -25,19 +25,19 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-534@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20260919T150000
 DTEND;TZID=America/New_York:20260919T160000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Soccer Stars United Met Oval - SSU 
  White 2015/2016 (Formerly Scorpio)
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 534 (HOME)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Legion FC U
- 11 Boys Blue (2015/2016)\nAWAY: Soccer Stars United Met Oval - SSU White 2
- 015/2016 (Formerly Scorpio)\n\nResults: 3 - 0\n\nSource: https://system.go
- tsport.com/org_event/events/55206/schedules?team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Legion FC 
+ U11 Boys Blue (2015/2016)\nAWAY: Soccer Stars United Met Oval - SSU White 
+ 2015/2016 (Formerly Scorpio)\n\nResults: 3 - 0\n\nSource: https://system.g
+ otsport.com/org_event/events/55206/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -67,19 +67,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-541@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Eleftheria Pancyprian Soccer Club E
  PSC 2015/2016 White
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 541 (HOME)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Legion FC U
- 11 Boys Blue (2015/2016)\nAWAY: Eleftheria Pancyprian Soccer Club EPSC 201
- 5/2016 White\n\nResults: 1 - 2\n\nSource: https://system.gotsport.com/org_
- event/events/55206/schedules?team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Legion FC 
+ U11 Boys Blue (2015/2016)\nAWAY: Eleftheria Pancyprian Soccer Club EPSC 20
+ 15/2016 White\n\nResults: 1 - 2\n\nSource: https://system.gotsport.com/org
+ _event/events/55206/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -109,16 +109,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-542@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261017T120000
 DTEND;TZID=America/New_York:20261017T130000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs B&G Soccer Academy & B2015/16 GLADI
  ATORS
 LOCATION:Van Cortlandt Park - C
 DESCRIPTION:Status: Scheduled\nMatch No: 542 (AWAY)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: B&G Soccer Academ
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: B&G Soccer Academ
  y & B2015/16 GLADIATORS\nAWAY: Soccer Legion FC U11 Boys Blue (2015/2016)\
  n\nResults: 6 - 0\n\nSource: https://system.gotsport.com/org_event/events/
  55206/schedules?team=4435585
@@ -151,16 +151,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-537@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:4
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261018T081500
 DTEND;TZID=America/New_York:20261018T091500
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Juventus Academy NY CJSL Vieri - B2
  016/2017
 LOCATION:Randall's Island - 6
 DESCRIPTION:Status: Rescheduled\nMatch No: 537 (AWAY)\nDivision: U11 (9v9) 
- - D4 Metro\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Juventus Academ
+ - D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Juventus Academ
  y NY CJSL Vieri - B2016/2017\nAWAY: Soccer Legion FC U11 Boys Blue (2015/2
  016)\n\nResults: 2 - 3\n\nSource: https://system.gotsport.com/org_event/ev
  ents/55206/schedules?team=4435585
@@ -193,18 +193,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-548@system.gotsport.com
-DTSTAMP:20261102T195315Z
-LAST-MODIFIED:20261102T195315Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261031T140000
 DTEND;TZID=America/New_York:20261031T150000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs 5 Star Soccer Academy 2015/2016
 LOCATION:Brooklyn Bridge Park Pier 5  - Field #3B
 DESCRIPTION:Status: Scheduled\nMatch No: 548 (HOME)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: Soccer Legion FC U
- 11 Boys Blue (2015/2016)\nAWAY: 5 Star Soccer Academy 2015/2016\n\nResults
- : 0 - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
- dules?team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Legion FC 
+ U11 Boys Blue (2015/2016)\nAWAY: 5 Star Soccer Academy 2015/2016\n\nResult
+ s: 0 - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -234,19 +234,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-553@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261107T130000
 DTEND;TZID=America/New_York:20261107T140000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Pelham Bay Soccer Club PBSC Pine - 
  2015-2016 Boys
 LOCATION:Bronx Park East - Turf
 DESCRIPTION:Status: Scheduled\nMatch No: 553 (AWAY)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Pelham Bay Soccer 
- Club PBSC Pine - 2015-2016 Boys\nAWAY: Soccer Legion FC U11 Boys Blue (201
- 5/2016)\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
- dules?team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Pelham Bay Soccer
+  Club PBSC Pine - 2015-2016 Boys\nAWAY: Soccer Legion FC U11 Boys Blue (20
+ 15/2016)\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
+ edules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -276,19 +276,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-555@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261114T140000
 DTEND;TZID=America/New_York:20261114T150000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Juventus Academy NY CJSL Vieri - B2
  016/2017
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 555 (HOME)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Legion FC U
- 11 Boys Blue (2015/2016)\nAWAY: Juventus Academy NY CJSL Vieri - B2016/201
- 7\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
- team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Legion FC 
+ U11 Boys Blue (2015/2016)\nAWAY: Juventus Academy NY CJSL Vieri - B2016/20
+ 17\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules
+ ?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer
@@ -318,9 +318,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-559@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261121T110000
 DTEND;TZID=America/New_York:20261121T120000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Eleftheria Pancyprian Soccer Club E
@@ -328,10 +328,10 @@ SUMMARY:CJSL: Soccer Legion U11 Blue vs Eleftheria Pancyprian Soccer Club E
 LOCATION:St.Michaels Field A - 7v7 or 9v9 - St. Michaels Field A - 7v7 or 9
  v9
 DESCRIPTION:Status: Scheduled\nMatch No: 559 (AWAY)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Eleftheria Pancypr
- ian Soccer Club EPSC 2015/2016 White\nAWAY: Soccer Legion FC U11 Boys Blue
-  (2015/2016)\n\nSource: https://system.gotsport.com/org_event/events/55206
- /schedules?team=4435585
+ D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Eleftheria Pancyp
+ rian Soccer Club EPSC 2015/2016 White\nAWAY: Soccer Legion FC U11 Boys Blu
+ e (2015/2016)\n\nSource: https://system.gotsport.com/org_event/events/5520
+ 6/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer

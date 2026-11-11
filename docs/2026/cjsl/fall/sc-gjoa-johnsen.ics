@@ -25,19 +25,19 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-98@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20260920T101500
 DTEND;TZID=America/New_York:20260920T111500
 SUMMARY:CJSL: Gjoa Johnsen vs New York United Soccer Academy NYUSA 2013/14 
  CJSL
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 98 (HOME)\nDivision: U13 (9v9) - D
- 1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen\
- nAWAY: New York United Soccer Academy NYUSA 2013/14 CJSL\n\nResults: 1 - 5
- \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
- eam=4244183
+ 1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: SC Gjoa Johnsen
+ \nAWAY: New York United Soccer Academy NYUSA 2013/14 CJSL\n\nResults: 1 - 
+ 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?
+ team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -67,17 +67,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-105@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: Gjoa Johnsen vs Eastern Queens FC - 2013/2014 Boys
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 105 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
- \nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nResults: 0 - 8\n\nSource: ht
- tps://system.gotsport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: SC Gjoa Johnse
+ n\nAWAY: Eastern Queens FC - 2013/2014 Boys\n\nResults: 0 - 8\n\nSource: h
+ ttps://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-104@system.gotsport.com
-DTSTAMP:20261024T093346Z
-LAST-MODIFIED:20261024T093346Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261017T083000
 DTEND;TZID=America/New_York:20261017T093000
 SUMMARY:CJSL: Gjoa Johnsen vs Long Island City U13
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 104 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 24\, 2026 at 5:33 AM EDT\n\nHOME: Long Island Ci
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Long Island Ci
  ty Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 3\n\nSourc
  e: https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
@@ -148,15 +148,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-113@system.gotsport.com
-DTSTAMP:20261028T195711Z
-LAST-MODIFIED:20261028T195711Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261024T160000
 DTEND;TZID=America/New_York:20261024T170000
 SUMMARY:CJSL: Gjoa Johnsen vs UNITED CYCLONES FC Geo -2013/14
 LOCATION:Bill Brown Playground - 1
 DESCRIPTION:Status: Scheduled\nMatch No: 113 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 28\, 2026 at 3:57 PM EDT\n\nHOME: UNITED CYCLONE
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: UNITED CYCLONE
  S FC Geo -2013/14\nAWAY: SC Gjoa Johnsen\n\nResults: 3 - 2\n\nSource: http
  s://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
@@ -188,17 +188,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-120@system.gotsport.com
-DTSTAMP:20261102T195315Z
-LAST-MODIFIED:20261102T195315Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261031T150000
 DTEND;TZID=America/New_York:20261031T160000
 SUMMARY:CJSL: Gjoa Johnsen vs ARB SC U1314
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 120 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 2\, 2026 at 2:53 PM EST\n\nHOME: SC Gjoa Johnsen
- \nAWAY: ARB SC U1314\n\nResults: 5 - 1\n\nSource: https://system.gotsport.
- com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: SC Gjoa Johnse
+ n\nAWAY: ARB SC U1314\n\nResults: 5 - 1\n\nSource: https://system.gotsport
+ .com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -228,17 +228,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-122@system.gotsport.com
-DTSTAMP:20261110T153231Z
-LAST-MODIFIED:20261110T153231Z
-SEQUENCE:3
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261107T120000
 DTEND;TZID=America/New_York:20261107T130000
 SUMMARY:CJSL: Gjoa Johnsen vs Chernomorets Black Sea 2014
 LOCATION:Scarangella Park  - Sacrangella Park
 DESCRIPTION:Status: Scheduled\nMatch No: 122 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 10\, 2026 at 10:32 AM EST\n\nHOME: Chernomorets 
- Black Sea 2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 11\n\nSource: https:
- //system.gotsport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Chernomorets B
+ lack Sea 2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 11\n\nSource: https:/
+ /system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -268,17 +268,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-127@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
 SUMMARY:CJSL: Gjoa Johnsen vs Brooklyn Premier Regional
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: SC Gjoa Johnsen
- \nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.got
- sport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: SC Gjoa Johnse
+ n\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.go
+ tsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
@@ -308,17 +308,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-131@system.gotsport.com
-DTSTAMP:20261010T010606Z
-LAST-MODIFIED:20261010T010606Z
-SEQUENCE:2
+DTSTAMP:20261111T110431Z
+LAST-MODIFIED:20261111T110431Z
+SEQUENCE:3
 DTSTART;TZID=America/New_York:20261122T110000
 DTEND;TZID=America/New_York:20261122T120000
 SUMMARY:CJSL: Gjoa Johnsen vs SFFK U13
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 131 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Oct 9\, 2026 at 9:06 PM EDT\n\nHOME: Soccer Fun for 
- Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: https
- ://system.gotsport.com/org_event/events/55206/schedules?team=4244183
+ D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for
+  Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: http
+ s://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
  83
 CATEGORIES:CJSL,Soccer
