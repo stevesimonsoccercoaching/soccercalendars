@@ -27,8 +27,9 @@ def clean_text(value):
     return str(value).strip()
 
 
-def match_fingerprint(match):
+def match_fingerprint(match, summary):
     payload = {
+        "summary": clean_text(summary),
         "start": match["start"].isoformat(),
         "end": match["end"].isoformat(),
         "all_day": bool(match["all_day"]),
@@ -86,10 +87,11 @@ def get_match_revision(
     state,
     event_id,
     match,
+    summary,
     changed_at,
 ):
     key = f"{event_id}:{match['match_no']}"
-    fingerprint = match_fingerprint(match)
+    fingerprint = match_fingerprint(match, summary)
 
     previous = state["matches"].get(key)
 
@@ -436,6 +438,7 @@ def build_calendar(
         revision = get_match_revision(
             state=revision_state,
             event_id=event_id,
+            summary=summary,
             match=match,
             changed_at=changed_at,
         )
