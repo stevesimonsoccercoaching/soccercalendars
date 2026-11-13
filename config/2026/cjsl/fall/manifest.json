@@ -514,10 +514,10 @@
       "short_name": "SFFK U13",
       "slug": "soccer-fun-for-kids-brooklyn-patriots-2013-2014",
       "gotsport": {
-        "schedule_team_id": "4260510",
-        "export_team_id": "4260510",
-        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4260510",
-        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4260510"
+        "schedule_team_id": "4262229",
+        "export_team_id": "4262229",
+        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4262229",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262229"
       }
     },
     {
@@ -525,10 +525,10 @@
       "short_name": "Long Island City U13",
       "slug": "long-island-city-soccer-club-2013-2014",
       "gotsport": {
-        "schedule_team_id": "4262229",
-        "export_team_id": "4262229",
-        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4262229",
-        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4262229"
+        "schedule_team_id": "4260510",
+        "export_team_id": "4260510",
+        "schedule_url": "https://system.gotsport.com/splash/3244/events/55206/schedules?team=4260510",
+        "export_url": "https://system.gotsport.com/org_event/events/55206/matches_export?team=4260510"
       }
     },
     {
