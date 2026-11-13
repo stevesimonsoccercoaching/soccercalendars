@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-177@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:5
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20260920T110000
 DTEND;TZID=America/New_York:20260920T120000
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs Gjoa Ajer
 LOCATION:Dyker Beach Park -  Dyker Turf Field B Small Sided (B)
 DESCRIPTION:Status: Rescheduled\nMatch No: 177 (HOME)\nDivision: U13 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn United 
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Brooklyn United 
  Academy B2013/2014 Park Slope Select\nAWAY: SC Gjoa Ajer\n\nResults: 3 - 2
  \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
  eam=4216813
@@ -66,15 +66,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-184@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261003T163000
 DTEND;TZID=America/New_York:20261003T173000
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs Met Oval U13 Gray
 LOCATION:Hamilton Metz Field - Field 1
 DESCRIPTION:Status: Scheduled\nMatch No: 184 (HOME)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn United Ac
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Brooklyn United Ac
  ademy B2013/2014 Park Slope Select\nAWAY: Metropolitan Oval Academy Brookl
  yn 2013/14 Boys U13 Gray\n\nResults: 6 - 0\n\nSource: https://system.gotsp
  ort.com/org_event/events/55206/schedules?team=4216813
@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-186@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261018T170000
 DTEND;TZID=America/New_York:20261018T180000
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs Dynamo SC U13
 LOCATION:KAISER PARK - KAISER PARK
 DESCRIPTION:Status: Scheduled\nMatch No: 186 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Dynamo Soccer Club
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Dynamo Soccer Club
   2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n\nResul
  ts: 1 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206/sc
  hedules?team=4216813
@@ -148,16 +148,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-191@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261024T173000
 DTEND;TZID=America/New_York:20261024T183000
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs South Brooklyn U13 #
  2
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 191 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: South Brooklyn FC 
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: South Brooklyn FC 
  #2 2013/2014\nAWAY: Brooklyn United Academy B2013/2014 Park Slope Select\n
  \nResults: 4 - 1\n\nSource: https://system.gotsport.com/org_event/events/5
  5206/schedules?team=4216813
@@ -232,15 +232,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-196@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261107T103500
 DTEND;TZID=America/New_York:20261107T113500
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs Met Oval U13 Gray
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 196 (AWAY)\nDivision: U13 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Metropolitan Oval 
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Metropolitan Oval 
  Academy Brooklyn 2013/14 Boys U13 Gray\nAWAY: Brooklyn United Academy B201
  3/2014 Park Slope Select\n\nResults: 1 - 6\n\nSource: https://system.gotsp
  ort.com/org_event/events/55206/schedules?team=4216813
@@ -273,15 +273,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-198@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261115T123000
 DTEND;TZID=America/New_York:20261115T133000
 SUMMARY:CJSL: Brooklyn United U13 Park Slope Select vs Dynamo SC U13
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Rescheduled\nMatch No: 198 (HOME)\nDivision: U13 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn United 
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Brooklyn United 
  Academy B2013/2014 Park Slope Select\nAWAY: Dynamo Soccer Club 2014\n\nSou
  rce: https://system.gotsport.com/org_event/events/55206/schedules?team=421
  6813

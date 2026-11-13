@@ -65,16 +65,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-109@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
 SUMMARY:CJSL: Brooklyn Premier Regional vs SFFK U13
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Reg
  ional\n\nResults: 1 - 5\n\nSource: https://system.gotsport.com/org_event/e
  vents/55206/schedules?team=4225977
@@ -190,15 +190,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-118@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261101T150000
 DTEND;TZID=America/New_York:20261101T160000
 SUMMARY:CJSL: Brooklyn Premier Regional vs Long Island City U13
 LOCATION:Astoria Park  - Astoria Park
 DESCRIPTION:Status: Scheduled\nMatch No: 118 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Long Island Ci
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Long Island Ci
  ty Soccer Club 2013/2014\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nRe
  sults: 0 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206
  /schedules?team=4225977
@@ -273,15 +273,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-127@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
 SUMMARY:CJSL: Brooklyn Premier Regional vs Gjoa Johnsen
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: SC Gjoa Johnse
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: SC Gjoa Johnse
  n\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.go
  tsport.com/org_event/events/55206/schedules?team=4225977
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42259

@@ -146,15 +146,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-431@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261101T153000
 DTEND;TZID=America/New_York:20261101T163000
 SUMMARY:CJSL: Gjoa Nyland vs Manhattan SC U12 Inter
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Rescheduled\nMatch No: 431 (AWAY)\nDivision: U12 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Manhattan SC Int
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Manhattan SC Int
  er B2014/15\nAWAY: SC Gjoa Nyland\n\nResults: 5 - 3\n\nSource: https://sys
  tem.gotsport.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
@@ -226,15 +226,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-443@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:5
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
 SUMMARY:CJSL: Gjoa Nyland vs Manhattan SC U12 Inter
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: SC Gjoa Nyland\nAW
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: SC Gjoa Nyland\nAW
  AY: Manhattan SC Inter B2014/15\n\nSource: https://system.gotsport.com/org
  _event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
@@ -266,15 +266,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-438@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:5
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
 SUMMARY:CJSL: Gjoa Nyland vs Rebels Legacy U12
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 438 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Rebels Legacy Socc
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Rebels Legacy Socc
  er Club 2014\\2015\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotspor
  t.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
@@ -306,15 +306,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-426@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261213T083000
 DTEND;TZID=America/New_York:20261213T093000
 SUMMARY:CJSL: Gjoa Nyland vs Rebels Legacy U12
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 426 (HOME)\nDivision: U12 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: SC Gjoa Nyland\n
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: SC Gjoa Nyland\n
  AWAY: Rebels Legacy Soccer Club 2014\\2015\n\nSource: https://system.gotsp
  ort.com/org_event/events/55206/schedules?team=4244169
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441

@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-371@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20260920T174500
 DTEND;TZID=America/New_York:20260920T184500
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs SkillsU U12
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Scheduled\nMatch No: 371 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: FA Euro New York 
+ D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: FA Euro New York 
  2014/2015 Pre-MLS III\nAWAY: SkillsU FC U12\n\nResults: 6 - 0\n\nSource: h
  ttps://system.gotsport.com/org_event/events/55206/schedules?team=4264585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42645
@@ -105,15 +105,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-376@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261003T150000
 DTEND;TZID=America/New_York:20261003T160000
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs Brooklyn City U12 Blue
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 376 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn City FC 
+ D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Brooklyn City FC 
  F.C. B14/15 Blue\nAWAY: FA Euro New York 2014/2015 Pre-MLS III\n\nResults:
   1 - 3\n\nSource: https://system.gotsport.com/org_event/events/55206/sched
  ules?team=4264585
@@ -146,15 +146,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-379@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261017T114500
 DTEND;TZID=America/New_York:20261017T124500
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs South Brooklyn U12
 LOCATION:Calvert Vaux Park - Field 2
 DESCRIPTION:Status: Scheduled\nMatch No: 379 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: FA Euro New York 
+ D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: FA Euro New York 
  2014/2015 Pre-MLS III\nAWAY: South Brooklyn Fc 2014/2015\n\nResults: 1 - 1
  \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
  eam=4264585
@@ -187,15 +187,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-381@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261025T110000
 DTEND;TZID=America/New_York:20261025T120000
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 381 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for Ki
+ D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Soccer Fun for Ki
  ds / Brooklyn Patriots 2014-2015 White\nAWAY: FA Euro New York 2014/2015 P
  re-MLS III\n\nResults: 6 - 8\n\nSource: https://system.gotsport.com/org_ev
  ent/events/55206/schedules?team=4264585
@@ -268,15 +268,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-388@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261107T194500
 DTEND;TZID=America/New_York:20261107T204500
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs Brooklyn City U12 Blue
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 388 (HOME)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: FA Euro New Yor
+ - D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: FA Euro New Yor
  k 2014/2015 Pre-MLS III\nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nResult
  s: 1 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
  edules?team=4264585
@@ -309,15 +309,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-391@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261114T163000
 DTEND;TZID=America/New_York:20261114T173000
 SUMMARY:CJSL: FA Euro U12 Pre-MLS III vs South Brooklyn U12
 LOCATION:Calvert Vaux/Verrazano Complex - Field #1
 DESCRIPTION:Status: Scheduled\nMatch No: 391 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: South Brooklyn Fc
+ D3 Cosmo\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: South Brooklyn Fc
   2014/2015\nAWAY: FA Euro New York 2014/2015 Pre-MLS III\n\nSource: https:
  //system.gotsport.com/org_event/events/55206/schedules?team=4264585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42645

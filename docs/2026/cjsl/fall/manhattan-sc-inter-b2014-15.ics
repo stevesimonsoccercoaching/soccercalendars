@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-423@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
 SUMMARY:CJSL: Manhattan SC U12 Inter vs Rebels Legacy U12
 LOCATION:College of Mt. St. Vincent - Marillac Field
 DESCRIPTION:Status: Scheduled\nMatch No: 423 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Manhattan SC Inter
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Manhattan SC Inter
   B2014/15\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nResults: 8 - 2\n\
  nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
  =4239148
@@ -150,15 +150,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-431@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:8
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:10
 DTSTART;TZID=America/New_York:20261101T153000
 DTEND;TZID=America/New_York:20261101T163000
 SUMMARY:CJSL: Manhattan SC U12 Inter vs Gjoa Nyland
 LOCATION:Randall's Island - 10A - Icahn
 DESCRIPTION:Status: Rescheduled\nMatch No: 431 (HOME)\nDivision: U12 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Manhattan SC Int
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Manhattan SC Int
  er B2014/15\nAWAY: SC Gjoa Nyland\n\nResults: 5 - 3\n\nSource: https://sys
  tem.gotsport.com/org_event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391
@@ -232,15 +232,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-443@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261114T080000
 DTEND;TZID=America/New_York:20261114T090000
 SUMMARY:CJSL: Manhattan SC U12 Inter vs Gjoa Nyland
 LOCATION:Dyker Turf Field B Small Sided  - B
 DESCRIPTION:Status: Scheduled\nMatch No: 443 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: SC Gjoa Nyland\nAW
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: SC Gjoa Nyland\nAW
  AY: Manhattan SC Inter B2014/15\n\nSource: https://system.gotsport.com/org
  _event/events/55206/schedules?team=4239148
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42391

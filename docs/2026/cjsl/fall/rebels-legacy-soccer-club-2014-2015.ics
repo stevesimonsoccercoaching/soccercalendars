@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-423@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:5
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20260919T171500
 DTEND;TZID=America/New_York:20260919T181500
 SUMMARY:CJSL: Rebels Legacy U12 vs Manhattan SC U12 Inter
 LOCATION:College of Mt. St. Vincent - Marillac Field
 DESCRIPTION:Status: Scheduled\nMatch No: 423 (AWAY)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Manhattan SC Inter
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Manhattan SC Inter
   B2014/15\nAWAY: Rebels Legacy Soccer Club 2014\\2015\n\nResults: 8 - 2\n\
  nSource: https://system.gotsport.com/org_event/events/55206/schedules?team
  =4260592
@@ -273,15 +273,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-438@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:6
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:8
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T150000
 SUMMARY:CJSL: Rebels Legacy U12 vs Gjoa Nyland
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 438 (HOME)\nDivision: U12 (9v9) - 
- D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Rebels Legacy Socc
+ D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: Rebels Legacy Socc
  er Club 2014\\2015\nAWAY: SC Gjoa Nyland\n\nSource: https://system.gotspor
  t.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
@@ -313,15 +313,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-426@system.gotsport.com
-DTSTAMP:20261113T112600Z
-LAST-MODIFIED:20261113T112600Z
-SEQUENCE:7
+DTSTAMP:20261113T203709Z
+LAST-MODIFIED:20261113T203709Z
+SEQUENCE:9
 DTSTART;TZID=America/New_York:20261213T083000
 DTEND;TZID=America/New_York:20261213T093000
 SUMMARY:CJSL: Rebels Legacy U12 vs Gjoa Nyland
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Rescheduled\nMatch No: 426 (AWAY)\nDivision: U12 (9v9) 
- - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: SC Gjoa Nyland\n
+ - D4 City\nUpdated: Nov 13\, 2026 at 3:37 PM EST\n\nHOME: SC Gjoa Nyland\n
  AWAY: Rebels Legacy Soccer Club 2014\\2015\n\nSource: https://system.gotsp
  ort.com/org_event/events/55206/schedules?team=4260592
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42605
