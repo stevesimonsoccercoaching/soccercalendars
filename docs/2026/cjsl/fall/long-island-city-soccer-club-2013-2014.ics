@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-104@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261017T083000
 DTEND;TZID=America/New_York:20261017T093000
 SUMMARY:CJSL: Long Island City U13 vs Gjoa Johnsen
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 104 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Long Island Ci
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Long Island Ci
  ty Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 3\n\nSourc
  e: https://system.gotsport.com/splash/3244/events/55206/schedules?team=426
  2229
@@ -230,15 +230,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-118@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261101T150000
 DTEND;TZID=America/New_York:20261101T160000
 SUMMARY:CJSL: Long Island City U13 vs Brooklyn Premier Regional
 LOCATION:Astoria Park  - Astoria Park
 DESCRIPTION:Status: Scheduled\nMatch No: 118 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Long Island Ci
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Long Island Ci
  ty Soccer Club 2013/2014\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nRe
  sults: 0 - 3\n\nSource: https://system.gotsport.com/splash/3244/events/552
  06/schedules?team=4262229
@@ -271,15 +271,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-124@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261108T144500
 DTEND;TZID=America/New_York:20261108T154500
 SUMMARY:CJSL: Long Island City U13 vs SFFK U13
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 124 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: Long Island City Soccer Club 20
  13/2014\n\nResults: 1 - 1\n\nSource: https://system.gotsport.com/splash/32
  44/events/55206/schedules?team=4262229

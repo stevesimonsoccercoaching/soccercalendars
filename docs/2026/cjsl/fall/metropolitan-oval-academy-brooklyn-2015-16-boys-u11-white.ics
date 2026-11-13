@@ -25,48 +25,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:cjsl-55206-match-564@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:3
-DTSTART;TZID=America/New_York:20260926T092000
-DTEND;TZID=America/New_York:20260926T102000
-SUMMARY:CJSL: Met Oval U11 White vs Long Island CIty Youth Soccer Academy L
- IC Dragons B 2015/2016
-LOCATION:Red Hook Field #5 - Field 5 11v11
-DESCRIPTION:Status: Rained Out\nMatch No: 564 (HOME)\nDivision: U11 (9v9) -
-  D4 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Metropolitan Oval
-  Academy Brooklyn 2015/16 Boys U11 White\nAWAY: Long Island CIty Youth Soc
- cer Academy LIC Dragons B 2015/2016\n\nSource: https://system.gotsport.com
- /org_event/events/55206/schedules?team=4264996
-URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
- 96
-CATEGORIES:CJSL,Soccer
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-X-GOTSPORT-STATUS:Rained Out
-BEGIN:VALARM
-TRIGGER:-P7D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 7 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 2 days
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT12H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 12 hours
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT3H
-ACTION:DISPLAY
-DESCRIPTION:CJSL match in 3 hours
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cjsl-55206-match-569@system.gotsport.com
 DTSTAMP:20261111T110431Z
 LAST-MODIFIED:20261111T110431Z
@@ -194,15 +152,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-578@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261031T103000
 DTEND;TZID=America/New_York:20261031T113000
 SUMMARY:CJSL: Met Oval U11 White vs Gjoa King
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 578 (HOME)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Metropolitan Oval 
+ D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Metropolitan Oval 
  Academy Brooklyn 2015/16 Boys U11 White\nAWAY: SC Gjoa King\n\nResults: 1 
  - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
  s?team=4264996
@@ -296,6 +254,48 @@ CATEGORIES:CJSL,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Scheduled
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:CJSL match in 3 hours
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cjsl-55206-match-564@system.gotsport.com
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:4
+DTSTART;TZID=America/New_York:20261115T131500
+DTEND;TZID=America/New_York:20261115T141500
+SUMMARY:CJSL: Met Oval U11 White vs Long Island CIty Youth Soccer Academy L
+ IC Dragons B 2015/2016
+LOCATION:Raymond o’Connor  - Raymond O’Connor field
+DESCRIPTION:Status: Rescheduled\nMatch No: 564 (HOME)\nDivision: U11 (9v9) 
+ - D4 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Metropolitan Ova
+ l Academy Brooklyn 2015/16 Boys U11 White\nAWAY: Long Island CIty Youth So
+ ccer Academy LIC Dragons B 2015/2016\n\nSource: https://system.gotsport.co
+ m/org_event/events/55206/schedules?team=4264996
+URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42649
+ 96
+CATEGORIES:CJSL,Soccer
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+X-GOTSPORT-STATUS:Rescheduled
 BEGIN:VALARM
 TRIGGER:-P7D
 ACTION:DISPLAY

@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-275@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20260919T163000
 DTEND;TZID=America/New_York:20260919T173000
 SUMMARY:CJSL: French FA Digne vs Gjoa Strand Larsen
 LOCATION:Randall's Island - 82
 DESCRIPTION:Status: Scheduled\nMatch No: 275 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: French Football A
+ D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: French Football A
  cademy 2014/15 Digne\nAWAY: SC Gjoa Strand Larsen\n\nResults: 0 - 3\n\nSou
  rce: https://system.gotsport.com/org_event/events/55206/schedules?team=420
  6689
@@ -66,15 +66,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-280@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261004T090000
 DTEND;TZID=America/New_York:20261004T100000
 SUMMARY:CJSL: French FA Digne vs Brooklyn Italians U12 Premier
 LOCATION:Calvert Vaux Park - Field 1A
 DESCRIPTION:Status: Scheduled\nMatch No: 280 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn Italians
+ D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn Italians
   2014/2015 Premier\nAWAY: French Football Academy 2014/15 Digne\n\nResults
  : 2 - 7\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
  dules?team=4206689
@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-283@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261018T100000
 DTEND;TZID=America/New_York:20261018T110000
 SUMMARY:CJSL: French FA Digne vs ALBION Brooklyn U12 Premier
 LOCATION:Randall's Island - 70
 DESCRIPTION:Status: Rescheduled\nMatch No: 283 (HOME)\nDivision: U12 (9v9) 
- - D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: French Football
+ - D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: French Football
   Academy 2014/15 Digne\nAWAY: ALBION SC Brooklyn B14/15 Premier - Williams
  burg\n\nResults: 7 - 2\n\nSource: https://system.gotsport.com/org_event/ev
  ents/55206/schedules?team=4206689
@@ -148,15 +148,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-285@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261024T190000
 DTEND;TZID=America/New_York:20261024T200000
 SUMMARY:CJSL: French FA Digne vs MKSC U12
 LOCATION:Con Edison Field- Manhattan - 1- Manhattan
 DESCRIPTION:Status: Scheduled\nMatch No: 285 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Manhattan Kickers
+ D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Manhattan Kickers
   MKSC 2014/2015\nAWAY: French Football Academy 2014/15 Digne\n\nResults: 9
   - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
  es?team=4206689
@@ -230,15 +230,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-292@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261108T083000
 DTEND;TZID=America/New_York:20261108T093000
 SUMMARY:CJSL: French FA Digne vs Brooklyn Italians U12 Premier
 LOCATION:Brooklyn Bridge Park Pier 5  - Field 3
 DESCRIPTION:Status: Scheduled\nMatch No: 292 (HOME)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: French Football A
+ D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: French Football A
  cademy 2014/15 Digne\nAWAY: Brooklyn Italians 2014/2015 Premier\n\nResults
  : 2 - 1\n\nSource: https://system.gotsport.com/org_event/events/55206/sche
  dules?team=4206689
@@ -271,15 +271,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-295@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:3
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261121T084500
 DTEND;TZID=America/New_York:20261121T094500
 SUMMARY:CJSL: French FA Digne vs ALBION Brooklyn U12 Premier
 LOCATION:Frank Principe Park  - East Field
 DESCRIPTION:Status: Scheduled\nMatch No: 295 (AWAY)\nDivision: U12 (9v9) - 
- D2 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brookly
+ D2 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: ALBION SC Brookly
  n B14/15 Premier - Williamsburg\nAWAY: French Football Academy 2014/15 Dig
  ne\n\nSource: https://system.gotsport.com/org_event/events/55206/schedules
  ?team=4206689

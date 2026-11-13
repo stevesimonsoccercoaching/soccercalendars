@@ -234,19 +234,19 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-553@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:3
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20261107T130000
 DTEND;TZID=America/New_York:20261107T140000
 SUMMARY:CJSL: Soccer Legion U11 Blue vs Pelham Bay Soccer Club PBSC Pine - 
  2015-2016 Boys
 LOCATION:Bronx Park East - Turf
 DESCRIPTION:Status: Scheduled\nMatch No: 553 (AWAY)\nDivision: U11 (9v9) - 
- D4 Metro\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Pelham Bay Soccer
+ D4 Metro\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Pelham Bay Soccer
   Club PBSC Pine - 2015-2016 Boys\nAWAY: Soccer Legion FC U11 Boys Blue (20
- 15/2016)\n\nSource: https://system.gotsport.com/org_event/events/55206/sch
- edules?team=4435585
+ 15/2016)\n\nResults: 2 - 1\n\nSource: https://system.gotsport.com/org_even
+ t/events/55206/schedules?team=4435585
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=44355
  85
 CATEGORIES:CJSL,Soccer

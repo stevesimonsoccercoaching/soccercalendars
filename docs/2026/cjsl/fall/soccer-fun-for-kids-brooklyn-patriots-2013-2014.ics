@@ -107,16 +107,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-109@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261017T160000
 DTEND;TZID=America/New_York:20261017T170000
 SUMMARY:CJSL: SFFK U13 vs Brooklyn Premier Regional
 LOCATION:Prospect Park\, Parade Grounds Field 10A - Parade Grounds Field 10
  A
 DESCRIPTION:Status: Scheduled\nMatch No: 109 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: Brooklyn Premier F.C. 14/13 Reg
  ional\n\nResults: 1 - 5\n\nSource: https://system.gotsport.com/splash/3244
  /events/55206/schedules?team=4260510
@@ -190,15 +190,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-124@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:3
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261108T144500
 DTEND;TZID=America/New_York:20261108T154500
 SUMMARY:CJSL: SFFK U13 vs Long Island City U13
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 124 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: Long Island City Soccer Club 20
  13/2014\n\nResults: 1 - 1\n\nSource: https://system.gotsport.com/splash/32
  44/events/55206/schedules?team=4260510
@@ -312,15 +312,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-131@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261122T110000
 DTEND;TZID=America/New_York:20261122T120000
 SUMMARY:CJSL: SFFK U13 vs Gjoa Johnsen
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 131 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for
+ D1 - D2 Mix\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for
   Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: http
  s://system.gotsport.com/splash/3244/events/55206/schedules?team=4260510
 URL:https://system.gotsport.com/splash/3244/events/55206/schedules?team=426

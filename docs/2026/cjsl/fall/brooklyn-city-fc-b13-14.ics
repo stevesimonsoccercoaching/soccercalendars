@@ -66,15 +66,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-136@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20260927T144500
 DTEND;TZID=America/New_York:20260927T154500
 SUMMARY:CJSL: Brooklyn City U13 vs Coney Island Tigers
 LOCATION:Bill Brown Playground - Bill Brown Playground
 DESCRIPTION:Status: Rained Out\nMatch No: 136 (AWAY)\nDivision: U13 (9v9) -
-  D3\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Coney Island Cyclones 
+  D3\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Coney Island Cyclones 
  United Tigers 2013/14\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: https
  ://system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719
@@ -148,15 +148,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-142@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261017T154500
 DTEND;TZID=America/New_York:20261017T164500
 SUMMARY:CJSL: Brooklyn City U13 vs ALBION Brooklyn U13 Premier
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 142 (HOME)\nDivision: U13 (9v9) - 
- D3\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn City FC F.C. B
+ D3\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn City FC F.C. B
  13/14\nAWAY: ALBION SC Brooklyn B13/14 Premier - Williamsburg\n\nResults: 
  4 - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
  les?team=4271987
@@ -229,15 +229,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-148@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261031T165000
 DTEND;TZID=America/New_York:20261031T175000
 SUMMARY:CJSL: Brooklyn City U13 vs Coney Island Tigers
 LOCATION:Red Hook Ball Fields - Field #8 9V9
 DESCRIPTION:Status: Scheduled\nMatch No: 148 (HOME)\nDivision: U13 (9v9) - 
- D3\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn City FC F.C. B
+ D3\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn City FC F.C. B
  13/14\nAWAY: Coney Island Cyclones United Tigers 2013/14\n\nResults: 1 - 1
  \n\nSource: https://system.gotsport.com/org_event/events/55206/schedules?t
  eam=4271987
@@ -312,15 +312,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-154@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261114T130000
 DTEND;TZID=America/New_York:20261114T140000
 SUMMARY:CJSL: Brooklyn City U13 vs ALBION Brooklyn U13 Premier
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 154 (AWAY)\nDivision: U13 (9v9) - 
- D3\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brooklyn B13/
+ D3\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: ALBION SC Brooklyn B13/
  14 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B13/14\n\nSource: h
  ttps://system.gotsport.com/org_event/events/55206/schedules?team=4271987
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42719

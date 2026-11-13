@@ -108,15 +108,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-515@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261003T140000
 DTEND;TZID=America/New_York:20261003T150000
 SUMMARY:CJSL: Brooklyn City U11 Blue vs ALBION Brooklyn U11 Premier
 LOCATION:Bush Terminal Piers Park - Soccer 2A - small sided
 DESCRIPTION:Status: Scheduled\nMatch No: 515 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn City FC F
+ D3 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn City FC F
  .C. B15/16 Blue\nAWAY: ALBION SC Brooklyn B15/16 Premier - Williamsburg\n\
  nResults: 3 - 2\n\nSource: https://system.gotsport.com/org_event/events/55
  206/schedules?team=4272105
@@ -149,15 +149,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-519@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:4
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:6
 DTSTART;TZID=America/New_York:20261018T110000
 DTEND;TZID=America/New_York:20261018T120000
 SUMMARY:CJSL: Brooklyn City U11 Blue vs SFFK U11
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 519 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Soccer Fun for Kid
+ D3 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Soccer Fun for Kid
  s / Brooklyn Patriots 2015-2016\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n
  \nResults: 2 - 4\n\nSource: https://system.gotsport.com/org_event/events/5
  5206/schedules?team=4272105
@@ -274,15 +274,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-527@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:5
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:7
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T133000
 SUMMARY:CJSL: Brooklyn City U11 Blue vs ALBION Brooklyn U11 Premier
 LOCATION:Pier 42 - Pier 42 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 527 (AWAY)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: ALBION SC Brooklyn
+ D3 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: ALBION SC Brooklyn
   B15/16 Premier - Williamsburg\nAWAY: Brooklyn City FC F.C. B15/16 Blue\n\
  nResults: 2 - 8\n\nSource: https://system.gotsport.com/org_event/events/55
  206/schedules?team=4272105
@@ -315,15 +315,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-531@system.gotsport.com
-DTSTAMP:20261111T110431Z
-LAST-MODIFIED:20261111T110431Z
-SEQUENCE:3
+DTSTAMP:20261113T112600Z
+LAST-MODIFIED:20261113T112600Z
+SEQUENCE:5
 DTSTART;TZID=America/New_York:20261114T150000
 DTEND;TZID=America/New_York:20261114T160000
 SUMMARY:CJSL: Brooklyn City U11 Blue vs SFFK U11
 LOCATION:Bush Terminal Piers Park - Soccer 03 (Back field)
 DESCRIPTION:Status: Scheduled\nMatch No: 531 (HOME)\nDivision: U11 (9v9) - 
- D3 City\nUpdated: Nov 11\, 2026 at 6:04 AM EST\n\nHOME: Brooklyn City FC F
+ D3 City\nUpdated: Nov 13\, 2026 at 6:26 AM EST\n\nHOME: Brooklyn City FC F
  .C. B15/16 Blue\nAWAY: Soccer Fun for Kids / Brooklyn Patriots 2015-2016\n
  \nSource: https://system.gotsport.com/org_event/events/55206/schedules?tea
  m=4272105
