@@ -206,8 +206,6 @@ def load_competitions():
             competition_dates.extend(schedule["dates"])
 
             href = ics_file.relative_to(DOCS_ROOT).as_posix()
-            gotsport = team.get("gotsport", {})
-            schedule_url = clean_text(gotsport.get("schedule_url"))
 
             team_records.append(
                 {
@@ -219,7 +217,9 @@ def load_competitions():
                         competition,
                     ),
                     "href": href,
-                    "schedule_url": schedule_url,
+                    "schedule_url": clean_text(
+                        team.get("gotsport", {}).get("schedule_url")
+                    ),
                 }
             )
 
@@ -230,11 +230,21 @@ def load_competitions():
             continue
 
         organizer = clean_text(competition.get("organizer")) or "Other"
+        league_label = (
+            clean_text(competition.get("competition"))
+            or organizer
+        )
         season = clean_text(competition.get("season"))
-        year = competition.get("year", "")
+        year = clean_text(competition.get("year"))
 
-        if season and year:
+        # A season such as "2026-27" already contains its year information.
+        # Conventional names such as "Fall" are paired with the configured year.
+        if season and re.search(r"\b20\d{2}(?:[-–/]\d{2,4})?\b", season):
+            season_label = season
+        elif season and year:
             season_label = f"{season} {year}"
+        elif season:
+            season_label = season
         elif clean_text(competition.get("name")):
             season_label = clean_text(competition.get("name"))
         else:
@@ -246,6 +256,7 @@ def load_competitions():
         competitions.append(
             {
                 "organizer": organizer,
+                "league_label": league_label,
                 "season_label": season_label,
                 "sort_date": season_sort_date(
                     competition,
@@ -280,30 +291,25 @@ def render_team_list(teams):
         else:
             display_name = team["short_name"]
 
-        schedule_link = ""
-        if team.get("schedule_url"):
-            schedule_link = (
-                f'<a class="team-action schedule-link" '
-                f'href="{escape(team["schedule_url"], quote=True)}" '
-                f'target="_blank" rel="noopener noreferrer">'
-                "GotSport Schedule"
-                "</a>"
+        links = [
+            (
+                f'<a class="feed-link" href="{escape(team["href"], quote=True)}" '
+                f'title="{escape(team["name"], quote=True)}">Calendar Feed</a>'
             )
+        ]
+
+        if team.get("schedule_url"):
+            links.append(
+                f'<a class="source-link" href="{escape(team["schedule_url"], quote=True)}" '
+                'target="_blank" rel="noopener">GotSport Schedule</a>'
+            )
+
+        action_html = ' <span aria-hidden="true">·</span> '.join(links)
 
         items.append(
             "          <li>"
-            '<div class="team-row">'
-            f'<span class="team-name" title="{escape(team["name"], quote=True)}">'
-            f"{escape(display_name)}"
-            "</span>"
-            '<span class="team-actions">'
-            f'<a class="team-action calendar-link" href="{escape(team["href"], quote=True)}" '
-            f'download title="Calendar feed for {escape(team["name"], quote=True)}">'
-            "Calendar Feed"
-            "</a>"
-            f"{schedule_link}"
-            "</span>"
-            "</div>"
+            f'<div class="team-name">{escape(display_name)}</div>'
+            f'<div class="team-actions">{action_html}</div>'
             "</li>"
         )
 
@@ -331,7 +337,7 @@ def render_competition(comp):
     parts = [
         (
             f'    <section class="competition" '
-            f'data-organizer="{escape(comp["organizer"], quote=True)}" '
+            f'data-organizer="{escape(comp["league_label"], quote=True)}" '
             f'data-start-date="{start_date}" '
             f'data-end-date="{end_date}">'
         ),
@@ -355,16 +361,16 @@ def render_competition(comp):
 
 
 def build_index(competitions):
-    organizers = defaultdict(list)
+    leagues = defaultdict(list)
 
     for competition in competitions:
-        organizers[competition["organizer"]].append(competition)
+        leagues[competition["league_label"]].append(competition)
 
-    organizer_sections = []
+    league_sections = []
 
-    for organizer in sorted(organizers, key=natural_key):
+    for league_label in sorted(leagues, key=natural_key):
         comps = sorted(
-            organizers[organizer],
+            leagues[league_label],
             key=lambda item: item["sort_date"],
             reverse=True,
         )
@@ -374,18 +380,18 @@ def build_index(competitions):
             for comp in comps
         )
 
-        organizer_sections.append(
+        league_sections.append(
             "\n".join(
                 [
                     '<section class="league">',
-                    f"  <h2>{escape(organizer)}</h2>",
+                    f"  <h2>{escape(league_label)}</h2>",
                     rendered_competitions,
                     "</section>",
                 ]
             )
         )
 
-    body = "\n\n".join(organizer_sections)
+    body = "\n\n".join(league_sections)
 
     return f'''<!doctype html>
 <html lang="en">
@@ -491,40 +497,32 @@ def build_index(competitions):
     }}
 
     .team-list li {{
+      padding: 11px 4px 12px;
       border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
     }}
 
-    .team-row {{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 12px 4px;
-    }}
-
     .team-name {{
-      min-width: 0;
-      font-weight: 650;
+      font-weight: 700;
     }}
 
     .team-actions {{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 8px 14px;
-      flex: 0 0 auto;
+      margin-top: 3px;
+      font-size: 0.92rem;
+      color: color-mix(in srgb, CanvasText 72%, transparent);
     }}
 
-    .team-action {{
+    .feed-link,
+    .source-link {{
       color: LinkText;
-      font-weight: 650;
+      font-weight: 600;
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
-      white-space: nowrap;
     }}
 
-    .team-action:hover,
-    .team-action:focus-visible {{
+    .feed-link:hover,
+    .feed-link:focus-visible,
+    .source-link:hover,
+    .source-link:focus-visible {{
       text-decoration-thickness: 2px;
     }}
 
@@ -538,15 +536,8 @@ def build_index(competitions):
         padding-top: 24px;
       }}
 
-      .team-row {{
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 6px;
-        padding: 14px 2px;
-      }}
-
-      .team-actions {{
-        justify-content: flex-start;
+      .team-list li {{
+        padding: 13px 2px 14px;
       }}
     }}
   </style>
@@ -555,9 +546,8 @@ def build_index(competitions):
 <main>
   <h1>Soccer Calendars</h1>
   <p class="intro">
-    Each team has a Calendar Feed for subscription and a GotSport Schedule link for the live team schedule.
-    To subscribe in Google Calendar, copy the Calendar Feed link and add it under
-    <strong>Other calendars → From URL</strong>.
+    Tap a team to download or open its ICS calendar feed. To subscribe in Google Calendar,
+    long-press or copy the team link and add it under <strong>Other calendars → From URL</strong>.
   </p>
 
   <label class="history-control" id="history-control">
