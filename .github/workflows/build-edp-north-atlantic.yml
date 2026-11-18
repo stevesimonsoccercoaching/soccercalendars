@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: soccer-calendar-build-$ {{ github.ref }}
+  group: soccer-calendar-build-${{ github.ref }}
   cancel-in-progress: false
   
 jobs:
