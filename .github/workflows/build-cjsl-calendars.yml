@@ -5,8 +5,8 @@ on:
 
   push:
     paths:
-      - "data/**/*.xlsx"
-      - "config/**/manifest.json"
+      - "data/**/cjsl/**/*.xlsx"
+      - "config/**/cjsl/**/manifest.json"
       - "scripts/build_cjsl_calendars.py"
       - "scripts/build_calendar_index.py"
       - "scripts/report_schedule_changes.py"
@@ -14,6 +14,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: soccer-calendar-build-$ {{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build-calendars:
