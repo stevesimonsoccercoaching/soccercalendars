@@ -44,7 +44,7 @@ jobs:
 
       - name: Validate EDP manifest and XLSX files
         run: |
-          python scripts/validate_soccer_manifest.py \config/2026-27/edp-north-atlantic/manifest.json
+          python scripts/validate_soccer_manifest.py config/2026-27/edp-north-atlantic/manifest.json
     
       - name: Report EDP schedule changes
         env:
