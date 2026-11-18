@@ -11,7 +11,8 @@
     "event_id": "54578",
     "timezone": "America/New_York",
     "default_duration_minutes": 60,
-    "status_mode": "metadata"
+    "status_mode": "metadata",
+    "gender": ""
   },
   "calendar_defaults": {
     "reminders": [
