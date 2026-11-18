@@ -29,7 +29,6 @@ COMPARE_FIELDS = (
     ("home_away", "Home/Away"),
     ("location", "Location"),
     ("division", "Division"),
-    ("status", "Status"),
     ("result", "Results"),
 )
 
@@ -340,10 +339,18 @@ def file_context(head, base, path):
     organizer = clean_text(competition.get("organizer"))
     season = clean_text(competition.get("season"))
     year = clean_text(competition.get("year"))
+    competition_name = clean_text(
+        competition.get("competition", competition.get("name", ""))
+    )
 
-    competition_label = " ".join(
-        part for part in (organizer, season, year) if part
-    ) or "Schedule"
+    if competition_name and season and season.casefold() not in competition_name.casefold():
+        competition_label = f"{competition_name} {season}"
+    elif competition_name:
+        competition_label = competition_name
+    else:
+        competition_label = " ".join(
+            part for part in (organizer, season, year) if part
+        ) or "Schedule"
 
     team_name = clean_text(team.get("name"))
     short_name = clean_text(team.get("short_name")) or team_name or Path(path).stem
@@ -352,6 +359,9 @@ def file_context(head, base, path):
         "competition_label": competition_label,
         "team_name": team_name,
         "short_name": short_name,
+        "status_mode": clean_text(
+            competition.get("status_mode", "display")
+        ).lower() or "display",
     }
 
 
@@ -361,7 +371,7 @@ def match_sort_key(match_no):
     return (1, match_no.casefold())
 
 
-def render_match_snapshot(match):
+def render_match_snapshot(match, *, include_status=True):
     lines = [
         f"- Date: **{match['date_display']}**",
         f"- Time: **{match['time_display']}**",
@@ -369,8 +379,10 @@ def render_match_snapshot(match):
         f"- AWAY: {match['away_team'] or '(blank)'}",
         f"- Location: {match['location_display']}",
         f"- Division: {match['division_display']}",
-        f"- Status: {match['status_display']}",
     ]
+
+    if include_status:
+        lines.append(f"- Status: {match['status_display']}")
 
     if match["result"]:
         lines.append(f"- Results: {match['result_display']}")
@@ -378,10 +390,14 @@ def render_match_snapshot(match):
     return lines
 
 
-def render_modified_match(old_match, new_match):
+def render_modified_match(old_match, new_match, *, include_status=True):
     changes = []
 
-    for key, label in COMPARE_FIELDS:
+    fields = list(COMPARE_FIELDS)
+    if include_status:
+        fields.append(("status", "Status"))
+
+    for key, label in fields:
         if old_match[key] == new_match[key]:
             continue
 
@@ -451,8 +467,11 @@ def build_report(base, head):
         f"Comparison: `{short_base}` → `{short_head}`",
         "",
         (
-            "Rows are compared by GotSport **Match #**. A blank Status is treated "
-            "as **Scheduled**, and a blank/`-` Results value is treated as no result."
+            "Rows are compared by GotSport **Match #**. For competitions whose manifest "
+            "uses `status_mode: metadata`, raw GotSport Status values are administrative "
+            "metadata and do **not** count as schedule changes. For display-status "
+            "competitions such as CJSL, Status remains a material field. A blank/`-` "
+            "Results value is treated as no result."
         ),
         "",
     ]
@@ -488,6 +507,7 @@ def build_report(base, head):
         display_path = new_path if status != "D" else old_path
         context = file_context(head, base, display_path)
         tracked_team = context["team_name"]
+        include_status = context["status_mode"] == "display"
 
         old_bytes = git_file_bytes(base, old_path) if status != "A" else None
         new_bytes = git_file_bytes(head, new_path) if status != "D" else None
@@ -504,6 +524,15 @@ def build_report(base, head):
                 "",
             ]
         )
+
+        if not include_status:
+            lines.extend(
+                [
+                    "Raw GotSport `Status` values are treated as **metadata only** "
+                    "for this competition.",
+                    "",
+                ]
+            )
 
         if status == "A":
             total_added += len(new_matches)
@@ -543,6 +572,7 @@ def build_report(base, head):
             change_lines = render_modified_match(
                 old_matches[match_no],
                 new_matches[match_no],
+                include_status=include_status,
             )
             if change_lines:
                 modified.append((match_no, change_lines))
@@ -566,17 +596,44 @@ def build_report(base, head):
                 [
                     f"### Match {match_no} — ADDED",
                     "",
-                    *render_match_snapshot(new_matches[match_no]),
+                    *render_match_snapshot(
+                        new_matches[match_no],
+                        include_status=include_status,
+                    ),
                     "",
                 ]
             )
 
         for match_no in removed_ids:
+            missing_label = (
+                "REMOVED"
+                if include_status
+                else "MISSING FROM NEW EXPORT — VERIFY"
+            )
+
             lines.extend(
                 [
-                    f"### Match {match_no} — REMOVED",
+                    f"### Match {match_no} — {missing_label}",
                     "",
-                    *render_match_snapshot(old_matches[match_no]),
+                ]
+            )
+
+            if not include_status:
+                lines.extend(
+                    [
+                        "**Do not assume this means canceled or rained out.** "
+                        "The new export no longer contains this Match #. "
+                        "Verify the GotSport schedule before assigning a reason.",
+                        "",
+                    ]
+                )
+
+            lines.extend(
+                [
+                    *render_match_snapshot(
+                        old_matches[match_no],
+                        include_status=include_status,
+                    ),
                     "",
                 ]
             )
@@ -600,7 +657,7 @@ def build_report(base, head):
             f"- XLSX files changed in Git: **{len(changed_files)}**",
             f"- Files with material schedule changes: **{files_with_material_changes}**",
             f"- Matches added: **{total_added}**",
-            f"- Matches removed: **{total_removed}**",
+            f"- Matches removed/missing from new exports: **{total_removed}**",
             f"- Existing matches changed: **{total_modified}**",
             "",
         ]
@@ -930,6 +987,7 @@ def build_current_status_report():
 
     return "\n".join(lines)
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="Compare changed soccer XLSX schedules between two Git commits."
@@ -945,7 +1003,7 @@ def main():
     change_report = build_report(base, head)
     current_status_report = build_current_status_report()
     report = change_report + "\n\n" + current_status_report
-    
+
     output_file = Path(args.output)
     output_file.write_text(report + "\n", encoding="utf-8")
 
