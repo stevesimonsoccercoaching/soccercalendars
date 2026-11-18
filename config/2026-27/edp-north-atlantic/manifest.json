@@ -13,6 +13,10 @@
     "default_duration_minutes": 60,
     "status_mode": "metadata",
     "gender": "",
+    "schedule_safety": {
+      "reject_empty_export": true,
+      "max_missing_fraction": 0.5
+    },
     "missing_match_policy": "preserve-warning"
   },
   "calendar_defaults": {
