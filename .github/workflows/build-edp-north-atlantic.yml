@@ -1,0 +1,60 @@
+name: Build EDP North Atlantic Calendars
+
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - "data/2026-27/edp-north-atlantic/**/*.xlsx"
+      - "config/2026-27/edp-north-atlantic/manifest.json"
+      - "scripts/build_soccer_calendars.py"
+      - ".github/workflows/build-edp-north-atlantic.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-calendars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl
+
+      - name: Build EDP North Atlantic calendars
+        run: |
+          python scripts/build_soccer_calendars.py \
+            config/2026-27/edp-north-atlantic/manifest.json
+
+      - name: Show generated changes
+        run: |
+          echo "Generated EDP calendar and revision-state changes:"
+          echo
+          git diff -- docs/ state/ || true
+
+      - name: Commit generated calendars and revision state
+        run: |
+          git add docs/ state/
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Update EDP North Atlantic calendars"
+          git push
