@@ -25,27 +25,44 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:edp-na-54578-match-2969@system.gotsport.com
-DTSTAMP:20261118T153337Z
-LAST-MODIFIED:20261118T153337Z
-SEQUENCE:3
+DTSTAMP:20261118T163255Z
+LAST-MODIFIED:20261118T163255Z
+SEQUENCE:4
 DTSTART;TZID=America/New_York:20260919T160000
 DTEND;TZID=America/New_York:20260919T170000
-SUMMARY:⚠️ Missing from EDP export — EDP NA: ALBION Brooklyn U11 Acad
- emy vs DV7 NY U11
+SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs DV7 NY U11
 LOCATION:Randall's Island - 90
-DESCRIPTION:Competition: EDP North Atlantic\nSchedule state: ⚠️ Missing
-  from latest GotSport export — verify\nFirst detected missing: 20261118T
- 153337Z\nMatch No: 2969 (AWAY)\nDivision: 3 SOUTHWEST BU11\nUpdated: Nov 1
- 8\, 2026 at 10:33 AM EST\n\nHOME: DV7 NY B2015/16\nAWAY: ALBION SC Brookly
- n B15/16 Academy - Williamsburg\n\nResults: 1 - 6\n\nSource: https://syste
- m.gotsport.com/org_event/events/54578/schedules?team=4249165
+DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2969 (AWAY)\nDivisio
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 11:32 AM EST\n\nHOME: DV7 N
+ Y B2015/16\nAWAY: ALBION SC Brooklyn B15/16 Academy - Williamsburg\n\nResu
+ lts: 1 - 6\n\nSource: https://system.gotsport.com/org_event/events/54578/s
+ chedules?team=4249165
 URL:https://system.gotsport.com/org_event/events/54578/schedules?team=42491
  65
 CATEGORIES:EDP NA,Soccer
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 X-GOTSPORT-STATUS:Y-MAM
-X-SCHEDULE-STATE:MISSING_FROM_EXPORT
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:EDP North Atlantic match in 7 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:EDP North Atlantic match in 2 days
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT12H
+ACTION:DISPLAY
+DESCRIPTION:EDP North Atlantic match in 12 hours
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:EDP North Atlantic match in 3 hours
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2976@system.gotsport.com
