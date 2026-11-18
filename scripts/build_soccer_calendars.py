@@ -40,6 +40,7 @@ def match_fingerprint(match, summary, source_url, include_raw_status=True):
         "status": match["status"] if include_raw_status else "",
         "summary": clean_text(summary),
         "source_url": clean_text(source_url),
+        "missing_from_export": bool(match.get("missing_from_export", False)),
     }
 
     # Include rendered/public-facing fields so label or source-link corrections
@@ -156,6 +157,78 @@ def save_revision_state(path, state):
     )
 
     return True
+
+
+
+def load_missing_match_state(path):
+    if not path.exists():
+        return {
+            "version": 1,
+            "teams": {},
+        }
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+
+    if not isinstance(data, dict):
+        raise RuntimeError(
+            f"Invalid missing-match state file: {path}"
+        )
+
+    data.setdefault("version", 1)
+    data.setdefault("teams", {})
+
+    if not isinstance(data["teams"], dict):
+        raise RuntimeError(
+            f"Invalid missing-match teams object: {path}"
+        )
+
+    return data
+
+
+def preserved_missing_matches(state, team_slug):
+    preserved = []
+
+    team_matches = state.get("teams", {}).get(team_slug, {})
+
+    if not isinstance(team_matches, dict):
+        return preserved
+
+    for match_no, entry in team_matches.items():
+        if not isinstance(entry, dict):
+            continue
+
+        snapshot = entry.get("match", {})
+        if not isinstance(snapshot, dict):
+            continue
+
+        try:
+            start = datetime.fromisoformat(snapshot["start"])
+            end = datetime.fromisoformat(snapshot["end"])
+        except (KeyError, TypeError, ValueError):
+            print(
+                f"WARNING: Skipping invalid preserved missing match "
+                f"{team_slug}:{match_no}"
+            )
+            continue
+
+        preserved.append(
+            {
+                "match_no": int(snapshot.get("match_no", match_no)),
+                "start": start,
+                "end": end,
+                "all_day": bool(snapshot.get("all_day", False)),
+                "home_team": clean_text(snapshot.get("home_team")),
+                "away_team": clean_text(snapshot.get("away_team")),
+                "result": clean_text(snapshot.get("result")),
+                "location": clean_text(snapshot.get("location")),
+                "division": clean_text(snapshot.get("division")),
+                "status": clean_text(snapshot.get("status")) or "Unknown",
+                "missing_from_export": True,
+                "missing_since": clean_text(entry.get("first_missing_at")),
+            }
+        )
+
+    return preserved
 
 
 def ics_escape(value):
@@ -447,7 +520,13 @@ def build_calendar(
             f"vs {opponent_short}"
         )
 
-        if "cancel" in status_lower:
+        missing_from_export = bool(
+            match.get("missing_from_export", False)
+        )
+
+        if missing_from_export:
+            summary = f"⚠️ Missing from EDP export — {summary}"
+        elif "cancel" in status_lower:
             summary = f"❌ Canceled — {summary}"
 
         uid = (
@@ -495,6 +574,16 @@ def build_calendar(
             description_parts.append(
                 f"Status: {ics_escape(match['status'])}"
             )
+
+        if missing_from_export:
+            description_parts.append(
+                "Schedule state: ⚠️ Missing from latest GotSport export — verify"
+            )
+            missing_since = clean_text(match.get("missing_since"))
+            if missing_since:
+                description_parts.append(
+                    f"First detected missing: {ics_escape(missing_since)}"
+                )
 
         description_parts.extend(
             [
@@ -573,7 +662,10 @@ def build_calendar(
             f"X-GOTSPORT-STATUS:{ics_escape(match['status'])}"
         )
 
-        if not match["all_day"]:
+        if missing_from_export:
+            lines.append("X-SCHEDULE-STATE:MISSING_FROM_EXPORT")
+
+        if not match["all_day"] and not missing_from_export:
             for reminder in reminders:
                 lines.extend(
                     [
@@ -670,10 +762,21 @@ def main():
         / relative_folder
         / "revisions.json"
     )
+    missing_state_file = (
+        Path("state")
+        / relative_folder
+        / "missing_matches.json"
+    )
 
     revision_state = load_revision_state(
         revision_state_file
     )
+    missing_match_state = load_missing_match_state(
+        missing_state_file
+    )
+    missing_match_policy = clean_text(
+        competition.get("missing_match_policy", "")
+    ).lower()
 
     changed_at = datetime.now(timezone.utc).strftime(
         "%Y%m%dT%H%M%SZ"
@@ -716,6 +819,25 @@ def main():
             tracked_team_name=team_name,
             duration_minutes=duration_minutes,
         )
+
+        if missing_match_policy == "preserve-warning":
+            current_match_numbers = {
+                match["match_no"] for match in matches
+            }
+
+            for preserved in preserved_missing_matches(
+                missing_match_state,
+                slug,
+            ):
+                if preserved["match_no"] not in current_match_numbers:
+                    matches.append(preserved)
+
+            matches.sort(
+                key=lambda match: (
+                    match["start"],
+                    match["match_no"],
+                )
+            )
 
         build_calendar(
             competition=competition,
