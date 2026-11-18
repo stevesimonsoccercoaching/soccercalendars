@@ -9,7 +9,7 @@ on:
       - "config/2026-27/edp-north-atlantic/manifest.json"
       - "scripts/build_soccer_calendars.py"
       - "scripts/build_calendar_index.py"
-      - "scripts/report_soccer_schedule_changes.py"
+      - "scripts/report_schedule_changes.py"
       - "scripts/sync_missing_soccer_matches.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
@@ -41,7 +41,7 @@ jobs:
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
         run: |
-          python scripts/report_soccer_schedule_changes.py \
+          python scripts/report_schedule_changes.py \
             --base "$BEFORE_SHA" \
             --head "$CURRENT_SHA" \
             --output schedule-change-report.md
