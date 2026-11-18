@@ -10,6 +10,7 @@ on:
       - "scripts/build_soccer_calendars.py"
       - "scripts/build_calendar_index.py"
       - "scripts/report_schedule_changes.py"
+      - "scripts/schedule_safety.py"
       - "scripts/sync_missing_soccer_matches.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
@@ -19,7 +20,7 @@ permissions:
 concurrency:
   group: soccer-calendar-build-${{ github.ref }}
   cancel-in-progress: false
-  
+
 jobs:
   build-calendars:
     runs-on: ubuntu-latest
@@ -49,7 +50,6 @@ jobs:
             --base "$BEFORE_SHA" \
             --head "$CURRENT_SHA" \
             --output schedule-change-report.md
-
           cat schedule-change-report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Preserve matches missing from latest EDP exports
@@ -68,8 +68,7 @@ jobs:
             config/2026-27/edp-north-atlantic/manifest.json
 
       - name: Build calendar index page
-        run: |
-          python scripts/build_calendar_index.py
+        run: python scripts/build_calendar_index.py
 
       - name: Show generated changes
         run: |
@@ -80,14 +79,11 @@ jobs:
       - name: Commit generated calendars and state
         run: |
           git add docs/ state/
-
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             exit 0
           fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git commit -m "Update EDP North Atlantic calendars"
           git push
