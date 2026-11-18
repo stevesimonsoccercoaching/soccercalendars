@@ -9,6 +9,8 @@ on:
       - "config/2026-27/edp-north-atlantic/manifest.json"
       - "scripts/build_soccer_calendars.py"
       - "scripts/build_calendar_index.py"
+      - "scripts/report_soccer_schedule_changes.py"
+      - "scripts/sync_missing_soccer_matches.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
 permissions:
@@ -34,6 +36,28 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
+      - name: Report EDP schedule changes
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          python scripts/report_soccer_schedule_changes.py \
+            --base "$BEFORE_SHA" \
+            --head "$CURRENT_SHA" \
+            --output schedule-change-report.md
+
+          cat schedule-change-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Preserve matches missing from latest EDP exports
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          python scripts/sync_missing_soccer_matches.py \
+            --manifest config/2026-27/edp-north-atlantic/manifest.json \
+            --base "$BEFORE_SHA" \
+            --head "$CURRENT_SHA"
+
       - name: Build EDP North Atlantic calendars
         run: |
           python scripts/build_soccer_calendars.py \
@@ -45,11 +69,11 @@ jobs:
 
       - name: Show generated changes
         run: |
-          echo "Generated EDP calendar, index, and revision-state changes:"
+          echo "Generated EDP calendar, index, and state changes:"
           echo
           git diff -- docs/ state/ || true
 
-      - name: Commit generated calendars and revision state
+      - name: Commit generated calendars and state
         run: |
           git add docs/ state/
 
