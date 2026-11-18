@@ -16,6 +16,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: soccer-calendar-build-$ {{ github.ref }}
+  cancel-in-progress: false
+  
 jobs:
   build-calendars:
     runs-on: ubuntu-latest
