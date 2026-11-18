@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-104@system.gotsport.com
-DTSTAMP:20261118T163020Z
-LAST-MODIFIED:20261118T163020Z
-SEQUENCE:26
+DTSTAMP:20261118T164327Z
+LAST-MODIFIED:20261118T164327Z
+SEQUENCE:28
 DTSTART;TZID=America/New_York:20261017T083000
 DTEND;TZID=America/New_York:20261017T093000
 SUMMARY:CJSL: Gjoa Johnsen vs Long Island City U13
 LOCATION:Red Hook Ball Fields 7 - 11v11\, 9v9\, 7v7 (1)
 DESCRIPTION:Status: Scheduled\nMatch No: 104 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:30 AM EST\n\nHOME: Long Island C
+ D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: Long Island C
  ity Soccer Club 2013/2014\nAWAY: SC Gjoa Johnsen\n\nResults: 4 - 3\n\nSour
  ce: https://system.gotsport.com/org_event/events/55206/schedules?team=4244
  183
@@ -268,15 +268,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-127@system.gotsport.com
-DTSTAMP:20261118T163020Z
-LAST-MODIFIED:20261118T163020Z
-SEQUENCE:25
+DTSTAMP:20261118T164327Z
+LAST-MODIFIED:20261118T164327Z
+SEQUENCE:27
 DTSTART;TZID=America/New_York:20261114T093000
 DTEND;TZID=America/New_York:20261114T103000
 SUMMARY:CJSL: Gjoa Johnsen vs Brooklyn Premier Regional
 LOCATION:Dyker Turf Field A Small Sided  - A
 DESCRIPTION:Status: Scheduled\nMatch No: 127 (HOME)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:30 AM EST\n\nHOME: SC Gjoa Johns
+ D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: SC Gjoa Johns
  en\nAWAY: Brooklyn Premier F.C. 14/13 Regional\n\nSource: https://system.g
  otsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
@@ -308,15 +308,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-131@system.gotsport.com
-DTSTAMP:20261118T163020Z
-LAST-MODIFIED:20261118T163020Z
-SEQUENCE:25
+DTSTAMP:20261118T164327Z
+LAST-MODIFIED:20261118T164327Z
+SEQUENCE:27
 DTSTART;TZID=America/New_York:20261122T110000
 DTEND;TZID=America/New_York:20261122T120000
 SUMMARY:CJSL: Gjoa Johnsen vs SFFK U13
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 131 (AWAY)\nDivision: U13 (9v9) - 
- D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:30 AM EST\n\nHOME: Soccer Fun fo
+ D1 - D2 Mix\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: Soccer Fun fo
  r Kids / Brooklyn Patriots 2013-2014\nAWAY: SC Gjoa Johnsen\n\nSource: htt
  ps://system.gotsport.com/org_event/events/55206/schedules?team=4244183
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42441
