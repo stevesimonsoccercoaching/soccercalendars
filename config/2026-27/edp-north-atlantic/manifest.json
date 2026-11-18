@@ -12,7 +12,8 @@
     "timezone": "America/New_York",
     "default_duration_minutes": 60,
     "status_mode": "metadata",
-    "gender": ""
+    "gender": "",
+    "missing_match_policy": "preserve-warning"
   },
   "calendar_defaults": {
     "reminders": [
