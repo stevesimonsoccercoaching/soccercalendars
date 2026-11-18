@@ -8,6 +8,7 @@ on:
       - "data/2026-27/edp-north-atlantic/**/*.xlsx"
       - "config/2026-27/edp-north-atlantic/manifest.json"
       - "scripts/build_soccer_calendars.py"
+      - "scripts/build_calendar_index.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
 permissions:
@@ -38,9 +39,13 @@ jobs:
           python scripts/build_soccer_calendars.py \
             config/2026-27/edp-north-atlantic/manifest.json
 
+      - name: Build calendar index page
+        run: |
+          python scripts/build_calendar_index.py
+
       - name: Show generated changes
         run: |
-          echo "Generated EDP calendar and revision-state changes:"
+          echo "Generated EDP calendar, index, and revision-state changes:"
           echo
           git diff -- docs/ state/ || true
 
