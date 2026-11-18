@@ -12,6 +12,7 @@ on:
       - "scripts/report_schedule_changes.py"
       - "scripts/schedule_safety.py"
       - "scripts/sync_missing_soccer_matches.py"
+      - "scripts/validate_soccer_manifest.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
 permissions:
@@ -41,6 +42,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
+      - name: Validate EDP manifest and XLSX files
+        run: |
+          python scripts/validate_soccer_manifest.py \config/2026-27/edp-north-atlantic/manifest.json
+    
       - name: Report EDP schedule changes
         env:
           BEFORE_SHA: ${{ github.event.before }}
