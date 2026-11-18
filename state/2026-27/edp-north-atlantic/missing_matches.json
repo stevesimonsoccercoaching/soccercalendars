@@ -1,4 +1,22 @@
 {
-  "teams": {},
+  "teams": {
+    "albion-sc-brooklyn-b15-16-academy-williamsburg": {
+      "2969": {
+        "first_missing_at": "20261118T153337Z",
+        "match": {
+          "all_day": false,
+          "away_team": "ALBION SC Brooklyn B15/16 Academy - Williamsburg",
+          "division": "3 SOUTHWEST BU11",
+          "end": "2026-09-19T17:00:00",
+          "home_team": "DV7 NY B2015/16",
+          "location": "Randall's Island - 90",
+          "match_no": 2969,
+          "result": "1 - 6",
+          "start": "2026-09-19T16:00:00",
+          "status": "Y-MAM"
+        }
+      }
+    }
+  },
   "version": 1
 }
