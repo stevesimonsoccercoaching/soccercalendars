@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:edp-na-54578-match-2969@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20260919T160000
 DTEND;TZID=America/New_York:20260919T170000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs DV7 NY U11
 LOCATION:Randall's Island - 90
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2969 (AWAY)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: DV7 NY
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: DV7 NY
   B2015/16\nAWAY: ALBION SC Brooklyn B15/16 Academy - Williamsburg\n\nResul
  ts: 1 - 6\n\nSource: https://system.gotsport.com/org_event/events/54578/sc
  hedules?team=4249165
@@ -66,15 +66,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2976@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261003T090000
 DTEND;TZID=America/New_York:20261003T100000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs DUSC U11
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2976 (HOME)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: ALBION
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: ALBION
   SC Brooklyn B15/16 Academy - Williamsburg\nAWAY: DUSC Boys (2015/2016) ED
  P\n\nResults: 5 - 1\n\nSource: https://system.gotsport.com/org_event/event
  s/54578/schedules?team=4249165
@@ -107,15 +107,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2983@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T143000
 DTEND;TZID=America/New_York:20261017T153000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs Met Oval U11 Black
 LOCATION:Met Oval Field - Met Oval Field
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2983 (AWAY)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: Metrop
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: Metrop
  olitan Oval Academy Brooklyn 2015/16 Boys U11 Black\nAWAY: ALBION SC Brook
  lyn B15/16 Academy - Williamsburg\n\nResults: 1 - 4\n\nSource: https://sys
  tem.gotsport.com/org_event/events/54578/schedules?team=4249165
@@ -148,15 +148,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2986@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261024T142000
 DTEND;TZID=America/New_York:20261024T152000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs Brooklyn United U11 Regional
 LOCATION:LIU Athletic Center - Field 1
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2986 (AWAY)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: Brookl
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: Brookl
  yn United Academy B2015/2016 Regional\nAWAY: ALBION SC Brooklyn B15/16 Aca
  demy - Williamsburg\n\nResults: 0 - 7\n\nSource: https://system.gotsport.c
  om/org_event/events/54578/schedules?team=4249165
@@ -189,16 +189,16 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2989@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261031T090000
 DTEND;TZID=America/New_York:20261031T100000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs Brooklyn United U11 Regional
   II
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2989 (HOME)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: ALBION
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: ALBION
   SC Brooklyn B15/16 Academy - Williamsburg\nAWAY: Brooklyn United Academy 
  B2015/2016 Regional II\n\nResults: 6 - 0\n\nSource: https://system.gotspor
  t.com/org_event/events/54578/schedules?team=4249165
@@ -231,15 +231,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2994@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261108T143000
 DTEND;TZID=America/New_York:20261108T153000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs Coney Island Hurricanes
 LOCATION:Bill Brown Playground - Bill Brown 9v9 Full Field
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2994 (AWAY)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: Coney 
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: Coney 
  Island Cyclones United Hurricanes 2015/16\nAWAY: ALBION SC Brooklyn B15/16
   Academy - Williamsburg\n\nResults: 1 - 3\n\nSource: https://system.gotspo
  rt.com/org_event/events/54578/schedules?team=4249165
@@ -272,15 +272,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2997@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261114T083000
 DTEND;TZID=America/New_York:20261114T093000
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs DV7 NY U11
 LOCATION:Frank Principe Park/ Maurice Park Soccer 04  - Field 4
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2997 (HOME)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: ALBION
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: ALBION
   SC Brooklyn B15/16 Academy - Williamsburg\nAWAY: DV7 NY B2015/16\n\nResul
  ts: 13 - 0\n\nSource: https://system.gotsport.com/org_event/events/54578/s
  chedules?team=4249165
@@ -313,15 +313,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:edp-na-54578-match-2972@system.gotsport.com
-DTSTAMP:20261118T111800Z
-LAST-MODIFIED:20261118T111800Z
-SEQUENCE:1
+DTSTAMP:20261118T142919Z
+LAST-MODIFIED:20261118T142919Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261121T151500
 DTEND;TZID=America/New_York:20261121T161500
 SUMMARY:EDP NA: ALBION Brooklyn U11 Academy vs Triboro United U11 Frost
 LOCATION:Randall’s Island Field #91 - Small Sided
 DESCRIPTION:Competition: EDP North Atlantic\nMatch No: 2972 (HOME)\nDivisio
- n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 6:18 AM EST\n\nHOME: ALBION
+ n: 3 SOUTHWEST BU11\nUpdated: Nov 18\, 2026 at 9:29 AM EST\n\nHOME: ALBION
   SC Brooklyn B15/16 Academy - Williamsburg\nAWAY: Triboro United SC 2015/1
  6 Frost\n\nSource: https://system.gotsport.com/org_event/events/54578/sche
  dules?team=4249165
