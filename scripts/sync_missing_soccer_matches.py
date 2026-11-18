@@ -10,6 +10,10 @@ from pathlib import Path
 
 from openpyxl import load_workbook
 
+from schedule_safety import (
+    ScheduleSafetyError,
+    validate_schedule_transition,
+)
 
 REQUIRED_COLUMNS = {
     "Match #",
@@ -22,12 +26,10 @@ REQUIRED_COLUMNS = {
     "Status",
 }
 
-
 def clean_text(value):
     if value is None:
         return ""
     return re.sub(r"\s+", " ", str(value)).strip()
-
 
 def run_git(args, *, check=True):
     result = subprocess.run(
@@ -43,7 +45,6 @@ def run_git(args, *, check=True):
         )
     return result.stdout.decode("utf-8", errors="replace")
 
-
 def commit_exists(ref):
     if not ref or set(ref) == {"0"}:
         return False
@@ -55,7 +56,6 @@ def commit_exists(ref):
     )
     return result.returncode == 0
 
-
 def resolve_base(base, head):
     if commit_exists(base):
         return base
@@ -63,7 +63,6 @@ def resolve_base(base, head):
     if commit_exists(parent):
         return parent
     return ""
-
 
 def git_file_bytes(ref, path):
     if not ref:
@@ -76,7 +75,6 @@ def git_file_bytes(ref, path):
     )
     return result.stdout if result.returncode == 0 else None
 
-
 def normalize_match_no(value):
     if value is None:
         return ""
@@ -88,7 +86,6 @@ def normalize_match_no(value):
     if re.fullmatch(r"\d+\.0+", text):
         return text.split(".", 1)[0]
     return text
-
 
 def parse_date(value):
     if isinstance(value, datetime):
@@ -109,14 +106,12 @@ def parse_date(value):
             continue
     raise ValueError(f"Unusable match date: {value!r}")
 
-
 def time_is_tbd(value):
     if isinstance(value, (datetime, time)):
         return False
     return clean_text(value).upper() in {
         "", "-", "TBD", "TBA", "TO BE DETERMINED", "TO BE ANNOUNCED"
     }
-
 
 def parse_time(value):
     if isinstance(value, datetime):
@@ -131,7 +126,6 @@ def parse_time(value):
         except ValueError:
             continue
     raise ValueError(f"Unusable match time: {value!r}")
-
 
 def read_schedule(workbook_bytes, duration_minutes=60):
     workbook = load_workbook(
@@ -163,6 +157,12 @@ def read_schedule(workbook_bytes, duration_minutes=60):
         match_no = normalize_match_no(row[headers["Match #"]])
         if not match_no:
             continue
+
+        if match_no in matches:
+            workbook.close()
+            raise RuntimeError(
+                f"Spreadsheet contains duplicate Match # {match_no}"
+            )
 
         match_date = parse_date(row[headers["Date"]])
         raw_time = row[headers["Time"]]
@@ -197,7 +197,6 @@ def read_schedule(workbook_bytes, duration_minutes=60):
     workbook.close()
     return matches
 
-
 def load_state(path):
     if not path.exists():
         return {"version": 1, "teams": {}}
@@ -205,7 +204,6 @@ def load_state(path):
     data.setdefault("version", 1)
     data.setdefault("teams", {})
     return data
-
 
 def save_state(path, state):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -216,7 +214,6 @@ def save_state(path, state):
     path.write_text(content, encoding="utf-8")
     print(f"Updated missing-match state: {path}")
     return True
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -255,6 +252,7 @@ def main():
     now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
     default_duration = int(competition.get("default_duration_minutes", 60))
+    schedule_safety = competition.get("schedule_safety", {})
     newly_missing = 0
     reappeared = 0
 
@@ -267,7 +265,6 @@ def main():
         old_bytes = git_file_bytes(base, path)
         new_bytes = git_file_bytes(head, path)
 
-        # New team/file or temporarily unavailable history: no missing inference.
         if not old_bytes or not new_bytes:
             continue
 
@@ -275,18 +272,37 @@ def main():
         old_matches = read_schedule(old_bytes, duration)
         new_matches = read_schedule(new_bytes, duration)
 
+        try:
+            transition = validate_schedule_transition(
+                old_matches,
+                new_matches,
+                schedule_safety,
+                label=slug,
+            )
+        except (ScheduleSafetyError, ValueError) as exc:
+            raise RuntimeError(
+                f"Schedule safety check failed for {path}:\n{exc}"
+            ) from exc
+
         old_ids = set(old_matches)
         new_ids = set(new_matches)
+
+        print(
+            f"{slug}: safety check passed — "
+            f"{transition['old_count']} previous, "
+            f"{transition['new_count']} current, "
+            f"{transition['missing_count']} missing "
+            f"({transition['missing_fraction']:.1%})."
+        )
+
         team_state = teams_state.setdefault(slug, {})
 
-        # If a previously missing Match # is back, clear the warning state.
         for match_no in list(team_state):
             if match_no in new_ids:
                 del team_state[match_no]
                 reappeared += 1
                 print(f"{slug}: Match {match_no} reappeared; cleared warning.")
 
-        # Newly vanished Match #s get a persistent last-known snapshot.
         for match_no in sorted(old_ids - new_ids):
             if match_no not in team_state:
                 team_state[match_no] = {
@@ -306,7 +322,6 @@ def main():
         f"currently preserved: "
         f"{sum(len(v) for v in teams_state.values())}"
     )
-
 
 if __name__ == "__main__":
     main()
