@@ -71,6 +71,18 @@
         "schedule_url": "https://system.gotsport.com/org_event/events/54578/schedules?team=4246976",
         "export_url": "https://system.gotsport.com/org_event/events/54578/matches_export?team=4246976"
       }
-    }
+    },
+
+    {
+	    "name": "DV7 NY B2015/16",
+ 	    "short_name": "DV7 NY U11",
+ 	    "slug": "dv7-ny-b2015-16",
+      "gotsport": { 
+        "schedule_team_id": "4151617",
+         "export_team_id": "4151617",
+         "schedule_url": "https://system.gotsport.com/org_event/events/54578/schedules?team=4151617",
+         "export_url": "https://system.gotsport.com/org_event/events/54578/matches_export?team=4151617" 
+	  } 
+  }
   ]
 }
