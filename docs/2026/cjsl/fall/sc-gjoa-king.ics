@@ -190,18 +190,18 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-578@system.gotsport.com
-DTSTAMP:20261118T133302Z
-LAST-MODIFIED:20261118T133302Z
-SEQUENCE:20
+DTSTAMP:20261118T150927Z
+LAST-MODIFIED:20261118T150927Z
+SEQUENCE:22
 DTSTART;TZID=America/New_York:20261031T103000
 DTEND;TZID=America/New_York:20261031T113000
 SUMMARY:CJSL: Gjoa King vs Met Oval U11 White
 LOCATION:Red Hook Field #5 - Field 5 11v11
 DESCRIPTION:Status: Scheduled\nMatch No: 578 (AWAY)\nDivision: U11 (9v9) - 
- D4 City\nUpdated: Nov 18\, 2026 at 8:33 AM EST\n\nHOME: Metropolitan Oval 
- Academy Brooklyn 2015/16 Boys U11 White\nAWAY: SC Gjoa King\n\nResults: 1 
- - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedule
- s?team=4244097
+ D4 City\nUpdated: Nov 18\, 2026 at 10:09 AM EST\n\nHOME: Metropolitan Oval
+  Academy Brooklyn 2015/16 Boys U11 White\nAWAY: SC Gjoa King\n\nResults: 1
+  - 5\n\nSource: https://system.gotsport.com/org_event/events/55206/schedul
+ es?team=4244097
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=42440
  97
 CATEGORIES:CJSL,Soccer
