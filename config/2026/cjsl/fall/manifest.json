@@ -6,6 +6,7 @@
     "name": "CJSL Fall 2026",
     "provider": "GotSport",
     "event_id": "55206",
+    "calendar_profile": "explicit-status-cjsl-v1",
     "timezone": "America/New_York",
     "default_duration_minutes": 60
   },
