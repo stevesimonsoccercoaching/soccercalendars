@@ -94,10 +94,21 @@ class CJSLRevisionViewTests(unittest.TestCase):
 
     @unittest.expectedFailure
     def test_two_team_rebuild_does_not_inflate_sequence(self):
-        """KNOWN BUG: alternate team summaries overwrite one shared fingerprint.
-
-        The second round must be byte-identical to the first and must not
-        change revision state. Remove expectedFailure only AFTER the fix.
+        """Version 2 keeps team views independent and preserves history."""
+        key = "55206:277"
+        legacy = {
+            "fingerprint": "original-history",
+            "sequence": 28,
+            "last_modified": "20261118T164327Z",
+        }
+        self.state = {
+            "version": 2,
+            "matches": {key: copy.deepcopy(legacy)},
+            "views": {
+                self.alpha["slug"]: {},
+                self.beta["slug"]: {},
+            },
+        }
         """
         first_alpha = self.render(self.alpha, "20261119T130000Z")
         first_beta = self.render(self.beta, "20261119T130000Z")
@@ -106,7 +117,13 @@ class CJSLRevisionViewTests(unittest.TestCase):
         next_alpha = self.render(self.alpha, "20261119T140000Z")
         next_beta = self.render(self.beta, "20261119T140000Z")
 
-        self.assertEqual(first_alpha, next_alpha,
+                self.assertEqual(self.state["matches"][key], legacy)
+        self.assertEqual(
+            self.state["views"][self.alpha["slug"]][key]["sequence"], 1
+        )
+        self.assertEqual(
+            self.state["views"][self.beta["slug"]][key]["sequence"], 1
+        )
                          "Alpha calendar unexpectedly changed on a no-op rebuild")
         self.assertEqual(first_beta, next_beta,
                          "Beta calendar unexpectedly changed on a no-op rebuild")
