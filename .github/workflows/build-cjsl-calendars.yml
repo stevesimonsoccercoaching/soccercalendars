@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
   push:
+    branches:
+      - main
     paths:
       - "data/**/cjsl/**/*.xlsx"
       - "config/**/cjsl/**/manifest.json"
@@ -85,6 +87,7 @@ jobs:
           git diff -- docs/ state/ || true
 
       - name: Commit updated calendars and revision state
+        if: github.ref == 'refs/heads/main'
         run: |
           git add docs/ state/
 
