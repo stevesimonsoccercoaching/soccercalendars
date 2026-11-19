@@ -45,7 +45,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
-      - name: Test soccer manifest validator
+      - name: Test soccer validation and discovery
         run: python -m unittest discover -s tests -p "test_*.py" -v
 
       - name: Discover registered soccer events
