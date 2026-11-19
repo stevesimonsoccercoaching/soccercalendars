@@ -67,6 +67,11 @@ jobs:
             --manifest config/2026/cjsl/fall/manifest.json \
             --json
 
+      - name: Verify CJSL v2 real-data parity
+        run: |
+          python scripts/verify_cjsl_v2_parity.py \
+            --manifest config/2026/cjsl/fall/manifest.json
+
       - name: Validate CJSL manifests and XLSX files
         run: |
           set -e
