@@ -76,8 +76,16 @@ def validate(manifest_path):
                 errors.append(f"{prefix}.gotsport.{field} is required")
                 continue
             url = urlparse(value)
+            valid_path = url.path == f"/org_event/events/{event_id}/{endpoint}"
+            if field == "schedule_url":
+                # Some CJSL GotSport schedule links use a numeric splash/org ID.
+                # Only schedule pages may use this format; exports remain /org_event/.
+                valid_path = valid_path or bool(re.fullmatch(
+                    rf"/splash/[0-9]+/events/{re.escape(event_id)}/schedules",
+                    url.path,
+                ))
             if (url.scheme != "https" or url.netloc != "system.gotsport.com"
-                    or url.path != f"/org_event/events/{event_id}/{endpoint}"
+                    or not valid_path
                     or parse_qs(url.query).get("team") != [team_id]):
                 errors.append(f"{prefix}.gotsport.{field}: check event ID, team ID and URL")
 
