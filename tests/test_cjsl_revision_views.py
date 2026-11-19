@@ -1,14 +1,10 @@
-"""CJSL regression guard: shared matches must not inflate revision history.
+"""CJSL regression tests for legacy and per-calendar revision tracking.
 
-This file deliberately records one KNOWN pre-existing defect using
-@unittest.expectedFailure. Do not remove that decorator until the CJSL
-builder is corrected and the test succeeds without it.
-
-Run from repository root:
+Run from the repository root:
     python -m unittest discover -s tests -p 'test_cjsl_revision_views.py' -v
 
-The tests write only to a disposable temporary directory. They never
-modify real calendars, source workbooks, or revision-state files.
+All generated calendars are written to a disposable temporary directory.
+These tests never modify real workbooks, published feeds, or revision state.
 """
 
 import copy
@@ -76,7 +72,7 @@ class CJSLRevisionViewTests(unittest.TestCase):
         return output.read_bytes()
 
     def test_single_team_rebuild_is_stable(self):
-        """Existing behavior: the same perspective alone is idempotent."""
+        """Version-1 behavior remains stable when rebuilding one feed."""
         first = self.render(self.alpha, "20261119T130000Z")
         initial = copy.deepcopy(self.state)
         second = self.render(self.alpha, "20261119T140000Z")
@@ -84,7 +80,7 @@ class CJSLRevisionViewTests(unittest.TestCase):
         self.assertEqual(initial, self.state)
 
     def test_shared_match_preserves_existing_uid_in_both_feeds(self):
-        """Keep published UID identity stable during the repair."""
+        """The same match keeps its original UID in both team feeds."""
         first = self.render(self.alpha, "20261119T130000Z")
         second = self.render(self.beta, "20261119T130000Z")
         uid = b"UID:cjsl-55206-match-277@system.gotsport.com\r\n"
@@ -92,9 +88,8 @@ class CJSLRevisionViewTests(unittest.TestCase):
         self.assertIn(uid, second)
         self.assertNotEqual(first, second)  # Different calendar perspectives.
 
-    @unittest.expectedFailure
     def test_two_team_rebuild_does_not_inflate_sequence(self):
-        """Version 2 keeps team views independent and preserves history."""
+        """Version 2 isolates team views and preserves legacy match history."""
         key = "55206:277"
         legacy = {
             "fingerprint": "original-history",
@@ -109,7 +104,7 @@ class CJSLRevisionViewTests(unittest.TestCase):
                 self.beta["slug"]: {},
             },
         }
-        """
+
         first_alpha = self.render(self.alpha, "20261119T130000Z")
         first_beta = self.render(self.beta, "20261119T130000Z")
         initial_state = copy.deepcopy(self.state)
@@ -117,18 +112,25 @@ class CJSLRevisionViewTests(unittest.TestCase):
         next_alpha = self.render(self.alpha, "20261119T140000Z")
         next_beta = self.render(self.beta, "20261119T140000Z")
 
-                self.assertEqual(self.state["matches"][key], legacy)
+        self.assertEqual(
+            first_alpha, next_alpha,
+            "Alpha calendar unexpectedly changed on a no-op rebuild",
+        )
+        self.assertEqual(
+            first_beta, next_beta,
+            "Beta calendar unexpectedly changed on a no-op rebuild",
+        )
+        self.assertEqual(
+            initial_state, self.state,
+            "Revision state unexpectedly changed on a no-op rebuild",
+        )
+        self.assertEqual(self.state["matches"][key], legacy)
         self.assertEqual(
             self.state["views"][self.alpha["slug"]][key]["sequence"], 1
         )
         self.assertEqual(
             self.state["views"][self.beta["slug"]][key]["sequence"], 1
         )
-                         "Alpha calendar unexpectedly changed on a no-op rebuild")
-        self.assertEqual(first_beta, next_beta,
-                         "Beta calendar unexpectedly changed on a no-op rebuild")
-        self.assertEqual(initial_state, self.state,
-                         "Revision state unexpectedly changed on a no-op rebuild")
 
 
 if __name__ == "__main__":
