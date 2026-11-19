@@ -15,6 +15,8 @@ on:
       - ".github/workflows/build-cjsl-calendars.yml"
       - "scripts/validate_soccer_manifest.py"
       - "tests/test_validate_soccer_manifest.py"
+      - "scripts/discover_soccer_manifests.py"
+      - "tests/test_discover_soccer_manifests.py"
 
 permissions:
   contents: write
@@ -44,7 +46,10 @@ jobs:
           pip install openpyxl
 
       - name: Test soccer manifest validator
-        run: python -m unittest discover -s tests -p "test_validate_soccer_manifest.py" -v
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Discover registered soccer events
+        run: python scripts/discover_soccer_manifests.py --json
 
       - name: Validate CJSL manifests and XLSX files
         run: |
