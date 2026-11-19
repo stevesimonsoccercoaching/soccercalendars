@@ -17,6 +17,8 @@ on:
       - "tests/test_validate_soccer_manifest.py"
       - "scripts/discover_soccer_manifests.py"
       - "tests/test_discover_soccer_manifests.py"
+      - "scripts/plan_soccer_builds.py"
+      - "tests/test_plan_soccer_builds.py"
 
 permissions:
   contents: write
@@ -50,6 +52,9 @@ jobs:
 
       - name: Discover registered soccer events
         run: python scripts/discover_soccer_manifests.py --json
+
+      - name: Plan multi-league calendar builds
+        run: python scripts/plan_soccer_builds.py --json
 
       - name: Validate CJSL manifests and XLSX files
         run: |
