@@ -89,11 +89,37 @@ def get_match_revision(
     match,
     summary,
     changed_at,
+    calendar_slug,
 ):
     key = f"{event_id}:{match['match_no']}"
     fingerprint = match_fingerprint(match, summary)
 
-    previous = state["matches"].get(key)
+    version = state.get("version", 1)
+
+    if version == 2:
+        views = state.get("views")
+
+        if not isinstance(views, dict) or calendar_slug not in views:
+            raise RuntimeError(
+                f"Missing seeded CJSL revision view: {calendar_slug}"
+            )
+
+        bucket = views[calendar_slug]
+
+        if not isinstance(bucket, dict):
+            raise RuntimeError(
+                f"Invalid CJSL revision view: {calendar_slug}"
+            )
+
+    elif version == 1:
+        bucket = state["matches"]
+
+    else:
+        raise RuntimeError(
+            f"Unsupported CJSL revision version: {version}"
+        )
+
+    previous = bucket.get(key)
 
     if previous and previous.get("fingerprint") == fingerprint:
         sequence = int(previous.get("sequence", 1))
@@ -109,7 +135,7 @@ def get_match_revision(
 
         last_modified = changed_at
 
-    state["matches"][key] = {
+    bucket[key] = {
         "fingerprint": fingerprint,
         "sequence": sequence,
         "last_modified": last_modified,
@@ -441,6 +467,7 @@ def build_calendar(
             summary=summary,
             match=match,
             changed_at=changed_at,
+       calendar_slug=team["slug"],
         )
 
         last_modified = revision["last_modified"]
