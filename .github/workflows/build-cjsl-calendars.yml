@@ -72,6 +72,71 @@ jobs:
           python scripts/verify_cjsl_v2_parity.py \
             --manifest config/2026/cjsl/fall/manifest.json
 
+
+      - name: Export CJSL v2 revision state
+        if: github.ref == 'refs/heads/refactor/multi-league-architecture'
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, "scripts")
+          from seed_cjsl_revision_views import preview_revision_seed
+
+          state, report = preview_revision_seed(
+              Path.cwd(), "config/2026/cjsl/fall/manifest.json"
+          )
+
+          actual = (
+              len(state["matches"]),
+              len(state["views"]),
+              sum(len(v) for v in state["views"].values()),
+          )
+          expected = (225, 37, 296)
+
+          if state["version"] != 2 or actual != expected:
+              raise SystemExit(
+                  f"Unsafe revision inventory: {actual}"
+              )
+
+          original = json.loads(
+              Path("state/2026/cjsl/fall/revisions.json")
+              .read_text(encoding="utf-8")
+          )
+          if state["matches"] != original["matches"]:
+              raise SystemExit("Legacy revision history changed")
+
+          output = (
+              Path(os.environ["RUNNER_TEMP"])
+              / "cjsl-v2-state"
+              / "revisions.json"
+          )
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          payload = (
+              json.dumps(state, indent=2, sort_keys=True) + "\n"
+          ).encode("utf-8")
+          output.write_bytes(payload)
+
+          print(f"Prepared candidate: {output}")
+          print(f"Legacy records / views / entries: {actual}")
+          print(f"SHA-256: {hashlib.sha256(payload).hexdigest()}")
+          print("Repository state unchanged.")
+          PY
+
+      - name: Upload CJSL v2 revision artifact
+        if: github.ref == 'refs/heads/refactor/multi-league-architecture'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cjsl-fall-2026-revisions-v2
+          path: ${{ runner.temp }}/cjsl-v2-state/revisions.json
+          retention-days: 30
+          if-no-files-found: error
+
+
       - name: Validate CJSL manifests and XLSX files
         run: |
           set -e
