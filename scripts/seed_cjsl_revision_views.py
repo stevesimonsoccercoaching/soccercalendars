@@ -1,20 +1,24 @@
-"""Prepare and verify CJSL per-calendar revision migration, without writing to repo.
+"""Preview CJSL v1-to-v2 migration or audit an existing v2 state, read-only.
 
 Usage from repo root:
   python scripts/seed_cjsl_revision_views.py --manifest config/2026/cjsl/fall/manifest.json
   python scripts/seed_cjsl_revision_views.py --manifest config/2026/cjsl/fall/manifest.json --json
 
-The old revisions.json contains a shared record per match; this prospective
-v2 format keeps that entire legacy history and adds a separate view record for
-each team calendar. Historical SEQUENCE and LAST-MODIFIED are read from the
-already-published ICS, not guessed from the collision-prone shared state.
+Version 1 revisions.json has a shared record per match. The proposed v2
+format keeps all legacy matches and adds one revision record per calendar view.
+Historical SEQUENCE and LAST-MODIFIED come from the published ICS feeds.
+
+When revisions.json is already v2, this command does NOT seed again. It
+reconstructs the expected v2 state from those same published ICS feeds and
+workbooks and requires the committed state to match that expectation exactly.
 
 STRICT SAFETY REQUIREMENT: each published ICS must be reproduced byte-for-byte
 by the existing CJSL builder using that calendar's seeded records and current
 XLSX input. Any discrepancy is an ERROR, not a revision bump or automatic edit.
 
 This command does not modify config/, data/, docs/, or state/. It does not
-write the candidate state. That will be a separately reviewed step.
+write the candidate state and has no --apply option. Migration remains a
+separately reviewed operation.
 """
 import argparse
 import json
@@ -136,13 +140,18 @@ def preview_revision_seed(root, manifest_path):
     duration_default = int(competition.get("default_duration_minutes", 60))
     revision_path = root / "state" / relative / "revisions.json"
 
-    legacy = json.loads(revision_path.read_text(encoding="utf-8"))
-    if legacy.get("version") != 1 or not isinstance(legacy.get("matches"), dict):
+    existing = json.loads(revision_path.read_text(encoding="utf-8"))
+    if not isinstance(existing, dict):
+        raise RevisionSeedError(f"{revision_path}: state must be an object")
+    state_version = existing.get("version")
+    if state_version not in (1, 2) or not isinstance(existing.get("matches"), dict):
         raise RevisionSeedError(
-            f"{revision_path}: expected existing version 1 with legacy matches"
+            f"{revision_path}: expected version 1 or 2 with legacy matches"
         )
-    if legacy.get("views"):
-        raise RevisionSeedError("Per-calendar view history already exists; refusing to seed twice")
+    if state_version == 1 and "views" in existing:
+        raise RevisionSeedError("Version-1 state unexpectedly contains views; refusing migration")
+    if state_version == 2 and not isinstance(existing.get("views"), dict):
+        raise RevisionSeedError("Version-2 state has missing or invalid views")
 
     views = {}
     all_versions = {}
@@ -216,20 +225,44 @@ def preview_revision_seed(root, manifest_path):
 
     candidate = {
         "version": 2,
-        "matches": legacy["matches"],  # Keep every legacy record unchanged.
+        "matches": existing["matches"],  # Keep every legacy record unchanged.
         "views": views,
     }
+
+    # A committed v2 state must be an exact match for published calendar views.
+    # Do not silently regenerate missing entries or repair altered sequences.
+    if state_version == 2 and existing != candidate:
+        current_views = existing["views"]
+        expected_slugs = set(views)
+        current_slugs = set(current_views)
+        if expected_slugs != current_slugs:
+            raise RevisionSeedError(
+                "Committed v2 state has an incorrect calendar inventory: "
+                f"missing={sorted(expected_slugs - current_slugs)}, "
+                f"unexpected={sorted(current_slugs - expected_slugs)}"
+            )
+        for slug in sorted(views):
+            if current_views[slug] != views[slug]:
+                raise RevisionSeedError(
+                    f"Committed v2 revisions differ from published ICS/XLSX: {slug}. "
+                    "Do not reset the stored SEQUENCE or LAST-MODIFIED values."
+                )
+        raise RevisionSeedError(
+            "Committed v2 state has unexpected top-level fields or layout"
+        )
+
     conflicting = sum(
         len(set(versions)) > 1 for versions in all_versions.values()
     )
     report = {
-        "legacy_matches_preserved": len(legacy["matches"]),
+        "legacy_matches_preserved": len(existing["matches"]),
         "team_feeds_verified": len(views),
         "per_calendar_view_records": event_count,
         "unique_published_matches": len(all_versions),
         "shared_match_revision_conflicts": conflicting,
         "published_ics_byte_identical": True,
         "repository_files_written": 0,
+        "revision_state_version_checked": state_version,
     }
     return candidate, report
 
@@ -250,7 +283,7 @@ def main():
     if args.json:
         print(json.dumps(report, indent=2))
     else:
-        print("CJSL per-calendar revision migration preview passed.")
+        print("CJSL per-calendar revision preview/audit passed.")
         for key, value in report.items():
             print(f"  {key}: {value}")
         print("No repository files changed. This command has no --apply option.")
