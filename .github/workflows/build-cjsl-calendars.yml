@@ -61,6 +61,12 @@ jobs:
       - name: Preview shared multi-league dispatcher
         run: python scripts/run_soccer_builds.py
 
+      - name: Preview CJSL revision history migration
+        run: |
+          python scripts/seed_cjsl_revision_views.py \
+            --manifest config/2026/cjsl/fall/manifest.json \
+            --json
+
       - name: Validate CJSL manifests and XLSX files
         run: |
           set -e
