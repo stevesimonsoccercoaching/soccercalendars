@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
   push:
+    branches:
+      - main
     paths:
       - "data/2026-27/edp-north-atlantic/**/*.xlsx"
       - "config/2026-27/edp-north-atlantic/manifest.json"
