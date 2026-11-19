@@ -467,7 +467,7 @@ def build_calendar(
             summary=summary,
             match=match,
             changed_at=changed_at,
-       calendar_slug=team["slug"],
+            calendar_slug=team["slug"],
         )
 
         last_modified = revision["last_modified"]
