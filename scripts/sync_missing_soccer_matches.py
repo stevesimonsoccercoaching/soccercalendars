@@ -9,6 +9,7 @@ from io import BytesIO
 from pathlib import Path
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 from schedule_safety import (
     ScheduleSafetyError,
@@ -241,11 +242,15 @@ def main():
         print("No usable previous commit; nothing to compare for missing matches.")
         return
 
-    parts = manifest_path.parts
-    config_index = parts.index("config")
-    relative_folder = Path(*parts[config_index + 1:-1])
-    data_folder = Path("data") / relative_folder
-    state_file = Path("state") / relative_folder / "missing_matches.json"
+
+    repo_root = Path.cwd().resolve()
+    event_paths = resolve_event_paths(
+        manifest_path, competition, repo_root=repo_root
+    )
+
+    data_folder = event_paths.data_dir
+    state_file = event_paths.state_dir / "missing_matches.json"
+
 
     state = load_state(state_file)
     teams_state = state.setdefault("teams", {})
@@ -261,9 +266,13 @@ def main():
         if not slug:
             continue
 
-        path = (data_folder / f"{slug}.xlsx").as_posix()
-        old_bytes = git_file_bytes(base, path)
-        new_bytes = git_file_bytes(head, path)
+
+        path = (
+            (data_folder / f"{slug}.xlsx")
+            .relative_to(repo_root)
+            .as_posix()
+        )
+
 
         if not old_bytes or not new_bytes:
             continue
