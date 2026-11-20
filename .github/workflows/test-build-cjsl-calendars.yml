@@ -165,21 +165,43 @@ jobs:
 
           sys.path.insert(0, 'scripts')
           from plan_soccer_builds import plan
+          from soccer_paths import resolve_event_paths
 
           events, errors, _ = plan(Path.cwd())
           if errors:
               raise SystemExit('Invalid registered events: ' + '; '.join(errors))
 
+          
           feed_paths = []
           state_paths = []
+          repo_root = Path.cwd()
+
           for event in events:
-              relative = Path(event['manifest']).parent.relative_to('config')
-              manifest = json.loads(Path(event['manifest']).read_text(encoding='utf-8'))
+              manifest_path = Path(event['manifest'])
+              manifest = json.loads(
+                  manifest_path.read_text(encoding='utf-8')
+              )
+
+              paths = resolve_event_paths(
+                  manifest_path,
+                  manifest['competition'],
+                  repo_root=repo_root,
+              )
+              docs_dir = paths.docs_dir.relative_to(repo_root)
+              state_dir = paths.state_dir.relative_to(repo_root)
+
               for team in manifest['teams']:
-                  feed_paths.append(Path('docs') / relative / (team['slug'] + '.ics'))
-              state_paths.append(Path('state') / relative / 'revisions.json')
+                  feed_paths.append(
+                      docs_dir / f"{team['slug']}.ics"
+                  )
+
+              state_paths.append(state_dir / 'revisions.json')
+
               if event['missing_match_sync']:
-                  state_paths.append(Path('state') / relative / 'missing_matches.json')
+                  state_paths.append(
+                      state_dir / 'missing_matches.json'
+                  )
+
 
           actual_feeds = {p.as_posix() for p in Path('docs').rglob('*.ics')}
           expected_feeds = {p.as_posix() for p in feed_paths}
