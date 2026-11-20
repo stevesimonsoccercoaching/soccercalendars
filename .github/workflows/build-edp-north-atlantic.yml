@@ -45,9 +45,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
-      - name: Test soccer manifest validator
+
+      - name: Run all soccer regression tests
         run: |
-          python -m unittest discover -s tests -p "test_validate_soccer_manifest.py" -v
+          python -m unittest discover -s tests -p "test_*.py" -v
+
 
       
       - name: Validate EDP manifest and XLSX files
