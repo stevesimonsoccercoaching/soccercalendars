@@ -9,6 +9,8 @@ on:
     paths:
       - "data/2026-27/edp-north-atlantic/**/*.xlsx"
       - "config/2026-27/edp-north-atlantic/manifest.json"
+      - "data/**/edp/north-atlantic/events/54578/*.xlsx"
+      - "config/**/edp/north-atlantic/events/54578/manifest.json"
       - "scripts/build_soccer_calendars.py"
       - "scripts/build_calendar_index.py"
       - "scripts/report_schedule_changes.py"
