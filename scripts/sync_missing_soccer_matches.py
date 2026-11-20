@@ -273,6 +273,8 @@ def main():
             .as_posix()
         )
 
+        old_bytes = git_file_bytes(base, path)
+        new_bytes = git_file_bytes(head, path)
 
         if not old_bytes or not new_bytes:
             continue
