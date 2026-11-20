@@ -23,6 +23,7 @@ from pathlib import Path
 # Keep preview mode from producing __pycache__ files in the repository.
 sys.dont_write_bytecode = True
 from plan_soccer_builds import plan
+from soccer_paths import resolve_event_paths
 
 
 class BuildDispatchError(RuntimeError):
@@ -42,13 +43,21 @@ def git_output(root, *args):
 
 def preflight_metadata_history(root, event, base, head):
     """Fail closed if EDP-style missing-match comparison would skip XLSX data."""
+    
     manifest = Path(event["manifest"])
-    event_data = Path("data") / manifest.parent.relative_to("config")
     registration = json.loads((root / manifest).read_text(encoding="utf-8"))
+
+    paths = resolve_event_paths(
+        manifest, registration["competition"], repo_root=root
+    )
+
     event_paths = sorted(
-        (event_data / f"{team['slug']}.xlsx").as_posix()
+        (paths.data_dir / f"{team['slug']}.xlsx")
+        .relative_to(root)
+        .as_posix()
         for team in registration["teams"]
     )
+
     for file_path in event_paths:
         # Existing tracker silently skips a workbook absent at either revision.
         # Check both sides explicitly before running it.
