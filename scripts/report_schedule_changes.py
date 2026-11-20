@@ -665,10 +665,10 @@ def build_report(base, head):
 
     return "\n".join(lines)
 
+
 def build_current_status_report():
-    manifests = sorted(
-        Path("config").glob("**/cjsl/*/manifest.json")
-    )
+    manifests = sorted(Path("config").rglob("manifest.json"))
+
 
     records = {}
     schedule_files_scanned = 0
@@ -680,8 +680,14 @@ def build_current_status_report():
             manifest_file.read_text(encoding="utf-8")
         )
 
+        
         competition = manifest.get("competition", {})
+
+        if clean_text(competition.get("organizer")).casefold() != "cjsl":
+            continue
+
         teams = manifest.get("teams", [])
+
 
         parts = manifest_file.parts
         try:
