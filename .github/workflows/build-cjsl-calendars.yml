@@ -106,28 +106,45 @@ jobs:
 
           cat schedule-change-report.md >> "$GITHUB_STEP_SUMMARY"
 
+
       - name: Build all CJSL calendars
         run: |
-          set -e
+          python <<'PY'
+          import subprocess
+          import sys
+          from pathlib import Path
 
-          found=0
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
 
-          while IFS= read -r manifest; do
-            found=1
-            echo "Building from: $manifest"
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('; '.join(errors))
 
-            python scripts/build_cjsl_calendars.py "$manifest"
-          done < <(
-            find config \
-              -type f \
-              -path "*/cjsl/*/manifest.json" \
-              | sort
-          )
+          cjsl_events = [
+              event for event in events
+              if event['organizer'] == 'cjsl'
+          ]
+          if not cjsl_events:
+              raise SystemExit('No CJSL events registered')
 
-          if [ "$found" -eq 0 ]; then
-            echo "No CJSL manifest files found."
-            exit 1
-          fi
+          for event in cjsl_events:
+              if event['builder'] != 'scripts/build_cjsl_calendars.py':
+                  raise SystemExit(
+                      f"Unexpected CJSL builder: {event['builder']}"
+                  )
+
+              print(f"Building from: {event['manifest']}", flush=True)
+              subprocess.run(
+                  [
+                      sys.executable,
+                      event['builder'],
+                      event['manifest'],
+                  ],
+                  check=True,
+              )
+          PY
+
 
       - name: Build calendar index page
         run: |
