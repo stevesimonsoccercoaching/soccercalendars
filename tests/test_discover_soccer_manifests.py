@@ -146,5 +146,82 @@ class ManifestDiscoveryTests(unittest.TestCase):
         self.assertEqual(new_files, old_files)
 
 
+    def test_two_events_cannot_share_publication_path(self):
+        first = self.write_manifest(
+            "2026-27/cjsl/league/events/55206/manifest.json"
+        )
+        second = self.write_manifest(
+            "2026-27/cjsl/league/events/66206/manifest.json",
+            event_id="66206",
+        )
+        for path in (first, second):
+            body = json.loads(path.read_text(encoding="utf-8"))
+            body["competition"]["publication_path"] = "2026/cjsl/fall"
+            path.write_text(json.dumps(body), encoding="utf-8")
+
+        _, errors, _ = discover(self.root)
+        self.assertTrue(
+            any("public directory collision" in e for e in errors),
+            errors,
+        )
+
+    def test_explicit_path_cannot_claim_legacy_directory(self):
+        self.write_manifest("2026/cjsl/fall/manifest.json")
+        other = self.write_manifest(
+            "2026-27/edp/north-atlantic/events/54578/manifest.json",
+            event_id="54578",
+            organizer="EDP",
+        )
+        body = json.loads(other.read_text(encoding="utf-8"))
+        body["competition"]["publication_path"] = "2026/cjsl/fall"
+        other.write_text(json.dumps(body), encoding="utf-8")
+
+        _, errors, _ = discover(self.root)
+        self.assertTrue(
+            any("public directory collision" in e for e in errors),
+            errors,
+        )
+
+    def test_distinct_publication_directories_are_allowed(self):
+        first = self.write_manifest(
+            "2026-27/cjsl/league/events/55206/manifest.json"
+        )
+        second = self.write_manifest(
+            "2026-27/cjsl/league/events/66206/manifest.json",
+            event_id="66206",
+        )
+        for path, public_dir in (
+            (first, "2026/cjsl/fall"),
+            (second, "2026/cjsl/spring"),
+        ):
+            body = json.loads(path.read_text(encoding="utf-8"))
+            body["competition"]["publication_path"] = public_dir
+            path.write_text(json.dumps(body), encoding="utf-8")
+
+        records, errors, _ = discover(self.root)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(records), 2)
+
+    def test_invalid_publication_directories_are_rejected(self):
+        path = self.write_manifest(
+            "2026-27/cjsl/league/events/55206/manifest.json"
+        )
+        for invalid in (
+            "../outside", "/absolute", "2026//cjsl",
+            "2026/CJSL", "2026\\cjsl", "",
+        ):
+            with self.subTest(publication=invalid):
+                body = json.loads(path.read_text(encoding="utf-8"))
+                body["competition"]["publication_path"] = invalid
+                path.write_text(json.dumps(body), encoding="utf-8")
+
+                _, errors, _ = discover(self.root)
+                self.assertTrue(
+                    any("invalid competition.publication_path" in e
+                        for e in errors),
+                    errors,
+                )
+
+
 if __name__ == "__main__":
     unittest.main()
