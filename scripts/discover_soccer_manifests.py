@@ -30,6 +30,7 @@ def discover(repo_root):
         return records, ["Missing config/ directory"], warnings
 
     seen_events = {}
+    seen_publications = {}
     manifests = sorted(config_root.rglob("manifest.json"))
     if not manifests:
         errors.append("No manifests found under config/")
@@ -89,6 +90,38 @@ def discover(repo_root):
             else:
                 seen_events[key] = display
 
+
+        requested_publication = competition.get("publication_path")
+
+        if requested_publication is None:
+            publication_dir = "/".join(event_dir)
+        elif (
+            not isinstance(requested_publication, str)
+            or not requested_publication
+            or any(
+                SEGMENT_PATTERN.fullmatch(segment) is None
+                for segment in requested_publication.split("/")
+            )
+        ):
+            errors.append(
+                f"{display}: invalid competition.publication_path"
+            )
+            publication_dir = None
+        else:
+            publication_dir = requested_publication
+
+        if publication_dir is not None:
+            previous = seen_publications.get(publication_dir)
+            if previous is not None:
+                errors.append(
+                    f"{display}: public directory collision: "
+                    f"docs/{publication_dir}/ already claimed by {previous}"
+                )
+            else:
+                seen_publications[publication_dir] = display
+
+
+        
         slugs = set()
         for index, team in enumerate(teams, 1):
             if not isinstance(team, dict):
