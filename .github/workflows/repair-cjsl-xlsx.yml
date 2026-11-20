@@ -1,0 +1,104 @@
+
+name: Repair CJSL XLSX migration
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.ref == 'refs/heads/migration/cjsl-layout-checkpoint'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out checkpoint branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Restore original XLSX blobs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          source = Path("data/2026/cjsl/fall")
+          target = Path("data/2026-27/cjsl/league/events/55206")
+
+          originals = sorted(source.glob("*.xlsx"))
+          copies = sorted(target.glob("*.xlsx"))
+
+          assert len(originals) == 37, (
+              f"Expected 37 originals, found {len(originals)}"
+          )
+          assert len(copies) == 37, (
+              f"Expected 37 copies, found {len(copies)}"
+          )
+
+          assert {p.name for p in originals} == {
+              p.name for p in copies
+          }, "Source and destination filenames differ"
+
+          for original in originals:
+              destination = target / original.name
+              destination.write_bytes(original.read_bytes())
+
+          for original in originals:
+              destination = target / original.name
+              assert original.read_bytes() == destination.read_bytes(), (
+                  f"Content mismatch: {original.name}"
+              )
+
+              original_blob = subprocess.check_output(
+                  ["git", "hash-object", str(original)],
+                  text=True,
+              ).strip()
+
+              copied_blob = subprocess.check_output(
+                  ["git", "hash-object", str(destination)],
+                  text=True,
+              ).strip()
+
+              assert original_blob == copied_blob, (
+                  f"Git blob mismatch: {original.name}"
+              )
+
+          print("PASS: All 37 XLSX files match their originals.")
+          PY
+
+      - name: Check and commit only repaired XLSX files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SOURCE="data/2026/cjsl/fall"
+          TARGET="data/2026-27/cjsl/league/events/55206"
+
+          git add -- "$TARGET"/*.xlsx
+
+          if git diff --cached --quiet; then
+            echo "No repair changes needed."
+            exit 0
+          fi
+
+          if git diff --cached --name-only | grep -vE \
+            '^data/2026-27/cjsl/league/events/55206/[^/]+\.xlsx$'; then
+            echo "ERROR: Unexpected staged files."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m \
+            "Repair 37 CJSL XLSX copies from original blobs"
+
+          git push origin HEAD:migration/cjsl-layout-checkpoint
