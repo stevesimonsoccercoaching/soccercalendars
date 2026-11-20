@@ -21,6 +21,8 @@ on:
       - "tests/test_plan_soccer_builds.py"
       - "scripts/run_soccer_builds.py"
       - "tests/test_run_soccer_builds.py"
+      - "scripts/soccer_paths.py"
+      - "tests/test_soccer_paths.py"
 
 permissions:
   contents: write
