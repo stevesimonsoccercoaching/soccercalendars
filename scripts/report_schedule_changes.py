@@ -9,6 +9,7 @@ from io import BytesIO
 from pathlib import Path
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 
 REQUIRED_COLUMNS = {
@@ -689,16 +690,15 @@ def build_current_status_report():
         teams = manifest.get("teams", [])
 
 
-        parts = manifest_file.parts
-        try:
-            config_index = parts.index("config")
-        except ValueError:
-            continue
-
-        relative_folder = Path(
-            *parts[config_index + 1:-1]
+        
+        repo_root = Path.cwd().resolve()
+        event_paths = resolve_event_paths(
+            manifest_file,
+            competition,
+            repo_root=repo_root,
         )
-        data_folder = Path("data") / relative_folder
+        data_folder = event_paths.data_dir.relative_to(repo_root)
+
 
         organizer = clean_text(competition.get("organizer"))
         season = clean_text(competition.get("season"))
