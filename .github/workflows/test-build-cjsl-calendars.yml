@@ -301,10 +301,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: multi-league-real-data-output
+
           path: |
             docs/
-            state/2026/cjsl/fall/
-            state/2026-27/edp-north-atlantic/
+            state/
             dispatcher-parity-report.txt
+
           retention-days: 7
           if-no-files-found: warn
