@@ -61,22 +61,38 @@ jobs:
       - name: Preview shared multi-league dispatcher
         run: python scripts/run_soccer_builds.py
 
+      
       - name: Validate CJSL manifests and XLSX files
         run: |
-          set -e
-          found=0
+          python <<'PY'
+          import subprocess
+          import sys
+          from pathlib import Path
 
-          while IFS= read -r manifest; do
-            found=1
-            python scripts/validate_soccer_manifest.py "$manifest"
-          done < <(
-            find config -type f -path "*/cjsl/*/manifest.json" | sort
-          )
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
 
-          if [ "$found" -eq 0 ]; then
-            echo "No CJSL manifests found."
-            exit 1
-          fi
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('; '.join(errors))
+
+          cjsl_events = [
+              event for event in events
+              if event['organizer'] == 'cjsl'
+          ]
+          if not cjsl_events:
+              raise SystemExit('No CJSL events registered')
+
+          for event in cjsl_events:
+              subprocess.run(
+                  [
+                      sys.executable,
+                      'scripts/validate_soccer_manifest.py',
+                      event['manifest'],
+                  ],
+                  check=True,
+              )
+          PY
 
       - name: Report XLSX schedule changes
         env:
