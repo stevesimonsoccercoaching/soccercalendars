@@ -634,22 +634,13 @@ def main():
             "No teams are configured in the manifest."
         )
 
-    parts = manifest_file.parts
-
 
     event_paths = resolve_event_paths(manifest_file, competition)
 
     data_folder = event_paths.data_dir
     docs_folder = event_paths.docs_dir
     revision_state_file = event_paths.state_dir / "revisions.json"
-
-
-
-    revision_state_file = (
-        Path("state")
-        / relative_folder
-        / "revisions.json"
-    )
+    
 
     revision_state = load_revision_state(
         revision_state_file
