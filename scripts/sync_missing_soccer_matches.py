@@ -239,8 +239,11 @@ def main():
     head = run_git(["rev-parse", args.head]).strip()
     base = resolve_base(args.base, head)
     if not base:
-        print("No usable previous commit; nothing to compare for missing matches.")
-        return
+        raise RuntimeError(
+            "No usable historical Git commit for missing-match "
+            "comparison. Refusing to skip preservation."
+        )
+
 
 
     repo_root = Path.cwd().resolve()
@@ -276,8 +279,21 @@ def main():
         old_bytes = git_file_bytes(base, path)
         new_bytes = git_file_bytes(head, path)
 
-        if not old_bytes or not new_bytes:
-            continue
+
+        if old_bytes is None or new_bytes is None:
+            missing = []
+            if old_bytes is None:
+                missing.append(f"{base}:{path}")
+            if new_bytes is None:
+                missing.append(f"{head}:{path}")
+
+            raise RuntimeError(
+                "Missing historical XLSX input: "
+                + ", ".join(missing)
+                + ". Verify the Git comparison baseline before "
+                "continuing; missing-match detection was not run."
+            )
+
 
         duration = int(team.get("duration_minutes", default_duration))
         old_matches = read_schedule(old_bytes, duration)
