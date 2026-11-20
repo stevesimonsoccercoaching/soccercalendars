@@ -57,13 +57,21 @@ def commit_exists(ref):
     )
     return result.returncode == 0
 
+
 def resolve_base(base, head):
-    if commit_exists(base):
+    if base:
+        if not commit_exists(base):
+            raise RuntimeError(
+                f"Explicit historical Git baseline is invalid: {base!r}. "
+                "Refusing to fall back to the parent commit."
+            )
         return base
+
     parent = run_git(["rev-parse", f"{head}^"], check=False).strip()
     if commit_exists(parent):
         return parent
     return ""
+
 
 def git_file_bytes(ref, path):
     if not ref:
