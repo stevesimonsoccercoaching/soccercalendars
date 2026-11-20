@@ -134,5 +134,36 @@ class ManifestValidatorTests(unittest.TestCase):
         self.assertEqual(self.manifest["display_names"]["Other Team"], "Other")
 
 
+    def test_canonical_storage_preserves_publication_path(self):
+        new_manifest = Path(
+            "config/2026-27/edp/north-atlantic/events/54578/manifest.json"
+        )
+        new_data = Path(
+            "data/2026-27/edp/north-atlantic/events/54578"
+        )
+
+        new_manifest.parent.mkdir(parents=True, exist_ok=True)
+        new_data.mkdir(parents=True, exist_ok=True)
+
+        self.manifest["competition"]["publication_path"] = (
+            "2026-27/edp-north-atlantic"
+        )
+        new_manifest.write_text(
+            json.dumps(self.manifest, indent=2),
+            encoding="utf-8",
+        )
+
+        (new_data / self.xlsx.name).touch()
+
+        # Remove legacy inputs so they cannot satisfy validation.
+        self.xlsx.unlink()
+        self.manifest_path.unlink()
+
+        errors, summary = validate(new_manifest)
+
+        self.assertEqual(errors, [])
+        self.assertEqual(summary, (1, 1))
+
+
 if __name__ == "__main__":
     unittest.main()
