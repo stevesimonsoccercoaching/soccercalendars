@@ -24,10 +24,39 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
+
       - name: Build CJSL calendars
         run: |
-          python scripts/build_cjsl_calendars.py \
-            config/2026/cjsl/fall/manifest.json
+          python <<'PY'
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
+
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('; '.join(errors))
+
+          matches = [
+              event for event in events
+              if event['event_id'] == '55206'
+              and event['organizer'] == 'cjsl'
+          ]
+          if len(matches) != 1:
+              raise SystemExit('Expected exactly one CJSL event 55206')
+
+          event = matches[0]
+          if event['builder'] != 'scripts/build_cjsl_calendars.py':
+              raise SystemExit('Unexpected builder for CJSL event 55206')
+
+          subprocess.run(
+              [sys.executable, event['builder'], event['manifest']],
+              check=True,
+          )
+          PY
+
 
       - name: Verify MKSC calendar was generated
         run: |
