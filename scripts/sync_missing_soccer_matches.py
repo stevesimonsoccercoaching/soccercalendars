@@ -252,6 +252,25 @@ def main():
             "comparison. Refusing to skip preservation."
         )
 
+    checked_out = run_git(["rev-parse", "HEAD"]).strip()
+    if head != checked_out:
+        raise RuntimeError(
+            "Historical comparison --head must match the "
+            "currently checked-out commit."
+        )
+
+    ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", base, head],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=False,
+    )
+    if ancestor.returncode != 0:
+        raise RuntimeError(
+            "Historical comparison --base must be an ancestor "
+            "of --head. Refusing an unrelated Git comparison."
+        )
+
 
 
     repo_root = Path.cwd().resolve()
