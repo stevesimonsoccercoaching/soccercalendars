@@ -30,7 +30,9 @@ class SoccerDispatcherTests(unittest.TestCase):
         for name in (
             "run_soccer_builds.py", "plan_soccer_builds.py",
             "discover_soccer_manifests.py", "validate_soccer_manifest.py",
+            "soccer_paths.py",
         ):
+
             shutil.copyfile(SCRIPTS / name, self.root / "scripts" / name)
         self.log = self.root / "dispatch-calls.txt"
         self.fake_builders()
