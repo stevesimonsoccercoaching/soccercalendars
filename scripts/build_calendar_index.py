@@ -6,6 +6,7 @@ import json
 import re
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 
 CONFIG_ROOT = Path("config")
@@ -166,9 +167,11 @@ def load_competitions():
             print(f"Skipping {manifest_file}: no teams configured.")
             continue
 
-        relative_folder = manifest_file.parent.relative_to(CONFIG_ROOT)
-        data_folder = DATA_ROOT / relative_folder
-        docs_folder = DOCS_ROOT / relative_folder
+
+        event_paths = resolve_event_paths(manifest_file, competition)
+        data_folder = event_paths.data_dir
+        docs_folder = event_paths.docs_dir
+
 
         team_records = []
         competition_dates = []
@@ -205,7 +208,9 @@ def load_competitions():
             schedule = read_team_schedule(xlsx_file)
             competition_dates.extend(schedule["dates"])
 
-            href = ics_file.relative_to(DOCS_ROOT).as_posix()
+            href = (
+                event_paths.publication_relative / f"{slug}.ics"
+            ).as_posix()
 
             team_records.append(
                 {
