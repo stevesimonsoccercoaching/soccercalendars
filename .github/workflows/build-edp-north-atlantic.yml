@@ -49,9 +49,52 @@ jobs:
         run: |
           python -m unittest discover -s tests -p "test_validate_soccer_manifest.py" -v
 
+      
       - name: Validate EDP manifest and XLSX files
         run: |
-          python scripts/validate_soccer_manifest.py config/2026-27/edp-north-atlantic/manifest.json
+          python <<'PY'
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
+
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('; '.join(errors))
+
+          matches = [
+              event for event in events
+              if event['organizer'] == 'edp'
+              and event['event_id'] == '54578'
+          ]
+
+          if len(matches) != 1:
+              raise SystemExit(
+                  'Expected exactly one EDP event 54578'
+              )
+
+          event = matches[0]
+
+          if (
+              event['calendar_profile'] != 'metadata-warning-v1'
+              or not event['missing_match_sync']
+          ):
+              raise SystemExit(
+                  'EDP missing-match protection is required'
+              )
+
+          subprocess.run(
+              [
+                  sys.executable,
+                  'scripts/validate_soccer_manifest.py',
+                  event['manifest'],
+              ],
+              check=True,
+          )
+          PY
+
     
       - name: Report EDP schedule changes
         env:
