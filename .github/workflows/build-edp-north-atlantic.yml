@@ -18,6 +18,13 @@ on:
       - "scripts/sync_missing_soccer_matches.py"
       - "scripts/validate_soccer_manifest.py"
       - "tests/test_validate_soccer_manifest.py"
+      - "scripts/soccer_paths.py"
+      - "tests/test_soccer_paths.py"
+      - "scripts/discover_soccer_manifests.py"
+      - "tests/test_discover_soccer_manifests.py"
+      - "scripts/plan_soccer_builds.py"
+      - "tests/test_plan_soccer_builds.py"
+      - "tests/test_sync_missing_soccer_matches.py"
       - ".github/workflows/build-edp-north-atlantic.yml"
 
 permissions:
