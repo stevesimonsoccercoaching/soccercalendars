@@ -25,15 +25,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:cjsl-55206-match-371@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:27
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:29
 DTSTART;TZID=America/New_York:20260920T174500
 DTEND;TZID=America/New_York:20260920T184500
 SUMMARY:CJSL: SkillsU U12 vs FA Euro U12 Pre-MLS III
 LOCATION:New Utrecht High School - Turf Field
 DESCRIPTION:Status: Scheduled\nMatch No: 371 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: FA Euro New York
+ D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: FA Euro New York
   2014/2015 Pre-MLS III\nAWAY: SkillsU FC U12\n\nResults: 6 - 0\n\nSource: 
  https://system.gotsport.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
@@ -105,15 +105,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-380@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:28
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:30
 DTSTART;TZID=America/New_York:20261018T121500
 DTEND;TZID=America/New_York:20261018T131500
 SUMMARY:CJSL: SkillsU U12 vs SFFK U12 White
 LOCATION:Prospect Park\, Parade Grounds Field 7A - Parade Grounds Field 7A
 DESCRIPTION:Status: Scheduled\nMatch No: 380 (AWAY)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: Soccer Fun for K
+ D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: Soccer Fun for K
  ids / Brooklyn Patriots 2014-2015 White\nAWAY: SkillsU FC U12\n\nResults: 
  9 - 2\n\nSource: https://system.gotsport.com/org_event/events/55206/schedu
  les?team=4321423
@@ -146,15 +146,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-383@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:30
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:32
 DTSTART;TZID=America/New_York:20261024T153000
 DTEND;TZID=America/New_York:20261024T163000
 SUMMARY:CJSL: SkillsU U12 vs Brooklyn City U12 Blue
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Rescheduled\nMatch No: 383 (HOME)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: SkillsU FC U12
+ - D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: SkillsU FC U12
  \nAWAY: Brooklyn City FC F.C. B14/15 Blue\n\nResults: 3 - 3\n\nSource: htt
  ps://system.gotsport.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
@@ -186,15 +186,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-386@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:29
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:31
 DTSTART;TZID=America/New_York:20261031T154500
 DTEND;TZID=America/New_York:20261031T164500
 SUMMARY:CJSL: SkillsU U12 vs South Brooklyn U12
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 386 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: SkillsU FC U12\n
+ D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: SkillsU FC U12\n
  AWAY: South Brooklyn Fc 2014/2015\n\nResults: 3 - 8\n\nSource: https://sys
  tem.gotsport.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
@@ -266,15 +266,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-392@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:27
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:29
 DTSTART;TZID=America/New_York:20261114T141500
 DTEND;TZID=America/New_York:20261114T151500
 SUMMARY:CJSL: SkillsU U12 vs SFFK U12 White
 LOCATION:Shore Road Park - Turf - Soccer Turf - Field 02
 DESCRIPTION:Status: Scheduled\nMatch No: 392 (HOME)\nDivision: U12 (9v9) - 
- D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: SkillsU FC U12\n
+ D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: SkillsU FC U12\n
  AWAY: Soccer Fun for Kids / Brooklyn Patriots 2014-2015 White\n\nSource: h
  ttps://system.gotsport.com/org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
@@ -306,15 +306,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cjsl-55206-match-374@system.gotsport.com
-DTSTAMP:20261118T164327Z
-LAST-MODIFIED:20261118T164327Z
-SEQUENCE:28
+DTSTAMP:20261119T161000Z
+LAST-MODIFIED:20261119T161000Z
+SEQUENCE:30
 DTSTART;TZID=America/New_York:20261122T180000
 DTEND;TZID=America/New_York:20261122T190000
 SUMMARY:CJSL: SkillsU U12 vs South Brooklyn U12
 LOCATION:Leif Ericson Park - Dust Bowl - Dust Bowl Field
 DESCRIPTION:Status: Rescheduled\nMatch No: 374 (AWAY)\nDivision: U12 (9v9) 
- - D3 Cosmo\nUpdated: Nov 18\, 2026 at 11:43 AM EST\n\nHOME: South Brooklyn
+ - D3 Cosmo\nUpdated: Nov 19\, 2026 at 11:10 AM EST\n\nHOME: South Brooklyn
   Fc 2014/2015\nAWAY: SkillsU FC U12\n\nSource: https://system.gotsport.com
  /org_event/events/55206/schedules?team=4321423
 URL:https://system.gotsport.com/org_event/events/55206/schedules?team=43214
