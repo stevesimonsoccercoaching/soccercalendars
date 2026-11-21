@@ -149,11 +149,11 @@ class SoccerDispatcherTests(unittest.TestCase):
         self.assertIn("Manifest validation failed", p.stderr)
         self.assertFalse(self.log.exists())
 
-    def test_metadata_execution_requires_explicit_git_comparison(self):
+    def test_metadata_execution_requires_explicit_head(self):
         self.register()
         p = self.run_dispatch("--execute")
         self.assertNotEqual(p.returncode, 0)
-        self.assertIn("explicit --base and --head", p.stderr)
+        self.assertIn("requires explicit --head", p.stderr)
         self.assertFalse(self.log.exists())
 
     def test_invalid_git_ref_rejected(self):
@@ -220,6 +220,154 @@ class SoccerDispatcherTests(unittest.TestCase):
         self.assertIn("--head " + head, calls[1])
         self.assertEqual(calls[-1], "build_calendar_index ")
         self.assertEqual(self.git("rev-parse", "HEAD"), head)
+
+    def test_missing_processing_checkpoint_fails_closed(self):
+        self.register()
+        _, head = self.history()
+
+        p = self.run_dispatch(
+            "--execute", "--head", head
+        )
+
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn("checkpoint", p.stderr.lower())
+        self.assertFalse(self.log.exists())
+
+    def test_checkpoint_selects_last_published_input_commit(self):
+        self.register()
+        base, _ = self.history()
+
+        checkpoint = (
+            self.root
+            / "state/2026-27/edp-north-atlantic/processing_checkpoint.json"
+        )
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        checkpoint.write_text(
+            json.dumps({
+                "version": 1,
+                "last_published_input_commit": base,
+            }) + "\n",
+            encoding="utf-8",
+        )
+
+        self.git("add", ".")
+        self.git("commit", "-qm", "record published checkpoint")
+
+        for update in ("first", "second"):
+            (self.root / "marker.txt").write_text(
+                update + "\n", encoding="utf-8"
+            )
+            self.git("add", "marker.txt")
+            self.git("commit", "-qm", "unprocessed update")
+
+        head = self.git("rev-parse", "HEAD")
+
+        p = self.run_dispatch("--execute", "--head", head)
+
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+
+        calls = self.log.read_text(
+            encoding="utf-8"
+        ).splitlines()
+
+        sync = next(
+            line for line in calls
+            if line.startswith("sync_missing_soccer_matches ")
+        )
+
+        self.assertIn(f"--base {base}", sync)
+        self.assertIn(f"--head {head}", sync)
+
+
+    def test_uncommitted_processing_checkpoint_is_rejected(self):
+        self.register()
+        base, _ = self.history()
+
+        checkpoint = (
+            self.root
+            / "state/2026-27/edp-north-atlantic/processing_checkpoint.json"
+        )
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+
+        data = {
+            "version": 1,
+            "last_published_input_commit": base,
+        }
+
+        checkpoint.write_text(
+            json.dumps(data) + "\n",
+            encoding="utf-8",
+        )
+
+        self.git("add", ".")
+        self.git("commit", "-qm", "record checkpoint")
+        head = self.git("rev-parse", "HEAD")
+
+        # Change the checkpoint locally without committing.
+        checkpoint.write_text(
+            json.dumps(data, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+        p = self.run_dispatch("--execute", "--head", head)
+
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn("uncommitted changes", p.stderr)
+        self.assertFalse(self.log.exists())
+
+
+    def test_malformed_processing_checkpoint_is_rejected(self):
+        self.register()
+        self.history()
+
+        checkpoint = (
+            self.root
+            / "state/2026-27/edp-north-atlantic/processing_checkpoint.json"
+        )
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        checkpoint.write_text(
+            "{invalid json\n", encoding="utf-8"
+        )
+
+        self.git("add", ".")
+        self.git("commit", "-qm", "record malformed checkpoint")
+        head = self.git("rev-parse", "HEAD")
+
+        p = self.run_dispatch("--execute", "--head", head)
+
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn("invalid processing checkpoint JSON", p.stderr)
+        self.assertFalse(self.log.exists())
+
+
+    def test_nonexistent_checkpoint_commit_is_rejected(self):
+        self.register()
+        self.history()
+
+        checkpoint = (
+            self.root
+            / "state/2026-27/edp-north-atlantic/processing_checkpoint.json"
+        )
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+
+        checkpoint.write_text(
+            json.dumps({
+                "version": 1,
+                "last_published_input_commit": "f" * 40,
+            }) + "\n",
+            encoding="utf-8",
+        )
+
+        self.git("add", ".")
+        self.git("commit", "-qm", "record invalid baseline")
+        head = self.git("rev-parse", "HEAD")
+
+        p = self.run_dispatch("--execute", "--head", head)
+
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn("Git preflight failed", p.stderr)
+        self.assertFalse(self.log.exists())
+
 
     def test_history_can_span_multiple_unprocessed_commits(self):
         self.register()

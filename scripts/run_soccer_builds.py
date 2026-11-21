@@ -16,6 +16,7 @@ is rejected rather than silently skipping missing-match detection.
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -39,6 +40,68 @@ def git_output(root, *args):
             f"Git preflight failed: git {' '.join(args)}: {proc.stderr.strip()}"
         )
     return proc.stdout.strip()
+
+
+def read_processing_checkpoint(root, event, head):
+    """Read a committed per-event publication checkpoint."""
+    manifest = Path(event["manifest"])
+    registration = json.loads(
+        (root / manifest).read_text(encoding="utf-8")
+    )
+    paths = resolve_event_paths(
+        manifest, registration["competition"], repo_root=root
+    )
+
+    checkpoint = paths.state_dir / "processing_checkpoint.json"
+    relative = checkpoint.relative_to(root).as_posix()
+
+    result = subprocess.run(
+        ["git", "show", f"{head}:{relative}"],
+        cwd=root, capture_output=True, check=False,
+    )
+
+    if result.returncode:
+        raise BuildDispatchError(
+            f"{event['name']}: processing checkpoint missing "
+            f"from Git revision {head}: {relative}"
+        )
+
+    if (
+        not checkpoint.is_file()
+        or checkpoint.read_bytes() != result.stdout
+    ):
+        raise BuildDispatchError(
+            f"{event['name']}: processing checkpoint has "
+            "uncommitted changes or is missing locally."
+        )
+
+    try:
+        data = json.loads(result.stdout.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise BuildDispatchError(
+            f"{event['name']}: invalid processing checkpoint JSON."
+        ) from exc
+
+    if (
+        not isinstance(data, dict)
+        or type(data.get("version")) is not int
+        or data["version"] != 1
+    ):
+        raise BuildDispatchError(
+            f"{event['name']}: unsupported processing checkpoint version."
+        )
+
+    base = data.get("last_published_input_commit")
+    if (
+        not isinstance(base, str)
+        or not re.fullmatch(r"[0-9a-f]{40}", base)
+    ):
+        raise BuildDispatchError(
+            f"{event['name']}: invalid checkpoint baseline commit."
+        )
+
+    return base
+
 
 
 def preflight_metadata_history(root, event, base, head):
@@ -98,40 +161,109 @@ def prepare(root, *, execute=False, base=None, head=None):
         if result.returncode:
             raise BuildDispatchError(f"Manifest validation failed: {event['manifest']}")
 
+
+    event_baselines = {}
+
     if execute and any(e["missing_match_sync"] for e in events):
-        if not base or not head:
+        if not head:
             raise BuildDispatchError(
-                "--execute requires explicit --base and --head when metadata-warning "
-                "events are registered. A missing-match comparison cannot be skipped."
+                "--execute requires explicit --head when "
+                "metadata-warning events are registered."
             )
-        # Resolve refs now, before any file writes, and require a forward history.
-        base = git_output(root, "rev-parse", "--verify", f"{base}^{{commit}}")
-        head = git_output(root, "rev-parse", "--verify", f"{head}^{{commit}}")
-        if subprocess.run(["git", "merge-base", "--is-ancestor", base, head],
-                          cwd=root, check=False).returncode:
-            raise BuildDispatchError("--base must be an ancestor of --head")
+
+        head = git_output(
+            root, "rev-parse", "--verify", f"{head}^{{commit}}"
+        )
+
+        if base:
+            base = git_output(
+                root, "rev-parse", "--verify", f"{base}^{{commit}}"
+            )
+
+        for event in events:
+            if not event["missing_match_sync"]:
+                continue
+
+            event_base = (
+                base if base
+                else read_processing_checkpoint(root, event, head)
+            )
+
+            event_base = git_output(
+                root, "rev-parse", "--verify",
+                f"{event_base}^{{commit}}"
+            )
+
+            if subprocess.run(
+                ["git", "merge-base", "--is-ancestor", event_base, head],
+                cwd=root, check=False,
+            ).returncode:
+                raise BuildDispatchError(
+                    f"{event['name']}: checkpoint baseline "
+                    "must be an ancestor of --head"
+                )
+
+            event_baselines[event["manifest"]] = event_base
+
         checked_out = git_output(root, "rev-parse", "HEAD")
         if checked_out != head:
-            raise BuildDispatchError("--head must refer to the checked-out commit")
+            raise BuildDispatchError(
+                "--head must refer to the checked-out commit"
+            )
+
         for event in events:
             if event["missing_match_sync"]:
-                preflight_metadata_history(root, event, base, head)
+                preflight_metadata_history(
+                    root, event,
+                    event_baselines[event["manifest"]],
+                    head,
+                )
+
 
     operations = []
     for event in events:
         manifest = event["manifest"]
+
         if event["missing_match_sync"]:
             if execute:
-                sync = [sys.executable, "scripts/sync_missing_soccer_matches.py",
-                        "--manifest", manifest, "--base", base, "--head", head]
+                sync = [
+                    sys.executable,
+                    "scripts/sync_missing_soccer_matches.py",
+                    "--manifest", manifest,
+                    "--base", event_baselines[manifest],
+                    "--head", head,
+                ]
             else:
-                sync = [sys.executable, "scripts/sync_missing_soccer_matches.py",
-                        "--manifest", manifest, "--base", "<required-base>",
-                        "--head", "<required-head>"]
-            operations.append((event["name"], "preserve-missing", sync))
-        operations.append((event["name"], "build", [sys.executable, event["builder"], manifest]))
-    operations.append(("all events", "index", [sys.executable, "scripts/build_calendar_index.py"]))
+                sync = [
+                    sys.executable,
+                    "scripts/sync_missing_soccer_matches.py",
+                    "--manifest", manifest,
+                    "--base", "<required-base>",
+                    "--head", "<required-head>",
+                ]
+
+            operations.append(
+                (event["name"], "preserve-missing", sync)
+            )
+
+        operations.append(
+            (
+                event["name"],
+                "build",
+                [sys.executable, event["builder"], manifest],
+            )
+        )
+
+    operations.append(
+        (
+            "all events",
+            "index",
+            [sys.executable, "scripts/build_calendar_index.py"],
+        )
+    )
+
     return operations, events, warnings
+
 
 
 def main():
