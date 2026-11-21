@@ -53,6 +53,14 @@ jobs:
       - name: Preview shared dispatcher
         run: python scripts/run_soccer_builds.py
 
+      - name: Rehearse full build without publishing
+        if: github.event_name == 'push' && github.ref == 'refs/heads/integration/multi-league-actions'
+        run: |
+          python scripts/run_soccer_builds.py --execute \
+            --base a8566df --head HEAD
+
+          git diff --exit-code -- docs/ state/
+
       - name: Verify repository remains unchanged
         run: |
           git diff --exit-code
