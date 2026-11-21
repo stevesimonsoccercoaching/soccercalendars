@@ -221,6 +221,37 @@ class SoccerDispatcherTests(unittest.TestCase):
         self.assertEqual(calls[-1], "build_calendar_index ")
         self.assertEqual(self.git("rev-parse", "HEAD"), head)
 
+    def test_history_can_span_multiple_unprocessed_commits(self):
+        self.register()
+        base, _ = self.history()
+
+        path = "data/2026-27/edp-north-atlantic/edp-team.xlsx"
+
+        for content in (b"first update", b"second update"):
+            (self.root / path).write_bytes(content)
+            self.git("add", path)
+            self.git("commit", "-qm", "schedule update")
+
+        head = self.git("rev-parse", "HEAD")
+
+        p = self.run_dispatch(
+            "--execute", "--base", base, "--head", head
+        )
+
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+
+        calls = self.log.read_text(
+            encoding="utf-8"
+        ).splitlines()
+
+        sync = next(
+            line for line in calls
+            if line.startswith("sync_missing_soccer_matches ")
+        )
+
+        self.assertIn(f"--base {base}", sync)
+        self.assertIn(f"--head {head}", sync)
+
     def test_explicit_status_only_can_execute_without_git_history(self):
         self.register(edp=False)
         p = self.run_dispatch("--execute")
