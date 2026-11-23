@@ -55,11 +55,7 @@ jobs:
 
       - name: Rehearse full build without publishing
         if: github.event_name == 'push' && github.ref == 'refs/heads/integration/multi-league-actions'
-        run: |
-          python scripts/run_soccer_builds.py --execute \
-            --head HEAD
-
-          git diff --exit-code -- docs/ state/
+        run: python scripts/rehearse_soccer_publication.py
 
       - name: Verify repository remains unchanged
         run: |
