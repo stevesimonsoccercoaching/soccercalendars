@@ -53,6 +53,18 @@ jobs:
       - name: Preview shared dispatcher
         run: python scripts/run_soccer_builds.py
 
+      - name: Report XLSX schedule changes
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          python scripts/report_schedule_changes.py \
+            --base "$BEFORE_SHA" \
+            --head HEAD \
+            --output "$RUNNER_TEMP/schedule-change-report.md" \
+            > /dev/null
+
+          cat "$RUNNER_TEMP/schedule-change-report.md" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Rehearse full build without publishing
         if: github.event_name == 'push' && github.ref == 'refs/heads/integration/multi-league-actions'
         run: python scripts/rehearse_soccer_publication.py
