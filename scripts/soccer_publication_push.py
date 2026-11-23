@@ -4,6 +4,9 @@ import re
 import subprocess
 from pathlib import Path
 
+from plan_soccer_builds import plan
+from soccer_publication_paths import expected_publication_paths
+
 
 TRUSTED_PRODUCTION_REPOSITORY_URL = (
     "https://github.com/stevesimonsoccercoaching/soccercalendars.git"
@@ -19,7 +22,7 @@ def git(root, *args):
     ).strip()
 
 
-def push_publication_commit(root, expected_base, allowed_paths):
+def push_publication_commit(root, expected_base):
     """Push one verified publication commit to main without force."""
     root = Path(root).resolve()
 
@@ -59,7 +62,17 @@ def push_publication_commit(root, expected_base, allowed_paths):
         cwd=root,
     )
     changed = set(changed_raw.decode("utf-8").split("\0")) - {""}
-    allowed = set(allowed_paths)
+    # Derive publication permissions independently from registered events.
+    # The clean working tree ensures manifests match the checked-out commit.
+    events, errors, _warnings = plan(root)
+
+    if errors or not events:
+        raise RuntimeError(
+            "Publication refused: invalid event registration: "
+            + "; ".join(errors or ["No authorized events"])
+        )
+
+    allowed = set(expected_publication_paths(root, events))
 
     if not changed:
         raise RuntimeError("Publication refused: empty publication commit")

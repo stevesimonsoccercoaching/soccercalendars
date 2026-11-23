@@ -1,5 +1,6 @@
 """Test guarded publication pushes using only disposable local Git remotes."""
 
+import json
 import subprocess
 import sys
 import tempfile
@@ -62,6 +63,25 @@ class PublicationPushTests(unittest.TestCase):
         self.git(work, "init", "-q", "-b", "main")
 
         self.write(work, "docs/index.html", "original\n")
+        self.write(
+            work,
+            "config/2026-27/cjsl/league/events/55206/manifest.json",
+            json.dumps(
+                {
+                    "competition": {
+                        "event_id": "55206",
+                        "organizer": "cjsl",
+                        "provider": "gotsport",
+                        "name": "Publication Test Event",
+                        "calendar_profile": "explicit-status-cjsl-v1",
+                        "publication_path": "test-calendar",
+                    },
+                    "teams": [{"slug": "test-team"}],
+                },
+                indent=2,
+            ) + "\n",
+        )
+
         initial = self.commit(work, "Initial publication")
 
         self.git(work, "remote", "add", "origin", str(remote))
@@ -91,7 +111,7 @@ class PublicationPushTests(unittest.TestCase):
         head = self.candidate(work)
 
         result = push_publication_commit(
-            work, base, ["docs/index.html"]
+            work, base
         )
 
         self.assertEqual(result, head)
@@ -118,7 +138,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "remote main differs"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(
@@ -137,7 +157,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "branch must be main"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -150,7 +170,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "parent differs"
         ):
             push_publication_commit(
-                work, "f" * 40, ["docs/index.html"]
+                work, "f" * 40
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -166,7 +186,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "unauthorized committed paths"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -180,7 +200,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "not clean"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -195,7 +215,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "empty publication commit"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -208,7 +228,7 @@ class PublicationPushTests(unittest.TestCase):
             ValueError, "invalid base commit SHA"
         ):
             push_publication_commit(
-                work, "HEAD", ["docs/index.html"]
+                work, "HEAD"
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -220,7 +240,7 @@ class PublicationPushTests(unittest.TestCase):
 
         with self.assertRaises(subprocess.CalledProcessError):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -264,7 +284,7 @@ class PublicationPushTests(unittest.TestCase):
         ):
             with self.assertRaises(subprocess.CalledProcessError):
                 push_publication_commit(
-                    work, base, ["docs/index.html"]
+                    work, base
                 )
 
         self.assertTrue(advanced)
@@ -293,7 +313,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "push destination"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -331,7 +351,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "unauthorized repository"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         # Neither repository should receive the candidate commit.
@@ -368,7 +388,7 @@ class PublicationPushTests(unittest.TestCase):
             RuntimeError, "push destination"
         ):
             push_publication_commit(
-                work, base, ["docs/index.html"]
+                work, base
             )
 
         self.assertEqual(self.remote_head(remote), base)
@@ -382,6 +402,68 @@ class PublicationPushTests(unittest.TestCase):
             capture_output=True,
         )
         self.assertNotEqual(result.returncode, 0)
+
+
+    def test_caller_cannot_self_authorize_unregistered_calendar(self):
+        work, remote, base = self.fixture()
+
+        self.write(
+            work,
+            "docs/unregistered-team.ics",
+            "unauthorized calendar\\n",
+        )
+        self.commit(work, "Attempt unregistered calendar publication")
+
+        # The caller deliberately authorizes an unregistered file.
+        # The publisher must independently reject it.
+        with self.assertRaisesRegex(
+            RuntimeError, "unauthorized committed paths"
+        ):
+            push_publication_commit(
+                work, base
+            )
+
+        self.assertEqual(self.remote_head(remote), base)
+
+
+    def test_publication_cannot_modify_its_own_manifest(self):
+        work, remote, base = self.fixture()
+
+        manifest = (
+            "config/2026-27/cjsl/league/events/55206/manifest.json"
+        )
+
+        registration = json.loads(
+            (work / manifest).read_text(encoding="utf-8")
+        )
+
+        registration["teams"].append(
+            {"slug": "unapproved-team"}
+        )
+
+        self.write(
+            work,
+            manifest,
+            json.dumps(registration, indent=2) + "\n",
+        )
+
+        self.write(
+            work,
+            "docs/test-calendar/unapproved-team.ics",
+            "BEGIN:VCALENDAR\nEND:VCALENDAR\n",
+        )
+
+        self.commit(
+            work,
+            "Attempt to authorize calendar by changing manifest",
+        )
+
+        with self.assertRaisesRegex(
+            RuntimeError, "unauthorized committed paths"
+        ):
+            push_publication_commit(work, base)
+
+        self.assertEqual(self.remote_head(remote), base)
 
 
 if __name__ == "__main__":
