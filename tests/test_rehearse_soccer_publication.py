@@ -33,7 +33,13 @@ class PublicationRehearsalTests(unittest.TestCase):
     def fixture(self, root, mode):
         self.git(root, "init", "-q")
 
-        for name in ("soccer_paths.py", "soccer_publication_paths.py"):
+        for name in (
+            "soccer_paths.py",
+            "soccer_publication_paths.py",
+            "rehearse_soccer_publication.py",
+            "soccer_publication_candidate.py",
+            "prepare_soccer_publication_candidate.py",
+        ):
             destination = root / "scripts" / name
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(SCRIPTS / name, destination)
@@ -158,6 +164,100 @@ class PublicationRehearsalTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertNotIn("PHASE 2:", result.stdout)
             self.assertNotIn("PHASE 3:", result.stdout)
+
+
+    def candidate_fixture(self, parent, mode, keep_remote=False):
+        source = parent / "source"
+        source.mkdir()
+        self.fixture(source, mode)
+
+        checkout = parent / "checkout"
+        self.git(
+            parent, "clone", "-q", "--local",
+            "--no-hardlinks", str(source), str(checkout),
+        )
+
+        head = self.git(source, "rev-parse", "HEAD")
+        self.git(checkout, "checkout", "-q", "--detach", head)
+
+        if not keep_remote:
+            self.git(checkout, "remote", "remove", "origin")
+
+        self.git(checkout, "config", "user.name", "Test")
+        self.git(checkout, "config", "user.email", "test@example.com")
+
+        return source, checkout, head
+
+    def run_candidate(self, checkout, head):
+        return subprocess.run(
+            [
+                sys.executable,
+                "scripts/prepare_soccer_publication_candidate.py",
+                "--head", head,
+            ],
+            cwd=checkout,
+            capture_output=True,
+            text=True,
+            env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1"},
+        )
+
+    def test_end_to_end_candidate_commit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source, checkout, head = self.candidate_fixture(
+                Path(tmp), "success"
+            )
+
+            result = self.run_candidate(checkout, head)
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+            candidate = self.git(checkout, "rev-parse", "HEAD")
+            self.assertNotEqual(candidate, head)
+            self.assertEqual(
+                self.git(checkout, "rev-parse", "HEAD^"), head
+            )
+            self.assertEqual(
+                set(self.git(
+                    checkout, "diff", "--name-only", head, candidate
+                ).splitlines()),
+                {FEED, f"{STATE}/processing_checkpoint.json"},
+            )
+            self.assertEqual(
+                self.git(source, "rev-parse", "HEAD"), head
+            )
+            self.assertEqual(
+                self.git(checkout, "status", "--porcelain"), ""
+            )
+            self.assertEqual(self.git(checkout, "remote"), "")
+            self.assertIn(
+                "no publication performed", result.stdout
+            )
+
+    def test_end_to_end_failed_builder_creates_no_commit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source, checkout, head = self.candidate_fixture(
+                Path(tmp), "fail"
+            )
+
+            result = self.run_candidate(checkout, head)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertEqual(
+                self.git(checkout, "rev-parse", "HEAD"), head
+            )
+            self.assertNotIn("CANDIDATE SHA:", result.stdout)
+
+    def test_candidate_refuses_remote_before_build(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source, checkout, head = self.candidate_fixture(
+                Path(tmp), "success", keep_remote=True
+            )
+
+            result = self.run_candidate(checkout, head)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("Git remote", result.stderr)
+            self.assertNotIn("PHASE 1:", result.stdout)
+            self.assertEqual(
+                self.git(checkout, "rev-parse", "HEAD"), head
+            )
 
 
 if __name__ == "__main__":
