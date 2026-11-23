@@ -5,6 +5,11 @@ import subprocess
 from pathlib import Path
 
 
+TRUSTED_PRODUCTION_REPOSITORY_URL = (
+    "https://github.com/stevesimonsoccercoaching/soccercalendars.git"
+)
+
+
 def git(root, *args):
     return subprocess.check_output(
         ["git", *args],
@@ -83,6 +88,11 @@ def push_publication_commit(root, expected_base, allowed_paths):
         raise RuntimeError(
             "Publication refused: push destination must match "
             "the single fetch destination"
+        )
+
+    if fetch_urls[0] != TRUSTED_PRODUCTION_REPOSITORY_URL:
+        raise RuntimeError(
+            "Publication refused: unauthorized repository"
         )
 
     remote_result = git(

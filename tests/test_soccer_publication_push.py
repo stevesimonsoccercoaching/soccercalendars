@@ -10,7 +10,9 @@ from pathlib import Path
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
+import soccer_publication_push
 from soccer_publication_push import push_publication_commit
+from unittest.mock import patch
 
 
 class PublicationPushTests(unittest.TestCase):
@@ -64,6 +66,14 @@ class PublicationPushTests(unittest.TestCase):
 
         self.git(work, "remote", "add", "origin", str(remote))
         self.git(work, "push", "-q", "-u", "origin", "main")
+
+        trusted_url = patch.object(
+            soccer_publication_push,
+            "TRUSTED_PRODUCTION_REPOSITORY_URL",
+            str(remote),
+        )
+        trusted_url.start()
+        self.addCleanup(trusted_url.stop)
 
         return work, remote, initial
 
@@ -297,6 +307,36 @@ class PublicationPushTests(unittest.TestCase):
             capture_output=True,
         )
         self.assertNotEqual(result.returncode, 0)
+
+
+    def test_matching_but_unauthorized_repository_is_rejected(self):
+        work, remote, base = self.fixture()
+        self.candidate(work)
+
+        wrong = work.parent / "wrong-repository.git"
+
+        self.git(
+            work.parent,
+            "clone", "--bare", "-q",
+            str(remote), str(wrong),
+        )
+
+        # Fetch and push now agree, but on the wrong repository.
+        self.git(
+            work, "remote", "set-url",
+            "origin", str(wrong),
+        )
+
+        with self.assertRaisesRegex(
+            RuntimeError, "unauthorized repository"
+        ):
+            push_publication_commit(
+                work, base, ["docs/index.html"]
+            )
+
+        # Neither repository should receive the candidate commit.
+        self.assertEqual(self.remote_head(remote), base)
+        self.assertEqual(self.remote_head(wrong), base)
 
 
 if __name__ == "__main__":
