@@ -67,6 +67,24 @@ def push_publication_commit(root, expected_base, allowed_paths):
             f"{sorted(unexpected)}"
         )
 
+    fetch_urls = git(
+        root, "remote", "get-url", "--all", "origin"
+    ).splitlines()
+
+    push_urls = git(
+        root, "remote", "get-url", "--push", "--all", "origin"
+    ).splitlines()
+
+    if (
+        len(fetch_urls) != 1
+        or len(push_urls) != 1
+        or fetch_urls[0] != push_urls[0]
+    ):
+        raise RuntimeError(
+            "Publication refused: push destination must match "
+            "the single fetch destination"
+        )
+
     remote_result = git(
         root, "ls-remote", "--exit-code",
         "origin", "refs/heads/main",

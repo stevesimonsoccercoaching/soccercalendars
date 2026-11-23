@@ -264,5 +264,40 @@ class PublicationPushTests(unittest.TestCase):
         )
 
 
+    def test_separate_push_url_is_rejected(self):
+        work, remote, base = self.fixture()
+        self.candidate(work)
+
+        other = work.parent / "wrong-destination.git"
+        self.git(
+            work.parent, "init", "--bare", "-q",
+            "--initial-branch=main", str(other),
+        )
+
+        self.git(
+            work, "remote", "set-url",
+            "--push", "origin", str(other),
+        )
+
+        with self.assertRaisesRegex(
+            RuntimeError, "push destination"
+        ):
+            push_publication_commit(
+                work, base, ["docs/index.html"]
+            )
+
+        self.assertEqual(self.remote_head(remote), base)
+
+        result = subprocess.run(
+            [
+                "git", "--git-dir", str(other),
+                "show-ref", "--verify", "--quiet",
+                "refs/heads/main",
+            ],
+            capture_output=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+
+
 if __name__ == "__main__":
     unittest.main()
