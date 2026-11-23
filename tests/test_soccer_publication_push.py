@@ -339,5 +339,50 @@ class PublicationPushTests(unittest.TestCase):
         self.assertEqual(self.remote_head(wrong), base)
 
 
+    def test_pushinstead_of_rewrite_is_rejected(self):
+        work, remote, base = self.fixture()
+        self.candidate(work)
+
+        wrong = work.parent / "rewritten-destination.git"
+        self.git(
+            work.parent, "init", "--bare", "-q",
+            "--initial-branch=main", str(wrong),
+        )
+
+        # Git config rewrites pushes without changing origin's stored URL.
+        self.git(
+            work, "config", "--local",
+            f"url.{wrong}.pushInsteadOf", str(remote),
+        )
+
+        self.assertEqual(
+            self.git(work, "remote", "get-url", "origin"),
+            str(remote),
+        )
+        self.assertEqual(
+            self.git(work, "remote", "get-url", "--push", "origin"),
+            str(wrong),
+        )
+
+        with self.assertRaisesRegex(
+            RuntimeError, "push destination"
+        ):
+            push_publication_commit(
+                work, base, ["docs/index.html"]
+            )
+
+        self.assertEqual(self.remote_head(remote), base)
+
+        result = subprocess.run(
+            [
+                "git", "--git-dir", str(wrong),
+                "show-ref", "--verify", "--quiet",
+                "refs/heads/main",
+            ],
+            capture_output=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+
+
 if __name__ == "__main__":
     unittest.main()
