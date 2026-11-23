@@ -57,7 +57,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/integration/multi-league-actions'
         run: |
           python scripts/run_soccer_builds.py --execute \
-            --base a8566df --head HEAD
+            --head HEAD
 
           git diff --exit-code -- docs/ state/
 
