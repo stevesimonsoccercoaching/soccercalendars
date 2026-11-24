@@ -18,6 +18,9 @@ concurrency:
 
 jobs:
   watch:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars'
     runs-on: ubuntu-latest
 
     steps:
@@ -41,8 +44,62 @@ jobs:
             --state "state/weave/sffk-2015-2016.json" \
             --report "weave-watch-report.md"
 
+      - name: Create or reuse GitHub issue for schedule change
+        if: steps.watch.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        env:
+          CHANGE_ID: ${{ steps.watch.outputs.notification_id }}
+        with:
+          script: |
+            const fs = require('fs');
+            const id = process.env.CHANGE_ID;
+
+            if (!/^[0-9a-f]{24}$/.test(id || '')) {
+              throw new Error('Invalid notification identifier');
+            }
+
+            const report = fs.readFileSync(
+              'weave-watch-report.md',
+              'utf8'
+            );
+            const marker = `<!-- weave-notification-id:${id} -->`;
+
+            if (!report.includes(marker)) {
+              throw new Error('Notification identifier missing from report');
+            }
+
+            const issues = await github.paginate(
+              github.rest.issues.listForRepo,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'all',
+                per_page: 100
+              }
+            );
+
+            const existing = issues.find(issue =>
+              !issue.pull_request &&
+              (issue.body || '').includes(marker)
+            );
+
+            if (existing) {
+              core.info(`Notification already exists: ${existing.html_url}`);
+            } else {
+              const result = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: 'SFFK 2015-2016 schedule changed',
+                body: report
+              });
+              core.info(`Notification created: ${result.data.html_url}`);
+            }
+
       - name: Commit updated watch state
+        shell: bash
         run: |
+          set -euo pipefail
+          test "$(git symbolic-ref --quiet --short HEAD)" = main
           if [ -z "$(git status --porcelain -- state/weave/)" ]; then
             echo "No state changes to commit."
             exit 0
@@ -53,22 +110,19 @@ jobs:
 
           git add state/weave/
           git commit -m "Update SFFK Team App schedule watch state"
-          git push
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt of 3"
 
-      - name: Create GitHub issue for schedule change
-        if: steps.watch.outputs.changed == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const report = fs.readFileSync(
-              'weave-watch-report.md',
-              'utf8'
-            );
+            git fetch --no-tags origin main
+            git rebase origin/main
 
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: 'SFFK 2015-2016 schedule changed',
-              body: report
-            });
+            if git push origin HEAD:refs/heads/main; then
+              echo "SFFK watch state published successfully."
+              exit 0
+            fi
+
+            echo "Push rejected or failed; retrying if attempts remain."
+          done
+
+          echo "ERROR: Could not publish SFFK watch state."
+          exit 1

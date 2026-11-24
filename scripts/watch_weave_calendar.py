@@ -12,6 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+from weave_notification_id import notification_id
+
 
 WATCHED_FIELDS = [
     ("start", "Start"),
@@ -385,6 +387,9 @@ def main() -> int:
 
     text = fetch_calendar(url)
     current = parse_feed(text)
+    previous_snapshot = (
+        state_path.read_bytes() if state_path.exists() else b''
+    )
     previous = load_state(state_path)
 
     # Initial run establishes a baseline and intentionally does not alert.
@@ -408,6 +413,9 @@ def main() -> int:
     material_change = bool(added or removed or changed)
 
     if material_change:
+        change_id = notification_id(
+            previous_snapshot, current, WATCHED_FIELDS
+        )
         save_state(state_path, args.name, current)
         report = build_report(
             args.name,
@@ -415,6 +423,9 @@ def main() -> int:
             removed,
             changed,
             len(current),
+        )
+        report += (
+            f'\n\n<!-- weave-notification-id:{change_id} -->'
         )
     else:
         report = (
@@ -428,6 +439,7 @@ def main() -> int:
     append_github_summary(report)
 
     set_output("changed", "true" if material_change else "false")
+    set_output("notification_id", change_id if material_change else "")
     set_output("baseline_created", "false")
     set_output("event_count", str(len(current)))
     set_output("added_count", str(len(added)))

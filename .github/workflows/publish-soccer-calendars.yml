@@ -1,0 +1,97 @@
+name: Publish Soccer Calendars
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: soccer-production-publication
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate publication candidate
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Check out triggering revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install openpyxl
+
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Rehearse publication without pushing
+        run: python scripts/rehearse_soccer_publication.py
+
+  publish:
+    name: Publish verified revision
+    needs: validate
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Check out production branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install openpyxl
+
+      - name: Verify production baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          git remote set-url origin \
+            https://github.com/stevesimonsoccercoaching/soccercalendars.git
+          git fetch origin main
+
+          BASE="$(git rev-parse HEAD)"
+          REMOTE="$(git rev-parse origin/main)"
+
+          test "$BASE" = "$GITHUB_SHA"
+          test "$REMOTE" = "$GITHUB_SHA"
+
+      - name: Publish through guarded coordinator
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/publish_soccer_calendars.py \
+            --publish \
+            --expected-head "$GITHUB_SHA"
