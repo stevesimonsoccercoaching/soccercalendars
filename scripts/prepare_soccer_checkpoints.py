@@ -92,6 +92,75 @@ def prepare_checkpoints(root, events, input_sha):
                 f"Checkpoint destination is a directory: {checkpoint}"
             )
 
+        # Preserve the last processed source revision when this event's
+        # committed inputs have not changed. Generated state and unrelated
+        # Git commits must not advance the missing-match baseline.
+        if checkpoint.is_file():
+            try:
+                existing = json.loads(
+                    checkpoint.read_text(encoding="utf-8")
+                )
+            except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+                raise RuntimeError(
+                    "Invalid existing checkpoint: malformed JSON"
+                ) from exc
+
+            previous = (
+                existing.get("last_published_input_commit")
+                if isinstance(existing, dict) else None
+            )
+
+            if (
+                not isinstance(existing, dict)
+                or type(existing.get("version")) is not int
+                or existing["version"] != 1
+                or not isinstance(previous, str)
+                or not re.fullmatch(r"[0-9a-f]{40}", previous)
+            ):
+                raise RuntimeError(
+                    "Invalid existing checkpoint: unsupported version "
+                    "or invalid baseline commit"
+                )
+            else:
+                ancestry = subprocess.run(
+                    [
+                        "git", "merge-base", "--is-ancestor",
+                        previous, input_sha,
+                    ],
+                    cwd=root,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+
+                if ancestry.returncode != 0:
+                    raise RuntimeError(
+                        "Checkpoint baseline is not a verified ancestor "
+                        "of the current input commit"
+                    )
+
+                comparison = subprocess.run(
+                    [
+                        "git", "diff", "--quiet",
+                        previous, input_sha, "--",
+                        manifest.parent.as_posix(),
+                        (Path("data") / paths.event_relative).as_posix(),
+                    ],
+                    cwd=root,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+
+                if comparison.returncode == 0:
+                    continue
+
+                if comparison.returncode != 1:
+                    raise RuntimeError(
+                        "Cannot compare checkpoint source inputs: "
+                        + comparison.stderr.strip()
+                    )
+
         pending.append(checkpoint)
 
     # Stage new contents and backups before replacing any checkpoint.

@@ -110,6 +110,8 @@ class CheckpointPreparationTests(unittest.TestCase):
                     "missing_match_sync": True,
                 })
 
+            previous, input_sha = self.make_changed_input_history(root)
+
             state = root / "state/2026-27/edp/north-atlantic/events"
 
             first = state / "54578/processing_checkpoint.json"
@@ -117,7 +119,7 @@ class CheckpointPreparationTests(unittest.TestCase):
 
             original = json.dumps({
                 "version": 1,
-                "last_published_input_commit": "b" * 40,
+                "last_published_input_commit": previous,
             }) + "\n"
 
             first.write_text(original, encoding="utf-8")
@@ -126,7 +128,7 @@ class CheckpointPreparationTests(unittest.TestCase):
             blocked.mkdir(parents=True)
 
             with self.assertRaises(IsADirectoryError):
-                prepare_checkpoints(root, events, self.make_input_commit(root))
+                prepare_checkpoints(root, events, input_sha)
 
             self.assertEqual(
                 first.read_text(encoding="utf-8"),
@@ -179,6 +181,40 @@ class CheckpointPreparationTests(unittest.TestCase):
                 "events/54578/processing_checkpoint.json"
             )
             self.assertFalse(checkpoint.exists())
+
+    def make_changed_input_history(self, root):
+        """Create two valid commits with a genuine EDP source change."""
+        import subprocess
+
+        workbook = (
+            root / "data/2026-27/edp/north-atlantic/"
+            "events/54578/team.xlsx"
+        )
+        workbook.parent.mkdir(parents=True, exist_ok=True)
+        workbook.write_bytes(b"original workbook")
+
+        previous = self.make_input_commit(root)
+
+        workbook.write_bytes(b"updated workbook")
+        subprocess.run(
+            ["git", "add", "--", str(workbook.relative_to(root))],
+            cwd=root, check=True,
+        )
+        subprocess.run(
+            [
+                "git", "-c", "user.name=Test",
+                "-c", "user.email=test@example.com",
+                "commit", "-qm", "update EDP source workbook",
+            ],
+            cwd=root, check=True,
+        )
+
+        current = subprocess.check_output(
+            ["git", "rev-parse", "HEAD"],
+            cwd=root, text=True,
+        ).strip()
+
+        return previous, current
 
     def make_input_commit(self, root):
         import subprocess
@@ -390,14 +426,14 @@ class CheckpointPreparationTests(unittest.TestCase):
                     "missing_match_sync": True,
                 })
 
-            input_sha = self.make_input_commit(root)
+            previous, input_sha = self.make_changed_input_history(root)
 
             state = root / "state/2026-27/edp/north-atlantic/events"
             first = state / "54578/processing_checkpoint.json"
             second = state / "54579/processing_checkpoint.json"
 
             first.parent.mkdir(parents=True, exist_ok=True)
-            original = '{"version": 1, "last_published_input_commit": "old"}\n'
+            original = json.dumps({"version": 1, "last_published_input_commit": previous}) + "\n"
             first.write_text(original, encoding="utf-8")
 
             import os
@@ -443,14 +479,14 @@ class CheckpointPreparationTests(unittest.TestCase):
                     "missing_match_sync": True,
                 })
 
-            input_sha = self.make_input_commit(root)
+            previous, input_sha = self.make_changed_input_history(root)
 
             state = root / "state/2026-27/edp/north-atlantic/events"
             first = state / "54578/processing_checkpoint.json"
             second = state / "54579/processing_checkpoint.json"
 
             first.parent.mkdir(parents=True, exist_ok=True)
-            original = b'{"version": 1, "last_published_input_commit": "old"}\n'
+            original = (json.dumps({"version": 1, "last_published_input_commit": previous}) + "\n").encode('utf-8')
             first.write_bytes(original)
 
             real_replace = os.replace
@@ -566,7 +602,7 @@ class CheckpointPreparationTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            input_sha = self.make_input_commit(root)
+            previous, input_sha = self.make_changed_input_history(root)
 
             checkpoint = (
                 root / "state/2026-27/edp/north-atlantic/"
@@ -575,7 +611,7 @@ class CheckpointPreparationTests(unittest.TestCase):
 
             checkpoint.parent.mkdir(parents=True, exist_ok=True)
             checkpoint.write_text(
-                '{"version": 1, "last_published_input_commit": "old"}\n',
+                json.dumps({"version": 1, "last_published_input_commit": previous}) + "\n",
                 encoding="utf-8",
             )
 
@@ -635,7 +671,7 @@ class CheckpointPreparationTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            input_sha = self.make_input_commit(root)
+            previous, input_sha = self.make_changed_input_history(root)
 
             checkpoint = (
                 root / "state/2026-27/edp/north-atlantic/"
@@ -643,7 +679,7 @@ class CheckpointPreparationTests(unittest.TestCase):
             )
             checkpoint.parent.mkdir(parents=True)
 
-            original = b'{"version": 1, "last_published_input_commit": "old"}\n'
+            original = (json.dumps({"version": 1, "last_published_input_commit": previous}) + "\n").encode('utf-8')
             checkpoint.write_bytes(original)
 
             real_unlink = Path.unlink
