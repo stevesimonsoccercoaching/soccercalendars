@@ -66,7 +66,6 @@ jobs:
           cat "$RUNNER_TEMP/schedule-change-report.md" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Rehearse full build without publishing
-        if: github.event_name == 'push' && github.ref == 'refs/heads/integration/multi-league-actions'
         run: python scripts/rehearse_soccer_publication.py
 
       - name: Verify repository remains unchanged
