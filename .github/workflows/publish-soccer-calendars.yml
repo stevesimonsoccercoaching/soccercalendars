@@ -3,6 +3,13 @@ name: Publish Soccer Calendars
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+      - main
+    paths:
+      - "config/**"
+      - "data/**"
+
 permissions:
   contents: read
 
@@ -53,6 +60,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
+    outputs:
+      published_sha: ${{ steps.record_publication.outputs.sha }}
+
     permissions:
       contents: write
 
@@ -95,3 +105,72 @@ jobs:
           python scripts/publish_soccer_calendars.py \
             --publish \
             --expected-head "$GITHUB_SHA"
+
+      - name: Record verified publication revision
+        id: record_publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          SHA="$(git rev-parse HEAD)"
+          REMOTE="$(git ls-remote origin refs/heads/main | cut -f1)"
+          test "$SHA" = "$REMOTE"
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+
+  deploy_pages:
+    name: Deploy verified calendars to GitHub Pages
+    needs: publish
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars' &&
+      needs.publish.outputs.published_sha != '' &&
+      vars.SOCCER_PAGES_ACTIONS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out verified publication revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.published_sha }}
+          persist-credentials: false
+
+      - name: Verify Pages artifact
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ needs.publish.outputs.published_sha }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+          test -s docs/index.html
+          test "$(find docs -type f -name '*.ics' | wc -l)" -gt 0
+
+          git fetch --quiet --no-tags origin main
+          VERIFIED_TREE="$(git rev-parse HEAD:docs)"
+          LATEST_TREE="$(git rev-parse FETCH_HEAD:docs)"
+          if [ "$VERIFIED_TREE" != "$LATEST_TREE" ]; then
+            echo "ERROR: Newer website content exists on main."
+            echo "Refusing to deploy outdated calendars."
+            exit 1
+          fi
+          echo "PASS: Verified website content matches current main."
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
