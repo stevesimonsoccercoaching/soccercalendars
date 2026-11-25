@@ -7,6 +7,7 @@ import re
 import sys
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 
 REQUIRED_COLUMNS = {
@@ -741,32 +742,12 @@ def main():
         if configured_name and configured_label:
             display_names[configured_name] = configured_label
 
-    parts = manifest_file.parts
+    event_paths = resolve_event_paths(manifest_file, competition)
 
-    try:
-        config_index = parts.index("config")
-    except ValueError:
-        raise SystemExit(
-            "Manifest must be stored beneath config/."
-        )
-
-    relative_folder = Path(
-        *parts[config_index + 1:-1]
-    )
-
-    data_folder = Path("data") / relative_folder
-    docs_folder = Path("docs") / relative_folder
-
-    revision_state_file = (
-        Path("state")
-        / relative_folder
-        / "revisions.json"
-    )
-    missing_state_file = (
-        Path("state")
-        / relative_folder
-        / "missing_matches.json"
-    )
+    data_folder = event_paths.data_dir
+    docs_folder = event_paths.docs_dir
+    revision_state_file = event_paths.state_dir / "revisions.json"
+    missing_state_file = event_paths.state_dir / "missing_matches.json"
 
     revision_state = load_revision_state(
         revision_state_file

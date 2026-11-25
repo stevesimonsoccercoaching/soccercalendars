@@ -1,0 +1,90 @@
+{
+  "competition": {
+    "year": 2026,
+    "organizer": "EDP",
+    "competition": "EDP North Atlantic",
+    "season": "2026-27",
+    "name": "EDP North Atlantic 2026-27",
+    "display_prefix": "EDP NA",
+    "uid_prefix": "edp-na",
+    "provider": "GotSport",
+    "event_id": "54578",
+	"calendar_profile": "metadata-warning-v1",
+	"publication_path": "2026-27/edp-north-atlantic",
+    "timezone": "America/New_York",
+    "default_duration_minutes": 60,
+    "status_mode": "metadata",
+    "gender": "",
+    "schedule_safety": {
+      "reject_empty_export": true,
+      "max_missing_fraction": 0.5
+    },
+    "missing_match_policy": "preserve-warning"
+  },
+  "calendar_defaults": {
+    "reminders": [
+      {
+        "trigger": "-P7D",
+        "description": "EDP North Atlantic match in 7 days"
+      },
+      {
+        "trigger": "-P2D",
+        "description": "EDP North Atlantic match in 2 days"
+      },
+      {
+        "trigger": "-PT12H",
+        "description": "EDP North Atlantic match in 12 hours"
+      },
+      {
+        "trigger": "-PT3H",
+        "description": "EDP North Atlantic match in 3 hours"
+      }
+    ]
+  },
+  "display_names": {
+    "ALBION SC Brooklyn B15/16 Academy - Williamsburg": "ALBION Brooklyn U11 Academy",
+    "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 Black": "Met Oval U11 Black",
+    "DV7 NY B2015/16": "DV7 NY U11",
+    "DUSC Boys (2015/2016) EDP": "DUSC U11",
+    "Brooklyn United Academy B2015/2016 Regional": "Brooklyn United U11 Regional",
+    "Brooklyn United Academy B2015/2016 Regional II": "Brooklyn United U11 Regional II",
+    "Coney Island Cyclones United Hurricanes 2015/16": "Coney Island Hurricanes",
+    "Triboro United SC 2015/16 Frost": "Triboro United U11 Frost"
+  },
+  "teams": [
+    {
+      "name": "ALBION SC Brooklyn B15/16 Academy - Williamsburg",
+      "short_name": "ALBION Brooklyn U11 Academy",
+      "slug": "albion-sc-brooklyn-b15-16-academy-williamsburg",
+      "gotsport": {
+        "schedule_team_id": "4249165",
+        "export_team_id": "4249165",
+        "schedule_url": "https://system.gotsport.com/org_event/events/54578/schedules?team=4249165",
+        "export_url": "https://system.gotsport.com/org_event/events/54578/matches_export?team=4249165"
+      }
+    },
+    {
+      "name": "Metropolitan Oval Academy Brooklyn 2015/16 Boys U11 Black",
+      "short_name": "Met Oval U11 Black",
+      "slug": "metropolitan-oval-academy-brooklyn-2015-16-boys-u11-black",
+      "gotsport": {
+        "schedule_team_id": "4246976",
+        "export_team_id": "4246976",
+        "schedule_url": "https://system.gotsport.com/org_event/events/54578/schedules?team=4246976",
+        "export_url": "https://system.gotsport.com/org_event/events/54578/matches_export?team=4246976"
+      }
+    },
+
+    {
+	    "name": "DV7 NY B2015/16",
+ 	    "short_name": "DV7 NY U11",
+ 	    "slug": "dv7-ny-b2015-16",
+      "gotsport": { 
+        "schedule_team_id": "4151617",
+         "export_team_id": "4151617",
+         "schedule_url": "https://system.gotsport.com/org_event/events/54578/schedules?team=4151617",
+         "export_url": "https://system.gotsport.com/org_event/events/54578/matches_export?team=4151617" 
+	  } 
+  }
+  ]
+}

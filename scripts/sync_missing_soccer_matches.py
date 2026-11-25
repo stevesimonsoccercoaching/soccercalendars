@@ -9,6 +9,7 @@ from io import BytesIO
 from pathlib import Path
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 from schedule_safety import (
     ScheduleSafetyError,
@@ -56,13 +57,21 @@ def commit_exists(ref):
     )
     return result.returncode == 0
 
+
 def resolve_base(base, head):
-    if commit_exists(base):
+    if base:
+        if not commit_exists(base):
+            raise RuntimeError(
+                f"Explicit historical Git baseline is invalid: {base!r}. "
+                "Refusing to fall back to the parent commit."
+            )
         return base
+
     parent = run_git(["rev-parse", f"{head}^"], check=False).strip()
     if commit_exists(parent):
         return parent
     return ""
+
 
 def git_file_bytes(ref, path):
     if not ref:
@@ -238,14 +247,40 @@ def main():
     head = run_git(["rev-parse", args.head]).strip()
     base = resolve_base(args.base, head)
     if not base:
-        print("No usable previous commit; nothing to compare for missing matches.")
-        return
+        raise RuntimeError(
+            "No usable historical Git commit for missing-match "
+            "comparison. Refusing to skip preservation."
+        )
 
-    parts = manifest_path.parts
-    config_index = parts.index("config")
-    relative_folder = Path(*parts[config_index + 1:-1])
-    data_folder = Path("data") / relative_folder
-    state_file = Path("state") / relative_folder / "missing_matches.json"
+    checked_out = run_git(["rev-parse", "HEAD"]).strip()
+    if head != checked_out:
+        raise RuntimeError(
+            "Historical comparison --head must match the "
+            "currently checked-out commit."
+        )
+
+    ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", base, head],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        check=False,
+    )
+    if ancestor.returncode != 0:
+        raise RuntimeError(
+            "Historical comparison --base must be an ancestor "
+            "of --head. Refusing an unrelated Git comparison."
+        )
+
+
+
+    repo_root = Path.cwd().resolve()
+    event_paths = resolve_event_paths(
+        manifest_path, competition, repo_root=repo_root
+    )
+
+    data_folder = event_paths.data_dir
+    state_file = event_paths.state_dir / "missing_matches.json"
+
 
     state = load_state(state_file)
     teams_state = state.setdefault("teams", {})
@@ -261,12 +296,31 @@ def main():
         if not slug:
             continue
 
-        path = (data_folder / f"{slug}.xlsx").as_posix()
+
+        path = (
+            (data_folder / f"{slug}.xlsx")
+            .relative_to(repo_root)
+            .as_posix()
+        )
+
         old_bytes = git_file_bytes(base, path)
         new_bytes = git_file_bytes(head, path)
 
-        if not old_bytes or not new_bytes:
-            continue
+
+        if old_bytes is None or new_bytes is None:
+            missing = []
+            if old_bytes is None:
+                missing.append(f"{base}:{path}")
+            if new_bytes is None:
+                missing.append(f"{head}:{path}")
+
+            raise RuntimeError(
+                "Missing historical XLSX input: "
+                + ", ".join(missing)
+                + ". Verify the Git comparison baseline before "
+                "continuing; missing-match detection was not run."
+            )
+
 
         duration = int(team.get("duration_minutes", default_duration))
         old_matches = read_schedule(old_bytes, duration)

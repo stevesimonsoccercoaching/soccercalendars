@@ -3,6 +3,9 @@ name: Test CJSL Calendar Build
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test-build:
     runs-on: ubuntu-latest
@@ -21,10 +24,39 @@ jobs:
           python -m pip install --upgrade pip
           pip install openpyxl
 
+
       - name: Build CJSL calendars
         run: |
-          python scripts/build_cjsl_calendars.py \
-            config/2026/cjsl/fall/manifest.json
+          python <<'PY'
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
+
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('; '.join(errors))
+
+          matches = [
+              event for event in events
+              if event['event_id'] == '55206'
+              and event['organizer'] == 'cjsl'
+          ]
+          if len(matches) != 1:
+              raise SystemExit('Expected exactly one CJSL event 55206')
+
+          event = matches[0]
+          if event['builder'] != 'scripts/build_cjsl_calendars.py':
+              raise SystemExit('Unexpected builder for CJSL event 55206')
+
+          subprocess.run(
+              [sys.executable, event['builder'], event['manifest']],
+              check=True,
+          )
+          PY
+
 
       - name: Verify MKSC calendar was generated
         run: |
@@ -115,3 +147,165 @@ jobs:
         with:
           name: generated-mksc-calendar
           path: docs/2026/cjsl/fall/manhattan-kickers-mksc-2014-2015.ics
+
+  # Temporarily hosted here because a new workflow_dispatch file cannot be
+  # manually launched in the GitHub UI until it exists on the default branch.
+  # This separate job has no publishing credentials or Git write operations.
+  test-multi-league-real-data:
+    name: Real-data dispatcher parity (no publishing)
+    if: github.ref == 'refs/heads/refactor/multi-league-architecture'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out full Git history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl
+
+      - name: Run all regression tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Build both leagues in this disposable runner
+        run: |
+          # HEAD^ is safe for this phase only because both EDP XLSX paths
+          # already exist at HEAD^ and HEAD; the dispatcher checks each path.
+          python scripts/run_soccer_builds.py --execute --base HEAD^ --head HEAD
+
+      - name: Compare generated calendars and state against checked-in files
+        run: |
+          python <<'PY'
+          import json
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          sys.path.insert(0, 'scripts')
+          from plan_soccer_builds import plan
+          from soccer_paths import resolve_event_paths
+
+          events, errors, _ = plan(Path.cwd())
+          if errors:
+              raise SystemExit('Invalid registered events: ' + '; '.join(errors))
+
+          
+          feed_paths = []
+          state_paths = []
+          repo_root = Path.cwd()
+
+          for event in events:
+              manifest_path = Path(event['manifest'])
+              manifest = json.loads(
+                  manifest_path.read_text(encoding='utf-8')
+              )
+
+              paths = resolve_event_paths(
+                  manifest_path,
+                  manifest['competition'],
+                  repo_root=repo_root,
+              )
+              docs_dir = paths.docs_dir.relative_to(repo_root)
+              state_dir = paths.state_dir.relative_to(repo_root)
+
+              for team in manifest['teams']:
+                  feed_paths.append(
+                      docs_dir / f"{team['slug']}.ics"
+                  )
+
+              state_paths.append(state_dir / 'revisions.json')
+
+              if event['missing_match_sync']:
+                  state_paths.append(
+                      state_dir / 'missing_matches.json'
+                  )
+
+
+          actual_feeds = {p.as_posix() for p in Path('docs').rglob('*.ics')}
+          expected_feeds = {p.as_posix() for p in feed_paths}
+          problems = []
+          if actual_feeds != expected_feeds:
+              problems.append('Feed inventory mismatch: missing=' + str(sorted(expected_feeds - actual_feeds))
+                              + ' unexpected=' + str(sorted(actual_feeds - expected_feeds)))
+
+          def at_head(name):
+              result = subprocess.run(['git', 'show', f'HEAD:{name}'], capture_output=True)
+              if result.returncode:
+                  problems.append(f'No committed baseline at HEAD:{name}')
+                  return None
+              return result.stdout
+
+          equal = 0
+          event_total = 0
+          for path in sorted(feed_paths + state_paths + [Path('docs/index.html')]):
+              name = path.as_posix()
+              original = at_head(name)
+              if not path.is_file():
+                  problems.append(f'Output missing: {name}')
+                  continue
+              built = path.read_bytes()
+              if original is None:
+                  continue
+              if built != original:
+                  problems.append(f'Generated output differs from HEAD: {name}')
+              else:
+                  equal += 1
+              if path.suffix == '.ics':
+                  before = original.count(b'BEGIN:VEVENT')
+                  after = built.count(b'BEGIN:VEVENT')
+                  event_total += after
+                  if before != after:
+                      problems.append(f'Event count changed for {name}: {before} -> {after}')
+
+          tracked = subprocess.run(
+              ['git', 'diff', '--name-only', '--', 'docs/', 'state/'],
+              capture_output=True, text=True, check=True,
+          ).stdout.splitlines()
+          if tracked:
+              problems.append('Working-tree output changes: ' + ', '.join(tracked))
+          untracked = subprocess.run(
+              ['git', 'ls-files', '--others', '--exclude-standard', '--', 'docs/', 'state/'],
+              capture_output=True, text=True, check=True,
+          ).stdout.splitlines()
+          if untracked:
+              problems.append('Unexpected untracked output files: ' + ', '.join(untracked))
+
+          report = [
+              f'Registered events: {len(events)}',
+              f'Expected team calendars: {len(feed_paths)}',
+              f'Generated events across feeds: {event_total}',
+              f'Outputs matching committed HEAD byte-for-byte: {equal} / '
+              f'{len(feed_paths) + len(state_paths) + 1}',
+              f'Issues: {len(problems)}',
+              *('- ' + p for p in problems),
+          ]
+          Path('dispatcher-parity-report.txt').write_text('\n'.join(report) + '\n', encoding='utf-8')
+          print('\n'.join(report))
+          if problems:
+              raise SystemExit('Real-data parity check failed; review report and artifacts.')
+          PY
+
+      - name: Upload generated output for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: multi-league-real-data-output
+
+          path: |
+            docs/
+            state/
+            dispatcher-parity-report.txt
+
+          retention-days: 7
+          if-no-files-found: warn

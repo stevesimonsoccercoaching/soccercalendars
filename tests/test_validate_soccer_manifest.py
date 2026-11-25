@@ -85,6 +85,43 @@ class ManifestValidatorTests(unittest.TestCase):
         self.save_manifest()
         self.check_error("check event ID, team ID and URL")
 
+    def set_splash_schedule_url(self, *, org_id="3244", event_id="54578", team_id="4151617", host="system.gotsport.com"):
+        self.manifest["teams"][0]["gotsport"]["schedule_url"] = (
+            f"https://{host}/splash/{org_id}/events/{event_id}/schedules?team={team_id}"
+        )
+        self.save_manifest()
+
+    def test_valid_splash_schedule_url(self):
+        self.set_splash_schedule_url()
+        before = self.manifest_path.read_bytes()
+        errors, summary = validate(self.manifest_path)
+        self.assertEqual(errors, [])
+        self.assertEqual(summary, (1, 1))
+        self.assertEqual(self.manifest_path.read_bytes(), before)
+
+    def test_splash_schedule_url_wrong_event_id(self):
+        self.set_splash_schedule_url(event_id="99999")
+        self.check_error("check event ID, team ID and URL")
+
+    def test_splash_schedule_url_wrong_team_id(self):
+        self.set_splash_schedule_url(team_id="999999")
+        self.check_error("check event ID, team ID and URL")
+
+    def test_splash_schedule_url_wrong_host(self):
+        self.set_splash_schedule_url(host="example.com")
+        self.check_error("check event ID, team ID and URL")
+
+    def test_splash_schedule_url_non_numeric_org_id(self):
+        self.set_splash_schedule_url(org_id="not-a-number")
+        self.check_error("check event ID, team ID and URL")
+
+    def test_splash_export_url_is_rejected(self):
+        self.manifest["teams"][0]["gotsport"]["export_url"] = (
+            "https://system.gotsport.com/splash/3244/events/54578/matches_export?team=4151617"
+        )
+        self.save_manifest()
+        self.check_error("check event ID, team ID and URL")
+
     def test_malformed_manifest_json(self):
         self.manifest_path.write_text("{not valid JSON", encoding="utf-8")
         self.check_error("Cannot read manifest")
@@ -95,6 +132,37 @@ class ManifestValidatorTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertEqual(self.manifest_path.read_bytes(), before)
         self.assertEqual(self.manifest["display_names"]["Other Team"], "Other")
+
+
+    def test_canonical_storage_preserves_publication_path(self):
+        new_manifest = Path(
+            "config/2026-27/edp/north-atlantic/events/54578/manifest.json"
+        )
+        new_data = Path(
+            "data/2026-27/edp/north-atlantic/events/54578"
+        )
+
+        new_manifest.parent.mkdir(parents=True, exist_ok=True)
+        new_data.mkdir(parents=True, exist_ok=True)
+
+        self.manifest["competition"]["publication_path"] = (
+            "2026-27/edp-north-atlantic"
+        )
+        new_manifest.write_text(
+            json.dumps(self.manifest, indent=2),
+            encoding="utf-8",
+        )
+
+        (new_data / self.xlsx.name).touch()
+
+        # Remove legacy inputs so they cannot satisfy validation.
+        self.xlsx.unlink()
+        self.manifest_path.unlink()
+
+        errors, summary = validate(new_manifest)
+
+        self.assertEqual(errors, [])
+        self.assertEqual(summary, (1, 1))
 
 
 if __name__ == "__main__":

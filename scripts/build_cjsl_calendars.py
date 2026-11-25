@@ -7,6 +7,7 @@ import re
 import sys
 
 from openpyxl import load_workbook
+from soccer_paths import resolve_event_paths
 
 
 REQUIRED_COLUMNS = {
@@ -89,11 +90,37 @@ def get_match_revision(
     match,
     summary,
     changed_at,
+    calendar_slug,
 ):
     key = f"{event_id}:{match['match_no']}"
     fingerprint = match_fingerprint(match, summary)
 
-    previous = state["matches"].get(key)
+    version = state.get("version", 1)
+
+    if version == 2:
+        views = state.get("views")
+
+        if not isinstance(views, dict) or calendar_slug not in views:
+            raise RuntimeError(
+                f"Missing seeded CJSL revision view: {calendar_slug}"
+            )
+
+        bucket = views[calendar_slug]
+
+        if not isinstance(bucket, dict):
+            raise RuntimeError(
+                f"Invalid CJSL revision view: {calendar_slug}"
+            )
+
+    elif version == 1:
+        bucket = state["matches"]
+
+    else:
+        raise RuntimeError(
+            f"Unsupported CJSL revision version: {version}"
+        )
+
+    previous = bucket.get(key)
 
     if previous and previous.get("fingerprint") == fingerprint:
         sequence = int(previous.get("sequence", 1))
@@ -109,7 +136,7 @@ def get_match_revision(
 
         last_modified = changed_at
 
-    state["matches"][key] = {
+    bucket[key] = {
         "fingerprint": fingerprint,
         "sequence": sequence,
         "last_modified": last_modified,
@@ -441,6 +468,7 @@ def build_calendar(
             summary=summary,
             match=match,
             changed_at=changed_at,
+            calendar_slug=team["slug"],
         )
 
         last_modified = revision["last_modified"]
@@ -606,27 +634,13 @@ def main():
             "No teams are configured in the manifest."
         )
 
-    parts = manifest_file.parts
 
-    try:
-        config_index = parts.index("config")
-    except ValueError:
-        raise SystemExit(
-            "Manifest must be stored beneath config/."
-        )
+    event_paths = resolve_event_paths(manifest_file, competition)
 
-    relative_folder = Path(
-        *parts[config_index + 1:-1]
-    )
-
-    data_folder = Path("data") / relative_folder
-    docs_folder = Path("docs") / relative_folder
-
-    revision_state_file = (
-        Path("state")
-        / relative_folder
-        / "revisions.json"
-    )
+    data_folder = event_paths.data_dir
+    docs_folder = event_paths.docs_dir
+    revision_state_file = event_paths.state_dir / "revisions.json"
+    
 
     revision_state = load_revision_state(
         revision_state_file

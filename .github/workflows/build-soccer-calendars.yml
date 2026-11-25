@@ -1,0 +1,74 @@
+name: Build Soccer Calendars
+
+on:
+  push:
+    branches:
+      - integration/multi-league-actions
+
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: soccer-validation-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate multi-league architecture
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install openpyxl
+
+      - name: Run automated tests
+        run: |
+          python -m unittest discover \
+            -s tests -p "test_*.py" -v
+
+      - name: Discover soccer events
+        run: python scripts/discover_soccer_manifests.py
+
+      - name: Plan calendar builds
+        run: python scripts/plan_soccer_builds.py
+
+      - name: Preview shared dispatcher
+        run: python scripts/run_soccer_builds.py
+
+      - name: Report XLSX schedule changes
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          python scripts/report_schedule_changes.py \
+            --base "$BEFORE_SHA" \
+            --head HEAD \
+            --output "$RUNNER_TEMP/schedule-change-report.md" \
+            > /dev/null
+
+          cat "$RUNNER_TEMP/schedule-change-report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Rehearse full build without publishing
+        run: python scripts/rehearse_soccer_publication.py
+
+      - name: Verify repository remains unchanged
+        run: |
+          git diff --exit-code
+          test -z "$(git status --porcelain)"

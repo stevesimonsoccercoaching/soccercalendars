@@ -4,6 +4,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
+from soccer_paths import resolve_event_paths
 
 
 def validate(manifest_path):
@@ -23,11 +24,14 @@ def validate(manifest_path):
     event_id = str(competition.get("event_id", "")).strip()
     if not event_id.isdecimal():
         errors.append("competition.event_id must be numeric")
+
     try:
-        relative = manifest_path.parent.relative_to("config")
-    except ValueError:
-        return ["Run from repository root; manifest must be under config/"], None
-    data_dir = Path("data") / relative
+        event_paths = resolve_event_paths(manifest_path, competition)
+    except ValueError as exc:
+        return [str(exc)], None
+
+    data_dir = event_paths.data_dir
+
     if not data_dir.is_dir():
         return [f"Missing data directory: {data_dir}"], None
 
@@ -76,8 +80,16 @@ def validate(manifest_path):
                 errors.append(f"{prefix}.gotsport.{field} is required")
                 continue
             url = urlparse(value)
+            valid_path = url.path == f"/org_event/events/{event_id}/{endpoint}"
+            if field == "schedule_url":
+                # Some CJSL GotSport schedule links use a numeric splash/org ID.
+                # Only schedule pages may use this format; exports remain /org_event/.
+                valid_path = valid_path or bool(re.fullmatch(
+                    rf"/splash/[0-9]+/events/{re.escape(event_id)}/schedules",
+                    url.path,
+                ))
             if (url.scheme != "https" or url.netloc != "system.gotsport.com"
-                    or url.path != f"/org_event/events/{event_id}/{endpoint}"
+                    or not valid_path
                     or parse_qs(url.query).get("team") != [team_id]):
                 errors.append(f"{prefix}.gotsport.{field}: check event ID, team ID and URL")
 
