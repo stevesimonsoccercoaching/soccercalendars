@@ -7,7 +7,12 @@ No fetch, push, or production publication is performed.
 import argparse
 import re
 import subprocess
+import sys
 from pathlib import Path
+
+# Disable bytecode before importing local modules so disposable
+# candidate checkouts remain free of generated __pycache__ files.
+sys.dont_write_bytecode = True
 
 from rehearse_soccer_publication import build_and_stage, git_output
 from soccer_publication_candidate import create_candidate_commit
