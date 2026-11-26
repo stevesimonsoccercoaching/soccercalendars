@@ -20,6 +20,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from build_cjsl_calendars import (
+    CJSLInputError,
+    CJSLInputErrors,
     parse_match_number,
     read_matches,
 )
@@ -90,8 +92,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
     def test_header_only_export_is_rejected(self):
         self.write_export([])
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('empty_export', ())
 
     def test_identical_duplicate_match_id_is_rejected(self):
         self.write_export([
@@ -143,8 +144,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
 
         self.write_export([self.match, incomplete])
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('missing_match_id', ())
 
     def test_blank_row_is_ignored(self):
         self.write_export([
@@ -169,8 +169,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
 
                 self.write_export([row])
 
-                with self.assertRaises(RuntimeError):
-                    self.read_export()
+                self.assert_structured_input_error('missing_team_identity', (277,))
 
     def test_unrelated_match_is_rejected(self):
         row = list(self.match)
@@ -179,8 +178,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
 
         self.write_export([row])
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('unrelated_match', (277,))
 
     def test_match_number_parser_accepts_valid_values(self):
         for value in (
@@ -247,8 +245,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             b"This is not a valid XLSX file."
         )
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('unreadable_workbook', ())
 
     def test_empty_worksheet_is_rejected(self):
         workbook = Workbook()
@@ -257,17 +254,13 @@ class CJSLExportIntegrityTests(unittest.TestCase):
         finally:
             workbook.close()
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('empty_worksheet', ())
 
     def test_missing_required_column_is_rejected(self):
         self.headers.remove("Status")
         self.write_export([])
 
-        with self.assertRaisesRegex(
-            RuntimeError, r"missing required columns"
-        ):
-            self.read_export()
+        self.assert_structured_input_error('missing_columns', (), message='missing required columns')
 
     def test_workbook_is_closed_after_successful_read(self):
         self.write_export([self.match])
@@ -361,8 +354,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
                 try:
                     self.write_export([self.match + [status]])
 
-                    with self.assertRaises(RuntimeError):
-                        self.read_export()
+                    self.assert_structured_input_error('duplicate_column', ())
                 finally:
                     self.headers = original_headers
 
@@ -374,8 +366,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             lambda data: None,
         )
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('missing_workbook_component', ())
 
     def test_malformed_workbook_xml_is_rejected(self):
         self.write_export([self.match])
@@ -385,8 +376,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             lambda data: b"<workbook>",
         )
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('unreadable_workbook', ())
 
     def test_malformed_worksheet_xml_is_rejected(self):
         self.write_export([self.match])
@@ -401,8 +391,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             truncate_xml,
         )
 
-        with self.assertRaises(RuntimeError):
-            self.read_export()
+        self.assert_structured_input_error('unreadable_worksheet', ())
 
     def test_unexpected_programming_errors_propagate(self):
         self.write_export([self.match])
@@ -410,6 +399,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
         for error in (
             KeyError("unexpected internal key"),
             TypeError("unexpected programming error"),
+            RuntimeError("unexpected runtime failure"),
         ):
             with self.subTest(error=type(error).__name__):
                 with patch(
@@ -511,11 +501,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             lambda data: None,
         )
 
-        with self.assertRaisesRegex(
-            RuntimeError,
-            "No active worksheet",
-        ):
-            self.read_export()
+        self.assert_structured_input_error('missing_worksheet', (), message='No active worksheet')
 
     def test_source_file_is_closed_after_successful_read(self):
         self.write_export([self.match])
@@ -568,6 +554,220 @@ class CJSLExportIntegrityTests(unittest.TestCase):
                 self.fail(
                     "Malformed workbook was unexpectedly accepted"
                 )
+
+    def assert_structured_input_error(self, kind, match_ids, message=None):
+        with self.assertRaises(CJSLInputError) as caught:
+            self.read_export()
+
+        error = caught.exception
+        self.assertEqual(error.kind, kind)
+        self.assertEqual(error.match_ids, match_ids)
+
+        if message is not None:
+            self.assertRegex(str(error), message)
+
+    def test_structured_missing_workbook_error(self):
+        self.assertFalse(self.input_file.exists())
+
+        self.assert_structured_input_error(
+            "missing_workbook",
+            (),
+        )
+
+    def test_structured_invalid_match_id_error(self):
+        row = list(self.match)
+        row[0] = "ABC"
+
+        self.write_export([row])
+
+        self.assert_structured_input_error(
+            "invalid_match_id",
+            (),
+        )
+
+    def test_structured_invalid_match_date_error(self):
+        row = list(self.match)
+        row[1] = "not-a-date"
+
+        self.write_export([row])
+
+        self.assert_structured_input_error(
+            "invalid_match_date",
+            (277,),
+        )
+
+    def test_structured_invalid_match_time_error(self):
+        row = list(self.match)
+        row[self.headers.index("Time")] = "not-a-time"
+        self.write_export([row])
+
+        self.assert_structured_input_error(
+            "invalid_match_time",
+            (277,),
+        )
+
+    def test_structured_duplicate_match_id_error(self):
+        self.write_export([
+            self.match,
+            list(self.match),
+        ])
+
+        self.assert_structured_input_error(
+            "duplicate_match_id",
+            (277,),
+        )
+
+    def assert_aggregated_input_errors(self, expected):
+        with self.assertRaises(CJSLInputErrors) as caught:
+            self.read_export()
+
+        problems = caught.exception.problems
+
+        actual = [
+            (problem.kind, problem.match_ids)
+            for problem in problems
+        ]
+
+        self.assertCountEqual(actual, expected)
+
+    def test_multiple_invalid_rows_are_reported(self):
+        invalid_date = list(self.match)
+        invalid_date[0] = 278
+        invalid_date[1] = "not-a-date"
+
+        invalid_id = list(self.match)
+        invalid_id[0] = "ABC"
+
+        invalid_time = list(self.match)
+        invalid_time[0] = 280
+        invalid_time[2] = "not-a-time"
+
+        self.write_export([
+            self.match,
+            invalid_date,
+            invalid_id,
+            invalid_time,
+        ])
+
+        self.assert_aggregated_input_errors([
+            ("invalid_match_date", (278,)),
+            ("invalid_match_id", ()),
+            ("invalid_match_time", (280,)),
+        ])
+
+    def test_duplicate_id_in_invalid_row_is_reported(self):
+        duplicate = list(self.match)
+        duplicate[2] = "not-a-time"
+
+        self.write_export([
+            self.match,
+            duplicate,
+        ])
+
+        self.assert_aggregated_input_errors([
+            ("duplicate_match_id", (277,)),
+            ("invalid_match_time", (277,)),
+        ])
+
+    def test_independent_errors_in_same_row_are_reported(self):
+        row = list(self.match)
+        row[self.headers.index("Home Team")] = None
+        row[self.headers.index("Date")] = "not-a-date"
+
+        self.write_export([row])
+
+        self.assert_aggregated_input_errors([
+            ("missing_team_identity", (277,)),
+            ("invalid_match_date", (277,)),
+        ])
+
+    def test_independent_errors_with_unknown_match_id(self):
+        row = list(self.match)
+        row[0] = "ABC"
+        row[1] = "not-a-date"
+        row[2] = "not-a-time"
+
+        self.write_export([row])
+
+        self.assert_aggregated_input_errors([
+            ("invalid_match_id", ()),
+            ("invalid_match_date", ()),
+            ("invalid_match_time", ()),
+        ])
+
+    def test_row_errors_survive_late_worksheet_failure(self):
+        row = list(self.match)
+        row[1] = "not-a-date"
+
+        self.write_export([row])
+
+        def truncate_xml(data):
+            closing_tag = b"</worksheet>"
+            self.assertTrue(data.endswith(closing_tag))
+            return data.removesuffix(closing_tag)
+
+        self.rewrite_workbook_member(
+            "xl/worksheets/sheet1.xml",
+            truncate_xml,
+        )
+
+        self.assert_aggregated_input_errors([
+            ("invalid_match_date", (277,)),
+            ("unreadable_worksheet", ()),
+        ])
+
+    def test_unexpected_failure_after_known_row_problem(self):
+        second = list(self.match)
+        second[0] = 278
+
+        self.write_export([self.match, second])
+
+        unexpected = RuntimeError(
+            "Unexpected failure during row validation"
+        )
+
+        with patch(
+            "build_cjsl_calendars.parse_match_date",
+            side_effect=[
+                ValueError("Invalid date"),
+                unexpected,
+            ],
+        ):
+            with self.assertRaises(RuntimeError) as caught:
+                self.read_export()
+
+        self.assertIs(caught.exception, unexpected)
+
+    def test_multiple_header_errors_are_reported(self):
+        self.headers.remove("Division")
+        self.headers.extend(["Status", "Results"])
+
+        self.write_export([])
+
+        self.assert_aggregated_input_errors([
+            ("duplicate_column", ()),
+            ("duplicate_column", ()),
+            ("missing_columns", ()),
+        ])
+
+    def test_invalid_headers_prevent_row_validation(self):
+        self.headers.extend(["Status", "Results"])
+
+        row = list(self.match)
+        row[0] = "ABC"
+        row.extend(["Canceled", "2-1"])
+
+        self.write_export([row])
+
+        with patch(
+            "build_cjsl_calendars.parse_match_number"
+        ) as parser:
+            self.assert_aggregated_input_errors([
+                ("duplicate_column", ()),
+                ("duplicate_column", ()),
+            ])
+
+        parser.assert_not_called()
 
 
 if __name__ == "__main__":

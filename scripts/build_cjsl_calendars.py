@@ -312,7 +312,40 @@ def parse_match_number(value):
     return match_no
 
 
+class CJSLInputError(RuntimeError):
+    def __init__(self, kind, message, match_ids=()):
+        super().__init__(message)
+        self.kind = kind
+        self.severity = "error"
+        self.team_slugs = ()
+        self.match_ids = tuple(match_ids)
+        self.message = message
+
+
+class CJSLInputErrors(RuntimeError):
+    def __init__(self, problems):
+        self.problems = tuple(problems)
+        super().__init__(
+            "CJSL input validation failed:\n"
+            + "\n".join(
+                str(problem) for problem in self.problems
+            )
+        )
+
+
 def read_matches(input_file, tracked_team_name, duration_minutes):
+    problems = []
+    matches = []
+    seen_match_numbers = set()
+
+    def add_problem(kind, message, match_ids=(), cause=None):
+        problem = CJSLInputError(kind, message, match_ids)
+
+        if cause is not None:
+            problem.__cause__ = cause
+
+        problems.append(problem)
+
     with ExitStack() as resources:
         try:
             source = resources.enter_context(
@@ -325,7 +358,8 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 data_only=True
             )
         except FileNotFoundError as exc:
-            raise RuntimeError(
+            raise CJSLInputError(
+                "missing_workbook",
                 f"{input_file}: Missing workbook for "
                 f"{tracked_team_name!r}"
             ) from exc
@@ -339,12 +373,14 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
             if origin.tb_frame.f_code is not ZipFile.getinfo.__code__:
                 raise
 
-            raise RuntimeError(
+            raise CJSLInputError(
+                "missing_workbook_component",
                 f"{input_file}: Missing internal XLSX component "
                 f"for {tracked_team_name!r}: {exc}"
             ) from exc
         except WORKBOOK_READ_ERRORS as exc:
-            raise RuntimeError(
+            raise CJSLInputError(
+                "unreadable_workbook",
                 f"{input_file}: Unable to open workbook for "
                 f"{tracked_team_name!r}: {exc}"
             ) from exc
@@ -353,7 +389,8 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
             sheet = workbook.active
 
             if sheet is None:
-                raise RuntimeError(
+                raise CJSLInputError(
+                    "missing_worksheet",
                     f"{input_file}: No active worksheet for "
                     f"{tracked_team_name!r}"
                 )
@@ -363,7 +400,8 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
             )
 
             if header_row is None:
-                raise RuntimeError(
+                raise CJSLInputError(
+                    "empty_worksheet",
                     f"{input_file}: Empty worksheet for "
                     f"{tracked_team_name!r}"
                 )
@@ -378,22 +416,31 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                     continue
 
                 if header in headers and header in consumed_columns:
-                    raise RuntimeError(
+                    add_problem(
+                        "duplicate_column",
                         f"{input_file}: Duplicate column {header!r} "
                         f"for {tracked_team_name!r} at columns "
                         f"{headers[header] + 1} and {index + 1}"
                     )
+
+                    continue
 
                 headers[header] = index
 
             missing = REQUIRED_COLUMNS - set(headers)
 
             if missing:
-                raise RuntimeError(
+                add_problem(
+                    "missing_columns",
                     f"{input_file} is missing required columns: {sorted(missing)}"
                 )
 
-            matches = []
+            # Reject invalid headers before interpreting rows.
+            if len(problems) == 1:
+                raise problems[0]
+
+            if problems:
+                raise CJSLInputErrors(problems)
 
             for row_number, row in enumerate(
                 sheet.iter_rows(min_row=2, values_only=True),
@@ -402,37 +449,118 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 if not any(clean_text(value) for value in row):
                     continue
 
-                match_no = row[headers["Match #"]]
+                initial_problem_count = len(problems)
+                raw_match_no = row[headers["Match #"]]
+                match_no = None
 
-                if not clean_text(match_no):
-                    raise RuntimeError(
+                if not clean_text(raw_match_no):
+                    add_problem(
+                        "missing_match_id",
                         f"{input_file}: Row {row_number} is missing "
-                        f"Match # for {tracked_team_name!r}"
+                        f"Match # for {tracked_team_name!r}",
                     )
+                else:
+                    try:
+                        match_no = parse_match_number(raw_match_no)
+                    except ValueError as exc:
+                        add_problem(
+                            "invalid_match_id",
+                            f"{input_file}: Invalid Match # "
+                            f"{raw_match_no!r} for "
+                            f"{tracked_team_name!r}: {exc} "
+                            f"(row {row_number})",
+                            cause=exc,
+                        )
 
-                try:
-                    match_no = parse_match_number(match_no)
-                except ValueError as exc:
-                    raise RuntimeError(
-                        f"{input_file}: Invalid Match # {match_no!r} "
-                        f"for {tracked_team_name!r}: {exc}"
-                    ) from exc
+                match_ids = (
+                    (match_no,) if match_no is not None else ()
+                )
+
+                match_label = (
+                    f"Match {match_no}"
+                    if match_no is not None
+                    else f"Row {row_number} (unknown Match #)"
+                )
+
+                if match_no is not None:
+                    if match_no in seen_match_numbers:
+                        add_problem(
+                            "duplicate_match_id",
+                            f"{input_file}: Duplicate Match # "
+                            f"{match_no} for {tracked_team_name!r} "
+                            f"(row {row_number})",
+                            match_ids,
+                        )
+
+                    seen_match_numbers.add(match_no)
 
                 home_team = clean_text(row[headers["Home Team"]])
                 away_team = clean_text(row[headers["Away Team"]])
 
                 if not home_team or not away_team:
-                    raise RuntimeError(
-                        f"{input_file}: Row {row_number}, Match {match_no} "
-                        f"has a missing home or away team identity "
-                        f"for {tracked_team_name!r}"
+                    add_problem(
+                        "missing_team_identity",
+                        f"{input_file}: Row {row_number}, "
+                        f"{match_label} has a missing home or away "
+                        f"team identity for {tracked_team_name!r}",
+                        match_ids,
+                    )
+                elif (
+                    home_team != tracked_team_name
+                    and away_team != tracked_team_name
+                ):
+                    add_problem(
+                        "unrelated_match",
+                        f"{match_label} does not contain configured "
+                        f"team {tracked_team_name!r} "
+                        f"(row {row_number})",
+                        match_ids,
                     )
 
-                if home_team != tracked_team_name and away_team != tracked_team_name:
-                    raise RuntimeError(
-                        f"Match {match_no} does not contain configured team "
-                        f"{tracked_team_name!r}"
+                date_value = row[headers["Date"]]
+                time_value = row[headers["Time"]]
+                match_date = None
+
+                try:
+                    match_date = parse_match_date(date_value)
+                except ValueError as exc:
+                    add_problem(
+                        "invalid_match_date",
+                        f"{input_file}: {match_label} has no usable "
+                        f"date (row {row_number})",
+                        match_ids,
+                        cause=exc,
                     )
+
+                all_day = time_is_tbd(time_value)
+
+                if not all_day:
+                    try:
+                        # A fixed valid date permits independent
+                        # time validation when the date is invalid.
+                        # Such a row is never accepted.
+                        start = parse_match_start(
+                            match_date or date(2000, 1, 1),
+                            time_value,
+                        )
+                    except (ValueError, IndexError) as exc:
+                        add_problem(
+                            "invalid_match_time",
+                            f"{input_file}: {match_label} has an invalid "
+                            f"time value: {time_value!r} "
+                            f"(row {row_number})",
+                            match_ids,
+                            cause=exc,
+                        )
+
+                if len(problems) != initial_problem_count:
+                    continue
+
+                if all_day:
+                    start = datetime.combine(match_date, time.min)
+                    end = start + timedelta(days=1)
+                else:
+                    end = start + timedelta(minutes=duration_minutes)
 
                 if "Results" in headers:
                     result = clean_text(row[headers["Results"]])
@@ -441,32 +569,6 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
 
                 raw_status = clean_text(row[headers["Status"]])
                 display_status = raw_status if raw_status else "Scheduled"
-
-                date_value = row[headers["Date"]]
-                time_value = row[headers["Time"]]
-
-                try:
-                    match_date = parse_match_date(date_value)
-                except ValueError as exc:
-                    raise RuntimeError(
-                        f"{input_file}: Match {match_no} has no usable date"
-                    ) from exc
-
-                all_day = time_is_tbd(time_value)
-
-                if all_day:
-                    start = datetime.combine(match_date, time.min)
-                    end = start + timedelta(days=1)
-                else:
-                    try:
-                        start = parse_match_start(date_value, time_value)
-                    except (ValueError, IndexError) as exc:
-                        raise RuntimeError(
-                            f"{input_file}: Match {match_no} has an invalid "
-                            f"time value: {time_value!r}"
-                        ) from exc
-
-                    end = start + timedelta(minutes=duration_minutes)
 
                 matches.append(
                     {
@@ -483,31 +585,27 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                     }
                 )
         except WORKBOOK_READ_ERRORS as exc:
-            raise RuntimeError(
+            add_problem(
+                "unreadable_worksheet",
                 f"{input_file}: Unable to read worksheet for "
-                f"{tracked_team_name!r}: {exc}"
-            ) from exc
+                f"{tracked_team_name!r}: {exc}",
+                cause=exc,
+            )
         finally:
             workbook.close()
 
+    if len(problems) == 1:
+        raise problems[0]
+
+    if problems:
+        raise CJSLInputErrors(problems)
+
     if not matches:
-        raise RuntimeError(
+        raise CJSLInputError(
+            "empty_export",
             f"{input_file}: No matches found for "
             f"{tracked_team_name!r}"
         )
-
-    seen_match_numbers = set()
-
-    for match in matches:
-        match_no = match["match_no"]
-
-        if match_no in seen_match_numbers:
-            raise RuntimeError(
-                f"{input_file}: Duplicate Match # {match_no} "
-                f"for {tracked_team_name!r}"
-            )
-
-        seen_match_numbers.add(match_no)
 
     matches.sort(
         key=lambda match: (
@@ -783,14 +881,6 @@ def main():
     revision_state_file = event_paths.state_dir / "revisions.json"
     
 
-    revision_state = load_revision_state(
-        revision_state_file
-    )
-
-    changed_at = datetime.now(timezone.utc).strftime(
-        "%Y%m%dT%H%M%SZ"
-    )
-
     default_duration = int(
         competition.get(
             "default_duration_minutes",
@@ -803,18 +893,16 @@ def main():
         f"{competition['name']}..."
     )
 
+    collected = []
+    problems = []
+
+    # Phase 1: Collect and validate every configured team export.
     for team in teams:
         team_name = team["name"]
         slug = team["slug"]
 
         input_file = data_folder / f"{slug}.xlsx"
         output_file = docs_folder / f"{slug}.ics"
-
-        if not input_file.exists():
-            raise FileNotFoundError(
-                f"Missing XLSX for {team_name}:\n"
-                f"{input_file}"
-            )
 
         duration_minutes = int(
             team.get(
@@ -823,12 +911,36 @@ def main():
             )
         )
 
-        matches = read_matches(
-            input_file=input_file,
-            tracked_team_name=team_name,
-            duration_minutes=duration_minutes,
-        )
+        try:
+            matches = read_matches(
+                input_file=input_file,
+                tracked_team_name=team_name,
+                duration_minutes=duration_minutes,
+            )
+        except CJSLInputError as exc:
+            exc.team_slugs = (slug,)
+            problems.append(exc)
+        except CJSLInputErrors as exc:
+            for problem in exc.problems:
+                problem.team_slugs = (slug,)
+                problems.append(problem)
+        else:
+            collected.append((team, matches, output_file))
 
+    # Phase 2: Reject the entire event if any input is invalid.
+    if problems:
+        raise CJSLInputErrors(problems)
+
+    revision_state = load_revision_state(
+        revision_state_file
+    )
+
+    changed_at = datetime.now(timezone.utc).strftime(
+        "%Y%m%dT%H%M%SZ"
+    )
+
+    # Phase 3: Render only after all exports pass validation.
+    for team, matches, output_file in collected:
         build_calendar(
             competition=competition,
             defaults=defaults,
