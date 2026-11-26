@@ -368,6 +368,25 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
 
     workbook.close()
 
+    if not matches:
+        raise RuntimeError(
+            f"{input_file}: No matches found for "
+            f"{tracked_team_name!r}"
+        )
+
+    seen_match_numbers = set()
+
+    for match in matches:
+        match_no = match["match_no"]
+
+        if match_no in seen_match_numbers:
+            raise RuntimeError(
+                f"{input_file}: Duplicate Match # {match_no} "
+                f"for {tracked_team_name!r}"
+            )
+
+        seen_match_numbers.add(match_no)
+
     matches.sort(
         key=lambda match: (
             match["start"],
