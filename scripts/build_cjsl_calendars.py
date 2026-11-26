@@ -1,7 +1,9 @@
+from contextlib import ExitStack
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from zipfile import BadZipFile
+from xml.etree.ElementTree import ParseError
+from zipfile import BadZipFile, ZipFile
 import hashlib
 import json
 import re
@@ -9,6 +11,16 @@ import sys
 
 from openpyxl import load_workbook
 from soccer_paths import resolve_event_paths
+
+
+WORKBOOK_READ_ERRORS = (OSError, BadZipFile, ParseError)
+
+try:
+    from lxml.etree import XMLSyntaxError
+except ImportError:
+    pass
+else:
+    WORKBOOK_READ_ERRORS += (XMLSyntaxError,)
 
 
 REQUIRED_COLUMNS = {
@@ -301,139 +313,182 @@ def parse_match_number(value):
 
 
 def read_matches(input_file, tracked_team_name, duration_minutes):
-    try:
-        workbook = load_workbook(
-            input_file,
-            read_only=True,
-            data_only=True
-        )
-    except FileNotFoundError as exc:
-        raise RuntimeError(
-            f"{input_file}: Missing workbook for "
-            f"{tracked_team_name!r}"
-        ) from exc
-    except (OSError, BadZipFile) as exc:
-        raise RuntimeError(
-            f"{input_file}: Unable to open workbook for "
-            f"{tracked_team_name!r}: {exc}"
-        ) from exc
+    with ExitStack() as resources:
+        try:
+            source = resources.enter_context(
+                Path(input_file).open("rb")
+            )
 
-    try:
-        sheet = workbook.active
-        header_row = next(
-            sheet.iter_rows(values_only=True), None
-        )
-
-        if header_row is None:
+            workbook = load_workbook(
+                source,
+                read_only=True,
+                data_only=True
+            )
+        except FileNotFoundError as exc:
             raise RuntimeError(
-                f"{input_file}: Empty worksheet for "
+                f"{input_file}: Missing workbook for "
                 f"{tracked_team_name!r}"
-            )
+            ) from exc
+        except KeyError as exc:
+            # Distinguish missing ZIP members from unrelated KeyErrors.
+            origin = exc.__traceback__
 
-        headers = {
-            clean_text(value): index
-            for index, value in enumerate(header_row)
-            if value is not None
-        }
+            while origin.tb_next is not None:
+                origin = origin.tb_next
 
-        missing = REQUIRED_COLUMNS - set(headers)
+            if origin.tb_frame.f_code is not ZipFile.getinfo.__code__:
+                raise
 
-        if missing:
             raise RuntimeError(
-                f"{input_file} is missing required columns: {sorted(missing)}"
-            )
+                f"{input_file}: Missing internal XLSX component "
+                f"for {tracked_team_name!r}: {exc}"
+            ) from exc
+        except WORKBOOK_READ_ERRORS as exc:
+            raise RuntimeError(
+                f"{input_file}: Unable to open workbook for "
+                f"{tracked_team_name!r}: {exc}"
+            ) from exc
 
-        matches = []
+        try:
+            sheet = workbook.active
 
-        for row_number, row in enumerate(
-            sheet.iter_rows(min_row=2, values_only=True),
-            start=2,
-        ):
-            if not any(clean_text(value) for value in row):
-                continue
-
-            match_no = row[headers["Match #"]]
-
-            if not clean_text(match_no):
+            if sheet is None:
                 raise RuntimeError(
-                    f"{input_file}: Row {row_number} is missing "
-                    f"Match # for {tracked_team_name!r}"
-                )
-
-            try:
-                match_no = parse_match_number(match_no)
-            except ValueError as exc:
-                raise RuntimeError(
-                    f"{input_file}: Invalid Match # {match_no!r} "
-                    f"for {tracked_team_name!r}: {exc}"
-                ) from exc
-
-            home_team = clean_text(row[headers["Home Team"]])
-            away_team = clean_text(row[headers["Away Team"]])
-
-            if not home_team or not away_team:
-                raise RuntimeError(
-                    f"{input_file}: Row {row_number}, Match {match_no} "
-                    f"has a missing home or away team identity "
-                    f"for {tracked_team_name!r}"
-                )
-
-            if home_team != tracked_team_name and away_team != tracked_team_name:
-                raise RuntimeError(
-                    f"Match {match_no} does not contain configured team "
+                    f"{input_file}: No active worksheet for "
                     f"{tracked_team_name!r}"
                 )
 
-            if "Results" in headers:
-                result = clean_text(row[headers["Results"]])
-            else:
-                result = ""
+            header_row = next(
+                sheet.iter_rows(values_only=True), None
+            )
 
-            raw_status = clean_text(row[headers["Status"]])
-            display_status = raw_status if raw_status else "Scheduled"
-
-            date_value = row[headers["Date"]]
-            time_value = row[headers["Time"]]
-
-            try:
-                match_date = parse_match_date(date_value)
-            except ValueError as exc:
+            if header_row is None:
                 raise RuntimeError(
-                    f"{input_file}: Match {match_no} has no usable date"
-                ) from exc
+                    f"{input_file}: Empty worksheet for "
+                    f"{tracked_team_name!r}"
+                )
 
-            all_day = time_is_tbd(time_value)
+            headers = {}
+            consumed_columns = REQUIRED_COLUMNS | {"Results"}
 
-            if all_day:
-                start = datetime.combine(match_date, time.min)
-                end = start + timedelta(days=1)
-            else:
-                try:
-                    start = parse_match_start(date_value, time_value)
-                except (ValueError, IndexError) as exc:
+            for index, value in enumerate(header_row):
+                header = clean_text(value)
+
+                if not header:
+                    continue
+
+                if header in headers and header in consumed_columns:
                     raise RuntimeError(
-                        f"{input_file}: Match {match_no} has an invalid "
-                        f"time value: {time_value!r}"
+                        f"{input_file}: Duplicate column {header!r} "
+                        f"for {tracked_team_name!r} at columns "
+                        f"{headers[header] + 1} and {index + 1}"
+                    )
+
+                headers[header] = index
+
+            missing = REQUIRED_COLUMNS - set(headers)
+
+            if missing:
+                raise RuntimeError(
+                    f"{input_file} is missing required columns: {sorted(missing)}"
+                )
+
+            matches = []
+
+            for row_number, row in enumerate(
+                sheet.iter_rows(min_row=2, values_only=True),
+                start=2,
+            ):
+                if not any(clean_text(value) for value in row):
+                    continue
+
+                match_no = row[headers["Match #"]]
+
+                if not clean_text(match_no):
+                    raise RuntimeError(
+                        f"{input_file}: Row {row_number} is missing "
+                        f"Match # for {tracked_team_name!r}"
+                    )
+
+                try:
+                    match_no = parse_match_number(match_no)
+                except ValueError as exc:
+                    raise RuntimeError(
+                        f"{input_file}: Invalid Match # {match_no!r} "
+                        f"for {tracked_team_name!r}: {exc}"
                     ) from exc
 
-                end = start + timedelta(minutes=duration_minutes)
+                home_team = clean_text(row[headers["Home Team"]])
+                away_team = clean_text(row[headers["Away Team"]])
 
-            matches.append(
-                {
-                    "match_no": match_no,
-                    "start": start,
-                    "end": end,
-                    "all_day": all_day,
-                    "home_team": home_team,
-                    "away_team": away_team,
-                    "result": result,
-                    "location": clean_text(row[headers["Location"]]),
-                    "division": clean_text(row[headers["Division"]]),
-                    "status": display_status,
-                }
-            )
-    finally:
-        workbook.close()
+                if not home_team or not away_team:
+                    raise RuntimeError(
+                        f"{input_file}: Row {row_number}, Match {match_no} "
+                        f"has a missing home or away team identity "
+                        f"for {tracked_team_name!r}"
+                    )
+
+                if home_team != tracked_team_name and away_team != tracked_team_name:
+                    raise RuntimeError(
+                        f"Match {match_no} does not contain configured team "
+                        f"{tracked_team_name!r}"
+                    )
+
+                if "Results" in headers:
+                    result = clean_text(row[headers["Results"]])
+                else:
+                    result = ""
+
+                raw_status = clean_text(row[headers["Status"]])
+                display_status = raw_status if raw_status else "Scheduled"
+
+                date_value = row[headers["Date"]]
+                time_value = row[headers["Time"]]
+
+                try:
+                    match_date = parse_match_date(date_value)
+                except ValueError as exc:
+                    raise RuntimeError(
+                        f"{input_file}: Match {match_no} has no usable date"
+                    ) from exc
+
+                all_day = time_is_tbd(time_value)
+
+                if all_day:
+                    start = datetime.combine(match_date, time.min)
+                    end = start + timedelta(days=1)
+                else:
+                    try:
+                        start = parse_match_start(date_value, time_value)
+                    except (ValueError, IndexError) as exc:
+                        raise RuntimeError(
+                            f"{input_file}: Match {match_no} has an invalid "
+                            f"time value: {time_value!r}"
+                        ) from exc
+
+                    end = start + timedelta(minutes=duration_minutes)
+
+                matches.append(
+                    {
+                        "match_no": match_no,
+                        "start": start,
+                        "end": end,
+                        "all_day": all_day,
+                        "home_team": home_team,
+                        "away_team": away_team,
+                        "result": result,
+                        "location": clean_text(row[headers["Location"]]),
+                        "division": clean_text(row[headers["Division"]]),
+                        "status": display_status,
+                    }
+                )
+        except WORKBOOK_READ_ERRORS as exc:
+            raise RuntimeError(
+                f"{input_file}: Unable to read worksheet for "
+                f"{tracked_team_name!r}: {exc}"
+            ) from exc
+        finally:
+            workbook.close()
 
     if not matches:
         raise RuntimeError(
