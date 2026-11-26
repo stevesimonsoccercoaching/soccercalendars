@@ -13,6 +13,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 from zipfile import ZipFile
+from xml.etree import ElementTree as ET
 
 from openpyxl import Workbook, load_workbook
 
@@ -341,6 +342,155 @@ class CJSLExportIntegrityTests(unittest.TestCase):
 
         rewritten.replace(self.input_file)
 
+    def test_invalid_workbook_metadata_is_structured(self):
+        self.write_export([self.match])
+
+        namespace = (
+            "{http://schemas.openxmlformats.org/"
+            "spreadsheetml/2006/main}"
+        )
+
+        def invalidate_sheet_state(data):
+            root = ET.fromstring(data)
+            sheet = root.find(f".//{namespace}sheet")
+
+            self.assertIsNotNone(sheet)
+            sheet.set("state", "invalid-state")
+
+            return ET.tostring(root, encoding="utf-8")
+
+        self.rewrite_workbook_member(
+            "xl/workbook.xml",
+            invalidate_sheet_state,
+        )
+
+        with patch(
+            "build_cjsl_calendars.load_workbook",
+            wraps=load_workbook,
+        ) as loader:
+            try:
+                self.read_export()
+            except CJSLInputError as error:
+                self.assertEqual(
+                    error.kind,
+                    "unreadable_workbook",
+                )
+
+                self.assertEqual(error.match_ids, ())
+                self.assertEqual(error.severity, "error")
+                self.assertIsInstance(
+                    error.__cause__,
+                    ValueError,
+                )
+
+                loader.assert_called_once()
+                self.assertTrue(
+                    loader.call_args.args[0].closed
+                )
+            else:
+                self.fail(
+                    "Invalid workbook metadata was accepted"
+                )
+
+    def corrupt_numeric_match_cell(self, coordinate):
+        namespace = (
+            "{http://schemas.openxmlformats.org/"
+            "spreadsheetml/2006/main}"
+        )
+
+        def invalidate_numeric_cell(data):
+            root = ET.fromstring(data)
+
+            cell = root.find(
+                f".//{namespace}c[@r='{coordinate}']"
+            )
+
+            self.assertIsNotNone(cell)
+            self.assertEqual(cell.get("t"), "n")
+
+            value = cell.find(f"{namespace}v")
+            self.assertIsNotNone(value)
+
+            value.text = "not-a-number"
+
+            return ET.tostring(root, encoding="utf-8")
+
+        self.rewrite_workbook_member(
+            "xl/worksheets/sheet1.xml",
+            invalidate_numeric_cell,
+        )
+
+    def test_invalid_numeric_cell_is_structured(self):
+        self.write_export([self.match])
+        self.corrupt_numeric_match_cell("A2")
+
+        with patch(
+            "build_cjsl_calendars.load_workbook",
+            wraps=load_workbook,
+        ) as loader:
+            try:
+                self.read_export()
+            except CJSLInputError as error:
+                self.assertEqual(
+                    error.kind,
+                    "unreadable_worksheet",
+                )
+
+                self.assertEqual(error.match_ids, ())
+                self.assertEqual(error.severity, "error")
+                self.assertIsInstance(
+                    error.__cause__,
+                    ValueError,
+                )
+
+                loader.assert_called_once()
+                self.assertTrue(
+                    loader.call_args.args[0].closed
+                )
+            else:
+                self.fail(
+                    "Invalid numeric cell was accepted"
+                )
+
+    def test_row_errors_survive_numeric_decoding_failure(self):
+        first = list(self.match)
+        first[1] = "not-a-date"
+
+        second = list(self.match)
+        second[0] = 278
+
+        self.write_export([first, second])
+        self.corrupt_numeric_match_cell("A3")
+
+        self.assert_aggregated_input_errors([
+            ("invalid_match_date", (277,)),
+            ("unreadable_worksheet", ()),
+        ])
+
+    def test_unexpected_application_value_error_propagates(self):
+        from build_cjsl_calendars import clean_text
+
+        self.write_export([self.match])
+
+        unexpected = ValueError(
+            "Unexpected application failure"
+        )
+
+        def unexpected_location_failure(value):
+            if value == "Test Field":
+                raise unexpected
+
+            return clean_text(value)
+
+        with patch(
+            "build_cjsl_calendars.clean_text",
+            side_effect=unexpected_location_failure,
+        ):
+            with self.assertRaises(ValueError) as caught:
+                self.read_export()
+
+        self.assertIs(caught.exception, unexpected)
+
     def test_duplicate_required_column_is_rejected(self):
         original_headers = list(self.headers)
 
@@ -399,6 +549,7 @@ class CJSLExportIntegrityTests(unittest.TestCase):
         for error in (
             KeyError("unexpected internal key"),
             TypeError("unexpected programming error"),
+            ValueError("unexpected acquisition failure"),
             RuntimeError("unexpected runtime failure"),
         ):
             with self.subTest(error=type(error).__name__):

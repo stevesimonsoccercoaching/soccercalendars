@@ -10,7 +10,11 @@ import re
 import sys
 
 from openpyxl import load_workbook
+from openpyxl.descriptors.base import Set
+from openpyxl.reader.excel import ExcelReader
+from openpyxl.worksheet._reader import _cast_number
 from soccer_paths import resolve_event_paths
+from validate_soccer_manifest import validate_team_identities
 
 
 WORKBOOK_READ_ERRORS = (OSError, BadZipFile, ParseError)
@@ -328,9 +332,23 @@ class CJSLInputErrors(RuntimeError):
         super().__init__(
             "CJSL input validation failed:\n"
             + "\n".join(
-                str(problem) for problem in self.problems
+                f"{problem.severity.upper()}: {problem}"
+                for problem in self.problems
             )
         )
+
+
+def exception_origin(error):
+    """Return the code object where an exception originated."""
+    origin = error.__traceback__
+
+    if origin is None:
+        return None
+
+    while origin.tb_next is not None:
+        origin = origin.tb_next
+
+    return origin.tb_frame.f_code
 
 
 def read_matches(input_file, tracked_team_name, duration_minutes):
@@ -365,12 +383,7 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
             ) from exc
         except KeyError as exc:
             # Distinguish missing ZIP members from unrelated KeyErrors.
-            origin = exc.__traceback__
-
-            while origin.tb_next is not None:
-                origin = origin.tb_next
-
-            if origin.tb_frame.f_code is not ZipFile.getinfo.__code__:
+            if exception_origin(exc) is not ZipFile.getinfo.__code__:
                 raise
 
             raise CJSLInputError(
@@ -379,6 +392,24 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 f"for {tracked_team_name!r}: {exc}"
             ) from exc
         except WORKBOOK_READ_ERRORS as exc:
+            raise CJSLInputError(
+                "unreadable_workbook",
+                f"{input_file}: Unable to open workbook for "
+                f"{tracked_team_name!r}: {exc}"
+            ) from exc
+        except ValueError as exc:
+            # Openpyxl wraps invalid workbook metadata in ValueError.
+            # Recognize descriptor validation failures without
+            # swallowing unrelated application or library defects.
+            cause = exc.__cause__
+
+            if (
+                exception_origin(exc) is not ExcelReader.read.__code__
+                or not isinstance(cause, ValueError)
+                or exception_origin(cause) is not Set.__set__.__code__
+            ):
+                raise
+
             raise CJSLInputError(
                 "unreadable_workbook",
                 f"{input_file}: Unable to open workbook for "
@@ -591,6 +622,17 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                 f"{tracked_team_name!r}: {exc}",
                 cause=exc,
             )
+        except ValueError as exc:
+            # Invalid numeric cell encoding fails before row validation.
+            if exception_origin(exc) is not _cast_number.__code__:
+                raise
+
+            add_problem(
+                "unreadable_worksheet",
+                f"{input_file}: Unable to read worksheet for "
+                f"{tracked_team_name!r}: {exc}",
+                cause=exc,
+            )
         finally:
             workbook.close()
 
@@ -615,6 +657,164 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
     )
 
     return matches
+
+
+def validate_shared_matches(teams, collected):
+    """Identify material disagreements within one CJSL event."""
+    registered = {
+        team["name"]: team["slug"]
+        for team in teams
+    }
+
+    readable_slugs = {
+        team["slug"]
+        for team, matches, output_file in collected
+    }
+
+    by_match = {}
+    problems = []
+
+    def normalize_whitespace(value):
+        return " ".join(clean_text(value).split())
+
+    def comparison_fields(match):
+        return {
+            "date": match["start"].date(),
+            "time": (
+                None if match["all_day"]
+                else match["start"].time()
+            ),
+            "home_team": match["home_team"],
+            "away_team": match["away_team"],
+            "location": normalize_whitespace(match["location"]),
+            "status": (
+                normalize_whitespace(match["status"])
+                or "Scheduled"
+            ),
+        }
+
+    def describe_differences(comparable):
+        baseline = comparable[0][1]
+
+        details = []
+
+        for field in baseline:
+            if any(
+                fields[field] != baseline[field]
+                for slug, fields in comparable
+            ):
+                values = ", ".join(
+                    f"{slug}={fields[field]!r}"
+                    for slug, fields in comparable
+                )
+
+                details.append(f"{field}: {values}")
+
+        return details
+
+    def add_problem(
+        kind, message, slugs, match_no, severity="error"
+    ):
+        problem = CJSLInputError(
+            kind,
+            message,
+            match_ids=(match_no,),
+        )
+
+        problem.team_slugs = tuple(sorted(slugs))
+        problem.severity = severity
+        problems.append(problem)
+
+    for team, matches, output_file in collected:
+        for match in matches:
+            by_match.setdefault(
+                match["match_no"], []
+            ).append((team["slug"], match))
+
+    for match_no, appearances in sorted(by_match.items()):
+        present_slugs = {
+            slug for slug, match in appearances
+        }
+
+        expected_slugs = set()
+
+        for slug, match in appearances:
+            for name in (
+                match["home_team"],
+                match["away_team"],
+            ):
+                if name in registered:
+                    expected_slugs.add(registered[name])
+
+        comparable = [
+            (slug, comparison_fields(match))
+            for slug, match in appearances
+        ]
+
+        details = describe_differences(comparable)
+
+        if details:
+            add_problem(
+                "shared_match_conflict",
+                f"Match {match_no}: conflicting shared-match "
+                f"records; {'; '.join(details)}",
+                present_slugs,
+                match_no,
+            )
+
+        warning_comparable = [
+            (
+                slug,
+                {
+                    "result": normalize_whitespace(match["result"]),
+                    "division": normalize_whitespace(match["division"]),
+                },
+            )
+            for slug, match in appearances
+        ]
+
+        warning_details = describe_differences(
+            warning_comparable
+        )
+
+        if warning_details:
+            add_problem(
+                "shared_match_warning",
+                f"Match {match_no}: non-blocking shared-match "
+                f"disagreement; {'; '.join(warning_details)}",
+                present_slugs,
+                match_no,
+                severity="warning",
+            )
+
+        missing_slugs = (
+            expected_slugs & readable_slugs
+        ) - present_slugs
+
+        for missing_slug in sorted(missing_slugs):
+            add_problem(
+                "missing_shared_match",
+                f"Match {match_no}: absent from validated "
+                f"export for {missing_slug}; present in "
+                f"{', '.join(sorted(present_slugs))}",
+                present_slugs | {missing_slug},
+                match_no,
+            )
+
+        incomplete_slugs = expected_slugs - readable_slugs
+
+        for incomplete_slug in sorted(incomplete_slugs):
+            add_problem(
+                "incomplete_shared_match_comparison",
+                f"Match {match_no}: unable to compare against "
+                f"{incomplete_slug}; its export did not pass "
+                f"workbook validation",
+                present_slugs | {incomplete_slug},
+                match_no,
+                severity="warning",
+            )
+
+    return problems
 
 
 def build_calendar(
@@ -873,6 +1073,13 @@ def main():
             "No teams are configured in the manifest."
         )
 
+    identity_errors = validate_team_identities(teams)
+
+    if identity_errors:
+        raise RuntimeError(
+            "CJSL manifest identity validation failed:\n"
+            + "\n".join(identity_errors)
+        )
 
     event_paths = resolve_event_paths(manifest_file, competition)
 
@@ -927,9 +1134,17 @@ def main():
         else:
             collected.append((team, matches, output_file))
 
-    # Phase 2: Reject the entire event if any input is invalid.
-    if problems:
+    # Phase 2: Validate shared matches before accepting inputs.
+    problems.extend(
+        validate_shared_matches(teams, collected)
+    )
+
+    # Only explicitly recognized warnings are non-blocking.
+    if any(problem.severity != "warning" for problem in problems):
         raise CJSLInputErrors(problems)
+
+    for problem in problems:
+        print(f"WARNING: {problem.message}", file=sys.stderr)
 
     revision_state = load_revision_state(
         revision_state_file
