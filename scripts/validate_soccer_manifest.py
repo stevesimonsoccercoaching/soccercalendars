@@ -7,6 +7,55 @@ from urllib.parse import parse_qs, urlparse
 from soccer_paths import resolve_event_paths
 
 
+def is_valid_team_slug(slug):
+    return (
+        isinstance(slug, str)
+        and re.fullmatch(
+            r"[a-z0-9]+(?:-[a-z0-9]+)*", slug
+        ) is not None
+    )
+
+
+def validate_team_identities(teams):
+    """Validate identities required for unambiguous team processing."""
+    if not isinstance(teams, list) or not teams:
+        return ["teams must be a nonempty list"]
+
+    errors = []
+    names = set()
+    slugs = set()
+
+    for number, team in enumerate(teams, 1):
+        prefix = f"teams[{number}]"
+
+        if not isinstance(team, dict):
+            errors.append(f"{prefix} must be an object")
+            continue
+
+        name, slug = team.get("name"), team.get("slug")
+
+        if not isinstance(name, str) or not name.strip():
+            errors.append(f"{prefix}.name is required")
+        elif name.casefold() in names:
+            errors.append(f"Duplicate team name: {name}")
+        else:
+            names.add(name.casefold())
+
+        if not is_valid_team_slug(slug):
+            errors.append(
+                f"{prefix}.slug must be lowercase, "
+                "alphanumeric and hyphenated"
+            )
+            continue
+
+        if slug in slugs:
+            errors.append(f"Duplicate slug: {slug}")
+
+        slugs.add(slug)
+
+    return errors
+
+
 def validate(manifest_path):
     errors = []
     try:
@@ -35,26 +84,19 @@ def validate(manifest_path):
     if not data_dir.is_dir():
         return [f"Missing data directory: {data_dir}"], None
 
-    slugs, names, ids = set(), set(), set()
+    errors.extend(validate_team_identities(teams))
+
+    ids = set()
     expected = set()
     for number, team in enumerate(teams, 1):
         prefix = f"teams[{number}]"
         if not isinstance(team, dict):
-            errors.append(f"{prefix} must be an object")
             continue
-        name, slug = team.get("name"), team.get("slug")
-        if not isinstance(name, str) or not name.strip():
-            errors.append(f"{prefix}.name is required")
-        elif name.casefold() in names:
-            errors.append(f"Duplicate team name: {name}")
-        else:
-            names.add(name.casefold())
-        if not isinstance(slug, str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
-            errors.append(f"{prefix}.slug must be lowercase, alphanumeric and hyphenated")
+
+        slug = team.get("slug")
+        if not is_valid_team_slug(slug):
             continue
-        if slug in slugs:
-            errors.append(f"Duplicate slug: {slug}")
-        slugs.add(slug)
+
         expected.add(f"{slug}.xlsx")
         if "short_name" in team and (not isinstance(team["short_name"], str) or not team["short_name"].strip()):
             errors.append(f"{prefix}.short_name must be nonempty when supplied")

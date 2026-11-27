@@ -8,6 +8,7 @@ on:
   pull_request:
     branches:
       - main
+      - integration/multi-league-actions
 
 permissions:
   contents: read
@@ -37,7 +38,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: python -m pip install openpyxl
+        run: python -m pip install -r requirements.txt
 
       - name: Run automated tests
         run: |
@@ -55,7 +56,7 @@ jobs:
 
       - name: Report XLSX schedule changes
         env:
-          BEFORE_SHA: ${{ github.event.before }}
+          BEFORE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
           python scripts/report_schedule_changes.py \
             --base "$BEFORE_SHA" \
