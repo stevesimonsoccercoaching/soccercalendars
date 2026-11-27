@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 import sys
+import zlib
 
 from openpyxl import load_workbook
 from openpyxl.descriptors.base import Set
@@ -17,7 +18,7 @@ from soccer_paths import resolve_event_paths
 from validate_soccer_manifest import validate_team_identities
 
 
-WORKBOOK_READ_ERRORS = (OSError, BadZipFile, ParseError)
+WORKBOOK_READ_ERRORS = (OSError, BadZipFile, ParseError, zlib.error)
 
 try:
     from lxml.etree import XMLSyntaxError

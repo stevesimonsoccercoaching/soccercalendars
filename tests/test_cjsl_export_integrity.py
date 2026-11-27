@@ -10,12 +10,15 @@ All workbooks are created in disposable temporary directories.
 import sys
 import tempfile
 import unittest
+import zlib
 from pathlib import Path
 from unittest.mock import patch
 from zipfile import ZipFile
 from xml.etree import ElementTree as ET
 
 from openpyxl import Workbook, load_workbook
+
+from cjsl_corruption_fixtures import corrupt_deflate_member
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -341,6 +344,50 @@ class CJSLExportIntegrityTests(unittest.TestCase):
                         modified.writestr(item, data)
 
         rewritten.replace(self.input_file)
+
+    def test_compressed_workbook_corruption_is_structured(self):
+        self.write_export([self.match])
+        self.assertEqual(len(self.read_export()), 1)
+
+        corrupt_deflate_member(
+            self.input_file, "xl/workbook.xml"
+        )
+
+        with self.assertRaises(CJSLInputError) as caught:
+            self.read_export()
+
+        error = caught.exception
+        self.assertEqual(error.kind, "unreadable_workbook")
+        self.assertEqual(error.match_ids, ())
+        self.assertIn(str(self.input_file), str(error))
+        self.assertIsInstance(error.__cause__, zlib.error)
+
+    def test_compressed_worksheet_corruption_is_structured(self):
+        rows = []
+
+        for match_no in range(1, 301):
+            row = list(self.match)
+            row[0] = match_no
+            row[self.headers.index("Location")] = "Field " + "x" * 500
+            rows.append(row)
+
+        self.write_export(rows)
+        self.assertEqual(len(self.read_export()), 300)
+
+        corrupt_deflate_member(
+            self.input_file,
+            "xl/worksheets/sheet1.xml",
+            late=True,
+        )
+
+        with self.assertRaises(CJSLInputError) as caught:
+            self.read_export()
+
+        error = caught.exception
+        self.assertEqual(error.kind, "unreadable_worksheet")
+        self.assertEqual(error.match_ids, ())
+        self.assertIn(str(self.input_file), str(error))
+        self.assertIsInstance(error.__cause__, zlib.error)
 
     def test_invalid_workbook_metadata_is_structured(self):
         self.write_export([self.match])

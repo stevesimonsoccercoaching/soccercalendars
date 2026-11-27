@@ -14,6 +14,8 @@ from unittest.mock import patch
 
 from openpyxl import Workbook
 
+from cjsl_corruption_fixtures import corrupt_deflate_member
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
@@ -295,6 +297,58 @@ class CJSLBuildValidationTests(unittest.TestCase):
 
         for problem in problems:
             self.assertTrue(problem.message)
+
+        self.assertEqual(before, self.snapshot_outputs())
+
+    def test_compressed_corruption_and_empty_export_are_aggregated(self):
+        before = self.snapshot_outputs()
+
+        corrupt_deflate_member(
+            self.data / "test-alpha.xlsx",
+            "xl/workbook.xml",
+        )
+
+        self.write_export("test-beta", [])
+
+        changed = list(self.gamma_match)
+        changed[2] = "19:40 EDT"
+        self.write_export("test-gamma", [changed])
+
+        with (
+            patch("build_cjsl_calendars.build_calendar") as render,
+            patch("build_cjsl_calendars.load_revision_state") as load,
+            patch("build_cjsl_calendars.save_revision_state") as save,
+        ):
+            with self.assertRaises(CJSLInputErrors) as caught:
+                self.run_builder()
+
+        render.assert_not_called()
+        load.assert_not_called()
+        save.assert_not_called()
+
+        problems = caught.exception.problems
+
+        self.assertCountEqual(
+            [
+                (
+                    problem.kind,
+                    problem.severity,
+                    problem.team_slugs,
+                    problem.match_ids,
+                )
+                for problem in problems
+            ],
+            [
+                ("unreadable_workbook", "error", ("test-alpha",), ()),
+                ("empty_export", "error", ("test-beta",), ()),
+            ],
+        )
+
+        for problem in problems:
+            slug = problem.team_slugs[0]
+            self.assertIn(
+                f"{slug}.xlsx", problem.message
+            )
 
         self.assertEqual(before, self.snapshot_outputs())
 
