@@ -1,0 +1,4 @@
+# Calendar processing dependencies.
+# Review dependency upgrades alongside regression and publication tests.
+openpyxl==3.1.5
+et-xmlfile==2.0.0
