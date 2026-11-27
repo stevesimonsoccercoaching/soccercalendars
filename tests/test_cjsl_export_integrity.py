@@ -161,6 +161,48 @@ class CJSLExportIntegrityTests(unittest.TestCase):
         self.assertEqual(len(matches), 1)
         self.assertEqual(matches[0]["match_no"], 277)
 
+    def test_identical_team_identity_is_rejected(self):
+        row = list(self.match)
+        row[self.headers.index("Away Team")] = self.team_name
+
+        self.write_export([row])
+
+        with self.assertRaises(CJSLInputError) as caught:
+            self.read_export()
+
+        error = caught.exception
+
+        self.assertEqual(error.kind, "identical_team_identity")
+        self.assertEqual(error.match_ids, (277,))
+        self.assertIn(str(self.input_file), str(error))
+        self.assertIn(self.team_name, str(error))
+        self.assertIn("Row 2", str(error))
+
+    def test_identical_team_identity_after_trimming_is_rejected(self):
+        row = list(self.match)
+        row[self.headers.index("Away Team")] = (
+            "  " + self.team_name + "  "
+        )
+
+        self.write_export([row])
+
+        self.assert_structured_input_error(
+            "identical_team_identity",
+            (277,),
+        )
+
+    def test_identical_team_identity_and_invalid_time_are_aggregated(self):
+        row = list(self.match)
+        row[self.headers.index("Away Team")] = self.team_name
+        row[self.headers.index("Time")] = "not-a-time"
+
+        self.write_export([row])
+
+        self.assert_aggregated_input_errors([
+            ("identical_team_identity", (277,)),
+            ("invalid_match_time", (277,)),
+        ])
+
     def test_missing_team_identity_is_rejected(self):
         for missing_column, other_column in (
             ("Home Team", "Away Team"),

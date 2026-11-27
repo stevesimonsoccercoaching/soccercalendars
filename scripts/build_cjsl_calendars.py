@@ -537,6 +537,14 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                         f"team identity for {tracked_team_name!r}",
                         match_ids,
                     )
+                elif home_team == away_team:
+                    add_problem(
+                        "identical_team_identity",
+                        f"{input_file}: Row {row_number}, "
+                        f"{match_label} has identical home and away "
+                        f"team identities: {home_team!r}",
+                        match_ids,
+                    )
                 elif (
                     home_team != tracked_team_name
                     and away_team != tracked_team_name

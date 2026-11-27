@@ -353,6 +353,47 @@ class CJSLBuildValidationTests(unittest.TestCase):
 
         self.assertEqual(before, self.snapshot_outputs())
 
+    def test_identical_team_identity_prevents_rendering(self):
+        before = self.snapshot_outputs()
+
+        changed = list(self.shared_match)
+        changed[2] = "19:40 EDT"
+
+        self.write_export("test-alpha", [changed])
+        self.write_export("test-beta", [changed])
+
+        invalid = list(self.gamma_match)
+        invalid[4] = invalid[3]
+
+        self.write_export("test-gamma", [invalid])
+
+        with (
+            patch("build_cjsl_calendars.build_calendar") as render,
+            patch("build_cjsl_calendars.load_revision_state") as load,
+            patch("build_cjsl_calendars.save_revision_state") as save,
+        ):
+            with self.assertRaises(CJSLInputErrors) as caught:
+                self.run_builder()
+
+        render.assert_not_called()
+        load.assert_not_called()
+        save.assert_not_called()
+
+        problems = caught.exception.problems
+
+        self.assertEqual(len(problems), 1)
+
+        problem = problems[0]
+
+        self.assertEqual(problem.kind, "identical_team_identity")
+        self.assertEqual(problem.severity, "error")
+        self.assertEqual(problem.team_slugs, ("test-gamma",))
+        self.assertEqual(problem.match_ids, (278,))
+        self.assertIn("test-gamma.xlsx", problem.message)
+        self.assertIn("Test Club Gamma", problem.message)
+
+        self.assertEqual(before, self.snapshot_outputs())
+
     def test_late_invalid_team_does_not_modify_outputs(self):
         before = self.snapshot_outputs()
 
