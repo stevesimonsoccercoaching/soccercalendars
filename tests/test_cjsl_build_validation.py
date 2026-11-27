@@ -5,6 +5,7 @@ All inputs and outputs reside inside a disposable repository.
 
 import io
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -410,6 +411,105 @@ class CJSLBuildValidationTests(unittest.TestCase):
             self.run_builder()
 
         self.assertEqual(self.snapshot_outputs(), {})
+
+    def test_cli_known_input_rejection_has_no_traceback(self):
+        before = self.snapshot_outputs()
+
+        self.write_export("test-alpha", [])
+        self.write_export("test-beta", [])
+
+        result = subprocess.run(
+            [
+                sys.executable,
+                "-B",
+                str(REPO_ROOT / "scripts/build_cjsl_calendars.py"),
+                str(self.manifest),
+            ],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertEqual(result.returncode, 1)
+
+        self.assertIn(
+            "CJSL input validation failed:",
+            result.stderr,
+        )
+
+        diagnostics = [
+            line for line in result.stderr.splitlines()
+            if line.startswith("ERROR:")
+        ]
+
+        self.assertEqual(len(diagnostics), 2)
+        self.assertTrue(
+            any("test-alpha.xlsx" in line for line in diagnostics)
+        )
+        self.assertTrue(
+            any("test-beta.xlsx" in line for line in diagnostics)
+        )
+
+        self.assertNotIn("Created ", result.stdout)
+        self.assertNotIn(
+            "All configured CJSL calendars built successfully.",
+            result.stdout,
+        )
+
+        self.assertEqual(before, self.snapshot_outputs())
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_cli_unexpected_failure_preserves_traceback(self):
+        before = self.snapshot_outputs()
+
+        script = REPO_ROOT / "scripts/build_cjsl_calendars.py"
+
+        injected_failure = """
+import runpy
+import sys
+from pathlib import Path
+from unittest.mock import patch
+
+script, manifest = sys.argv[1:]
+sys.path.insert(0, str(Path(script).parent))
+sys.argv = [script, manifest]
+
+with patch(
+    "openpyxl.load_workbook",
+    side_effect=RuntimeError("Injected unexpected application failure"),
+):
+    runpy.run_path(script, run_name="__main__")
+"""
+
+        result = subprocess.run(
+            [
+                sys.executable,
+                "-B",
+                "-c",
+                injected_failure,
+                str(script),
+                str(self.manifest),
+            ],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Traceback", result.stderr)
+        self.assertIn(
+            "RuntimeError: Injected unexpected application failure",
+            result.stderr,
+        )
+        self.assertNotIn(
+            "CJSL input validation failed:",
+            result.stderr,
+        )
+
+        self.assertNotIn("Created ", result.stdout)
+        self.assertEqual(before, self.snapshot_outputs())
 
     def test_unexpected_collection_failure_prevents_rendering(self):
         from build_cjsl_calendars import CJSLInputError

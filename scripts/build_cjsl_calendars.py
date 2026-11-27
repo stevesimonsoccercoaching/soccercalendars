@@ -1188,4 +1188,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (CJSLInputError, CJSLInputErrors) as exc:
+        print(str(exc), file=sys.stderr)
+        sys.exit(1)
