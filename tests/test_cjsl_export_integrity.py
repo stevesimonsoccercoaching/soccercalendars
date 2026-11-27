@@ -836,6 +836,23 @@ class CJSLExportIntegrityTests(unittest.TestCase):
             (277,),
         )
 
+    def test_unexpected_time_parser_index_error_propagates(self):
+        self.write_export([self.match])
+
+        unexpected = IndexError(
+            "Injected unexpected time parser failure"
+        )
+
+        with patch(
+            "build_cjsl_calendars.parse_match_start",
+            side_effect=unexpected,
+        ) as parser:
+            with self.assertRaises(IndexError) as caught:
+                self.read_export()
+
+        self.assertIs(caught.exception, unexpected)
+        parser.assert_called_once()
+
     def test_structured_invalid_match_time_error(self):
         row = list(self.match)
         row[self.headers.index("Time")] = "not-a-time"

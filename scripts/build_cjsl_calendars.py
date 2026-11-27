@@ -583,7 +583,7 @@ def read_matches(input_file, tracked_team_name, duration_minutes):
                             match_date or date(2000, 1, 1),
                             time_value,
                         )
-                    except (ValueError, IndexError) as exc:
+                    except ValueError as exc:
                         add_problem(
                             "invalid_match_time",
                             f"{input_file}: {match_label} has an invalid "

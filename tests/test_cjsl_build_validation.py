@@ -552,6 +552,34 @@ with patch(
         self.assertNotIn("Created ", result.stdout)
         self.assertEqual(before, self.snapshot_outputs())
 
+    def test_unexpected_time_parser_index_error_prevents_rendering(self):
+        before = self.snapshot_outputs()
+
+        unexpected = IndexError(
+            "Injected unexpected time parser failure"
+        )
+
+        with (
+            patch(
+                "build_cjsl_calendars.parse_match_start",
+                side_effect=unexpected,
+            ) as parser,
+            patch("build_cjsl_calendars.build_calendar") as render,
+            patch("build_cjsl_calendars.load_revision_state") as load,
+            patch("build_cjsl_calendars.save_revision_state") as save,
+        ):
+            with self.assertRaises(IndexError) as caught:
+                self.run_builder()
+
+        self.assertIs(caught.exception, unexpected)
+        parser.assert_called_once()
+
+        render.assert_not_called()
+        load.assert_not_called()
+        save.assert_not_called()
+
+        self.assertEqual(before, self.snapshot_outputs())
+
     def test_unexpected_collection_failure_prevents_rendering(self):
         from build_cjsl_calendars import CJSLInputError
 
