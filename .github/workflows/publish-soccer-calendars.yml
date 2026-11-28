@@ -116,8 +116,8 @@ jobs:
           test "$SHA" = "$REMOTE"
           echo "sha=$SHA" >> "$GITHUB_OUTPUT"
 
-  deploy_pages:
-    name: Deploy verified calendars to GitHub Pages
+  prepare_pages:
+    name: Prepare verified Pages artifact
     needs: publish
     if: >-
       github.ref == 'refs/heads/main' &&
@@ -129,12 +129,10 @@ jobs:
 
     permissions:
       contents: read
-      pages: write
-      id-token: write
+      pages: read
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      artifact_name: ${{ steps.artifact_identity.outputs.name }}
 
     steps:
       - name: Check out verified publication revision
@@ -165,12 +163,82 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: false
+
+      - name: Identify Pages artifact
+        id: artifact_identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs
+          name: ${{ steps.artifact_identity.outputs.name }}
+
+  deploy_pages:
+    name: Deploy verified calendars to GitHub Pages
+    needs: [publish, prepare_pages]
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars' &&
+      needs.publish.outputs.published_sha != '' &&
+      vars.SOCCER_PAGES_ACTIONS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out verified publication revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.published_sha }}
+          persist-credentials: false
+
+      - name: Recheck Pages artifact freshness
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ needs.publish.outputs.published_sha }}
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
+          test -s docs/index.html
+          test "$(find docs -type f -name '*.ics' | wc -l)" -gt 0
+
+          git fetch --quiet --no-tags origin main
+          VERIFIED_TREE="$(git rev-parse HEAD:docs)"
+          LATEST_TREE="$(git rev-parse FETCH_HEAD:docs)"
+          if [ "$VERIFIED_TREE" != "$LATEST_TREE" ]; then
+            echo "ERROR: Newer website content exists on main."
+            echo "Refusing to deploy outdated calendars."
+            exit 1
+          fi
+          echo "PASS: Verified website content matches current main."
+
+      - name: Verify prepared artifact identity
+        shell: bash
+        env:
+          ARTIFACT_NAME: ${{ needs.prepare_pages.outputs.artifact_name }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$ARTIFACT_NAME" =~ ^github-pages-${GITHUB_RUN_ID}-[1-9][0-9]*$ ]]; then
+            echo "ERROR: Missing or invalid prepared artifact identity."
+            exit 1
+          fi
 
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.prepare_pages.outputs.artifact_name }}
