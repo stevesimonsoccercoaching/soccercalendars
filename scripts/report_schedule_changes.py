@@ -503,9 +503,17 @@ def build_report(base, head):
     total_removed = 0
     total_modified = 0
     files_with_material_changes = 0
+    unregistered_removals = []
 
     for status, old_path, new_path in changed_files:
         display_path = new_path if status != "D" else old_path
+        if status == "D":
+            _, old_team = load_manifest_for_data_path(base, old_path)
+            _, new_team = load_manifest_for_data_path(head, old_path)
+            if not old_team and not new_team:
+                unregistered_removals.append(old_path)
+                continue
+
         context = file_context(head, base, display_path)
         tracked_team = context["team_name"]
         include_status = context["status_mode"] == "display"
@@ -649,6 +657,20 @@ def build_report(base, head):
                 ]
             )
 
+    if unregistered_removals:
+        lines.extend([
+            "## Unregistered source files removed",
+            "",
+            "These files were not registered at either compared revision. "
+            "Their deletion is not counted as a material schedule change "
+            "or match removal.",
+            "",
+        ])
+        lines.extend(
+            f"- `{path}`" for path in sorted(unregistered_removals)
+        )
+        lines.append("")
+
     lines.extend(
         [
             "---",
@@ -656,6 +678,7 @@ def build_report(base, head):
             "## Summary",
             "",
             f"- XLSX files changed in Git: **{len(changed_files)}**",
+            f"- Unregistered source files removed: **{len(unregistered_removals)}**",
             f"- Files with material schedule changes: **{files_with_material_changes}**",
             f"- Matches added: **{total_added}**",
             f"- Matches removed/missing from new exports: **{total_removed}**",
