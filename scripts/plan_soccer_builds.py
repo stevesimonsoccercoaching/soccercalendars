@@ -10,6 +10,8 @@ Production orchestration will consume its explicitly selected profiles later.
 
 import argparse
 import json
+import os
+import stat
 from pathlib import Path
 
 from discover_soccer_manifests import discover
@@ -35,10 +37,68 @@ LEGACY_PROFILES = {
 }
 
 
+def validate_source_inventory(root, records):
+    """Reject XLSX files outside registered, direct event directories."""
+    data_root = root / "data"
+    allowed_dirs = {
+        data_root / Path(record["manifest"]).parent.relative_to("config")
+        for record in records
+    }
+    errors = []
+
+    try:
+        mode = data_root.lstat().st_mode
+    except FileNotFoundError:
+        # Config-only planning remains supported. The per-event
+        # manifest validator checks for required data directories.
+        return errors
+    except OSError as exc:
+        return [f"Cannot inspect data/ inventory: {exc}"]
+
+    if not stat.S_ISDIR(mode):
+        return ["data/ must be a real directory"]
+
+    def onerror(exc):
+        errors.append(f"Cannot scan data/ inventory: {exc}")
+
+    for directory, dirs, files in os.walk(
+        data_root, onerror=onerror, followlinks=False
+    ):
+        parent = Path(directory)
+
+        for name in sorted(dirs):
+            path = parent / name
+            if path.is_symlink():
+                errors.append(
+                    f"Symlinked source directory: "
+                    f"{path.relative_to(root).as_posix()}"
+                )
+
+        for name in sorted(files):
+            path = parent / name
+            if path.suffix.lower() != ".xlsx":
+                continue
+
+            display = path.relative_to(root).as_posix()
+            if path.is_symlink():
+                errors.append(f"Symlinked XLSX: {display}")
+            elif parent not in allowed_dirs:
+                errors.append(
+                    f"Misplaced XLSX: {display}; "
+                    "expected a registered event data directory"
+                )
+
+    return sorted(errors)
+
+
 def plan(repo_root):
     """Return (planned_events, errors, warnings), without modifying files."""
     root = Path(repo_root)
     records, errors, warnings = discover(root)
+    if errors:
+        return [], errors, warnings
+
+    errors.extend(validate_source_inventory(root, records))
     if errors:
         return [], errors, warnings
 

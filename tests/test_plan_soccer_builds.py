@@ -124,5 +124,119 @@ class BuildPlanTests(unittest.TestCase):
         self.assertEqual(original, f.read_bytes())
 
 
+    def write_xlsx(self, relative):
+        path = self.root / "data" / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"inventory fixture")
+        return path
+
+    def test_registered_event_inventory_is_allowed(self):
+        self.write_manifest(
+            "2026-27/cjsl/league/events/55206/manifest.json",
+            profile="explicit-status-cjsl-v1",
+        )
+        self.write_manifest(
+            "2026-27/edp/north-atlantic/events/54578/manifest.json",
+            organizer="EDP", event_id="54578",
+            profile="metadata-warning-v1",
+            status_mode="metadata",
+            missing_policy="preserve-warning",
+            safety={"reject_empty_export": True,
+                    "max_missing_fraction": .5},
+        )
+        paths = [
+            self.write_xlsx(
+                "2026-27/cjsl/league/events/55206/team-0.xlsx"
+            ),
+            self.write_xlsx(
+                "2026-27/edp/north-atlantic/events/54578/team-0.xlsx"
+            ),
+        ]
+        before = [p.read_bytes() for p in paths]
+        events, errors, _ = plan(self.root)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(events), 2)
+        self.assertEqual(before, [p.read_bytes() for p in paths])
+
+    def test_registered_legacy_inventory_is_allowed(self):
+        self.write_manifest("2026/cjsl/fall/manifest.json")
+        self.write_xlsx("2026/cjsl/fall/team-0.xlsx")
+        events, errors, _ = plan(self.root)
+        self.assertFalse(errors, errors)
+        self.assertEqual(len(events), 1)
+
+    def test_misplaced_workbooks_invalidate_whole_plan(self):
+        active = "2026-27/cjsl/league/events/55206"
+        self.write_manifest(
+            active + "/manifest.json",
+            profile="explicit-status-cjsl-v1",
+        )
+        self.write_xlsx(active + "/team-0.xlsx")
+
+        misplaced = [
+            "stray.xlsx",
+            "2026/cjsl/fall/team-0.xlsx",
+            active + "/nested/extra.xlsx",
+            active + "/nested/deeper/extra.XLSX",
+            "2026-27/cjsl/league/events/552060/extra.xlsx",
+        ]
+
+        for relative in misplaced:
+            self.write_xlsx(relative)
+
+        events, errors, _ = plan(self.root)
+
+        self.assertEqual(events, [])
+        self.assertEqual(len(errors), len(misplaced))
+
+        for relative in misplaced:
+            self.assertTrue(
+                any("data/" + relative in e for e in errors),
+                errors,
+            )
+
+    def test_non_xlsx_files_do_not_invalidate_plan(self):
+        self.write_manifest("2026/cjsl/fall/manifest.json")
+        self.write_xlsx("notes.txt")
+        self.write_xlsx("old/README.md")
+        events, errors, _ = plan(self.root)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(events), 1)
+
+    def test_symlinked_source_paths_are_rejected(self):
+        active = "2026/cjsl/fall"
+        self.write_manifest(active + "/manifest.json")
+        workbook = self.write_xlsx(active + "/team-0.xlsx")
+        try:
+            (self.root / "data/linked").symlink_to(
+                workbook.parent, target_is_directory=True
+            )
+            (workbook.parent / "alias.xlsx").symlink_to(workbook)
+        except OSError as exc:
+            self.skipTest(f"Symlinks unavailable: {exc}")
+
+        events, errors, _ = plan(self.root)
+        self.assertEqual(events, [])
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(any("data/linked" in e for e in errors))
+        self.assertTrue(any("alias.xlsx" in e for e in errors))
+
+    def test_dispatch_rejects_misplaced_xlsx_before_operations(self):
+        from unittest.mock import patch
+        from run_soccer_builds import prepare, BuildDispatchError
+
+        self.write_manifest("2026/cjsl/fall/manifest.json")
+        self.write_xlsx("stray.XLSX")
+
+        for execute in (False, True):
+            with self.subTest(execute=execute):
+                with patch("run_soccer_builds.subprocess.run") as run:
+                    with self.assertRaisesRegex(
+                        BuildDispatchError, "Misplaced XLSX"
+                    ):
+                        prepare(self.root, execute=execute)
+                    run.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()
