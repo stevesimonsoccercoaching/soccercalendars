@@ -235,6 +235,8 @@ jobs:
           UPLOAD_OUTCOME: ${{ steps.pages_upload.outcome }}
         run: |
           set -euo pipefail
+          # Backticks below are literal Markdown code spans.
+          # shellcheck disable=SC2016
           {
             echo '### Pages preparation'
             printf -- '- Run ID: `%s`\n- Preparation attempt: `%s`\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
@@ -365,6 +367,8 @@ jobs:
           DEPLOY_OUTCOME: ${{ steps.deployment.outcome }}
         run: |
           set -euo pipefail
+          # Backticks below are literal Markdown code spans.
+          # shellcheck disable=SC2016
           {
             echo '### Pages deployment'
             printf -- '- Run ID: `%s`\n- Deployment attempt: `%s`\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
