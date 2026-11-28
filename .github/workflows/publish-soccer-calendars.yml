@@ -116,9 +116,140 @@ jobs:
           test "$SHA" = "$REMOTE"
           echo "sha=$SHA" >> "$GITHUB_OUTPUT"
 
+  prepare_pages:
+    name: Prepare verified Pages artifact
+    needs: publish
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      github.repository == 'stevesimonsoccercoaching/soccercalendars' &&
+      needs.publish.outputs.published_sha != '' &&
+      vars.SOCCER_PAGES_ACTIONS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    permissions:
+      contents: read
+      pages: read
+
+    outputs:
+      artifact_name: ${{ steps.artifact_identity.outputs.name }}
+      artifact_id: ${{ steps.pages_upload.outputs.artifact_id }}
+      docs_tree: ${{ steps.pages_guard.outputs.docs_tree }}
+
+    steps:
+      - name: Check out verified publication revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.published_sha }}
+          persist-credentials: false
+
+      - name: Verify Pages artifact
+        id: pages_guard
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ needs.publish.outputs.published_sha }}
+        run: |
+          set -euo pipefail
+          if ! ACTUAL_SHA="$(git rev-parse HEAD)"; then
+            echo "ERROR: Unable to identify checked-out revision."
+            exit 1
+          fi
+          if [ "$ACTUAL_SHA" != "$EXPECTED_SHA" ]; then
+            echo "ERROR: Checkout SHA does not match verified publication SHA."
+            printf 'Expected SHA: %s\nActual SHA: %s\n' "$EXPECTED_SHA" "$ACTUAL_SHA"
+            exit 1
+          fi
+          if [ ! -f docs/index.html ]; then
+            echo "ERROR: Missing or non-regular calendar index: docs/index.html"
+            exit 1
+          fi
+          if [ ! -s docs/index.html ]; then
+            echo "ERROR: Empty calendar index: docs/index.html"
+            exit 1
+          fi
+          if ! ICS_COUNT="$(find docs -type f -name '*.ics' | wc -l)"; then
+            echo "ERROR: Unable to count calendar files under docs/."
+            exit 1
+          fi
+          if [ "$ICS_COUNT" -le 0 ]; then
+            echo "ERROR: No ICS files found under docs/."
+            exit 1
+          fi
+
+          if ! git fetch --quiet --no-tags origin main; then
+            echo "ERROR: Unable to fetch main; cannot verify website freshness."
+            exit 1
+          fi
+          if ! VERIFIED_TREE="$(git rev-parse --verify HEAD:docs)"; then
+            echo "ERROR: Unable to identify verified docs tree."
+            exit 1
+          fi
+          if ! LATEST_TREE="$(git rev-parse --verify FETCH_HEAD:docs)"; then
+            echo "ERROR: Unable to identify current main docs tree."
+            exit 1
+          fi
+          printf 'Verified docs tree: %s\nCurrent main docs tree: %s\n' "$VERIFIED_TREE" "$LATEST_TREE"
+          {
+            echo "docs_tree=$VERIFIED_TREE"
+            echo "main_docs_tree=$LATEST_TREE"
+            echo "calendar_count=$ICS_COUNT"
+          } >> "$GITHUB_OUTPUT"
+          if [ "$VERIFIED_TREE" != "$LATEST_TREE" ]; then
+            echo "ERROR: Newer website content exists on main."
+            echo "Refusing to deploy outdated calendars."
+            exit 1
+          fi
+          echo "PASS: Verified website content matches current main."
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: false
+
+      - name: Identify Pages artifact
+        id: artifact_identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload Pages artifact
+        id: pages_upload
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+          name: ${{ steps.artifact_identity.outputs.name }}
+
+      - name: Summarize Pages preparation
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        shell: bash
+        env:
+          PUBLICATION_SHA: ${{ needs.publish.outputs.published_sha }}
+          VERIFIED_TREE: ${{ steps.pages_guard.outputs.docs_tree }}
+          MAIN_TREE: ${{ steps.pages_guard.outputs.main_docs_tree }}
+          CALENDAR_COUNT: ${{ steps.pages_guard.outputs.calendar_count }}
+          ARTIFACT_NAME: ${{ steps.artifact_identity.outputs.name }}
+          ARTIFACT_ID: ${{ steps.pages_upload.outputs.artifact_id }}
+          GUARD_OUTCOME: ${{ steps.pages_guard.outcome }}
+          UPLOAD_OUTCOME: ${{ steps.pages_upload.outcome }}
+        run: |
+          set -euo pipefail
+          # Backticks below are literal Markdown code spans.
+          # shellcheck disable=SC2016
+          {
+            echo '### Pages preparation'
+            printf -- '- Run ID: `%s`\n- Preparation attempt: `%s`\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+            printf -- '- Publication SHA: `%s`\n' "$PUBLICATION_SHA"
+            printf -- '- Verified docs tree: `%s`\n- Current main docs tree: `%s`\n' "${VERIFIED_TREE:-not recorded}" "${MAIN_TREE:-not recorded}"
+            printf -- '- Calendar count: `%s`\n' "${CALENDAR_COUNT:-not recorded}"
+            printf -- '- Artifact name: `%s`\n- Uploaded artifact ID: `%s`\n' "${ARTIFACT_NAME:-not recorded}" "${ARTIFACT_ID:-not recorded}"
+            printf -- '- Freshness guard: `%s`\n- Upload outcome: `%s`\n' "$GUARD_OUTCOME" "$UPLOAD_OUTCOME"
+          } >> "$GITHUB_STEP_SUMMARY"
+
   deploy_pages:
     name: Deploy verified calendars to GitHub Pages
-    needs: publish
+    needs: [publish, prepare_pages]
     if: >-
       github.ref == 'refs/heads/main' &&
       github.repository == 'stevesimonsoccercoaching/soccercalendars' &&
@@ -143,19 +274,57 @@ jobs:
           ref: ${{ needs.publish.outputs.published_sha }}
           persist-credentials: false
 
-      - name: Verify Pages artifact
+      - name: Recheck Pages artifact freshness
+        id: pages_guard
         shell: bash
         env:
           EXPECTED_SHA: ${{ needs.publish.outputs.published_sha }}
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "$EXPECTED_SHA"
-          test -s docs/index.html
-          test "$(find docs -type f -name '*.ics' | wc -l)" -gt 0
+          if ! ACTUAL_SHA="$(git rev-parse HEAD)"; then
+            echo "ERROR: Unable to identify checked-out revision."
+            exit 1
+          fi
+          if [ "$ACTUAL_SHA" != "$EXPECTED_SHA" ]; then
+            echo "ERROR: Checkout SHA does not match verified publication SHA."
+            printf 'Expected SHA: %s\nActual SHA: %s\n' "$EXPECTED_SHA" "$ACTUAL_SHA"
+            exit 1
+          fi
+          if [ ! -f docs/index.html ]; then
+            echo "ERROR: Missing or non-regular calendar index: docs/index.html"
+            exit 1
+          fi
+          if [ ! -s docs/index.html ]; then
+            echo "ERROR: Empty calendar index: docs/index.html"
+            exit 1
+          fi
+          if ! ICS_COUNT="$(find docs -type f -name '*.ics' | wc -l)"; then
+            echo "ERROR: Unable to count calendar files under docs/."
+            exit 1
+          fi
+          if [ "$ICS_COUNT" -le 0 ]; then
+            echo "ERROR: No ICS files found under docs/."
+            exit 1
+          fi
 
-          git fetch --quiet --no-tags origin main
-          VERIFIED_TREE="$(git rev-parse HEAD:docs)"
-          LATEST_TREE="$(git rev-parse FETCH_HEAD:docs)"
+          if ! git fetch --quiet --no-tags origin main; then
+            echo "ERROR: Unable to fetch main; cannot verify website freshness."
+            exit 1
+          fi
+          if ! VERIFIED_TREE="$(git rev-parse --verify HEAD:docs)"; then
+            echo "ERROR: Unable to identify verified docs tree."
+            exit 1
+          fi
+          if ! LATEST_TREE="$(git rev-parse --verify FETCH_HEAD:docs)"; then
+            echo "ERROR: Unable to identify current main docs tree."
+            exit 1
+          fi
+          printf 'Verified docs tree: %s\nCurrent main docs tree: %s\n' "$VERIFIED_TREE" "$LATEST_TREE"
+          {
+            echo "docs_tree=$VERIFIED_TREE"
+            echo "main_docs_tree=$LATEST_TREE"
+            echo "calendar_count=$ICS_COUNT"
+          } >> "$GITHUB_OUTPUT"
           if [ "$VERIFIED_TREE" != "$LATEST_TREE" ]; then
             echo "ERROR: Newer website content exists on main."
             echo "Refusing to deploy outdated calendars."
@@ -163,14 +332,49 @@ jobs:
           fi
           echo "PASS: Verified website content matches current main."
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
+      - name: Verify prepared artifact identity
+        shell: bash
+        env:
+          ARTIFACT_NAME: ${{ needs.prepare_pages.outputs.artifact_name }}
+        run: |
+          set -euo pipefail
+          if [[ ! "$ARTIFACT_NAME" =~ ^github-pages-${GITHUB_RUN_ID}-[1-9][0-9]*$ ]]; then
+            echo "ERROR: Missing or invalid prepared artifact identity."
+            printf 'Expected: github-pages-%s-<positive attempt number>\n' "$GITHUB_RUN_ID"
+            printf 'Received: %q\n' "$ARTIFACT_NAME"
+            exit 1
+          fi
 
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.prepare_pages.outputs.artifact_name }}
+
+      - name: Summarize Pages deployment
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        shell: bash
+        env:
+          PUBLICATION_SHA: ${{ needs.publish.outputs.published_sha }}
+          PREPARED_TREE: ${{ needs.prepare_pages.outputs.docs_tree }}
+          VERIFIED_TREE: ${{ steps.pages_guard.outputs.docs_tree }}
+          MAIN_TREE: ${{ steps.pages_guard.outputs.main_docs_tree }}
+          CALENDAR_COUNT: ${{ steps.pages_guard.outputs.calendar_count }}
+          ARTIFACT_NAME: ${{ needs.prepare_pages.outputs.artifact_name }}
+          ARTIFACT_ID: ${{ needs.prepare_pages.outputs.artifact_id }}
+          GUARD_OUTCOME: ${{ steps.pages_guard.outcome }}
+          DEPLOY_OUTCOME: ${{ steps.deployment.outcome }}
+        run: |
+          set -euo pipefail
+          # Backticks below are literal Markdown code spans.
+          # shellcheck disable=SC2016
+          {
+            echo '### Pages deployment'
+            printf -- '- Run ID: `%s`\n- Deployment attempt: `%s`\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT"
+            printf -- '- Publication SHA: `%s`\n' "$PUBLICATION_SHA"
+            printf -- '- Prepared docs tree: `%s`\n- Rechecked docs tree: `%s`\n- Current main docs tree: `%s`\n' "${PREPARED_TREE:-not recorded}" "${VERIFIED_TREE:-not recorded}" "${MAIN_TREE:-not recorded}"
+            printf -- '- Calendar count: `%s`\n' "${CALENDAR_COUNT:-not recorded}"
+            printf -- '- Expected artifact name: `%s`\n- Expected uploaded artifact ID: `%s`\n' "${ARTIFACT_NAME:-not recorded}" "${ARTIFACT_ID:-not recorded}"
+            printf -- '- Freshness guard: `%s`\n- Deployment action outcome: `%s`\n' "$GUARD_OUTCOME" "$DEPLOY_OUTCOME"
+          } >> "$GITHUB_STEP_SUMMARY"
